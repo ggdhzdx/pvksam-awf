@@ -1,0 +1,1403 @@
+{
+  "candidates": [
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0001--proton-placement-001",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 473,
+      "relaxed_total_energy_eV": -4686.673828125,
+      "movable_maximum_force_eV_A": 0.021463462793485343,
+      "frozen_raw_maximum_force_eV_A": 0.6266083854056809,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.36566416712243227,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.200714082912139
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.1934225493275883
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 239,
+          "nearest_oxygen_distance_A": 0.9777153430880124,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.738269805908203,
+      "site_combination_id": "site-combination-0001",
+      "proton_placement_id": "proton-placement-001",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0001/proton-placement-001/initial.extxyz",
+          "sha256": "9b7f2a44cd8ca13347a7ed3ec7bdaa5c0c02c11d9caa7fe191c8a934922b7de8"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0001/proton-placement-001/relaxed.extxyz",
+          "sha256": "0f0a2f494415819796f5841e8eece20940ccb44b36c884ce89d49f1d6d6793cd"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0001/proton-placement-001/optimization.traj",
+          "sha256": "93a2a2eb0c79617fcd8b4a726de76b9e58e4e988d17fe3a4394f4a5611a937da"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0001/proton-placement-001/optimizer.log",
+          "sha256": "c04c6ec0b8326576527291c2ff22048ab0820439b3616c0cd34988dc1c525b1a"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0001/proton-placement-001/progress.jsonl",
+          "sha256": "5783f590af6e98065e348ea8cee7eb80eca11375defb4a6592666735209d98ba"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0001--proton-placement-002",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 113,
+      "relaxed_total_energy_eV": -4686.57421875,
+      "movable_maximum_force_eV_A": 0.029582926943053128,
+      "frozen_raw_maximum_force_eV_A": 0.6318411180158965,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.39420074758026663,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.2459594495633945
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.1693669077980164
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 209,
+          "nearest_oxygen_distance_A": 0.9778269701434019,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.638660430908203,
+      "site_combination_id": "site-combination-0001",
+      "proton_placement_id": "proton-placement-002",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0001/proton-placement-002/initial.extxyz",
+          "sha256": "cc8783ad5c13b2934088c5c426f55c1634b81efe6599b3017cc97c7b9d690db5"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0001/proton-placement-002/relaxed.extxyz",
+          "sha256": "35b8fbf9cb5b76b7d9e6df3e290b0c761b8b537576fccc3028e3c3f0dc890f27"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0001/proton-placement-002/optimization.traj",
+          "sha256": "6f05039499c6a95afd3bf440f98f2e5d661ebae8277bd737ca39843464b399f0"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0001/proton-placement-002/optimizer.log",
+          "sha256": "0c6099beb8210b4d0420876b9a8c7065790531c802fe9bdced086659110b578a"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0001/proton-placement-002/progress.jsonl",
+          "sha256": "7e7ac2f6830465c4f6cd0cf8eb2cf890edda89de57d1250927445752665e9faa"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0001--proton-placement-003",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 120,
+      "relaxed_total_energy_eV": -4686.53515625,
+      "movable_maximum_force_eV_A": 0.028793395206897672,
+      "frozen_raw_maximum_force_eV_A": 0.7239306184466491,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.3976898035794326,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.1863245344788553
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.158207385479506
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 269,
+          "nearest_oxygen_distance_A": 0.9742221055350999,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.599597930908203,
+      "site_combination_id": "site-combination-0001",
+      "proton_placement_id": "proton-placement-003",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0001/proton-placement-003/initial.extxyz",
+          "sha256": "af1c6f729639851f578ec7f1581e7bd9c6ad009aed585407ea0ffe29ebdc9ff0"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0001/proton-placement-003/relaxed.extxyz",
+          "sha256": "6ef5f292152af0360df0b110e3734f75ccea1672851b789fc22bf824a3050e0b"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0001/proton-placement-003/optimization.traj",
+          "sha256": "5bedd5b97cebfbc95beef6c7658e05ab2f5a69e75392234270a97aa3d0523396"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0001/proton-placement-003/optimizer.log",
+          "sha256": "85d7a0c27849fd5ac1d49982f91cafc5d6812454058be0892672c65389b42663"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0001/proton-placement-003/progress.jsonl",
+          "sha256": "526e2996d9c6cf3e5ba7164e72d7b29cf341c5dbe27b794f788248e729921aaf"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0002--proton-placement-001",
+      "status": "failed_validation",
+      "valid_for_adsorption_energy_selection": false,
+      "optimizer_steps": 162,
+      "relaxed_total_energy_eV": -4684.8037109375,
+      "movable_maximum_force_eV_A": 0.028828649437926852,
+      "frozen_raw_maximum_force_eV_A": 0.1938374793597442,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.038085884061528186,
+      "final_denticity": 0,
+      "final_donor_metal_contacts": [],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 750,
+          "nearest_oxygen_distance_A": 1.0369937280980857,
+          "nearest_oxygen_is_substrate": false
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": false,
+        "surface_protons_bound_to_substrate_oxygen": false,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": null,
+      "site_combination_id": "site-combination-0002",
+      "proton_placement_id": "proton-placement-001",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0002/proton-placement-001/initial.extxyz",
+          "sha256": "c7b481ee81758d597e9b57f0a2dcc78f568369665bdd6470800e21c763347219"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0002/proton-placement-001/relaxed.extxyz",
+          "sha256": "a60821ccb03f67eab50eb481dc7ffd04291481e72fbc54027543b1506ab2ea48"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0002/proton-placement-001/optimization.traj",
+          "sha256": "d04b1b5ebefa941a6d357501662cec295d84e950e717ba27b3823f0f597e5d1d"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0002/proton-placement-001/optimizer.log",
+          "sha256": "acd561e5759165163a445a24fc943401e2d9e7f163a68ab639c1f25bebf8f1d9"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0002/proton-placement-001/progress.jsonl",
+          "sha256": "6d8dc9d3c9fa7cf9065c151479a93800015e1dd01367aefaffa885b13d848a92"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0002--proton-placement-002",
+      "status": "failed_validation",
+      "valid_for_adsorption_energy_selection": false,
+      "optimizer_steps": 358,
+      "relaxed_total_energy_eV": -4685.0927734375,
+      "movable_maximum_force_eV_A": 0.02664637276130465,
+      "frozen_raw_maximum_force_eV_A": 0.29650416260309503,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.09535098080340652,
+      "final_denticity": 0,
+      "final_donor_metal_contacts": [],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 751,
+          "nearest_oxygen_distance_A": 1.0239393787263305,
+          "nearest_oxygen_is_substrate": false
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": false,
+        "surface_protons_bound_to_substrate_oxygen": false,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": null,
+      "site_combination_id": "site-combination-0002",
+      "proton_placement_id": "proton-placement-002",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0002/proton-placement-002/initial.extxyz",
+          "sha256": "7b759bf7da768ccb2025eb5445246e7dc18bf5ac539667a020ec97481dfd978e"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0002/proton-placement-002/relaxed.extxyz",
+          "sha256": "fdfc27ca1c35e39ff84ef6cb429d7e03450b802ce72796cfa92d0ea035f8e3d6"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0002/proton-placement-002/optimization.traj",
+          "sha256": "2fd17c40f7982d82d2033cf5469ff88b0aee5cbee9c71bfe05ec926212983d17"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0002/proton-placement-002/optimizer.log",
+          "sha256": "7457a60aa0927458d3a514115e053e9bfe7e832b1fc8aa7a4ed749e985fb69e9"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0002/proton-placement-002/progress.jsonl",
+          "sha256": "c6ed9778080acabe58155c04d8acd380b7ff5fee49cd3d6800838faa37fc9acb"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0003--proton-placement-001",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 51,
+      "relaxed_total_energy_eV": -4686.63330078125,
+      "movable_maximum_force_eV_A": 0.029427909244430013,
+      "frozen_raw_maximum_force_eV_A": 0.633945242436995,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.36687208637082347,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.171606734667147
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.2024897748312586
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 389,
+          "nearest_oxygen_distance_A": 0.9770706304310376,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.697742462158203,
+      "site_combination_id": "site-combination-0003",
+      "proton_placement_id": "proton-placement-001",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0003/proton-placement-001/initial.extxyz",
+          "sha256": "de2f9eec7875a155831f9c6ccbcfec73e9796b177f7b2723145b98d9c8c921c4"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0003/proton-placement-001/relaxed.extxyz",
+          "sha256": "68996620f69ae13fc340f38464c655093d595a35c7bca3b0bef9f07da0772a63"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0003/proton-placement-001/optimization.traj",
+          "sha256": "b4d433016ee6f523012ede1833157a75ac433a614a27f9fa6bd1a9e94a0048eb"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0003/proton-placement-001/optimizer.log",
+          "sha256": "356774222c74518ae787038a85419c6dc7777d7e662390e08ce9310604ab29d0"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0003/proton-placement-001/progress.jsonl",
+          "sha256": "5806aa43b4c22404695fe5a025853f4542fb026647cc9b7c3367d0427721cedf"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0003--proton-placement-002",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 53,
+      "relaxed_total_energy_eV": -4686.626953125,
+      "movable_maximum_force_eV_A": 0.028903446767535725,
+      "frozen_raw_maximum_force_eV_A": 0.6335888768899387,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.37074307835447307,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.201076025948611
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.1783484490137255
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 359,
+          "nearest_oxygen_distance_A": 0.9772725682395239,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.691394805908203,
+      "site_combination_id": "site-combination-0003",
+      "proton_placement_id": "proton-placement-002",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0003/proton-placement-002/initial.extxyz",
+          "sha256": "afb23b7bd177dcbe8c56907d3074eb12bf2ba0dea629fd1e37b21dae567a2043"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0003/proton-placement-002/relaxed.extxyz",
+          "sha256": "111b4df3567ac7993d2239e4d10a2d704030e11e1eac803700d37353c84bca3d"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0003/proton-placement-002/optimization.traj",
+          "sha256": "690c8d5cb0118752563f641cc3c134c4aa4acb7beb6c2f5a7fa259557beec024"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0003/proton-placement-002/optimizer.log",
+          "sha256": "e95ba250976ae3bcad70a33e94afc0560237b435a191f96291eecf432f07733a"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0003/proton-placement-002/progress.jsonl",
+          "sha256": "e64fe8f53f79cd0e53037a119fc6e1e9e44a67d44bc50374cd4098df8f256bda"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0003--proton-placement-003",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 54,
+      "relaxed_total_energy_eV": -4686.63037109375,
+      "movable_maximum_force_eV_A": 0.023343836479736074,
+      "frozen_raw_maximum_force_eV_A": 0.6336507255149879,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.3683069356091626,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.172458211164603
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.2051999745716806
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 239,
+          "nearest_oxygen_distance_A": 0.9765485495938611,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.694812774658203,
+      "site_combination_id": "site-combination-0003",
+      "proton_placement_id": "proton-placement-003",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0003/proton-placement-003/initial.extxyz",
+          "sha256": "c31b529a3f59633ec7336e931732e0ea515af120bbdaa8fce9d731f99be8e902"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0003/proton-placement-003/relaxed.extxyz",
+          "sha256": "abb38e7470a9181b5b7973ecbf84de3559196058ac855f2f4b4ff7063c80c6d6"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0003/proton-placement-003/optimization.traj",
+          "sha256": "218cd6f6c78b51361d1c45efca51ba6cb3cb225478f6121f940c13b152ec7600"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0003/proton-placement-003/optimizer.log",
+          "sha256": "d159c2a2e031a117158c7c2700173be55bc065c8bce07ececf1bbf27e8bf14be"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0003/proton-placement-003/progress.jsonl",
+          "sha256": "3da46aa1916d365e11cf40561f80a8686253a9cf8cb67d9856e9062102d5032c"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0003--proton-placement-004",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 53,
+      "relaxed_total_energy_eV": -4686.6259765625,
+      "movable_maximum_force_eV_A": 0.021450426709088928,
+      "frozen_raw_maximum_force_eV_A": 0.6332744223552841,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.3710338870634537,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.201384808561527
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.1784044618031255
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 209,
+          "nearest_oxygen_distance_A": 0.9769969123324983,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.690418243408203,
+      "site_combination_id": "site-combination-0003",
+      "proton_placement_id": "proton-placement-004",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0003/proton-placement-004/initial.extxyz",
+          "sha256": "a97d38cec7f502506448e85fac8335835a7fadb79d1b228f89869b2daa50cb26"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0003/proton-placement-004/relaxed.extxyz",
+          "sha256": "449bddaaae03d254a3138477d0be522047258d4e9a642aae36bf8ad8273f77cb"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0003/proton-placement-004/optimization.traj",
+          "sha256": "8441c4d130aaabb40418c71de7eb53644a86ec46922f389b5927e28fa4efba4c"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0003/proton-placement-004/optimizer.log",
+          "sha256": "3f8d10b2fb4905956d57831e6d76e324b7afaf2af320ef3f5b3ad57debc34bce"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0003/proton-placement-004/progress.jsonl",
+          "sha256": "811fbf04b04f278a090191d2b8f572745babc2b46030a5845625c3043db165a2"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0004--proton-placement-001",
+      "status": "failed_validation",
+      "valid_for_adsorption_energy_selection": false,
+      "optimizer_steps": 88,
+      "relaxed_total_energy_eV": -4684.96484375,
+      "movable_maximum_force_eV_A": 0.02840709340011013,
+      "frozen_raw_maximum_force_eV_A": 0.2040255329201529,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.04309951398825724,
+      "final_denticity": 0,
+      "final_donor_metal_contacts": [],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 750,
+          "nearest_oxygen_distance_A": 1.0373470782897642,
+          "nearest_oxygen_is_substrate": false
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": false,
+        "surface_protons_bound_to_substrate_oxygen": false,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": null,
+      "site_combination_id": "site-combination-0004",
+      "proton_placement_id": "proton-placement-001",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0004/proton-placement-001/initial.extxyz",
+          "sha256": "8b80b1a1de4c917d3a66b6ed1ade68cd04961e56edfeca850c4a63256536c0ca"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0004/proton-placement-001/relaxed.extxyz",
+          "sha256": "7a392c23d264ea14bc84b068b061338b078f5d7c5ec18855d704456cec7b6ac7"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0004/proton-placement-001/optimization.traj",
+          "sha256": "751ea8456319ad862ede9054435a316609eed5429725c889be2df002d2734cd0"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0004/proton-placement-001/optimizer.log",
+          "sha256": "7ce4a21be5e856e045691b71fb52f68b89605909aaf309f34c5eb59dab0bc7b6"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0004/proton-placement-001/progress.jsonl",
+          "sha256": "8742c6bc1288eb8b1adffc9c63767fc60a83527fed92c5a5e4c5096ba86d8fcb"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0004--proton-placement-002",
+      "status": "failed_validation",
+      "valid_for_adsorption_energy_selection": false,
+      "optimizer_steps": 90,
+      "relaxed_total_energy_eV": -4684.9267578125,
+      "movable_maximum_force_eV_A": 0.02731530069461136,
+      "frozen_raw_maximum_force_eV_A": 0.20950683941871207,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.043463156132777334,
+      "final_denticity": 0,
+      "final_donor_metal_contacts": [],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 751,
+          "nearest_oxygen_distance_A": 1.0398441614448917,
+          "nearest_oxygen_is_substrate": false
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": false,
+        "surface_protons_bound_to_substrate_oxygen": false,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": null,
+      "site_combination_id": "site-combination-0004",
+      "proton_placement_id": "proton-placement-002",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0004/proton-placement-002/initial.extxyz",
+          "sha256": "9830d63fb307c5943ca13b200f90d2ab672625920f16f041898f651fcabd8f2d"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0004/proton-placement-002/relaxed.extxyz",
+          "sha256": "3e57b534bc57c977ce03424ee43b7fc680ba2d3b137c34cd576efd40c708008f"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0004/proton-placement-002/optimization.traj",
+          "sha256": "fcee4e67afb76f5d8cd4140777d657a3f699896bdd17ff51790c50e7b7b13285"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0004/proton-placement-002/optimizer.log",
+          "sha256": "96c8d8107419fb5373c04fbcce1175288a9e515c545e990087afa02edaa2ec0d"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0004/proton-placement-002/progress.jsonl",
+          "sha256": "073068d568dcc2af4133ff9b10f3d820d3f9f4244e46f73d4116b3b0e38ada6d"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0004--proton-placement-003",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 91,
+      "relaxed_total_energy_eV": -4684.255859375,
+      "movable_maximum_force_eV_A": 0.022780952833813456,
+      "frozen_raw_maximum_force_eV_A": 0.5476303103023706,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 1.1604580165621203,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 387,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.254308257896249
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 387,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.33091477442995
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 329,
+          "nearest_oxygen_distance_A": 0.9728160194634287,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -0.3203010559082031,
+      "site_combination_id": "site-combination-0004",
+      "proton_placement_id": "proton-placement-003",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0004/proton-placement-003/initial.extxyz",
+          "sha256": "6e72ca229f13343725cbf8b2e2efd95cd25b1d32da340a31f3880fa78e81ea02"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0004/proton-placement-003/relaxed.extxyz",
+          "sha256": "5447286a79ecc31e4b25d07d02ce151c67735760e45c28137497243b24a47bf4"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0004/proton-placement-003/optimization.traj",
+          "sha256": "ea50238d4da3f32e5b9c25c70b3522ef2950d4c5f30edef06e01d704d9ca0f27"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0004/proton-placement-003/optimizer.log",
+          "sha256": "529058751d4e5055db69a5dd23ae533f45230c6d1283c20e7ce0bbaddc35faf6"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0004/proton-placement-003/progress.jsonl",
+          "sha256": "56533f302324df4462241615fa4c9d0fe4bf384872cf52325c5d920e6b3647db"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0004--proton-placement-004",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 87,
+      "relaxed_total_energy_eV": -4684.255859375,
+      "movable_maximum_force_eV_A": 0.020794384930235808,
+      "frozen_raw_maximum_force_eV_A": 0.5484620531344988,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 1.1622067655897883,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 387,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.277007573531388
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 387,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.3005772433521687
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 419,
+          "nearest_oxygen_distance_A": 0.9728757201465181,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -0.3203010559082031,
+      "site_combination_id": "site-combination-0004",
+      "proton_placement_id": "proton-placement-004",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0004/proton-placement-004/initial.extxyz",
+          "sha256": "8ec68175ef07e09b5df38090295d2c55bde4f97b28ce023cdfdb0a935edba0ed"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0004/proton-placement-004/relaxed.extxyz",
+          "sha256": "4fa88eb8e3e09b5dc2ab06e5748be4f5e718c52b0b4cc2060cdbb682a2e92c2e"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0004/proton-placement-004/optimization.traj",
+          "sha256": "a3027788930d44bd8950c614b08b83d00eb2441287e62af97f5270b93618f133"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0004/proton-placement-004/optimizer.log",
+          "sha256": "384f64048491dcaa96c815ce4f335b409b4eaa1fca207b61ce8c10f29b647e4c"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0004/proton-placement-004/progress.jsonl",
+          "sha256": "d28eca9d99365f493953e93eed514b5d9815b22b4e18e2da7960a3fb43b02050"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0005--proton-placement-001",
+      "status": "failed_validation",
+      "valid_for_adsorption_energy_selection": false,
+      "optimizer_steps": 94,
+      "relaxed_total_energy_eV": -4686.1572265625,
+      "movable_maximum_force_eV_A": 0.02333641806277938,
+      "frozen_raw_maximum_force_eV_A": 0.5746195010086135,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.15832558694676413,
+      "final_denticity": 1,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.0917112150409807
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 359,
+          "nearest_oxygen_distance_A": 1.0208153230783286,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": false,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": null,
+      "site_combination_id": "site-combination-0005",
+      "proton_placement_id": "proton-placement-001",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0005/proton-placement-001/initial.extxyz",
+          "sha256": "62429aa7b869123e10ff9fbbda6b89064843d1f278ada5a350069c70180e3d40"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0005/proton-placement-001/relaxed.extxyz",
+          "sha256": "92a3d6e6672ab83cb56bdb930a9e1a9071976537935168558f2d767bcf3d5d3a"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0005/proton-placement-001/optimization.traj",
+          "sha256": "b03f5dff13cd563893a5c870d20628cddd7e6b8c28b703522ef8b346f815bddd"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0005/proton-placement-001/optimizer.log",
+          "sha256": "952299258adf92681a41009a688065154015106c4c365066072f83fdcf5a17b7"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0005/proton-placement-001/progress.jsonl",
+          "sha256": "47bc373299dc1417bd41eab4bb0f4bf7e4cf46dd297069916aa6cfde0e03c9f8"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0005--proton-placement-002",
+      "status": "failed_validation",
+      "valid_for_adsorption_energy_selection": false,
+      "optimizer_steps": 88,
+      "relaxed_total_energy_eV": -4686.1494140625,
+      "movable_maximum_force_eV_A": 0.026772620084376336,
+      "frozen_raw_maximum_force_eV_A": 0.5371107983883999,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.15962282131074026,
+      "final_denticity": 1,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.088185579987495
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 209,
+          "nearest_oxygen_distance_A": 1.0205188103575202,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": false,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": null,
+      "site_combination_id": "site-combination-0005",
+      "proton_placement_id": "proton-placement-002",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0005/proton-placement-002/initial.extxyz",
+          "sha256": "cd67b033b9b7676b30e402732508023bfc7f416ac68540214b98089a8e68d2c8"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0005/proton-placement-002/relaxed.extxyz",
+          "sha256": "13a7738d6c6bb0742b6e9a44968b4a69c2fb96827439c25c78349d0e73be1d34"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0005/proton-placement-002/optimization.traj",
+          "sha256": "1e2c31bf32278ff8c6ee5a1ba78d9ecf2d62defe7f41793dd7b48dcde57d3459"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0005/proton-placement-002/optimizer.log",
+          "sha256": "4454ac46761cc415bc6fefbb5ff06ff6d9e36dfd7d25a9be52376e8162a094ff"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0005/proton-placement-002/progress.jsonl",
+          "sha256": "b9dc1fcaab71587f9cb4f761b01f1716f037584e539e49a5b2fd4c7c85e0dc83"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0005--proton-placement-003",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 166,
+      "relaxed_total_energy_eV": -4686.55859375,
+      "movable_maximum_force_eV_A": 0.028559308682687277,
+      "frozen_raw_maximum_force_eV_A": 0.7267323763387786,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.388319674613764,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 358,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.1708657410470953
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.15694077033644
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 389,
+          "nearest_oxygen_distance_A": 0.9746108858631213,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.623035430908203,
+      "site_combination_id": "site-combination-0005",
+      "proton_placement_id": "proton-placement-003",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0005/proton-placement-003/initial.extxyz",
+          "sha256": "3cd390f1e2d9de877acaf05676ff1bf3eec189671a81dc890a14692db1442164"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0005/proton-placement-003/relaxed.extxyz",
+          "sha256": "a8a6fe4c0fbbd39202af69a491aff898f4e332e9a5fc1e3b8f7a1358601b491f"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0005/proton-placement-003/optimization.traj",
+          "sha256": "fdfd75098b4a21401976eef0b33583af710ca2bc770e4c15b3966a21f425858c"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0005/proton-placement-003/optimizer.log",
+          "sha256": "90d8513485a79222c177787b401117e4efd1bdfe88591dca7fa99084fe37b51e"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0005/proton-placement-003/progress.jsonl",
+          "sha256": "7a1f4c0032a825de11497cca96b618c664a354c6ed9e51e4078da6911bdacba9"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0005--proton-placement-004",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 183,
+      "relaxed_total_energy_eV": -4686.5966796875,
+      "movable_maximum_force_eV_A": 0.026075387720553532,
+      "frozen_raw_maximum_force_eV_A": 0.6287810846749933,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.39165460962870025,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 358,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.2160948545007795
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.1685316300088187
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 329,
+          "nearest_oxygen_distance_A": 0.9771099407666394,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.661121368408203,
+      "site_combination_id": "site-combination-0005",
+      "proton_placement_id": "proton-placement-004",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0005/proton-placement-004/initial.extxyz",
+          "sha256": "2d0dd53f45378c71c3d9ea043cab9137fd26a5362dce32622678534349a1108c"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0005/proton-placement-004/relaxed.extxyz",
+          "sha256": "ea5255712053e61a40c73e268572e0345f483defc60406aa705d0d05eeda2156"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0005/proton-placement-004/optimization.traj",
+          "sha256": "07565d2fbec848c129f49af2a5619c939be193a367dc3133c4299164d3470bc4"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0005/proton-placement-004/optimizer.log",
+          "sha256": "012887c031a932583a2c36696550aba3d86347548bc0e88525a8fc58bffeb0b4"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0005/proton-placement-004/progress.jsonl",
+          "sha256": "9feb8c5fdca86b084145dfea92fdbd50b8a61ac819acee4ee02f9a36d378684b"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0005--proton-placement-005",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 165,
+      "relaxed_total_energy_eV": -4686.611328125,
+      "movable_maximum_force_eV_A": 0.026730011784663426,
+      "frozen_raw_maximum_force_eV_A": 0.6334691236154498,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.3803625917253088,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.173160437912385
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 418,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.2075075723637
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 239,
+          "nearest_oxygen_distance_A": 0.9765404403717202,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.675769805908203,
+      "site_combination_id": "site-combination-0005",
+      "proton_placement_id": "proton-placement-005",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0005/proton-placement-005/initial.extxyz",
+          "sha256": "d4f33af427b405238757246ebdeafde970608dfd0524863d2ad262ee3105ec82"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0005/proton-placement-005/relaxed.extxyz",
+          "sha256": "6bf6235e8c4f6ef2a6193987b47469ce20ec4ba2df97f96bdf458f68d56694af"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0005/proton-placement-005/optimization.traj",
+          "sha256": "1b8e7f6dba628bc62f5cd910133ead86053d5bd27265e57a447e12467cfb68bf"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0005/proton-placement-005/optimizer.log",
+          "sha256": "e30d9878405c2902bb2d5dc0ba92f3892cb12729b3683d18a31ceab216e9f4ca"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0005/proton-placement-005/progress.jsonl",
+          "sha256": "fdd14d61a89b6dbd8745abd94bfcbf6690c5e061265673e40a165dd7bd03b94c"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "candidate_id": "site-combination-0005--proton-placement-006",
+      "status": "passed",
+      "valid_for_adsorption_energy_selection": true,
+      "optimizer_steps": 144,
+      "relaxed_total_energy_eV": -4686.623046875,
+      "movable_maximum_force_eV_A": 0.028032931644050407,
+      "frozen_raw_maximum_force_eV_A": 0.6278535757194772,
+      "maximum_frozen_position_change_A": 0.0,
+      "maximum_movable_substrate_displacement_A": 0.36481853186294544,
+      "final_denticity": 2,
+      "final_donor_metal_contacts": [
+        {
+          "probe_donor_atom_id_0_based": 750,
+          "surface_metal_atom_id_0_based": 358,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.2066770928505117
+        },
+        {
+          "probe_donor_atom_id_0_based": 751,
+          "surface_metal_atom_id_0_based": 388,
+          "surface_metal_element": "Sn",
+          "distance_A": 2.172505747798339
+        }
+      ],
+      "surface_proton_assignments": [
+        {
+          "surface_proton_atom_id_0_based": 757,
+          "nearest_oxygen_atom_id_0_based": 179,
+          "nearest_oxygen_distance_A": 0.9765695282856591,
+          "nearest_oxygen_is_substrate": true
+        }
+      ],
+      "checks": {
+        "optimizer_converged": true,
+        "movable_force": true,
+        "formula": true,
+        "atom_count": true,
+        "fixed_cell": true,
+        "frozen_positions_unchanged": true,
+        "probe_connectivity": true,
+        "final_denticity": true,
+        "surface_protons_bound_to_substrate_oxygen": true,
+        "movable_substrate_displacement": true
+      },
+      "adsorption_energy_eV": -2.687488555908203,
+      "site_combination_id": "site-combination-0005",
+      "proton_placement_id": "proton-placement-006",
+      "artifacts": [
+        {
+          "role": "initial_structure",
+          "path": "candidates/site-combination-0005/proton-placement-006/initial.extxyz",
+          "sha256": "76fdf8de37807e5640179330448602d44eb5ff0a804e65f34bd12ee30eacbc45"
+        },
+        {
+          "role": "relaxed_structure",
+          "path": "candidates/site-combination-0005/proton-placement-006/relaxed.extxyz",
+          "sha256": "d66407c33ddd0bfb23c7e6ece869a792af52e798b00e898065f403bcf9f7ef83"
+        },
+        {
+          "role": "trajectory",
+          "path": "candidates/site-combination-0005/proton-placement-006/optimization.traj",
+          "sha256": "839440391b226d94ac7f535469b007d5daf631195e18148b50c89d37c9db1741"
+        },
+        {
+          "role": "optimizer_log",
+          "path": "candidates/site-combination-0005/proton-placement-006/optimizer.log",
+          "sha256": "b1f4adaf9396454195f7b322b12b2f8d58d64d6302dc3cdfda6da53b37603bf1"
+        },
+        {
+          "role": "progress",
+          "path": "candidates/site-combination-0005/proton-placement-006/progress.jsonl",
+          "sha256": "c820ac6d078de25de799f3ee48e4e31866d931ad38363e8b796d50e5c9c645ac"
+        }
+      ]
+    }
+  ]
+}

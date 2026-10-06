@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "status": "passed_selection",
+  "selected_candidate_id": "termination-001",
+  "selection_rule": "Among stoichiometric, charge-neutral, formally nonpolar, force-converged and thickness-converged pairs, choose the lowest thick-limit surface energy.",
+  "energy_interpretation": {
+    "reported_quantity": "two_surface_pair_average",
+    "equation": "gamma_pair_average=(E_slab-N_formula*E_bulk_formula)/(2*A)",
+    "warning": "For an asymmetric or formally polar slab this is only the average excess energy of its two complementary surfaces, not either individual surface energy. Uncompensated polar pairs are diagnostic-only."
+  },
+  "candidate_results": [
+    {
+      "candidate_id": "termination-001",
+      "cut_fractional_phase": 0.0,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -4.2528953143201707e-16,
+      "classification": "directly_rankable_nonpolar_pair",
+      "individual_surface_energy_interpretation": "allowed_for_symmetric_nonpolar_pair",
+      "calculation_status": "completed",
+      "relaxations_passed": true,
+      "thickness_converged": true,
+      "rankable": true,
+      "thickest_repeat": 5,
+      "pair_average_surface_energy_eV_A2": 0.05211278097811837,
+      "pair_average_surface_energy_J_m2": 0.8349388001590091,
+      "child_run": {
+        "status": "passed",
+        "output_directory": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0",
+        "run_manifest_sha256": "670aad396fac4f76b620644f53181c8d4e4294b99e3eb7211355601d8b1ab609",
+        "convergence_report_sha256": "08a4d98fed0005baa5d6c709c3c8bd82162ce5fd7dbc5378a689d0038ac4db88"
+      }
+    },
+    {
+      "candidate_id": "termination-002",
+      "cut_fractional_phase": 0.190862923371,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -0.29124097093967366,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-003",
+      "cut_fractional_phase": 0.264827173591,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -0.5824819418793474,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-004",
+      "cut_fractional_phase": 0.309137076629,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -0.873722912819021,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-005",
+      "cut_fractional_phase": 0.377879640441,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "In": 6
+      },
+      "formal_dipole_density_e_per_A": -1.1649638837586958,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-006",
+      "cut_fractional_phase": 0.465990417539,
+      "top_plane_formula": {
+        "In": 6
+      },
+      "bottom_plane_formula": {
+        "In": 4
+      },
+      "formal_dipole_density_e_per_A": -0.29124097093967366,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-007",
+      "cut_fractional_phase": 0.534009582461,
+      "top_plane_formula": {
+        "In": 4
+      },
+      "bottom_plane_formula": {
+        "In": 6
+      },
+      "formal_dipole_density_e_per_A": 0.29124097093967455,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-008",
+      "cut_fractional_phase": 0.622120359559,
+      "top_plane_formula": {
+        "In": 6
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 1.1649638837586953,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-009",
+      "cut_fractional_phase": 0.690862923371,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 0.8737229128190217,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-010",
+      "cut_fractional_phase": 0.735172826409,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 0.5824819418793477,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-011",
+      "cut_fractional_phase": 0.809137076629,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 0.291240970939675,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    }
+  ],
+  "diagnostic_pair_average_energy_order": [
+    "termination-001"
+  ],
+  "rankable_energy_order": [
+    "termination-001"
+  ]
+}

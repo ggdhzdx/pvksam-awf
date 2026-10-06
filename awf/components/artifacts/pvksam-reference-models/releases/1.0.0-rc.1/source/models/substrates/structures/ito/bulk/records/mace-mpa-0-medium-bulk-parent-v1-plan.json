@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "mode": "bulk_relaxation_plan",
+  "substrate": {
+    "key": "ITO",
+    "host_material": "In2O3",
+    "structure_manifest": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/manifest.json",
+      "sha256": "3e1191c3967a3e7f00c3bcb9c693e969a7c305a9857490c85b0e841de3c07b51"
+    }
+  },
+  "bulk_seed": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/bulk/In2O3-Ia-3-mp-22598-conventional.cif",
+    "sha256": "2ca66b493000860fd860d35529d254f5b71cbe84eb1efaf5293c33dfc9d685a5",
+    "status": "standardized_seed_pending_protocol_relaxation",
+    "formula": {
+      "In": 32,
+      "O": 48
+    },
+    "atom_count": 80,
+    "pbc": [
+      true,
+      true,
+      true
+    ],
+    "cell_A": {
+      "lengths": [
+        10.1767232696,
+        10.1767232696,
+        10.1767232696
+      ],
+      "angles_deg": [
+        90.0,
+        90.0,
+        90.0
+      ],
+      "volume_A3": 1053.9594335651254
+    },
+    "cell_constraint_check": "passed"
+  },
+  "potential": {
+    "model_path": "${PVKSAM_PROJECT_ROOT}/mace-mpa-0-medium.model",
+    "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+    "required_elements": [
+      "In",
+      "O"
+    ],
+    "declared_model_elements": [
+      "In",
+      "O"
+    ],
+    "coverage": "passed",
+    "coverage_basis": "maintainer_declaration_not_model_introspection"
+  },
+  "relaxation_contract": {
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "status": "ready_for_execution",
+    "cell_constraint": "cubic",
+    "relax_atomic_positions": true,
+    "relax_cell": true,
+    "target_pressure_GPa": 0.0,
+    "force_tolerance_eV_A": 0.03,
+    "stress_tolerance_GPa": 0.2,
+    "maximum_step_A": 0.05,
+    "symmetry_tolerance_A": 0.01,
+    "maximum_steps": 500,
+    "reference": {
+      "cell_A": {
+        "a": 10.117,
+        "b": 10.117,
+        "c": 10.117
+      },
+      "provenance": "single_crystal_xray_diffraction_Marezio_1966",
+      "citation": "M. Marezio, Refinement of the crystal structure of In2O3 at two wavelengths, Acta Crystallographica 20 (1966) 723-728",
+      "doi": "10.1107/S0365110X66001749"
+    },
+    "acceptance": {
+      "maximum_relative_length_deviation": 0.02,
+      "maximum_angle_deviation_deg": 0.5,
+      "require_formula_unchanged": true,
+      "require_atom_count_unchanged": true,
+      "require_crystal_system_preserved": true,
+      "expected_space_group_number": 206
+    }
+  },
+  "optimizer_contract": {
+    "optimizer": "LBFGS",
+    "cell_filter": "FrechetCellFilter",
+    "symmetry_constraint": "FixSymmetry",
+    "exp_cell_factor": 43.85531615271653,
+    "derivation": "stress_tolerance_eV_A3 * initial_volume_A3 / force_tolerance_eV_A",
+    "purpose": "Map the declared stress threshold onto the same optimizer fmax threshold used for atomic forces."
+  },
+  "seed_reference_comparison": {
+    "reference_lengths_A": [
+      10.117,
+      10.117,
+      10.117
+    ],
+    "relative_length_deviations": [
+      0.005903258831669386,
+      0.005903258831669386,
+      0.005903258831669386
+    ],
+    "within_acceptance_envelope": true,
+    "note": "This comparison characterizes the unrelaxed seed. Acceptance must be recomputed from the future relaxed candidate."
+  },
+  "planned_outputs": {
+    "candidate_structure_role": "bulk_parent_candidate",
+    "required_records": [
+      "relaxed_structure",
+      "optimizer_log",
+      "final_force_and_stress_metrics",
+      "acceptance_report",
+      "provenance_manifest"
+    ],
+    "registration_policy": "Promote a candidate to Bulk Parent only after every acceptance check passes; never overwrite the Bulk Seed."
+  },
+  "bulk_parent_state": "not_registered",
+  "execution_contract": {
+    "executable": true,
+    "read_only": true,
+    "execution_command": "bulk-relaxation-run",
+    "readiness_issues": []
+  }
+}

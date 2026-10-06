@@ -1,0 +1,669 @@
+{
+  "status": "passed",
+  "site_selections": [
+    {
+      "site_combination_id": "site-combination-0001",
+      "candidate_count": 4,
+      "valid_candidate_count": 3,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0001--proton-placement-002",
+      "adsorption_energy_eV": -1.6161994934082031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0001--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.6161994934082031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0001--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.2137336730957031,
+          "energy_above_site_minimum_eV": 0.4024658203125
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0001--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.7551155090332031,
+          "energy_above_site_minimum_eV": 0.861083984375
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0002",
+      "candidate_count": 5,
+      "valid_candidate_count": 1,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0002--proton-placement-005",
+      "adsorption_energy_eV": -0.4443244934082031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0002--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.4443244934082031,
+          "energy_above_site_minimum_eV": 0.0
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0003",
+      "candidate_count": 3,
+      "valid_candidate_count": 2,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0003--proton-placement-002",
+      "adsorption_energy_eV": -1.9306526184082031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0003--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.9306526184082031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0003--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.8553352355957031,
+          "energy_above_site_minimum_eV": 1.0753173828125
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0004",
+      "candidate_count": 5,
+      "valid_candidate_count": 5,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0004--proton-placement-005",
+      "adsorption_energy_eV": -2.325183868408203,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0004--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.325183868408203,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0004--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.306385040283203,
+          "energy_above_site_minimum_eV": 0.018798828125
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0004--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.175403594970703,
+          "energy_above_site_minimum_eV": 0.1497802734375
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0004--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.060657501220703,
+          "energy_above_site_minimum_eV": 0.2645263671875
+        },
+        {
+          "rank": 5,
+          "candidate_id": "site-combination-0004--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8625984191894531,
+          "energy_above_site_minimum_eV": 0.46258544921875
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0005",
+      "candidate_count": 5,
+      "valid_candidate_count": 3,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0005--proton-placement-005",
+      "adsorption_energy_eV": -2.062732696533203,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0005--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.062732696533203,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0005--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.7431526184082031,
+          "energy_above_site_minimum_eV": 0.319580078125
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0005--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.9095344543457031,
+          "energy_above_site_minimum_eV": 1.1531982421875
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0006",
+      "candidate_count": 6,
+      "valid_candidate_count": 2,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0006--proton-placement-005",
+      "adsorption_energy_eV": -1.5844612121582031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0006--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.5844612121582031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0006--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.2493782043457031,
+          "energy_above_site_minimum_eV": 0.3350830078125
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0007",
+      "candidate_count": 3,
+      "valid_candidate_count": 3,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0007--proton-placement-002",
+      "adsorption_energy_eV": -1.7228889465332031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0007--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.7228889465332031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0007--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.7072639465332031,
+          "energy_above_site_minimum_eV": 0.015625
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0007--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.4673957824707031,
+          "energy_above_site_minimum_eV": 0.2554931640625
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0008",
+      "candidate_count": 4,
+      "valid_candidate_count": 4,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0008--proton-placement-004",
+      "adsorption_energy_eV": -1.9074592590332031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0008--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.9074592590332031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0008--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.7217903137207031,
+          "energy_above_site_minimum_eV": 0.1856689453125
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0008--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.6816291809082031,
+          "energy_above_site_minimum_eV": 0.225830078125
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0008--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.4692878723144531,
+          "energy_above_site_minimum_eV": 0.43817138671875
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0009",
+      "candidate_count": 5,
+      "valid_candidate_count": 5,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0009--proton-placement-004",
+      "adsorption_energy_eV": -2.371692657470703,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0009--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.371692657470703,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0009--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.205493927001953,
+          "energy_above_site_minimum_eV": 0.16619873046875
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0009--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8788948059082031,
+          "energy_above_site_minimum_eV": 0.4927978515625
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0009--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8470344543457031,
+          "energy_above_site_minimum_eV": 0.524658203125
+        },
+        {
+          "rank": 5,
+          "candidate_id": "site-combination-0009--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.7526741027832031,
+          "energy_above_site_minimum_eV": 0.6190185546875
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0010",
+      "candidate_count": 5,
+      "valid_candidate_count": 5,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0010--proton-placement-001",
+      "adsorption_energy_eV": -2.436817169189453,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0010--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.436817169189453,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0010--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.191089630126953,
+          "energy_above_site_minimum_eV": 0.2457275390625
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0010--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.077381134033203,
+          "energy_above_site_minimum_eV": 0.35943603515625
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0010--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8874397277832031,
+          "energy_above_site_minimum_eV": 0.54937744140625
+        },
+        {
+          "rank": 5,
+          "candidate_id": "site-combination-0010--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8818855285644531,
+          "energy_above_site_minimum_eV": 0.554931640625
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0011",
+      "candidate_count": 6,
+      "valid_candidate_count": 3,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0011--proton-placement-006",
+      "adsorption_energy_eV": -1.4257698059082031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0011--proton-placement-006",
+          "proton_placement_id": "proton-placement-006",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.4257698059082031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0011--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.0632209777832031,
+          "energy_above_site_minimum_eV": 0.362548828125
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0011--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.6938362121582031,
+          "energy_above_site_minimum_eV": 0.73193359375
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0012",
+      "candidate_count": 6,
+      "valid_candidate_count": 4,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0012--proton-placement-006",
+      "adsorption_energy_eV": -0.8752326965332031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0012--proton-placement-006",
+          "proton_placement_id": "proton-placement-006",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.8752326965332031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0012--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.6970100402832031,
+          "energy_above_site_minimum_eV": 0.17822265625
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0012--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.6655158996582031,
+          "energy_above_site_minimum_eV": 0.209716796875
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0012--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.5315437316894531,
+          "energy_above_site_minimum_eV": 0.34368896484375
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0013",
+      "candidate_count": 6,
+      "valid_candidate_count": 6,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0013--proton-placement-002",
+      "adsorption_energy_eV": -1.8697395324707031,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0013--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8697395324707031,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0013--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.7463264465332031,
+          "energy_above_site_minimum_eV": 0.1234130859375
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0013--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.6347541809082031,
+          "energy_above_site_minimum_eV": 0.2349853515625
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0013--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.3464241027832031,
+          "energy_above_site_minimum_eV": 0.5233154296875
+        },
+        {
+          "rank": 5,
+          "candidate_id": "site-combination-0013--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.3165168762207031,
+          "energy_above_site_minimum_eV": 0.55322265625
+        },
+        {
+          "rank": 6,
+          "candidate_id": "site-combination-0013--proton-placement-006",
+          "proton_placement_id": "proton-placement-006",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.2047004699707031,
+          "energy_above_site_minimum_eV": 0.6650390625
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0014",
+      "candidate_count": 6,
+      "valid_candidate_count": 6,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0014--proton-placement-003",
+      "adsorption_energy_eV": -2.448108673095703,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0014--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.448108673095703,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0014--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.145618438720703,
+          "energy_above_site_minimum_eV": 0.302490234375
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0014--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.9289436340332031,
+          "energy_above_site_minimum_eV": 0.5191650390625
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0014--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8763313293457031,
+          "energy_above_site_minimum_eV": 0.57177734375
+        },
+        {
+          "rank": 5,
+          "candidate_id": "site-combination-0014--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.6768684387207031,
+          "energy_above_site_minimum_eV": 0.771240234375
+        },
+        {
+          "rank": 6,
+          "candidate_id": "site-combination-0014--proton-placement-006",
+          "proton_placement_id": "proton-placement-006",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.5601692199707031,
+          "energy_above_site_minimum_eV": 0.887939453125
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0015",
+      "candidate_count": 6,
+      "valid_candidate_count": 5,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0015--proton-placement-005",
+      "adsorption_energy_eV": -1.1858406066894531,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0015--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.1858406066894531,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0015--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.1622200012207031,
+          "energy_above_site_minimum_eV": 0.02362060546875
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0015--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.9382209777832031,
+          "energy_above_site_minimum_eV": 0.24761962890625
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0015--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.8688850402832031,
+          "energy_above_site_minimum_eV": 0.31695556640625
+        },
+        {
+          "rank": 5,
+          "candidate_id": "site-combination-0015--proton-placement-006",
+          "proton_placement_id": "proton-placement-006",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -0.4805183410644531,
+          "energy_above_site_minimum_eV": 0.705322265625
+        }
+      ]
+    },
+    {
+      "site_combination_id": "site-combination-0016",
+      "candidate_count": 6,
+      "valid_candidate_count": 6,
+      "status": "passed",
+      "selected_candidate_id": "site-combination-0016--proton-placement-003",
+      "adsorption_energy_eV": -2.033679962158203,
+      "valid_candidate_energy_ranking": [
+        {
+          "rank": 1,
+          "candidate_id": "site-combination-0016--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -2.033679962158203,
+          "energy_above_site_minimum_eV": 0.0
+        },
+        {
+          "rank": 2,
+          "candidate_id": "site-combination-0016--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.9149665832519531,
+          "energy_above_site_minimum_eV": 0.11871337890625
+        },
+        {
+          "rank": 3,
+          "candidate_id": "site-combination-0016--proton-placement-006",
+          "proton_placement_id": "proton-placement-006",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.8348274230957031,
+          "energy_above_site_minimum_eV": 0.1988525390625
+        },
+        {
+          "rank": 4,
+          "candidate_id": "site-combination-0016--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.7413215637207031,
+          "energy_above_site_minimum_eV": 0.2923583984375
+        },
+        {
+          "rank": 5,
+          "candidate_id": "site-combination-0016--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.2768440246582031,
+          "energy_above_site_minimum_eV": 0.7568359375
+        },
+        {
+          "rank": 6,
+          "candidate_id": "site-combination-0016--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "final_denticity": 2,
+          "adsorption_energy_eV": -1.0385627746582031,
+          "energy_above_site_minimum_eV": 0.9951171875
+        }
+      ]
+    }
+  ]
+}

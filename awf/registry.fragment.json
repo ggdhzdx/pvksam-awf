@@ -15,27 +15,32 @@
       "descriptor": "components/artifacts/mace-mpa-0-medium/component.yaml",
       "id": "artifact.mace-mpa-0-medium",
       "kind": "artifact"
+    },
+    {
+      "descriptor": "components/artifacts/pvksam-reference-models/component.yaml",
+      "id": "artifact.pvksam-reference-models",
+      "kind": "artifact"
     }
   ],
   "workflows": [
     {
-      "id": "pvksam",
-      "display_name": "AWF PVKSAM",
       "aliases": [
         "AWF PVKSAM",
         "PVKSAM"
       ],
-      "descriptor": "workflows/pvksam/releases/1.0.0-rc.17/workflow.yaml",
-      "descriptor_sha256": "502c602bae4454415925a32929fb294ff9048c53e8b42eb9ea107ca2c49f589b",
-      "lock": "workflows/pvksam/releases/1.0.0-rc.17/versions.lock",
-      "lock_sha256": "1a4e67884a02c44d5dc74cd8972c6b2cf95a7e2f5f9668986e3f2473f6a8b774",
+      "descriptor": "workflows/pvksam/releases/1.0.0-rc.18/workflow.yaml",
+      "descriptor_sha256": "eb52d9d47483d60c88b1ee78def3fd43aa34c82a5708c80612145dc9d2af06f1",
+      "display_name": "AWF PVKSAM",
+      "id": "pvksam",
+      "lock": "workflows/pvksam/releases/1.0.0-rc.18/versions.lock",
+      "lock_sha256": "859c677d86bfc728577e057af0d0938652cb4f2fc7377d9bb74686810f15f5d0",
       "releases": {
-        "1.0.0-rc.17": {
-          "descriptor": "workflows/pvksam/releases/1.0.0-rc.17/workflow.yaml",
-          "descriptor_sha256": "502c602bae4454415925a32929fb294ff9048c53e8b42eb9ea107ca2c49f589b",
-          "lock": "workflows/pvksam/releases/1.0.0-rc.17/versions.lock",
-          "lock_sha256": "1a4e67884a02c44d5dc74cd8972c6b2cf95a7e2f5f9668986e3f2473f6a8b774",
-          "status": "candidate"
+        "1.0.0-rc.18": {
+          "descriptor": "workflows/pvksam/releases/1.0.0-rc.18/workflow.yaml",
+          "lock": "workflows/pvksam/releases/1.0.0-rc.18/versions.lock",
+          "status": "candidate",
+          "descriptor_sha256": "eb52d9d47483d60c88b1ee78def3fd43aa34c82a5708c80612145dc9d2af06f1",
+          "lock_sha256": "859c677d86bfc728577e057af0d0938652cb4f2fc7377d9bb74686810f15f5d0"
         }
       }
     }

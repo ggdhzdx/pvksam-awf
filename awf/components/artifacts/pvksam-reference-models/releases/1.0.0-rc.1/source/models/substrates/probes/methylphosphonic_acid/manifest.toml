@@ -1,0 +1,25 @@
+schema_version = 1
+key = "methylphosphonic_acid"
+display_name = "Methylphosphonic acid"
+anchor_family = "phosphonic_acid"
+source_kind = "pubchem_3d_conformer"
+source = "sources/pubchem-cid-13818-3d.sdf"
+sha256 = "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf"
+source_url = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13818/record/SDF?record_type=3d"
+pubchem_cid = 13818
+inchi_key = "YACKEPLHDIMKIO-UHFFFAOYSA-N"
+expected_neutral_formula = { C = 1, H = 5, O = 3, P = 1 }
+
+[topology]
+anchor_element = "P"
+carbon_neighbor_count = 1
+oxygen_neighbor_count = 3
+acidic_hydrogen_count = 2
+methyl_hydrogen_count = 3
+
+[deprotonation]
+policy = "remove_every_hydrogen_covalently_bound_to_anchor_oxygen"
+fully_deprotonated_formula = { C = 1, H = 3, O = 3, P = 1 }
+released_protons = 2
+retain_released_protons_in_surface_system = true
+alternative_states_enumerated = false

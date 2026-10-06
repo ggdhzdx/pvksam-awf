@@ -1,27 +1,31 @@
 {
   "schema_version": 1,
   "workflow": "pvksam",
-  "workflow_release": "1.0.0-rc.17",
+  "workflow_release": "1.0.0-rc.18",
   "files": {
     ".gitignore": {
-      "bytes": 51,
-      "sha256": "7a111fc11987a2441ae564e200fd2ecfa2131aa72d770b41314dff1e122185b9"
+      "bytes": 53,
+      "sha256": "651e73892ddd87a0bc9e681540cd7ec7a9c9fe421e7f4c8e2a76fb1aba91bdbe"
+    },
+    "DATA-NOTICE.md": {
+      "bytes": 648,
+      "sha256": "297255d92372afa82840eef9100e5db18005944e9992def5bb803c5693c8bee6"
     },
     "LICENSE": {
-      "bytes": 1076,
-      "sha256": "c286dad1c2440b465c9bc6faef734bb4c045be12fc5622ee38164c25462228ed"
+      "bytes": 1064,
+      "sha256": "83f14088c9267068b0ef1a007b0f239c4866b24d39823e5ea1251514fbaa1471"
     },
     "MODEL-NOTICE.md": {
-      "bytes": 389,
-      "sha256": "4493697c329f124b88873068dc86fae68a42ed10869144b07f09694e1e7297a0"
+      "bytes": 190,
+      "sha256": "173d00eeafeae599ef5e8ae12192499443b6883c0cd425afbced9a320a056a9b"
     },
     "README.md": {
-      "bytes": 1993,
-      "sha256": "b7238b04ecec3f2d93919cfa6cb24de5a8bf0035e7e7c05418ee58ff8c175c68"
+      "bytes": 2201,
+      "sha256": "8f58e0d8845681f3bb77874497deeafb2d68b72b474e29d3f19f64a96c9791cb"
     },
     "THIRD-PARTY-NOTICES.md": {
-      "bytes": 305,
-      "sha256": "0d653079f40ebabf0c95e9d2563d3691244c343b16f7524c0ee22f2f425d4004"
+      "bytes": 211,
+      "sha256": "8d519482c592c89a60763521448cc073483ba65bf2fe4b6dd97719bf667ca52d"
     },
     "awf/components/artifacts/mace-mpa-0-medium/component.yaml": {
       "bytes": 1252,
@@ -35,163 +39,995 @@
       "bytes": 408,
       "sha256": "c84c45e35a91cb2f211ee55db929944cb24ae6055c0979daf1428a7dff910224"
     },
-    "awf/components/recipes/pvksam-ase-cueq/component.yaml": {
-      "bytes": 776,
-      "sha256": "cf727b57d087b22b1b77f7c1312363c59cc39204f937a320def4b69e64e86026"
+    "awf/components/artifacts/pvksam-reference-models/component.yaml": {
+      "bytes": 1859,
+      "sha256": "8ed85a08a84b77d0a384cfba8ca07c9f9691d2ba37e1cafe4ff794d19ef2c535"
     },
-    "awf/components/recipes/pvksam-ase-cueq/releases/1.0.0-rc.2/source/RECIPE.md": {
-      "bytes": 2845,
-      "sha256": "a795cf56d963879de5a6e40389c40e23c2c34a1279d70e62a2b8b014c0e2697f"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/DATA-NOTICE.md": {
+      "bytes": 648,
+      "sha256": "297255d92372afa82840eef9100e5db18005944e9992def5bb803c5693c8bee6"
     },
-    "awf/components/skills/pvksam/component.yaml": {
-      "bytes": 2583,
-      "sha256": "f1b94150a4264bc38a7d4a9583adcc77efcf5b01a39587a44d741507938c9a12"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/MODEL-CATALOG.json": {
+      "bytes": 3759,
+      "sha256": "199c57fc8eb06598b318a95954742d18d745b4f3b68a92fc54c89fa2d7b1a463"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/.gitignore": {
-      "bytes": 37,
-      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/README.md": {
+      "bytes": 1033,
+      "sha256": "e936d25876b43094063f05ea2821420ab09a8f66859112ff83d51a684b0afedb"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/CACHEDIR.TAG": {
-      "bytes": 191,
-      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/SHA256SUMS": {
+      "bytes": 41199,
+      "sha256": "4dc6d0c8d647c35999d7ea724ecd848e4156def380138a8ddcb1caff2d8d079e"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/README.md": {
-      "bytes": 302,
-      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/historical-used/DBF21ID_molecule.extxyz": {
+      "bytes": 15376,
+      "sha256": "33bf95f29b7df3bff964cbcffe52b7c3616eb551b2300697f9e132e7e9347766"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/v/cache/nodeids": {
-      "bytes": 21685,
-      "sha256": "528865af644529a0f59c0c7fe03eac63617e37105c199c59e451c7115bc64887"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/historical-used/DBF34ID_molecule.extxyz": {
+      "bytes": 15376,
+      "sha256": "221eea1c7c5d067980bea1449370eb6a0cd7ae4b106e73f745357569d5a88c5f"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/SKILL.md": {
-      "bytes": 8400,
-      "sha256": "a38ac6d5f4160d294bbbb2745fb949edbc559f5be4130a8c795dab3f6e5f5c12"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/historical-used/DBF43ID_molecule.extxyz": {
+      "bytes": 15376,
+      "sha256": "a3f5e319c01f3113820551bb7e66eedcd5eb923c773bee343b9f77f4e529b178"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/provenance.json": {
-      "bytes": 6005,
-      "sha256": "70b09c5d9901d6fb28dac1629ee137d749af6a35f6eedac8238e44cfd34bc111"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/reference-conformers/1Br2PADCB_lowest_energy_optimized.sdf": {
+      "bytes": 4297,
+      "sha256": "57202cc1539e8ab43dd043f5354aa7801c3d640b60bbd43d97f1aef9ae868e11"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/references/initial-conformer-search.md": {
-      "bytes": 10896,
-      "sha256": "c5353dd7a71312fca5b30fa3d19c501f804eeef4d4b27bae93be9e57634bfac6"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/reference-conformers/1Br4PADCB_lowest_energy_optimized.sdf": {
+      "bytes": 4798,
+      "sha256": "38b2a4d4637f67c6b98258ac89b43a5fe1df0dff619a7bf797adc31f1be009f7"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/references/pvksam.zh-CN.md": {
-      "bytes": 10661,
-      "sha256": "4bf7f83d10a5ddab81df5ca237ba53d0bda306a3b90f501a1a983d0f96bc5b88"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/reference-conformers/2Br2PADCB_lowest_energy_optimized.sdf": {
+      "bytes": 4303,
+      "sha256": "d1441dfc10caf2d6106573d0f712a14739b897b784c42a8da0497c54ca4a26da"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/analyze_production_traj.py": {
-      "bytes": 87921,
-      "sha256": "8e7600d44d8a517dd4b06c51e466796d8c5f95fa1bc4151965445795bdf77ac6"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/source-inputs/1Br2PADCB_explicit_h.sdf": {
+      "bytes": 4107,
+      "sha256": "b8169cee422bb6326b0f98b6e077844fdc8731cbbab4e713cb7135aa5b8c3bd9"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/fast_ff_prefilter.py": {
-      "bytes": 137093,
-      "sha256": "c5880e02a7d9f359a3e3772d7fc5bf06e3d4fcd651870ed920967266b890a191"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/source-inputs/1Br4PADCB_explicit_h.sdf": {
+      "bytes": 4607,
+      "sha256": "06c21872d3f3743747dc342f2eb7e99865ab153a8a2684bc38920561c3f3b40f"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/generate_pc_rolls.py": {
-      "bytes": 10774,
-      "sha256": "04a2739c8fd26d05657f2a7935fde74e88282bb8deb53be8262f6a96efb84720"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/source-inputs/2Br2PADCB_explicit_h.sdf": {
+      "bytes": 4111,
+      "sha256": "cc745b4a870b0e9562b33d0ed00cd892ce25a4674861ba916111652565ec28ab"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/mace_conformation_scan.py": {
-      "bytes": 349436,
-      "sha256": "5526f83de5350f1a3ab8350a37a2cb7ce31b51c7f40e4b75aa422f0fd59d6628"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/source-inputs/2Nap-Ac_explicit_h.sdf": {
+      "bytes": 7052,
+      "sha256": "96c0195ff523539a8f7041db6878b44275527c618bca8c31c4ac1d834bf8ab61"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/mace_dimer_scan.py": {
-      "bytes": 34478,
-      "sha256": "2ffcb27b446b3b2f0c0bb4c25485c00ac5c228f79f4b3599315b255ee6e52e46"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/source-inputs/3Nap-Ac_explicit_h.sdf": {
+      "bytes": 8423,
+      "sha256": "c88b603a821a1d20511570ae0bfbea11011232d14dcb4d9aef04072dd5dfcbc3"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/monolayer_builder.py": {
-      "bytes": 26822,
-      "sha256": "66bacec5fa95e7c3d1c03d7af83ab3c0737a26adfaab9ecf977f495cf33397d9"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/sam/source-inputs/4Nap-Ac_explicit_h.sdf": {
+      "bytes": 9794,
+      "sha256": "eb9b58c7badb884c730992dfe108350c534f4d557c56f020adc1ccaed7788921"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/monolayer_headgroup_fit.py": {
-      "bytes": 48328,
-      "sha256": "7426a8ce80ac04a5d92368a4a3c92b174f2d6c75960b917467917b64042bf7fa"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/fto.toml": {
+      "bytes": 10840,
+      "sha256": "bb41b6ef9b559d1ae165ecc8f5b34defbb5d6bd7738eb26c41dbd12dc34fed4f"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/monolayer_sequential_growth.py": {
-      "bytes": 820562,
-      "sha256": "786799afac203a831d4f8200fb01468c0bdcabafe60a4a1971418d58d5d9d620"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/ito.toml": {
+      "bytes": 11224,
+      "sha256": "9ce2e1cd791cc612b91c4ce47d065cba4217c776264a4d4d0b4904e261ab72da"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/orchestrate_md_pipeline.py": {
-      "bytes": 99706,
-      "sha256": "43b09e02cbad5cdef9304cce9500ec9ccf95cad71825174008a2358892159f4a"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/probes/README.md": {
+      "bytes": 1459,
+      "sha256": "29203985a76d7dbccd566ab243d9129eb31355dad4f14613a1164df3e454ab1a"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/relax_monolayer.py": {
-      "bytes": 44974,
-      "sha256": "c507c2533a9f7ed6dd2f2d83a67d01a8c532b9f96500e5bf6a509d28ba41c699"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/probes/acetic_acid/manifest.toml": {
+      "bytes": 850,
+      "sha256": "45d735588a621b5f8a26cf5d6a2503fda3ed865e929d7bc76720d117d1c467da"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/run_annealing.py": {
-      "bytes": 27859,
-      "sha256": "dbca9e5bf353d7b6f56d54f702c506abea5c1dcd51d6a683bb2ec13c814d6935"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/probes/acetic_acid/sources/pubchem-cid-176-3d.sdf": {
+      "bytes": 1830,
+      "sha256": "c51ff19f9924d6b2494310412de3b0e7392cc4f897bdd9fdc441a5980e855dea"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/run_langevin_md_hmr.py": {
-      "bytes": 19205,
-      "sha256": "50ad6fc595ea0a32e2223708f6c73efd291518b8e55fe0df6c8ee8661520e824"
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/probes/methylphosphonic_acid/manifest.toml": {
+      "bytes": 890,
+      "sha256": "50909d1e1fea4427bcf5d601f2873b6c27006f843e65ecab5c3257fce63290f4"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/sam_lammps.py": {
-      "bytes": 16639,
-      "sha256": "44286c6770e955de03996b577bc8d97cc0abc8a345c6b3eba130c24f7153cbaf"
-    },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/sam_structure_tools.py": {
-      "bytes": 129209,
-      "sha256": "d9c114d7f09f6b5b3c0c0daa8de443fdf7e3e14962a50bbff083277fb7c3402a"
-    },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/select_single_pc_roll.py": {
-      "bytes": 14794,
-      "sha256": "7ff1dc5038bf56fe9dd7e53cac61905c05388047aa938842389ebe7192127c71"
-    },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/stage0_relaxation.py": {
-      "bytes": 23571,
-      "sha256": "10992d6219fee77fcf288c1ab47987b4379ffe7eddf5e92fb76d0d924e2cf8f2"
-    },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/substrate_library.py": {
-      "bytes": 620859,
-      "sha256": "3e36fb0d531cccc5fb51049426509cad9123d0fa1180d6e4fae0d9ea59625cc6"
-    },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/surface_protonation.py": {
-      "bytes": 56884,
-      "sha256": "d104b44aa2159c87e096e07dec750135964676baf909164cc74039894630140d"
-    },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/validate_monolayer.py": {
-      "bytes": 75491,
-      "sha256": "ddcc30d2aa598178d114881df79f234b0386bc6d0151feebf9d26a3a1541a5a3"
-    },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/fixtures/methylphosphonic-acid.sdf": {
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/probes/methylphosphonic_acid/sources/pubchem-cid-13818-3d.sdf": {
       "bytes": 2011,
       "sha256": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_fast_ff_prefilter.py": {
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/README.md": {
+      "bytes": 12686,
+      "sha256": "d9c7f73fee223248a89a727a2a5d25ef5fd5187bf788298ddb772da95cf20482"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/candidate-energy-report.json": {
+      "bytes": 54833,
+      "sha256": "2af810843ed623037e07fc6589f8d91e10497d4ecbc03639b69e8438277be35c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/probe-relaxation-plan.json": {
+      "bytes": 178226,
+      "sha256": "621cbeab82d904b0d43fd5582f27e89a9bd19ad786a0e1c7b1482b096c263385"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/probe-relaxation-run-manifest.json": {
+      "bytes": 1746,
+      "sha256": "6827a82cf736895c13d2f80f6a3e99641786e486b0db8076a6301a5e5bd354c5"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-energy-selection-report.json": {
+      "bytes": 5726,
+      "sha256": "bbc8c1ffb23016b8ec2c0d35069e15e92bd7d9e0fab8b7d8542f8da22ada5c02"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-plan.json": {
+      "bytes": 31797,
+      "sha256": "83aa27132e2b432d8e4fa68ca0460368ea245bdc2eefd2020f13f80ff8ae1c0a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-promotion-plan.json": {
+      "bytes": 12369,
+      "sha256": "dc7e64f4fad6604c3dfb359525f03686473303f1a28319354238f719cbf377c9"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-promotion-report.json": {
+      "bytes": 845,
+      "sha256": "025c987b0cea9f8b8f92d4cd24e878985a0b0c611c7bb70d1c0c706814e7368a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-run-manifest.json": {
+      "bytes": 1528,
+      "sha256": "e7be125becefd50967537c27ed0764daf0b0c915710c1fa8a6d9fd9b5083dc46"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/site-prototypes.json": {
+      "bytes": 27436,
+      "sha256": "8cc29b30d813f00f65dad3109dc29c6386774a0f4e1ff739fc3f22a3aaa20e86"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0001.extxyz": {
+      "bytes": 89852,
+      "sha256": "0f0a2f494415819796f5841e8eece20940ccb44b36c884ce89d49f1d6d6793cd"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0002.extxyz": {
+      "bytes": 89857,
+      "sha256": "68996620f69ae13fc340f38464c655093d595a35c7bca3b0bef9f07da0772a63"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0003.extxyz": {
+      "bytes": 89849,
+      "sha256": "5447286a79ecc31e4b25d07d02ce151c67735760e45c28137497243b24a47bf4"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/candidate-energy-report.json": {
+      "bytes": 26141,
+      "sha256": "ce4448dfc3bc14d6da7a2ac2713ee4532b242b339d0e7bb945d1863f1f2a42b1"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/probe-relaxation-plan.json": {
+      "bytes": 162004,
+      "sha256": "5f2fe3e77e7a7834145d14c83bfd22fc844c25f99c01b1b442e5ee03918d2b1c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/probe-relaxation-run-manifest.json": {
+      "bytes": 1744,
+      "sha256": "5d4c1e86cc0d44610d2a8bf6b78a66d55ad20124619cf47a10ff861c47d8f5ed"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-energy-selection-report.json": {
+      "bytes": 3212,
+      "sha256": "dedafac0cb30b5b1c49a086ef69cde5213e1f3501f10473d61aed67207fc6522"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-plan.json": {
+      "bytes": 23794,
+      "sha256": "26d62eecddacf138b279578d18a71a44f607b03914a755ed833801429e199c23"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-promotion-plan.json": {
+      "bytes": 7389,
+      "sha256": "c4d8ce5ea28f4e8de330ae50178ac7b373006610bd30d1643d14a32f3ba2c42b"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-promotion-report.json": {
+      "bytes": 845,
+      "sha256": "553debe68bde0f034f332fb3dcbb3f8e5ecdb58eb8f73aa02671fa21375d78d2"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-run-manifest.json": {
+      "bytes": 1245,
+      "sha256": "17c3f400e4205a6a5227c8bb5a75941e8ad91cf393db086e8c852fac91e62733"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/site-prototypes.json": {
+      "bytes": 19515,
+      "sha256": "05a00f057a41854239a5f45bef394e82bddf0226ea29fcfda1361aab97e5bf60"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/structures/site-prototype-carboxylic-acid-0001.extxyz": {
+      "bytes": 89848,
+      "sha256": "81f7f4ff3ea0f3939cf38cb4b41ec44860af0ef2300585c0573051ead696da79"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/structures/site-prototype-carboxylic-acid-0002.extxyz": {
+      "bytes": 89849,
+      "sha256": "87ffa5f4ff5dda681235d125048a64a35a633204aacdf7c9f1c8dac1c05957ba"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/candidate-energy-report.json": {
+      "bytes": 53856,
+      "sha256": "c7c8dbea1a8266e99395fdc8c61f69614d1170db9473cbc6520672116ea97c1a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/probe-relaxation-plan.json": {
+      "bytes": 181420,
+      "sha256": "dd3b78c5de2078b355bc8ff3506c28390c175edbc6e44d98a478ab06f765610c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/probe-relaxation-run-manifest.json": {
+      "bytes": 1746,
+      "sha256": "70e1f23fe3c9bd624ae717e258cfee52f89529cf0f36938b4685e71ebacae4cd"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-energy-selection-report.json": {
+      "bytes": 5683,
+      "sha256": "d6b820bb0b1d13fd823a3010d1285c53fcc36c4f3db215f880e6f9100bddd7f9"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-plan.json": {
+      "bytes": 19052,
+      "sha256": "4c93c32461ffe526c03a5d1c1cae2c9fca02b819665fb4cd47ed4107f2a8f0d7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-promotion-plan.json": {
+      "bytes": 7053,
+      "sha256": "25846d94c63def576a0bd1f239ef7ae73190be58759f6b85a1bcfbb7f72be65c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-promotion-report.json": {
+      "bytes": 845,
+      "sha256": "62cf2f33067bd641d1c224632dcf4c2216b70b70a62fe437ab142e99c4ed9163"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-run-manifest.json": {
+      "bytes": 962,
+      "sha256": "380e3522a578e28718c4bced8ecf3b9ea2eca283295a10229fbfc157c8387a1b"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/site-prototypes.json": {
+      "bytes": 14550,
+      "sha256": "ed4a0dd815244415e2ed5325903ae88fee5700dfc93473fade4601c463e78ffa"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/structures/site-prototype-phosphonic-acid-0001.extxyz": {
+      "bytes": 90085,
+      "sha256": "32ec39bae8a67b75563a8ab4f8478e5b5ed6323606610b4f6341319fdbf297e3"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/SnO2-rutile-conventional.cif": {
+      "bytes": 1170,
+      "sha256": "d4e5ad60e414f2d26e31a5a3b903b16e72c5f85ad712efb31f14511b1b12f18b"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/SnO2-rutile-mace-mpa-0-medium-bulk-parent-v1.cif": {
+      "bytes": 1021,
+      "sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/records/mace-mpa-0-medium-bulk-parent-v1-acceptance.json": {
+      "bytes": 2296,
+      "sha256": "86dca3ff1ef0549c45d5e31bcf498360d25502d237b14dc99e8cb30068a6ab68"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/records/mace-mpa-0-medium-bulk-parent-v1-experimental-position-check.json": {
+      "bytes": 7320,
+      "sha256": "67b2e722592525359aa91b796c6eb86243b3df27e764c45ee540c33d67f20460"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/records/mace-mpa-0-medium-bulk-parent-v1-optimizer.txt": {
+      "bytes": 422,
+      "sha256": "8a9f71be794b8f7d5bf1c58839332fe78c1d5acba4dce8f4ad5b4ae91503b277"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/records/mace-mpa-0-medium-bulk-parent-v1-plan.json": {
+      "bytes": 3831,
+      "sha256": "d1e4200131b7643c686e366753fd3ef5b0870431dc265df8693871d8fc10940f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/records/mace-mpa-0-medium-bulk-parent-v1-progress.jsonl": {
+      "bytes": 2200,
+      "sha256": "a21a3dbe12ae6aab083c77dec3de1e195cb23bffec3058ae135b57a073cc530c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/bulk/records/mace-mpa-0-medium-bulk-parent-v1-run-manifest.json": {
+      "bytes": 1808,
+      "sha256": "bf095c1e292b7366cbc29572907cadde00cc0cf6186b1fe192936f7ccfe067fd"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/manifest.json": {
+      "bytes": 29386,
+      "sha256": "d336cb6f940003fe8e66bb83fb57d3055df6c883adbe957ea1e605027819f1d2"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/SnO2-rutile-110-five-repeat-bridging-O-bulk-parent-v1.cif": {
+      "bytes": 2707,
+      "sha256": "fb3a3c25684f6d668702886e3717ba956fed8e5d57034d49659a5390e525e573"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/SnO2-rutile-110-five-repeat-bridging-O-relaxed-mace-mpa-0-medium-v1.cif": {
+      "bytes": 3227,
+      "sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/bulk-reference.json": {
+      "bytes": 738,
+      "sha256": "723eb2d425e26e8f51ebf2558be3206c1ee0deb9e55e6476662fb7f8de3c636f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/repeat-005-optimizer.log": {
+      "bytes": 1270,
+      "sha256": "3fb186a79eca6d2a5091e996120dbc0b52e1be3b30c4741654c7af810f8ccd83"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/repeat-005-progress.jsonl": {
+      "bytes": 3519,
+      "sha256": "7e99077c3820e867e8d20724c33fe938cb03e5ac71c015befaa98de015d3d31a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/repeat-005-relaxation-report.json": {
+      "bytes": 1258,
+      "sha256": "bd34d08fb643e1909da1d2e0aa8e3a51b8c86ddf32e37abd27bdaabab7b395cf"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-convergence-report.json": {
+      "bytes": 5108,
+      "sha256": "63539ece350370be97b709df2c51a8e7c80f67165ba73b9637c27148446fe89d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-promotion-plan.json": {
+      "bytes": 9226,
+      "sha256": "21726f88bea4df24aae9a684260c9fcfcff0a78e28792ef0dcb8c67d50849e88"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-promotion-report.json": {
+      "bytes": 1757,
+      "sha256": "af480963cd512479aa109dbcd89fcb874298e45958d3b4b94c7379491b50296d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-relaxation-plan.json": {
+      "bytes": 9092,
+      "sha256": "a246733a436a76ca776b0ecf34517176437341ac97098ebe3f783ff11e9de01f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-relaxation-run-manifest.json": {
+      "bytes": 6028,
+      "sha256": "22b3bb9b0dd05e964c61a0d4f195b3f6b64437a8d17084292dde31837622a898"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/termination-screen-plan.json": {
+      "bytes": 28117,
+      "sha256": "19daad1c6c5a1656146bd28e2d3e2b3b5d121580be65e174b0509ead43457fba"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/termination-screen-run-manifest.json": {
+      "bytes": 1643,
+      "sha256": "a042298ee679b7b3f2ca14cc185d4da8080a11c45815422664d213ca9d59f1d1"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/termination-selection-report.json": {
+      "bytes": 3511,
+      "sha256": "b1f6eb7e0f8607318e2187cf7808cc8f334ac81c4a48f6322b1f6386cf5cb4ac"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/records/surface-precut-v1-plan.json": {
+      "bytes": 5843,
+      "sha256": "ef6c98d3b6f0d6f482e2a88cd468f53d222f2a0dd02e0ee7274d7a22d0344a32"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/records/surface-precut-v1-run-manifest.json": {
+      "bytes": 1616,
+      "sha256": "2e820d9866978238870068c6976029aac786e415b0110cf4cb15ee4df2fdeab2"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/slabs/110/stoichiometric/records/surface-precut-v1-selection.json": {
+      "bytes": 424,
+      "sha256": "0cd9ea73dab8c6efeab030cb0ee2515637625abbff64e55e98409b3375d2c317"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/sources/experimental/cod-2101853-bolzan-1997.cif": {
+      "bytes": 2036,
+      "sha256": "4a965e1b9841236cfdeba92e70717997160234d393246e9ccddda4459fee4cf4"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/fto/sources/materials-studio/SnO2-rutile-bulk.cif": {
+      "bytes": 1473,
+      "sha256": "63c0befda40e0a7466511096fffb872ffaa29a36c513f5c9406c467bde3dd031"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/candidate-energy-report.json": {
+      "bytes": 314538,
+      "sha256": "83cce702bbab2f633bc45840cce5f184cd95a4084f66bafaeab8324ad35de0c0"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/probe-relaxation-plan.json": {
+      "bytes": 204655,
+      "sha256": "ba3440efbe739056c9a4cb3fb5af2f2bb1d3c99bd9722c9eaea63142c02f693a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/probe-relaxation-run-manifest.json": {
+      "bytes": 1749,
+      "sha256": "447c565cdd137674385286e432b133d51eb38f5d5fed23cf53074244de328233"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/site-energy-selection-report.json": {
+      "bytes": 30196,
+      "sha256": "0a3d7b9bba88c2169cffa2053a92fc94bf2965d5440f03b6c0fca106e779db08"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/site-prototype-plan.json": {
+      "bytes": 128641,
+      "sha256": "ea94f353d1ef89cca7d846b60ca5675e3e85027cba7e933b679fd1c9ab9ce8e3"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/site-prototype-promotion-plan.json": {
+      "bytes": 20955,
+      "sha256": "373f0502a2cb9ae593bdb49079781dc881f64e6f9f32a8bcdfc9e5e133fa94bb"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/site-prototype-promotion-report.json": {
+      "bytes": 845,
+      "sha256": "6bbba50a3a7a44e582613af75c96edec6ff714a3a7c887f3f2d7af9902917a0c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/records/site-prototype-run-manifest.json": {
+      "bytes": 4642,
+      "sha256": "b15198f965a84e79dcf98bbdbc326ad359cb3ff6a88291241fea24a6dbbec7b0"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/site-prototypes.json": {
+      "bytes": 120383,
+      "sha256": "72bf9f533b88552569669baf0daab45110c4eccceb6d31367aca2010f4b38d6d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0001.extxyz": {
+      "bytes": 18193,
+      "sha256": "fc6d8096d15a5bd02034fbdbf169b2bbd842ef4986880979cb6dd787eed2f12d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0002.extxyz": {
+      "bytes": 18198,
+      "sha256": "e8d129af877434352f2cdd69e63dd3364325fbb34d9192947dcc6ffb12a73a9a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0003.extxyz": {
+      "bytes": 18205,
+      "sha256": "7975b573b98093372cab4353abac877866831aab4e174efa096aed9afbae3ea7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0004.extxyz": {
+      "bytes": 18200,
+      "sha256": "647e774ba1d32de96bf400bf156d645e60267e3f23c189bc20eb21a9fbd831ee"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0005.extxyz": {
+      "bytes": 18200,
+      "sha256": "5fc3abdf0ad6809ed1ba250cfc6eea85907b967b2ca62ed8dc2c31ae60017090"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0006.extxyz": {
+      "bytes": 18200,
+      "sha256": "42b798ad0b6596e6bc49d53aadc6f4c82a70a346d5bce553043ec2a0429d4481"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0007.extxyz": {
+      "bytes": 18204,
+      "sha256": "02be19c333733cdce11d645cf57519ce159111d160f2d6d260d0dcb57ae42ba2"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0008.extxyz": {
+      "bytes": 18202,
+      "sha256": "e8058fe932e69a9cfcd25168d92508d9ff727561b0e16d1e9ce0934bd6bcd0e2"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0009.extxyz": {
+      "bytes": 18188,
+      "sha256": "e6f52490310059731780e0201bb855f98e15099ed2c7c4d2bff58aa0c94c6d4e"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0010.extxyz": {
+      "bytes": 18197,
+      "sha256": "c7a379c8e4c6022f989255f43e0d8557044c7ef5a614e1a71f83eabfab2bce7e"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0011.extxyz": {
+      "bytes": 18197,
+      "sha256": "c014e208eb92aeea6d078c5376139784a057f11966143c8eabb30b0f11980627"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0012.extxyz": {
+      "bytes": 18201,
+      "sha256": "bf238c208eff693cdb246c4b76a2b27f637eb597f6dd79459f3883caca3a0a8c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0013.extxyz": {
+      "bytes": 18201,
+      "sha256": "4c7e69ff4185c0ec47ad88e6527c65228a66fea711ceefa03e507356cd1c0f79"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-0b339cba894b/structures/site-prototype-carboxylic-acid-0014.extxyz": {
+      "bytes": 18195,
+      "sha256": "062326124439f3bca8b3295db3a936a64804ee9e9b9ae5c804c0634032000e97"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/candidate-energy-report.json": {
+      "bytes": 239515,
+      "sha256": "c53de6cfbade13ea22ba4f2e6741dc785cba3a84f34e51cf4b790c8a592e1bd7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/probe-relaxation-plan.json": {
+      "bytes": 159365,
+      "sha256": "89e79210a266eb2657db08a5649199d640f27cae2676d887903b8e4e43058ea7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/probe-relaxation-run-manifest.json": {
+      "bytes": 1716,
+      "sha256": "658900ea3f5765d51c9685f210c7cf862dffda951101feac8b52cdc0f58f522d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/site-energy-selection-report.json": {
+      "bytes": 25114,
+      "sha256": "2a550abfcf0fe1746ff5a65eddb32653c358fee27b834b5c8e19214a1c69070a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/site-prototype-plan.json": {
+      "bytes": 111242,
+      "sha256": "902d0b47756941d41d09ca6517592d6e8747431527c3bab031cf58f8b62ef899"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/site-prototype-promotion-plan.json": {
+      "bytes": 12133,
+      "sha256": "94b1aa9a5e2e9bd2c0752398e4c3e85b1904c34b1b24c58c27db45a21f21b33d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/site-prototype-promotion-report.json": {
+      "bytes": 845,
+      "sha256": "f786699e21eb3f16edafc08483016fdb77ca2546fce3897d347c89c632018fb4"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/records/site-prototype-run-manifest.json": {
+      "bytes": 4359,
+      "sha256": "a9ac07dd99f0d437108b3b276fdca4e2664dfd98815eea1cabc9a3e83399d2e4"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/site-prototypes.json": {
+      "bytes": 106503,
+      "sha256": "af22832937c9c5f59ee1af88a8a5201917e2e3cdd0fd0f1961aacd1678e09949"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0001.extxyz": {
+      "bytes": 18195,
+      "sha256": "4555a00cab10718236ff815deeb59aae1c84fd4ad80d456d7b14ec95b59c6f3f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0002.extxyz": {
+      "bytes": 18200,
+      "sha256": "43a03302590e61bb1458744a9a4d6e7b7a3a36b2dfa69c512e547d52b7a2905a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0003.extxyz": {
+      "bytes": 18199,
+      "sha256": "5d52f785fcd0681a38d2e59a354d4cae16d84363e4ea9f211b228fafbc93831a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0004.extxyz": {
+      "bytes": 18197,
+      "sha256": "25351e9dfa8221a00c7231187e2abf95543819cdcb30dbcdbb1eeeacd8bf2bc3"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0005.extxyz": {
+      "bytes": 18199,
+      "sha256": "aa3bcb34f60c33db3e4089c990d90c90943bed75c7b82a67898fb723517f52a3"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0006.extxyz": {
+      "bytes": 18201,
+      "sha256": "4ed1078e18f9c6b4338016791b97d791234b065821c1f979b237b3abf94d5cbc"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0007.extxyz": {
+      "bytes": 18196,
+      "sha256": "25cb2489b1efe42affd61f10797a7c409686967d5f526ab9c58c1d4c7d90b5a6"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0008.extxyz": {
+      "bytes": 18197,
+      "sha256": "ecf56db11d9c2356986faacde7a477bc4c2d298c3d8871ad1dfe1e008d05efbf"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0009.extxyz": {
+      "bytes": 18192,
+      "sha256": "947e62b08c06581d61125544f71994a11d1ed7594a3b50179bb60e199ad3d9ec"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0010.extxyz": {
+      "bytes": 18200,
+      "sha256": "6fc19b738250e10b559bee1d22f86526281d9e314a6dde841f1835cb6e27a23f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0011.extxyz": {
+      "bytes": 18201,
+      "sha256": "6918e9ef193da8e71132e127c9335c4c36ad0afcaa2a8960006c99777c01896f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0012.extxyz": {
+      "bytes": 18198,
+      "sha256": "f8e9c6418eae7566e1b9ea832656c9554c189fc59416078818b6dd751b16871d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-dea1773fbc2d/structures/site-prototype-carboxylic-acid-0013.extxyz": {
+      "bytes": 18199,
+      "sha256": "0f1d15327f8954328acc36882ce1e3f5a4d64443635d19d4944f8e5a1e7f3082"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/candidate-energy-report.json": {
+      "bytes": 814960,
+      "sha256": "804db329f058b4ee91d9b5f2e0482d24040f015dcebfeecfadd1391fc6a7ddad"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/probe-relaxation-plan.json": {
+      "bytes": 504337,
+      "sha256": "36cd861dd695769e1d90ca59fc08fee7e506fae5dba5875f5bf80c76423aae61"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/probe-relaxation-run-manifest.json": {
+      "bytes": 1676,
+      "sha256": "f1ddeed00a04fa8e239e7765053b0cd01c30aa8299d292ad9215b63890fad7a0"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/site-energy-selection-report.json": {
+      "bytes": 8004,
+      "sha256": "f0bb8031e6bce1828211ecc91e39dd16302aeabd0bd02e5e2aca785aa45f57e5"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/site-prototype-plan.json": {
+      "bytes": 148441,
+      "sha256": "0d4fdde8b8b182ae3053ae6083c5a3bb6b78b9106f5a53e60ecff15ffcc25a5a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/site-prototype-promotion-plan.json": {
+      "bytes": 12746,
+      "sha256": "fd718cb5ade6d62db457cec8f18196ed42cf6dbe75c6e0a3f12fb9665269d8a3"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/site-prototype-promotion-report.json": {
+      "bytes": 849,
+      "sha256": "e1bc11896a41c4aae77196223587aca62e73f8b25d7a2be83c5c8b3aa426938c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/records/site-prototype-run-manifest.json": {
+      "bytes": 4642,
+      "sha256": "9fe3fce27963c9bd7464d65f013386cf730a39577d83eefea8f337abc16d0205"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/site-prototypes.json": {
+      "bytes": 143328,
+      "sha256": "5ff0999ff9b1e24a2de42eeeee7717c6f3c314eac20bb1d520f2714991f97465"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0001.extxyz": {
+      "bytes": 18433,
+      "sha256": "833224e1fd2b4a942554b334342548bc32b1a99cf9dfec91f957cb566eeb222f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0002.extxyz": {
+      "bytes": 18431,
+      "sha256": "093b34373f68060d812a2a8960097933b39c9e25fd291896d98bcba04e6b0388"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0003.extxyz": {
+      "bytes": 18433,
+      "sha256": "88fca9a435903485bae52ffb0005c1809be34a3aac53e066d8de9cf0872a80b7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0004.extxyz": {
+      "bytes": 18433,
+      "sha256": "552e047e0bb74afa82663d2513111a25ce9acbc48475bd51d3c30181622a9fe0"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0005.extxyz": {
+      "bytes": 18427,
+      "sha256": "98ea9e23890fc53b946a665486f72856e4f35719a4fe0acf6d9606ef54686765"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0006.extxyz": {
+      "bytes": 18430,
+      "sha256": "a2bd91ca7ca3b459212fce46aa62eef700eab21f57ffc17cd8bed46a5fe74d7d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0007.extxyz": {
+      "bytes": 18435,
+      "sha256": "3fa316ceedf0970b650f6216773e629b2f5d46749208bfbd09044ced71897aa7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0008.extxyz": {
+      "bytes": 18427,
+      "sha256": "0ef7bd0aaa4c239d9eb1ebbdfbf06477b42e7e8a5b8bdea8b49f95fb0da4cb54"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0009.extxyz": {
+      "bytes": 18431,
+      "sha256": "db18ab9799eb070796f966a012246c640bfce8b3f3d4f92f4e59aa8b4396921a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0010.extxyz": {
+      "bytes": 18430,
+      "sha256": "c73841ec0a02218e266630d4e14494cdab6a047f3148ec3c51d0ee532a384476"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0011.extxyz": {
+      "bytes": 18425,
+      "sha256": "70daf78e554eabbb269958049eaf93adb2a497ffbb00c2b69ae1bd1b92dd2487"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0012.extxyz": {
+      "bytes": 18427,
+      "sha256": "1fc39df5434199101b04c68c5528efda74bcdb22a04b39bcbed9167cfd4b1222"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0013.extxyz": {
+      "bytes": 18434,
+      "sha256": "6a187786ebe9b27d1edc4f044373643f9a021e379678edc7b9eb2f6ba62dc402"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-10d5c9fed77c/structures/site-prototype-phosphonic-acid-0014.extxyz": {
+      "bytes": 18430,
+      "sha256": "775b05303a3a9a39de3561d10eb2c1a68ec1e27169d5e14b7254d1f9a2d26b6c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/candidate-energy-report.json": {
+      "bytes": 814960,
+      "sha256": "804db329f058b4ee91d9b5f2e0482d24040f015dcebfeecfadd1391fc6a7ddad"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/probe-relaxation-plan.json": {
+      "bytes": 504337,
+      "sha256": "36cd861dd695769e1d90ca59fc08fee7e506fae5dba5875f5bf80c76423aae61"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/probe-relaxation-run-manifest.json": {
+      "bytes": 1676,
+      "sha256": "f1ddeed00a04fa8e239e7765053b0cd01c30aa8299d292ad9215b63890fad7a0"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/site-energy-selection-report.json": {
+      "bytes": 8004,
+      "sha256": "f0bb8031e6bce1828211ecc91e39dd16302aeabd0bd02e5e2aca785aa45f57e5"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/site-prototype-plan.json": {
+      "bytes": 148441,
+      "sha256": "26b8298c47fac8e1d908b111864c500d77ced68b7fb07b8f63ce1a46693e8547"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/site-prototype-promotion-plan.json": {
+      "bytes": 12746,
+      "sha256": "bc8560d7ae21758f39af8086786d38755046b3116998579e34fde3ec5e96754f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/site-prototype-promotion-report.json": {
+      "bytes": 849,
+      "sha256": "c081f425ea7de38e9a98c0a72766b235905b01d4996edeb31744bf2c92ac5391"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/records/site-prototype-run-manifest.json": {
+      "bytes": 4656,
+      "sha256": "83bbeab7914290c9473d174984d6b4348db41c2a082ef2b87399c99475fba4b6"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/site-prototypes.json": {
+      "bytes": 143542,
+      "sha256": "5f7aaefa7ca997e9c48f4f09d6d1ae01dc22120348d54c51ce1e944fc96e5df8"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0001.extxyz": {
+      "bytes": 18433,
+      "sha256": "833224e1fd2b4a942554b334342548bc32b1a99cf9dfec91f957cb566eeb222f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0002.extxyz": {
+      "bytes": 18431,
+      "sha256": "093b34373f68060d812a2a8960097933b39c9e25fd291896d98bcba04e6b0388"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0003.extxyz": {
+      "bytes": 18433,
+      "sha256": "88fca9a435903485bae52ffb0005c1809be34a3aac53e066d8de9cf0872a80b7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0004.extxyz": {
+      "bytes": 18433,
+      "sha256": "552e047e0bb74afa82663d2513111a25ce9acbc48475bd51d3c30181622a9fe0"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0005.extxyz": {
+      "bytes": 18427,
+      "sha256": "98ea9e23890fc53b946a665486f72856e4f35719a4fe0acf6d9606ef54686765"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0006.extxyz": {
+      "bytes": 18430,
+      "sha256": "a2bd91ca7ca3b459212fce46aa62eef700eab21f57ffc17cd8bed46a5fe74d7d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0007.extxyz": {
+      "bytes": 18435,
+      "sha256": "3fa316ceedf0970b650f6216773e629b2f5d46749208bfbd09044ced71897aa7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0008.extxyz": {
+      "bytes": 18427,
+      "sha256": "0ef7bd0aaa4c239d9eb1ebbdfbf06477b42e7e8a5b8bdea8b49f95fb0da4cb54"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0009.extxyz": {
+      "bytes": 18431,
+      "sha256": "db18ab9799eb070796f966a012246c640bfce8b3f3d4f92f4e59aa8b4396921a"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0010.extxyz": {
+      "bytes": 18430,
+      "sha256": "c73841ec0a02218e266630d4e14494cdab6a047f3148ec3c51d0ee532a384476"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0011.extxyz": {
+      "bytes": 18425,
+      "sha256": "70daf78e554eabbb269958049eaf93adb2a497ffbb00c2b69ae1bd1b92dd2487"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0012.extxyz": {
+      "bytes": 18427,
+      "sha256": "1fc39df5434199101b04c68c5528efda74bcdb22a04b39bcbed9167cfd4b1222"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0013.extxyz": {
+      "bytes": 18434,
+      "sha256": "6a187786ebe9b27d1edc4f044373643f9a021e379678edc7b9eb2f6ba62dc402"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-a0f30de11ed0/structures/site-prototype-phosphonic-acid-0014.extxyz": {
+      "bytes": 18430,
+      "sha256": "775b05303a3a9a39de3561d10eb2c1a68ec1e27169d5e14b7254d1f9a2d26b6c"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/In2O3-Ia-3-mace-mpa-0-medium-bulk-parent-v1.cif": {
+      "bytes": 7103,
+      "sha256": "ee8f6591c9bc900ee3d8209a1ed62e3b7e2d25535011b291bd7aad6efec2ad16"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/In2O3-Ia-3-mp-22598-conventional.cif": {
+      "bytes": 5100,
+      "sha256": "2ca66b493000860fd860d35529d254f5b71cbe84eb1efaf5293c33dfc9d685a5"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/records/mace-mpa-0-medium-bulk-parent-v1-acceptance.json": {
+      "bytes": 2300,
+      "sha256": "beec059d9c5402c8107476b0f22b4b09c035082c72507d0a673e7e6516ba969f"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/records/mace-mpa-0-medium-bulk-parent-v1-experimental-position-check.json": {
+      "bytes": 60431,
+      "sha256": "a2a8bc7ceb5d6bbaf3daf803b7c529d8f16d3373dde6ca5281f6aa7cafa4df22"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/records/mace-mpa-0-medium-bulk-parent-v1-optimizer.txt": {
+      "bytes": 846,
+      "sha256": "09a687c26b6de4c6aa620a460b63d6cc26625f985eb4d83f4b5b3c4c3462c37e"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/records/mace-mpa-0-medium-bulk-parent-v1-plan.json": {
+      "bytes": 3832,
+      "sha256": "ec5b1dd81dabddf951a6632ff5cf644ddab0ba0b3ebf4804f80122e3387f079d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/records/mace-mpa-0-medium-bulk-parent-v1-progress.jsonl": {
+      "bytes": 4396,
+      "sha256": "85aa3967981781e7d37bc76b379debc502387f70f5d6a1740c1e61f92203bac1"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/bulk/records/mace-mpa-0-medium-bulk-parent-v1-run-manifest.json": {
+      "bytes": 1806,
+      "sha256": "544d432d353b3b721972ac0c11a0e083dee35333de3e2065623804ab5c2ff977"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/manifest.json": {
+      "bytes": 50935,
+      "sha256": "bc4b8a905ec445ab699393e08086dee369081f0ad9e94903ceb255d18fd12a50"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/In2O3-Ia-3-111-three-repeat-nonpolar-bulk-parent-v1.cif": {
+      "bytes": 11181,
+      "sha256": "3bdc783d48ecc51c6fd62a27e828ef774e922af79a193311da600aba75ece7bd"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/In2O3-Ia-3-111-three-repeat-O-terminated-relaxed-mace-mpa-0-medium-v1.cif": {
+      "bytes": 11199,
+      "sha256": "ca2a5df822673b3219e873d8552f05aa89cc64213d51f908d3c7a6894b125192"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/bulk-reference.json": {
+      "bytes": 737,
+      "sha256": "d56c52c9b6fbbaa61e606bff6ce600db1fbc752d50eb93782a4925197be2bbe1"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/repeat-003-optimizer.log": {
+      "bytes": 1376,
+      "sha256": "17f09f99bd5a0a32ecf08c509f5eb0cb97a6a1089224b4acefa9f5333d5d8625"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/repeat-003-progress.jsonl": {
+      "bytes": 3791,
+      "sha256": "df8c44f4569d25aeae065e35fb3b8c21661eeb1322e8cba62f3e70b98cefce16"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/repeat-003-relaxation-report.json": {
+      "bytes": 1258,
+      "sha256": "9238c19728499d90a51d7367e9d8758770ddb2ffaf635ee85fd20c9c4ddb6ad7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/surface-convergence-report.json": {
+      "bytes": 5117,
+      "sha256": "08a4d98fed0005baa5d6c709c3c8bd82162ce5fd7dbc5378a689d0038ac4db88"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/surface-promotion-plan.json": {
+      "bytes": 9245,
+      "sha256": "c76c62957950c73598c2acfb1297f67c3eef643dc6acbad7e801cb8d9aee7aaf"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/surface-promotion-report.json": {
+      "bytes": 1752,
+      "sha256": "5cd1251fd7c84433a9b44618e223c7221d8179e79a112102b6c40f7928f32894"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/surface-relaxation-plan.json": {
+      "bytes": 9209,
+      "sha256": "21127e4d65544c8aaa87622af760cf91a7273feb5a82e076eb54c84d4d0db810"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/surface-relaxation-run-manifest.json": {
+      "bytes": 6027,
+      "sha256": "ade0d39dd0a8625e617274f579e6de6273b6a2e26e342c10b0285a1126a15007"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/termination-screen-plan.json": {
+      "bytes": 63919,
+      "sha256": "779a57e2ce0ad8c4163ad54fe11cc3ae797f56850f959de6f20704aa6548a854"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/termination-screen-run-manifest.json": {
+      "bytes": 1643,
+      "sha256": "3313250298d3d40c2b893a2893e037227602c3cab3035e19b9c8fab643d1a0ca"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/records/termination-selection-report.json": {
+      "bytes": 9444,
+      "sha256": "ef7c86e5457133760400c6ffc387d74be90d7d966512bf7846b971fe7b3e2984"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/records/surface-precut-v1-plan.json": {
+      "bytes": 15056,
+      "sha256": "0cfd0343aad643ef805daf45931bbfdf946b08f6790b06fc0f5be9393fa4dee9"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/records/surface-precut-v1-run-manifest.json": {
+      "bytes": 3432,
+      "sha256": "eb9273cb1a647a3b6dcee5549ca13d739a7c1ab7665d4a0d18860c58e72586aa"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/records/surface-precut-v1-selection.json": {
+      "bytes": 1434,
+      "sha256": "730eddb929efcaa9813f45f31d51475fcef29b66387e9aee5dd20b9063295cac"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/slabs/111/stoichiometric/three-layer-mother-slab.cif": {
+      "bytes": 18182,
+      "sha256": "eec79fae01bd93c86589195c4623c30ab60cc171d9c12d9e25c9c1d91cefccc3"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/sources/experimental/cod-2310009-marezio-1966.cif": {
+      "bytes": 3454,
+      "sha256": "9f37d9c40f126e548deb9a9be0992d1d6ac3be7ddfc64fffc216cc1e8589fcb2"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/sources/materials-project/mp-22598-structure-summary.json": {
+      "bytes": 852,
+      "sha256": "cd2d946f6f46b40cb7977e879a2dacaee5a8eca775cace7c09207cd36483dbb7"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/sources/materials-project/mp-22598-summary-response.json": {
+      "bytes": 19973,
+      "sha256": "a3718b32d29b553cc81bd0f0e349227bed294f4e5c248d8fd844a8a4440f7e4d"
+    },
+    "awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/models/substrates/structures/ito/sources/materials-studio/In2O3-I213-bulk.cif": {
+      "bytes": 3032,
+      "sha256": "0dbb87b994b584854efde20a01d8400550afd527d82acfedd36e1e1f0f03f10d"
+    },
+    "awf/components/recipes/pvksam-ase-cueq/component.yaml": {
+      "bytes": 825,
+      "sha256": "166f659a8174399e70aff5586e507c025b04f9e42a2ae17c2ec37cc53a6dd1a8"
+    },
+    "awf/components/recipes/pvksam-ase-cueq/releases/1.0.0-rc.3/source/RECIPE.md": {
+      "bytes": 3387,
+      "sha256": "3c2073c676ea72c45e32ae61db8bf686b9185152b011214f476ded46b93371ad"
+    },
+    "awf/components/skills/pvksam/component.yaml": {
+      "bytes": 2697,
+      "sha256": "ad135e8e367bbc4bdb5723a6871cf660b669b369352df22c2b87235044536bb3"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/.pytest_cache/.gitignore": {
+      "bytes": 37,
+      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/.pytest_cache/CACHEDIR.TAG": {
+      "bytes": 191,
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/.pytest_cache/README.md": {
+      "bytes": 302,
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/.pytest_cache/v/cache/nodeids": {
+      "bytes": 21772,
+      "sha256": "2cddff88720cb8a9c85f55644add3cbf4a7f80a56fae8829b87afbd2b509e039"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/SKILL.md": {
+      "bytes": 9020,
+      "sha256": "f507fdacbde4bc4a221b7725646e55a019a689f468d21758f1a16f6eb4ae95bd"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/provenance.json": {
+      "bytes": 6005,
+      "sha256": "70b09c5d9901d6fb28dac1629ee137d749af6a35f6eedac8238e44cfd34bc111"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/references/initial-conformer-search.md": {
+      "bytes": 10896,
+      "sha256": "c5353dd7a71312fca5b30fa3d19c501f804eeef4d4b27bae93be9e57634bfac6"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/references/pvksam.zh-CN.md": {
+      "bytes": 10661,
+      "sha256": "4bf7f83d10a5ddab81df5ca237ba53d0bda306a3b90f501a1a983d0f96bc5b88"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/analyze_production_traj.py": {
+      "bytes": 87921,
+      "sha256": "8e7600d44d8a517dd4b06c51e466796d8c5f95fa1bc4151965445795bdf77ac6"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/fast_ff_prefilter.py": {
+      "bytes": 137093,
+      "sha256": "c5880e02a7d9f359a3e3772d7fc5bf06e3d4fcd651870ed920967266b890a191"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/generate_pc_rolls.py": {
+      "bytes": 10774,
+      "sha256": "04a2739c8fd26d05657f2a7935fde74e88282bb8deb53be8262f6a96efb84720"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/mace_conformation_scan.py": {
+      "bytes": 349436,
+      "sha256": "5526f83de5350f1a3ab8350a37a2cb7ce31b51c7f40e4b75aa422f0fd59d6628"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/mace_dimer_scan.py": {
+      "bytes": 34478,
+      "sha256": "2ffcb27b446b3b2f0c0bb4c25485c00ac5c228f79f4b3599315b255ee6e52e46"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/monolayer_builder.py": {
+      "bytes": 26822,
+      "sha256": "66bacec5fa95e7c3d1c03d7af83ab3c0737a26adfaab9ecf977f495cf33397d9"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/monolayer_headgroup_fit.py": {
+      "bytes": 48328,
+      "sha256": "7426a8ce80ac04a5d92368a4a3c92b174f2d6c75960b917467917b64042bf7fa"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/monolayer_sequential_growth.py": {
+      "bytes": 820562,
+      "sha256": "786799afac203a831d4f8200fb01468c0bdcabafe60a4a1971418d58d5d9d620"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/orchestrate_md_pipeline.py": {
+      "bytes": 99706,
+      "sha256": "43b09e02cbad5cdef9304cce9500ec9ccf95cad71825174008a2358892159f4a"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/relax_monolayer.py": {
+      "bytes": 44974,
+      "sha256": "c507c2533a9f7ed6dd2f2d83a67d01a8c532b9f96500e5bf6a509d28ba41c699"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/run_annealing.py": {
+      "bytes": 27859,
+      "sha256": "dbca9e5bf353d7b6f56d54f702c506abea5c1dcd51d6a683bb2ec13c814d6935"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/run_langevin_md_hmr.py": {
+      "bytes": 19205,
+      "sha256": "50ad6fc595ea0a32e2223708f6c73efd291518b8e55fe0df6c8ee8661520e824"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/sam_lammps.py": {
+      "bytes": 16639,
+      "sha256": "44286c6770e955de03996b577bc8d97cc0abc8a345c6b3eba130c24f7153cbaf"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/sam_structure_tools.py": {
+      "bytes": 129209,
+      "sha256": "d9c114d7f09f6b5b3c0c0daa8de443fdf7e3e14962a50bbff083277fb7c3402a"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/select_single_pc_roll.py": {
+      "bytes": 14794,
+      "sha256": "7ff1dc5038bf56fe9dd7e53cac61905c05388047aa938842389ebe7192127c71"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/stage0_relaxation.py": {
+      "bytes": 23571,
+      "sha256": "10992d6219fee77fcf288c1ab47987b4379ffe7eddf5e92fb76d0d924e2cf8f2"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/substrate_library.py": {
+      "bytes": 621428,
+      "sha256": "81eedbf98fead2459f51776af8d0a6870f3f1ed21972e074cd94ef18fce86246"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/surface_protonation.py": {
+      "bytes": 56884,
+      "sha256": "d104b44aa2159c87e096e07dec750135964676baf909164cc74039894630140d"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/scripts/validate_monolayer.py": {
+      "bytes": 75491,
+      "sha256": "ddcc30d2aa598178d114881df79f234b0386bc6d0151feebf9d26a3a1541a5a3"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/fixtures/methylphosphonic-acid.sdf": {
+      "bytes": 2011,
+      "sha256": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_fast_ff_prefilter.py": {
       "bytes": 45344,
       "sha256": "dfd75bcf4f0a13bb94781dfb5705cee1e5f6d34d61b1ee2e3a89a4550da5bd64"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_generate_pc_rolls.py": {
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_generate_pc_rolls.py": {
       "bytes": 4130,
       "sha256": "6b2bcff5ee7c6f65f9f64d16bd6323a63e80d75b915aa467d450b5c5b193dbf7"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_mace_conformation_scan.py": {
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_mace_conformation_scan.py": {
       "bytes": 52511,
       "sha256": "2fac0f156b6b7850ca318a072c18fe5d919a95fc0d88edb61584bccff803afc8"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_metal_coordination_filter.py": {
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_metal_coordination_filter.py": {
       "bytes": 10342,
       "sha256": "7482e9402e8a6a7ccb1e27f00c8f76560867189f2e72d40f5ca08d236f166335"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_pvksam.py": {
-      "bytes": 23177,
-      "sha256": "c14a1ab0e4b2edd4d021df1d54cfbfab68706def0479dfd77c5df3355ab48d81"
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_pvksam.py": {
+      "bytes": 23757,
+      "sha256": "ae7b4e7a104dc37431eeb67fc706f73af79ec8419a0ebe997b492fbfe397e342"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_sam_structure_tools.py": {
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_sam_structure_tools.py": {
       "bytes": 57533,
       "sha256": "09286aaa4f88c0bac350fd45fdb07257939b6ed9a1d317101142b62116621e97"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_select_single_pc_roll.py": {
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_select_single_pc_roll.py": {
       "bytes": 7555,
       "sha256": "ffa188c6c4ac6d5abc97803dbf74b353ddccc183fc01f5d3953f65c97afbd2c2"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_surface_protonation.py": {
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_surface_protonation.py": {
       "bytes": 7713,
       "sha256": "445bc093c60c2112cd1026f5b5303b734ddf46a07a772f2b2a744ce0e5911ff7"
     },
-    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_validate_monolayer.py": {
+    "awf/components/skills/pvksam/releases/1.0.0-rc.16/source/tests/test_validate_monolayer.py": {
       "bytes": 33485,
       "sha256": "6797d06a6ec0d0ad3e60831f77438c3bd37d4efd2cec3f7f0cb06b373dfc9f0f"
     },
@@ -199,21 +1035,25 @@
       "bytes": 1835,
       "sha256": "fad7ba016a8c875dae0b277b065472e7cbab21b04fb5a9b2479dd75f4e6071e1"
     },
+    "awf/docs/adr/0020-bundle-pvksam-reference-structures.md": {
+      "bytes": 1471,
+      "sha256": "8b53097cab1b003b71cf8b69adb8cdd1011ac8a55992a3a2fb479427a963cfa9"
+    },
     "awf/registry.fragment.json": {
-      "bytes": 1404,
-      "sha256": "54ca41a0041a6e25cf0e6d45f3a651a2f929734513ce80fd18c8519b80a4a91a"
+      "bytes": 1573,
+      "sha256": "7a519fed2f1995507d0cf581f8fc1dae19b34387a44df0dfac6e4b73488846ff"
     },
-    "awf/workflows/pvksam/releases/1.0.0-rc.17/versions.lock": {
-      "bytes": 293,
-      "sha256": "1a4e67884a02c44d5dc74cd8972c6b2cf95a7e2f5f9668986e3f2473f6a8b774"
+    "awf/workflows/pvksam/releases/1.0.0-rc.18/versions.lock": {
+      "bytes": 347,
+      "sha256": "859c677d86bfc728577e057af0d0938652cb4f2fc7377d9bb74686810f15f5d0"
     },
-    "awf/workflows/pvksam/releases/1.0.0-rc.17/workflow.yaml": {
-      "bytes": 11653,
-      "sha256": "502c602bae4454415925a32929fb294ff9048c53e8b42eb9ea107ca2c49f589b"
+    "awf/workflows/pvksam/releases/1.0.0-rc.18/workflow.yaml": {
+      "bytes": 11612,
+      "sha256": "eb52d9d47483d60c88b1ee78def3fd43aa34c82a5708c80612145dc9d2af06f1"
     },
     "verify.py": {
-      "bytes": 2314,
-      "sha256": "afef9e92267fc59c7ad86c43b696561869956fac3848b5ac2e671569e5359d4e"
+      "bytes": 3738,
+      "sha256": "9dadebf11fa55f90f00aa176853abcca774b227cfa7734fd426543bb582f7e2e"
     }
   }
 }

@@ -1,0 +1,107 @@
+data_ITO
+_audit_creation_date              2026-08-01
+_audit_creation_method            'Materials Studio'
+_symmetry_space_group_name_H-M    'I213'
+_symmetry_Int_Tables_number       199
+_symmetry_cell_setting            cubic
+loop_
+_symmetry_equiv_pos_as_xyz
+  x,y,z
+  -x+1/2,-y,z+1/2
+  -x,y+1/2,-z+1/2
+  x+1/2,-y+1/2,-z
+  z,x,y
+  z+1/2,-x+1/2,-y
+  -z+1/2,-x,y+1/2
+  -z,x+1/2,-y+1/2
+  y,z,x
+  -y,z+1/2,-x+1/2
+  y+1/2,-z+1/2,-x
+  -y+1/2,-z,x+1/2
+  x+1/2,y+1/2,z+1/2
+  -x,-y+1/2,z
+  -x+1/2,y,-z
+  x,-y,-z+1/2
+  z+1/2,x+1/2,y+1/2
+  z,-x,-y+1/2
+  -z,-x+1/2,y
+  -z+1/2,x,-y
+  y+1/2,z+1/2,x+1/2
+  -y+1/2,z,-x
+  y,-z,-x+1/2
+  -y,-z+1/2,x
+_cell_length_a                    10.1200
+_cell_length_b                    10.1200
+_cell_length_c                    10.1200
+_cell_angle_alpha                 90.0000
+_cell_angle_beta                  90.0000
+_cell_angle_gamma                 90.0000
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+O1     O     0.12500   0.12500   0.37500   0.00000  Uiso   1.00
+O2     O     0.12500   0.37500   0.37500   0.00000  Uiso   1.00
+In1    In    0.25000   0.25000   0.25000   0.00000  Uiso   1.00
+In2    In    0.02100   0.00000   0.25000   0.00000  Uiso   1.00
+In3    In    0.54200   0.00000   0.25000   0.00000  Uiso   1.00
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+O1     In1     2.191   .     S
+O1     In2     2.076   .     S
+O1     In2     2.320   7     S
+O1     In3     2.461   9     S
+O2     In1     2.191   .     S
+O2     In3     1.976   7_565 S
+O2     In2     2.320   3     S
+O2     In3     2.461   9     S
+In1    O2      2.191   5     S
+In1    O2      2.191   9     S
+In1    O1      2.191   5     S
+In1    O1      2.191   9     S
+In1    In3     3.291   3_655 S
+In1    In3     3.291   7_565 S
+In1    In3     3.291   11_556 S
+In1    In2     3.431   .     S
+In1    In2     3.431   5     S
+In1    In2     3.431   9     S
+In1    In2     3.731   3     S
+In1    In2     3.731   7     S
+In1    In2     3.731   11    S
+In2    O1      2.076   16    S
+In2    O1      2.320   10_545 S
+In2    O1      2.320   24    S
+In2    O2      2.320   3_545 S
+In2    O2      2.320   14    S
+In2    In1     3.431   16    S
+In2    In1     3.731   3_545 S
+In2    In1     3.731   14    S
+In2    In2     3.438   5     S
+In2    In2     3.438   7     S
+In2    In2     3.438   9     S
+In2    In2     3.438   10_545 S
+In2    In3     3.755   6_455 S
+In2    In3     3.755   8_545 S
+In3    O2      1.976   10_645 S
+In3    O2      1.976   24_655 S
+In3    O1      2.461   5     S
+In3    O1      2.461   18    S
+In3    O2      2.461   5     S
+In3    O2      2.461   18    S
+In3    In1     3.291   3_645 S
+In3    In1     3.291   14_655 S
+In3    In3     3.318   12_554 S
+In3    In3     3.318   11_556 S
+In3    In3     3.318   6     S
+In3    In3     3.318   8_645 S
+In3    In2     3.755   12    S
+In3    In2     3.755   11    S

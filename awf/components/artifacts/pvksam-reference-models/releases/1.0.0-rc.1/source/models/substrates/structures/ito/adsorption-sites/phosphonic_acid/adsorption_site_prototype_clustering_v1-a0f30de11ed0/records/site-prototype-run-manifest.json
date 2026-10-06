@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_run",
+  "status": "passed_clustering_pending_promotion",
+  "fingerprint": "a0f30de11ed0ace74581295798a7b1f5939047bdf2524fc3c2b0d977e1f2ab75",
+  "substrate_key": "ITO",
+  "anchor_family": "phosphonic_acid",
+  "site_prototype_count": 14,
+  "artifacts": [
+    {
+      "role": "site_prototype_plan",
+      "path": "adsorption-site-prototype-plan.json",
+      "sha256": "7e7d9b68d000ec7343e02bf63bad07cc8d6631430745d88738ec06934e130c88"
+    },
+    {
+      "role": "site_prototype_library",
+      "path": "site-prototypes.json",
+      "sha256": "3011cac7bca4230ff69bc556fcfc9d72660c40f398254a2348e63e3a17e0b611"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0001",
+      "path": "structures\\site-prototype-phosphonic-acid-0001.extxyz",
+      "sha256": "833224e1fd2b4a942554b334342548bc32b1a99cf9dfec91f957cb566eeb222f"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0002",
+      "path": "structures\\site-prototype-phosphonic-acid-0002.extxyz",
+      "sha256": "093b34373f68060d812a2a8960097933b39c9e25fd291896d98bcba04e6b0388"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0003",
+      "path": "structures\\site-prototype-phosphonic-acid-0003.extxyz",
+      "sha256": "88fca9a435903485bae52ffb0005c1809be34a3aac53e066d8de9cf0872a80b7"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0004",
+      "path": "structures\\site-prototype-phosphonic-acid-0004.extxyz",
+      "sha256": "552e047e0bb74afa82663d2513111a25ce9acbc48475bd51d3c30181622a9fe0"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0005",
+      "path": "structures\\site-prototype-phosphonic-acid-0005.extxyz",
+      "sha256": "98ea9e23890fc53b946a665486f72856e4f35719a4fe0acf6d9606ef54686765"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0006",
+      "path": "structures\\site-prototype-phosphonic-acid-0006.extxyz",
+      "sha256": "a2bd91ca7ca3b459212fce46aa62eef700eab21f57ffc17cd8bed46a5fe74d7d"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0007",
+      "path": "structures\\site-prototype-phosphonic-acid-0007.extxyz",
+      "sha256": "3fa316ceedf0970b650f6216773e629b2f5d46749208bfbd09044ced71897aa7"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0008",
+      "path": "structures\\site-prototype-phosphonic-acid-0008.extxyz",
+      "sha256": "0ef7bd0aaa4c239d9eb1ebbdfbf06477b42e7e8a5b8bdea8b49f95fb0da4cb54"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0009",
+      "path": "structures\\site-prototype-phosphonic-acid-0009.extxyz",
+      "sha256": "db18ab9799eb070796f966a012246c640bfce8b3f3d4f92f4e59aa8b4396921a"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0010",
+      "path": "structures\\site-prototype-phosphonic-acid-0010.extxyz",
+      "sha256": "c73841ec0a02218e266630d4e14494cdab6a047f3148ec3c51d0ee532a384476"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0011",
+      "path": "structures\\site-prototype-phosphonic-acid-0011.extxyz",
+      "sha256": "70daf78e554eabbb269958049eaf93adb2a497ffbb00c2b69ae1bd1b92dd2487"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0012",
+      "path": "structures\\site-prototype-phosphonic-acid-0012.extxyz",
+      "sha256": "1fc39df5434199101b04c68c5528efda74bcdb22a04b39bcbed9167cfd4b1222"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0013",
+      "path": "structures\\site-prototype-phosphonic-acid-0013.extxyz",
+      "sha256": "6a187786ebe9b27d1edc4f044373643f9a021e379678edc7b9eb2f6ba62dc402"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0014",
+      "path": "structures\\site-prototype-phosphonic-acid-0014.extxyz",
+      "sha256": "775b05303a3a9a39de3561d10eb2c1a68ec1e27169d5e14b7254d1f9a2d26b6c"
+    }
+  ]
+}

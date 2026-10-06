@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_run",
+  "status": "passed_clustering_pending_promotion",
+  "fingerprint": "80142c6989cd65df13a2db22556a12658af27d9eadc2a39d6e7b7d7f18be6904",
+  "substrate_key": "FTO",
+  "anchor_family": "phosphonic_acid",
+  "site_prototype_count": 1,
+  "artifacts": [
+    {
+      "role": "site_prototype_plan",
+      "path": "adsorption-site-prototype-plan.json",
+      "sha256": "3bdf7395f9f4b0dd2f1c5b52749e46fce4d492f05aa7e2bff39f5bbfcd52d810"
+    },
+    {
+      "role": "site_prototype_library",
+      "path": "site-prototypes.json",
+      "sha256": "ed4a0dd815244415e2ed5325903ae88fee5700dfc93473fade4601c463e78ffa"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-phosphonic-acid-0001",
+      "path": "structures/site-prototype-phosphonic-acid-0001.extxyz",
+      "sha256": "32ec39bae8a67b75563a8ab4f8478e5b5ed6323606610b4f6341319fdbf297e3"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "passed_selection",
+  "selected_candidate_id": "termination-002",
+  "selection_basis": "bulk stoichiometry, formal charge neutrality, explicit formal-dipole threshold, and preferred top element",
+  "historical_comparison": null,
+  "known_limitations": [
+    "Candidates are unrelaxed geometric Surface Precuts.",
+    "Formal-charge nonpolarity is not a calculated surface energy."
+  ]
+}

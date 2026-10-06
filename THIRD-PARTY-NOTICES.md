@@ -1,3 +1,3 @@
 # Third-party notices
 
-PVKSAM interfaces with external packages and programs including ASE, RDKit, PyTorch, MACE, LAMMPS, OpenMM and CuEq-related tooling. They are not bundled and retain their own licenses. Project molecular structures, oxide slabs, trajectories and scientific results are also excluded.
+Runtime dependencies and scientific source records retain their own licenses and terms. See `DATA-NOTICE.md` and provenance within the bundled catalogs. No MACE weights are redistributed.

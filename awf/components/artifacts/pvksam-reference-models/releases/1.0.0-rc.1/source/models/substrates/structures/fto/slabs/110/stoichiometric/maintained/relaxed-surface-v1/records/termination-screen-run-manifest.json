@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "passed_selection",
+  "fingerprint": "b8ad4bdd6c96aa54abefb1dc854a6d172cbda527d49f2374307af6c265c23c4c",
+  "plan_fingerprint": "d2891ab7f7f695ba353a30595fcf1f639450abfe57aedef76754077269f81aa5",
+  "started_at_utc": "2026-08-02T09:32:25.351636+00:00",
+  "output_directory": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/fto/surface_termination_screen_v1-20260802T093225Z-b8ad4bdd6c96",
+  "host": "node01",
+  "device": "cuda",
+  "default_dtype": "float32",
+  "plan": {
+    "path": "surface-termination-screen-plan.json",
+    "sha256": "58d8340414e8436bd26b96239422f97cf031711559ce8503244db9c2a640111a"
+  },
+  "artifacts": [
+    {
+      "role": "termination_child_run_manifest",
+      "candidate_id": "termination-002",
+      "path": "termination-runs/termination-002/fto/surface_relaxation_v1-20260802T093225Z-7338c92d5f60/run-manifest.json",
+      "sha256": "cf80d63dc3e8217dc0574f524438bce625a6d348460a920bb020e458bb39835d"
+    },
+    {
+      "role": "termination_child_convergence_report",
+      "candidate_id": "termination-002",
+      "path": "termination-runs/termination-002/fto/surface_relaxation_v1-20260802T093225Z-7338c92d5f60/convergence-report.json",
+      "sha256": "63539ece350370be97b709df2c51a8e7c80f67165ba73b9637c27148446fe89d"
+    },
+    {
+      "role": "termination_selection_report",
+      "path": "termination-selection-report.json",
+      "sha256": "92032923f4ef4f9f8fd4df273cebcf67ab7711bd1bab3cfd0759caeebd1d28f1"
+    }
+  ],
+  "finished_at_utc": "2026-08-02T09:32:34.538243+00:00",
+  "selected_candidate_id": "termination-002",
+  "all_required_relaxations_passed": true
+}

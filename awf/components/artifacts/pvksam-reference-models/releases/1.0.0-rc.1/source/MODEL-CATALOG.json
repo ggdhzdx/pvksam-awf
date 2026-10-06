@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "artifact": "artifact.pvksam-reference-models@1.0.0-rc.1",
+  "substrates": {
+    "catalog_path": "models/substrates",
+    "ids": [
+      "fto",
+      "ito"
+    ],
+    "contents": "bulk, source, maintained relaxed slabs, phosphonic-acid and carboxylic-acid site packages"
+  },
+  "sam_models": [
+    {
+      "id": "1Br2PADCB",
+      "role": "authoritative-explicit-H-source-input",
+      "path": "models/sam/source-inputs/1Br2PADCB_explicit_h.sdf",
+      "format": "sdf",
+      "atoms": 45,
+      "formula": "C22H17BrNO3P"
+    },
+    {
+      "id": "1Br4PADCB",
+      "role": "authoritative-explicit-H-source-input",
+      "path": "models/sam/source-inputs/1Br4PADCB_explicit_h.sdf",
+      "format": "sdf",
+      "atoms": 51,
+      "formula": "C24H21BrNO3P"
+    },
+    {
+      "id": "2Br2PADCB",
+      "role": "authoritative-explicit-H-source-input",
+      "path": "models/sam/source-inputs/2Br2PADCB_explicit_h.sdf",
+      "format": "sdf",
+      "atoms": 45,
+      "formula": "C22H16Br2NO3P"
+    },
+    {
+      "id": "2Nap-Ac",
+      "role": "authoritative-explicit-H-source-input",
+      "path": "models/sam/source-inputs/2Nap-Ac_explicit_h.sdf",
+      "format": "sdf",
+      "atoms": 80,
+      "formula": "C39H36NO3P"
+    },
+    {
+      "id": "3Nap-Ac",
+      "role": "authoritative-explicit-H-source-input",
+      "path": "models/sam/source-inputs/3Nap-Ac_explicit_h.sdf",
+      "format": "sdf",
+      "atoms": 96,
+      "formula": "C49H42NO3P"
+    },
+    {
+      "id": "4Nap-Ac",
+      "role": "authoritative-explicit-H-source-input",
+      "path": "models/sam/source-inputs/4Nap-Ac_explicit_h.sdf",
+      "format": "sdf",
+      "atoms": 112,
+      "formula": "C59H48NO3P"
+    },
+    {
+      "id": "DBF21ID",
+      "role": "historical-used-SAM-coordinate-model",
+      "path": "models/sam/historical-used/DBF21ID_molecule.extxyz",
+      "format": "extxyz",
+      "atoms": 48,
+      "formula": "C22H20NO3PS",
+      "elements": {
+        "C": 22,
+        "H": 20,
+        "N": 1,
+        "O": 3,
+        "P": 1,
+        "S": 1
+      },
+      "derived_from": "dbf21id/dbf21id_isolated_global_min.cif",
+      "derivation": "Extract all organic atoms and the three O atoms within 2.1 A of P from the recorded adsorbed global-minimum CIF; periodic cell removed."
+    },
+    {
+      "id": "DBF34ID",
+      "role": "historical-used-SAM-coordinate-model",
+      "path": "models/sam/historical-used/DBF34ID_molecule.extxyz",
+      "format": "extxyz",
+      "atoms": 48,
+      "formula": "C22H20NO3PS",
+      "elements": {
+        "C": 22,
+        "H": 20,
+        "N": 1,
+        "O": 3,
+        "P": 1,
+        "S": 1
+      },
+      "derived_from": "dbf34id_isolated_global_min.cif",
+      "derivation": "Extract all organic atoms and the three O atoms within 2.1 A of P from the recorded adsorbed global-minimum CIF; periodic cell removed."
+    },
+    {
+      "id": "DBF43ID",
+      "role": "historical-used-SAM-coordinate-model",
+      "path": "models/sam/historical-used/DBF43ID_molecule.extxyz",
+      "format": "extxyz",
+      "atoms": 48,
+      "formula": "C22H20NO3PS",
+      "elements": {
+        "C": 22,
+        "H": 20,
+        "N": 1,
+        "O": 3,
+        "P": 1,
+        "S": 1
+      },
+      "derived_from": "dbf43id_isolated_global_min.cif",
+      "derivation": "Extract all organic atoms and the three O atoms within 2.1 A of P from the recorded adsorbed global-minimum CIF; periodic cell removed."
+    }
+  ],
+  "notes": [
+    "Source-input SDFs preserve explicit hydrogens and bond orders.",
+    "Reference conformers are included only where a recorded lowest-energy optimized SDF exists.",
+    "Historical DBF coordinate models are derived from used adsorbed CIFs and do not preserve authoritative bond orders."
+  ]
+}

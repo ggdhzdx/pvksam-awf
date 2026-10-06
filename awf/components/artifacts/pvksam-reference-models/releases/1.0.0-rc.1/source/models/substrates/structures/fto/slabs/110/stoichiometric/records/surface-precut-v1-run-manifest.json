@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "status": "passed_selection",
+  "fingerprint": "eacec7c62384cf982f570540b0a81ac9a0089757c37cc5d6ed0cfb5a9a8b24c8",
+  "created_at_utc": "2026-08-02T08:33:14.905566+00:00",
+  "output_directory": "${PVKSAM_PROJECT_ROOT}/runs/surface-precut/fto/surface_precut_v1-eacec7c62384",
+  "host": "node01",
+  "bulk_parent_sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429",
+  "conventional_miller": [
+    1,
+    1,
+    0
+  ],
+  "primitive_miller": [
+    1,
+    1,
+    0
+  ],
+  "selected_candidate_id": "termination-002",
+  "artifacts": [
+    {
+      "role": "surface_precut_candidate",
+      "candidate_id": "termination-001",
+      "path": "candidates/termination-001.cif",
+      "sha256": "fd1fe98cf3bf3e7f40b2e5d81a1182a1f6d96323bd8d17f18b9abc8549bae644"
+    },
+    {
+      "role": "selected_surface_precut_candidate",
+      "candidate_id": "termination-002",
+      "path": "candidates/termination-002.cif",
+      "sha256": "fb3a3c25684f6d668702886e3717ba956fed8e5d57034d49659a5390e525e573"
+    },
+    {
+      "role": "surface_precut_candidate",
+      "candidate_id": "termination-003",
+      "path": "candidates/termination-003.cif",
+      "sha256": "fcfb346087902d8c9eca10d8e3951f9522f5e635e322ea257fbf171b63ee0bc1"
+    },
+    {
+      "role": "surface_precut_plan",
+      "path": "surface-precut-plan.json",
+      "sha256": "865638fada69d713d42c83b04fb968ae7e9b9c949ae71e63ca4312f90b329d9c"
+    },
+    {
+      "role": "selection_report",
+      "path": "selection-report.json",
+      "sha256": "0cd9ea73dab8c6efeab030cb0ee2515637625abbff64e55e98409b3375d2c317"
+    }
+  ]
+}

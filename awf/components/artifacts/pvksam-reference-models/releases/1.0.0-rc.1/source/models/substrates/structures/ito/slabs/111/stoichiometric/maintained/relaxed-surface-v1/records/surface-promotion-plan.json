@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "mode": "surface_promotion_plan",
+  "fingerprint": "8482a80884360b826d2fd4d2b06da5438e268ae8359796796b7001f14e9b486f",
+  "substrate": {
+    "key": "ITO",
+    "host_material": "In2O3",
+    "structure_manifest": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/manifest.json",
+      "sha256": "38114bea04335b190ae5d0ce041d4195bae9fd5672efc8182fb75b1f3a99b88c"
+    }
+  },
+  "bulk_parent": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/bulk/In2O3-Ia-3-mace-mpa-0-medium-bulk-parent-v1.cif",
+    "sha256": "ee8f6591c9bc900ee3d8209a1ed62e3b7e2d25535011b291bd7aad6efec2ad16",
+    "status": "accepted",
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "formula": {
+      "In": 32,
+      "O": 48
+    },
+    "atom_count": 80,
+    "cell_A": {
+      "a": 10.3007485187,
+      "b": 10.3007485187,
+      "c": 10.3007485187
+    },
+    "space_group": {
+      "symbol": "Ia-3",
+      "number": 206,
+      "symprec_A": 0.01
+    },
+    "run_fingerprint": "500c5cfe723bbd0e034f0b3ecf9e7b4f807b655f41b48495ef737aaf00d7eb51",
+    "potential": {
+      "name": "mace-mpa-0-medium",
+      "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+      "default_dtype": "float32"
+    },
+    "potential_energy_eV": -452.04766845703125
+  },
+  "promotion_contract": {
+    "protocol_version": "relaxed_surface_promotion_v1",
+    "preserve_registered_thickness": true,
+    "destination_directory": "slabs/111/stoichiometric/maintained/relaxed-surface-v1",
+    "structure_filename": "In2O3-Ia-3-111-three-repeat-O-terminated-relaxed-mace-mpa-0-medium-v1.cif"
+  },
+  "source_surface_precut": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/In2O3-Ia-3-111-three-repeat-nonpolar-bulk-parent-v1.cif",
+    "sha256": "3bdc783d48ecc51c6fd62a27e828ef774e922af79a193311da600aba75ece7bd",
+    "status": "accepted_bulk_derived_unrelaxed_precut",
+    "source_layers": 3,
+    "miller": [
+      1,
+      1,
+      1
+    ],
+    "primitive_miller": [
+      1,
+      1,
+      1
+    ],
+    "termination": "stoichiometric_formally_nonpolar_O_top",
+    "cut_fractional_phase": 0.0
+  },
+  "screen_result": {
+    "run_directory": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17",
+    "run_fingerprint": "b20e8ce28f17235ff1e27715bae67043e330817d68a8d53d4b9f8ceb1e460e23",
+    "selected_candidate_id": "termination-001",
+    "plan_sha256": "bbfe082ae879139383c7f00351748377fd8a943d442421026b387b3b1882cf67",
+    "selection_report_sha256": "71e74b22a730f6c4ed253af550e7bb3e17c37d089251d012ca9ebbaffea6244f",
+    "run_manifest_sha256": "a8098446bf62a4a437f0c1dcb8fe7da2e7c9cb8b04d67a28eac511c75953899e"
+  },
+  "target_surface": {
+    "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/repeat-003/relaxed.cif",
+    "source_sha256": "ca2a5df822673b3219e873d8552f05aa89cc64213d51f908d3c7a6894b125192",
+    "oriented_unit_repeats": 3,
+    "formula": {
+      "In": 48,
+      "O": 72
+    },
+    "atom_count": 120,
+    "cell_A": {
+      "lengths": [
+        14.567458257780915,
+        14.567458257780917,
+        33.04905420593702
+      ],
+      "angles_deg": [
+        90.0,
+        90.0,
+        120.00000000000001
+      ],
+      "surface_area_A2": 183.77997847827325
+    },
+    "solid_thickness_A": 8.160204444599975,
+    "vacuum_A": 24.888849761337042,
+    "top_plane_formula": {
+      "O": 3
+    },
+    "bottom_plane_formula": {
+      "O": 3
+    },
+    "formal_dipole_density_e_per_A": -2.3181706736059347e-08,
+    "surface_energy_eV_A2": 0.05158821333971116,
+    "surface_energy_J_m2": 0.8265343000269233,
+    "maximum_force_eV_A": 0.027269754133995287,
+    "maximum_atomic_displacement_A": 0.29814474655869866,
+    "destination_directory": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1",
+    "destination_path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/In2O3-Ia-3-111-three-repeat-O-terminated-relaxed-mace-mpa-0-medium-v1.cif"
+  },
+  "thickness_convergence": {
+    "passed": true,
+    "thinner_repeat": 4,
+    "thickest_repeat": 5,
+    "absolute_difference_eV_A2": 3.5618790262217925e-05,
+    "absolute_difference_J_m2": 0.0005706759348947229,
+    "maximum_eV_A2": 0.001,
+    "maximum_J_m2": 0.01602176634
+  },
+  "evidence": [
+    {
+      "role": "termination_screen_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/surface-termination-screen-plan.json",
+      "source_sha256": "bbfe082ae879139383c7f00351748377fd8a943d442421026b387b3b1882cf67",
+      "destination_name": "termination-screen-plan.json"
+    },
+    {
+      "role": "termination_selection_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-selection-report.json",
+      "source_sha256": "71e74b22a730f6c4ed253af550e7bb3e17c37d089251d012ca9ebbaffea6244f",
+      "destination_name": "termination-selection-report.json"
+    },
+    {
+      "role": "termination_screen_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/run-manifest.json",
+      "source_sha256": "a8098446bf62a4a437f0c1dcb8fe7da2e7c9cb8b04d67a28eac511c75953899e",
+      "destination_name": "termination-screen-run-manifest.json"
+    },
+    {
+      "role": "surface_relaxation_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/surface-relaxation-plan.json",
+      "source_sha256": "dece5405c40928fc14011c396acdc4a8e1381192eb53e21fe16c4fe4d2ac3534",
+      "destination_name": "surface-relaxation-plan.json"
+    },
+    {
+      "role": "surface_relaxation_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/run-manifest.json",
+      "source_sha256": "670aad396fac4f76b620644f53181c8d4e4294b99e3eb7211355601d8b1ab609",
+      "destination_name": "surface-relaxation-run-manifest.json"
+    },
+    {
+      "role": "surface_convergence_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/convergence-report.json",
+      "source_sha256": "08a4d98fed0005baa5d6c709c3c8bd82162ce5fd7dbc5378a689d0038ac4db88",
+      "destination_name": "surface-convergence-report.json"
+    },
+    {
+      "role": "bulk_reference",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/bulk-reference.json",
+      "source_sha256": "7b96e5e3cb81e35ac2861305f4eb9f996003dd5abeef7ec9f713226382d527f5",
+      "destination_name": "bulk-reference.json"
+    },
+    {
+      "role": "target_relaxation_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/repeat-003/relaxation-report.json",
+      "source_sha256": "9238c19728499d90a51d7367e9d8758770ddb2ffaf635ee85fd20c9c4ddb6ad7",
+      "destination_name": "repeat-003-relaxation-report.json"
+    },
+    {
+      "role": "target_optimizer_log",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/repeat-003/optimizer.log",
+      "source_sha256": "17f09f99bd5a0a32ecf08c509f5eb0cb97a6a1089224b4acefa9f5333d5d8625",
+      "destination_name": "repeat-003-optimizer.log"
+    },
+    {
+      "role": "target_progress",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17/termination-runs/termination-001/ito/surface_relaxation_v1-20260802T093159Z-402a1caae5a0/repeat-003/progress.jsonl",
+      "source_sha256": "df8c44f4569d25aeae065e35fb3b8c21661eeb1322e8cba62f3e70b98cefce16",
+      "destination_name": "repeat-003-progress.jsonl"
+    }
+  ],
+  "execution_contract": {
+    "read_only": true,
+    "executable": true,
+    "execution_command": "surface-promotion-run",
+    "readiness_issues": [],
+    "mutation": "Create one immutable maintained-surface package, supersede but do not delete the geometric precut, and update the structure manifest."
+  }
+}

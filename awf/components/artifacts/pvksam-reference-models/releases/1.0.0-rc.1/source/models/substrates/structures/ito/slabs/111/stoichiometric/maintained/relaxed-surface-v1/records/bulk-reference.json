@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "structure": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/bulk/In2O3-Ia-3-mace-mpa-0-medium-bulk-parent-v1.cif",
+    "sha256": "ee8f6591c9bc900ee3d8209a1ed62e3b7e2d25535011b291bd7aad6efec2ad16"
+  },
+  "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+  "default_dtype": "float32",
+  "device": "cuda",
+  "reduced_formula": {
+    "In": 2,
+    "O": 3
+  },
+  "parent_formula_units": 16,
+  "potential_energy_eV": -452.04766845703125,
+  "potential_energy_per_formula_unit_eV": -28.252979278564453,
+  "maximum_force_eV_A": 0.02821882072331702,
+  "note": "Fresh single-point reference evaluated in this run with the same calculator instance used for every slab."
+}

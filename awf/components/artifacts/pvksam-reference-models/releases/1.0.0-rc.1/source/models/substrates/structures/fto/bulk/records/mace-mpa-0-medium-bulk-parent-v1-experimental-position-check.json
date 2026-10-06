@@ -1,0 +1,279 @@
+{
+  "bulk_parent": {
+    "atom_count": 6,
+    "cell_A": {
+      "a": 4.8265005241,
+      "b": 4.8265005241,
+      "c": 3.2296703657
+    },
+    "formula": {
+      "O": 4,
+      "Sn": 2
+    },
+    "path": "bulk/SnO2-rutile-mace-mpa-0-medium-bulk-parent-v1.cif",
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "run_fingerprint": "69d222cace86eecfc806d040fa732c5bbd8e701eaec5ce0039b4edaceabc1eb1",
+    "sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429",
+    "space_group": {
+      "number": 136,
+      "symbol": "P4_2/mnm",
+      "symprec_A": 0.01
+    },
+    "status": "accepted"
+  },
+  "checks": {
+    "maximum_displacement": {
+      "maximum_A": 0.1,
+      "observed_A": 0.005931600861460663,
+      "passed": true
+    },
+    "rms_displacement": {
+      "maximum_A": 0.05,
+      "observed_A": 0.0048431318228105095,
+      "passed": true
+    }
+  },
+  "comparison": {
+    "atom_mapping": [
+      {
+        "candidate_aligned_fractional": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "candidate_standardized_index_0based": 0,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "Sn",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_standardized_index_0based": 0
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "candidate_standardized_index_0based": 1,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "Sn",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "reference_standardized_index_0based": 1
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.19349463683442625,
+          0.8065053631655738,
+          0.5
+        ],
+        "candidate_standardized_index_0based": 2,
+        "displacement_A": 0.005931600861460663,
+        "displacement_vector_A": [
+          -0.004194275192430801,
+          0.004194275192430801,
+          0.0
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0008853631655737493,
+          0.0008853631655737493,
+          0.0
+        ],
+        "reference_fractional": [
+          0.19438,
+          0.80562,
+          0.5
+        ],
+        "reference_standardized_index_0based": 4
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.30650536316557364,
+          0.30650536316557375,
+          0.0
+        ],
+        "candidate_standardized_index_0based": 3,
+        "displacement_A": 0.005931600861460291,
+        "displacement_vector_A": [
+          0.004194275192430276,
+          0.004194275192430801,
+          0.0
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0008853631655736383,
+          0.0008853631655737493,
+          0.0
+        ],
+        "reference_fractional": [
+          0.30562,
+          0.30562,
+          0.0
+        ],
+        "reference_standardized_index_0based": 2
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6934946368344262,
+          0.6934946368344262,
+          0.0
+        ],
+        "candidate_standardized_index_0based": 4,
+        "displacement_A": 0.005931600861460663,
+        "displacement_vector_A": [
+          -0.004194275192430801,
+          -0.004194275192430801,
+          0.0
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0008853631655737493,
+          -0.0008853631655737493,
+          0.0
+        ],
+        "reference_fractional": [
+          0.69438,
+          0.69438,
+          0.0
+        ],
+        "reference_standardized_index_0based": 3
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8065053631655738,
+          0.19349463683442625,
+          0.5
+        ],
+        "candidate_standardized_index_0based": 5,
+        "displacement_A": 0.005931600861460663,
+        "displacement_vector_A": [
+          0.004194275192430801,
+          -0.004194275192430801,
+          0.0
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0008853631655737493,
+          -0.0008853631655737493,
+          0.0
+        ],
+        "reference_fractional": [
+          0.80562,
+          0.19438,
+          0.5
+        ],
+        "reference_standardized_index_0based": 5
+      }
+    ],
+    "by_element": {
+      "O": {
+        "count": 4,
+        "maximum_displacement_A": 0.005931600861460663,
+        "mean_displacement_A": 0.005931600861460569,
+        "rms_displacement_A": 0.00593160086146057
+      },
+      "Sn": {
+        "count": 2,
+        "maximum_displacement_A": 0.0,
+        "mean_displacement_A": 0.0,
+        "rms_displacement_A": 0.0
+      }
+    },
+    "by_wyckoff_group": {
+      "O:f": {
+        "count": 4,
+        "maximum_displacement_A": 0.005931600861460663,
+        "mean_displacement_A": 0.005931600861460569,
+        "representative": {
+          "candidate_fractional": [
+            0.30650536316557364,
+            0.30650536316557375,
+            0.0
+          ],
+          "experimental_fractional": [
+            0.30562,
+            0.30562,
+            0.0
+          ],
+          "fractional_difference_minimum_image": [
+            0.0008853631655736383,
+            0.0008853631655737493,
+            0.0
+          ]
+        },
+        "rms_displacement_A": 0.00593160086146057
+      },
+      "Sn:a": {
+        "count": 2,
+        "maximum_displacement_A": 0.0,
+        "mean_displacement_A": 0.0,
+        "representative": {
+          "candidate_fractional": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "experimental_fractional": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "fractional_difference_minimum_image": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rms_displacement_A": 0.0
+      }
+    },
+    "coordinate_basis": "Fractional internal-coordinate differences converted with the experimental reference lattice; lattice-size error is excluded.",
+    "method": "spglib_standardized_conventional_cells_then_elementwise_hungarian_minimum_image_matching",
+    "origin_shift_fractional": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "overall_maximum_displacement_A": 0.005931600861460663,
+    "overall_mean_displacement_A": 0.003954400574307046,
+    "overall_rms_displacement_A": 0.0048431318228105095,
+    "symprec_A": 0.01
+  },
+  "experimental_reference": {
+    "citation": "A. A. Bolzan, C. Fong, B. J. Kennedy, C. J. Howard, Structural studies of rutile-type metal dioxides, Acta Crystallographica B53 (1997) 373-380",
+    "doi": "10.1107/S0108768197001468",
+    "path": "sources/experimental/cod-2101853-bolzan-1997.cif",
+    "sha256": "4a965e1b9841236cfdeba92e70717997160234d393246e9ccddda4459fee4cf4"
+  },
+  "mode": "bulk_parent_position_check",
+  "schema_version": 1,
+  "status": "passed",
+  "substrate": "FTO"
+}

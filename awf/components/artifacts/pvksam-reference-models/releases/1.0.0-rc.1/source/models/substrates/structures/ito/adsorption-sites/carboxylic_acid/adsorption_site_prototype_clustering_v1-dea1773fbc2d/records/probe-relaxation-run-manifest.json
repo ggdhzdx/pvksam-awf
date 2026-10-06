@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_probe_relaxation_run",
+  "status": "passed",
+  "fingerprint": "1c6bb0c3669b7a8c186b86b8356d6f80e20866bef38c659bc13e10fb5cf428af",
+  "plan_fingerprint": "bd536d7b1b272dbe9b80c0ab98491941ef8cd069b2412bbadcd814cacf559351",
+  "started_at_utc": "2026-08-03T09:45:08.173991+00:00",
+  "output_directory": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/ito/adsorption_probe_relaxation_v1-20260803T094508Z-1c6bb0c3669b",
+  "host": "node01",
+  "device": "cuda",
+  "default_dtype": "float32",
+  "plan": {
+    "path": "adsorption-probe-relaxation-plan.json",
+    "sha256": "256658a68feecfeac143133debf5a2d2cba440adb4095fa506124dc4d0bc1640"
+  },
+  "artifacts": [
+    {
+      "role": "reference_energy_report",
+      "path": "reference-energy-report.json",
+      "sha256": "dbd40af06478ed8072315769006e838e52aabb4bc0c8c7d0199a15494849c3ee"
+    },
+    {
+      "role": "candidate_energy_report",
+      "path": "candidate-energy-report.json",
+      "sha256": "c53de6cfbade13ea22ba4f2e6741dc785cba3a84f34e51cf4b790c8a592e1bd7"
+    },
+    {
+      "role": "site_energy_selection_report",
+      "path": "site-energy-selection-report.json",
+      "sha256": "2a550abfcf0fe1746ff5a65eddb32653c358fee27b834b5c8e19214a1c69070a"
+    }
+  ],
+  "finished_at_utc": "2026-08-03T09:50:17.491698+00:00",
+  "runtime": {
+    "mace_version": "0.3.14",
+    "torch_version": "2.9.1+cu128",
+    "cuda_available": true,
+    "cuda_device_name": "NVIDIA GeForce RTX 4090 D"
+  },
+  "summary": {
+    "reference_task_count": 2,
+    "candidate_task_count": 81,
+    "valid_candidate_count": 63,
+    "site_combination_count": 16,
+    "selected_site_count": 16,
+    "rejected_site_combination_count": 0
+  }
+}

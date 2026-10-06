@@ -3,14 +3,14 @@
   "id": "skill.pvksam",
   "kind": "skill",
   "releases": {
-    "1.0.0-rc.15": {
+    "1.0.0-rc.16": {
       "status": "candidate",
       "observed_at": "2026-10-06",
-      "source_snapshot": "components/skills/pvksam/releases/1.0.0-rc.15/source",
-      "tree_sha256": "a4a59897d7c450fab921df53da361fc80192e8364adbc619e5df8b3e89632652",
-      "provenance": "Content-equivalent public successor to rc14 aligning the declared Recipe dependency with portable Recipe rc.2.",
+      "source_snapshot": "components/skills/pvksam/releases/1.0.0-rc.16/source",
+      "tree_sha256": "fd9da3ebf16de5ea56cef7b9531f5111ddbbea489c8485bcd7def631aec9e72d",
+      "provenance": "Public successor that discovers the locked bundled ITO/FTO catalog and documents explicit selection of the nine included used-SAM models.",
       "entry_point": "SKILL.md",
-      "recipe": "recipe.pvksam-ase-cueq@1.0.0-rc.2",
+      "recipe": "recipe.pvksam-ase-cueq@1.0.0-rc.3",
       "capabilities": [
         "phosphonate-original-molecule-intake",
         "single-systematic-skeleton-grid-route",
@@ -26,7 +26,9 @@
         "dynamic-CN5-single-metal-fill-enabled",
         "sealed-H0-restraints-global-protonation-cyclic-annealing",
         "pre-adsorbed-216-start-scan-removed",
-        "hash-bound-single-PC-roll-selector-input"
+        "hash-bound-single-PC-roll-selector-input",
+        "bundled-ITO-FTO-catalog-discovery",
+        "bundled-used-SAM-model-catalog"
       ],
       "limitations": [
         "Original-molecule initial-conformer route is phosphonate-only; carboxylate source adapter is not connected.",
@@ -35,11 +37,11 @@
         "The front controller stops after H0 canonicalization and CPU skeleton screening; subsequent FF, dedup, site-roll, MACE and growth are explicit handoffs.",
         "The skeleton scanner infers adjacency from reviewed unoptimized H0 coordinates; compare against the authoritative source SDF for every new molecule.",
         "MMFF94s single-point selection is a gas-phase starting-pose reduction, not an ITO adsorption-energy ranking.",
-        "Maintained substrate/site packages and model weights remain external inputs.",
+        "MACE model weights remain external; locked ITO/FTO and used-SAM reference structures are bundled.",
         "fixed-site-cpu accepts only the selected PVKSAM one-roll-per-skeleton ensemble and its matching hash-bound selector receipt.",
-        "External model weights, substrate/site packages, project inputs and scientific results are not bundled."
+        "External model weights, new project inputs and scientific results are not bundled."
       ],
-      "predecessor": "skill.pvksam@1.0.0-rc.14"
+      "predecessor": "skill.pvksam@1.0.0-rc.15"
     }
   }
 }

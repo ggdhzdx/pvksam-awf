@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_promotion_plan",
+  "status": "passed_promotion_plan",
+  "fingerprint": "e2d4d7286f5ddb7cdf753a1d6598bd682a868bb6c61e069af5b0a2e8dd217b53",
+  "substrate": {
+    "key": "ITO",
+    "structure_manifest_path": "${PVKSAM_PROJECT_ROOT}\\substrates\\structures\\ito\\manifest.json",
+    "structure_manifest_sha256": "e0286789f234124730e854e602e4a145f93e4aef9d7e7581a6ea08eeb84e7bb3"
+  },
+  "source_surface_sha256": "ca2a5df822673b3219e873d8552f05aa89cc64213d51f908d3c7a6894b125192",
+  "anchor_family": "phosphonic_acid",
+  "probe": {
+    "schema_version": 1,
+    "key": "methylphosphonic_acid",
+    "display_name": "Methylphosphonic acid",
+    "anchor_family": "phosphonic_acid",
+    "manifest_sha256": "50909d1e1fea4427bcf5d601f2873b6c27006f843e65ecab5c3257fce63290f4",
+    "source_kind": "pubchem_3d_conformer",
+    "source_sha256": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13818/record/SDF?record_type=3d",
+    "pubchem_cid": 13818,
+    "inchi_key": "YACKEPLHDIMKIO-UHFFFAOYSA-N",
+    "neutral_formula": {
+      "C": 1,
+      "H": 5,
+      "O": 3,
+      "P": 1
+    },
+    "neutral_atom_count": 10,
+    "fully_deprotonated_formula": {
+      "C": 1,
+      "H": 3,
+      "O": 3,
+      "P": 1
+    },
+    "fully_deprotonated_atom_count": 8,
+    "released_protons": 2,
+    "source_atom_ids": {
+      "anchor": 0,
+      "carbon": 4,
+      "oxygen_donors": [
+        1,
+        2,
+        3
+      ],
+      "acidic_hydrogens_removed": [
+        8,
+        9
+      ],
+      "methyl_hydrogens_retained": [
+        5,
+        6,
+        7
+      ]
+    },
+    "adsorbate_atom_ids": {
+      "anchor": 0,
+      "carbon": 4,
+      "oxygen_donors": [
+        1,
+        2,
+        3
+      ],
+      "methyl_hydrogens": [
+        5,
+        6,
+        7
+      ]
+    },
+    "adsorbate_to_source_atom_id": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "deprotonation_policy": "remove_every_hydrogen_covalently_bound_to_anchor_oxygen",
+    "alternative_states_enumerated": false
+  },
+  "clustering_contract": {
+    "protocol_version": "adsorption_site_prototype_clustering_v1",
+    "anchor_family": "phosphonic_acid",
+    "equivalent_probe_donors": true,
+    "maximum_contact_distance_rms_difference_A": 0.15,
+    "maximum_metal_geometry_rms_difference_A": 0.15,
+    "maximum_anchor_height_difference_A": 0.2,
+    "maximum_anchor_lateral_offset_difference_A": 0.25,
+    "representative_selection": "lowest_adsorption_energy_then_candidate_id",
+    "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+    "doped_site_energy_policy": "reuse_undoped_parent"
+  },
+  "prototype_run": {
+    "directory": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0",
+    "manifest_sha256": "1bf9319feb9360097dd608a0ea7b4f439ca888ffdb388469d8fc421b52a3142a",
+    "fingerprint": "a0f30de11ed0ace74581295798a7b1f5939047bdf2524fc3c2b0d977e1f2ab75"
+  },
+  "prototype_library": {
+    "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\site-prototypes.json",
+    "source_sha256": "3011cac7bca4230ff69bc556fcfc9d72660c40f398254a2348e63e3a17e0b611",
+    "summary": {
+      "selected_relaxed_site_count": 28,
+      "site_prototype_count": 14,
+      "bidentate_prototype_count": 2,
+      "tridentate_prototype_count": 12,
+      "collapsed_selected_site_count": 14
+    },
+    "destination_directory": "${PVKSAM_PROJECT_ROOT}\\substrates\\structures\\ito\\adsorption-sites\\phosphonic_acid\\adsorption_site_prototype_clustering_v1-a0f30de11ed0",
+    "destination_path": "${PVKSAM_PROJECT_ROOT}\\substrates\\structures\\ito\\adsorption-sites\\phosphonic_acid\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\site-prototypes.json"
+  },
+  "representative_structures": [
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0001",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0001.extxyz",
+      "source_sha256": "833224e1fd2b4a942554b334342548bc32b1a99cf9dfec91f957cb566eeb222f",
+      "destination_name": "site-prototype-phosphonic-acid-0001.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0002",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0002.extxyz",
+      "source_sha256": "093b34373f68060d812a2a8960097933b39c9e25fd291896d98bcba04e6b0388",
+      "destination_name": "site-prototype-phosphonic-acid-0002.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0003",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0003.extxyz",
+      "source_sha256": "88fca9a435903485bae52ffb0005c1809be34a3aac53e066d8de9cf0872a80b7",
+      "destination_name": "site-prototype-phosphonic-acid-0003.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0004",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0004.extxyz",
+      "source_sha256": "552e047e0bb74afa82663d2513111a25ce9acbc48475bd51d3c30181622a9fe0",
+      "destination_name": "site-prototype-phosphonic-acid-0004.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0005",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0005.extxyz",
+      "source_sha256": "98ea9e23890fc53b946a665486f72856e4f35719a4fe0acf6d9606ef54686765",
+      "destination_name": "site-prototype-phosphonic-acid-0005.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0006",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0006.extxyz",
+      "source_sha256": "a2bd91ca7ca3b459212fce46aa62eef700eab21f57ffc17cd8bed46a5fe74d7d",
+      "destination_name": "site-prototype-phosphonic-acid-0006.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0007",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0007.extxyz",
+      "source_sha256": "3fa316ceedf0970b650f6216773e629b2f5d46749208bfbd09044ced71897aa7",
+      "destination_name": "site-prototype-phosphonic-acid-0007.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0008",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0008.extxyz",
+      "source_sha256": "0ef7bd0aaa4c239d9eb1ebbdfbf06477b42e7e8a5b8bdea8b49f95fb0da4cb54",
+      "destination_name": "site-prototype-phosphonic-acid-0008.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0009",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0009.extxyz",
+      "source_sha256": "db18ab9799eb070796f966a012246c640bfce8b3f3d4f92f4e59aa8b4396921a",
+      "destination_name": "site-prototype-phosphonic-acid-0009.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0010",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0010.extxyz",
+      "source_sha256": "c73841ec0a02218e266630d4e14494cdab6a047f3148ec3c51d0ee532a384476",
+      "destination_name": "site-prototype-phosphonic-acid-0010.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0011",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0011.extxyz",
+      "source_sha256": "70daf78e554eabbb269958049eaf93adb2a497ffbb00c2b69ae1bd1b92dd2487",
+      "destination_name": "site-prototype-phosphonic-acid-0011.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0012",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0012.extxyz",
+      "source_sha256": "1fc39df5434199101b04c68c5528efda74bcdb22a04b39bcbed9167cfd4b1222",
+      "destination_name": "site-prototype-phosphonic-acid-0012.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0013",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0013.extxyz",
+      "source_sha256": "6a187786ebe9b27d1edc4f044373643f9a021e379678edc7b9eb2f6ba62dc402",
+      "destination_name": "site-prototype-phosphonic-acid-0013.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0014",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\structures\\site-prototype-phosphonic-acid-0014.extxyz",
+      "source_sha256": "775b05303a3a9a39de3561d10eb2c1a68ec1e27169d5e14b7254d1f9a2d26b6c",
+      "destination_name": "site-prototype-phosphonic-acid-0014.extxyz"
+    }
+  ],
+  "evidence": [
+    {
+      "role": "site_prototype_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\adsorption-site-prototype-plan.json",
+      "source_sha256": "7e7d9b68d000ec7343e02bf63bad07cc8d6631430745d88738ec06934e130c88",
+      "destination_name": "site-prototype-plan.json"
+    },
+    {
+      "role": "site_prototype_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-a0f30de11ed0\\run-manifest.json",
+      "source_sha256": "1bf9319feb9360097dd608a0ea7b4f439ca888ffdb388469d8fc421b52a3142a",
+      "destination_name": "site-prototype-run-manifest.json"
+    },
+    {
+      "role": "probe_relaxation_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-probe-relaxation\\ito\\adsorption_probe_relaxation_v1-20260803T032102Z-c1e065a93579\\adsorption-probe-relaxation-plan.json",
+      "source_sha256": "34e8dd99b460a1f4b85fa8a3c2f8ea5e529b2f5e39b8e6888983e72e3503ad52",
+      "destination_name": "probe-relaxation-plan.json"
+    },
+    {
+      "role": "probe_relaxation_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-probe-relaxation\\ito\\adsorption_probe_relaxation_v1-20260803T032102Z-c1e065a93579\\run-manifest.json",
+      "source_sha256": "40a7bb37c9f5966bccc833d1688bf38d1ea28bfc10792fba7a70e1d1db30dc90",
+      "destination_name": "probe-relaxation-run-manifest.json"
+    },
+    {
+      "role": "candidate_energy_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-probe-relaxation\\ito\\adsorption_probe_relaxation_v1-20260803T032102Z-c1e065a93579\\candidate-energy-report.json",
+      "source_sha256": "804db329f058b4ee91d9b5f2e0482d24040f015dcebfeecfadd1391fc6a7ddad",
+      "destination_name": "candidate-energy-report.json"
+    },
+    {
+      "role": "site_energy_selection_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-probe-relaxation\\ito\\adsorption_probe_relaxation_v1-20260803T032102Z-c1e065a93579\\site-energy-selection-report.json",
+      "source_sha256": "f0bb8031e6bce1828211ecc91e39dd16302aeabd0bd02e5e2aca785aa45f57e5",
+      "destination_name": "site-energy-selection-report.json"
+    }
+  ],
+  "execution_contract": {
+    "read_only": true,
+    "executable": true,
+    "execution_command": "adsorption-site-prototype-promotion-run",
+    "readiness_issues": [],
+    "mutation": "Create one immutable maintained Site Prototype package and append its hash-verified registration to the substrate structure manifest."
+  }
+}

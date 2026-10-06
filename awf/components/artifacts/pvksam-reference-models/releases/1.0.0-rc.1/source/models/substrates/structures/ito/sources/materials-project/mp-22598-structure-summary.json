@@ -1,0 +1,41 @@
+{
+  "crystal_structure": {
+    "atomic_positions": [
+      {
+        "wyckoff": "8b",
+        "element": "In",
+        "a": "1/4",
+        "b": "3/4",
+        "c": "1/4"
+      },
+      {
+        "wyckoff": "24d",
+        "element": "In",
+        "a": "1/2",
+        "b": "1/4",
+        "c": "0.034022"
+      },
+      {
+        "wyckoff": "48e",
+        "element": "O",
+        "a": "0.390013",
+        "b": "0.15475",
+        "c": "0.382137"
+      }
+    ],
+    "symmetry": {
+      "crystal_system": "Cubic",
+      "lattice_system": "Cubic",
+      "hall_number": "-I 2b 2c 3",
+      "international_number": 206,
+      "symbol": "Ia3̅",
+      "point_group": "m3̅"
+    },
+    "structure_meta": {
+      "number_of_atoms": 80,
+      "density": "7.00 g·cm⁻³",
+      "dimensionality": "",
+      "possible_oxidation_states": "O²⁻, In³⁺"
+    }
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "schema_version": 1,
+  "mode": "surface_relaxation_plan",
+  "substrate": {
+    "key": "FTO",
+    "host_material": "SnO2",
+    "structure_manifest": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/manifest.json",
+      "sha256": "64089ac117cf69504776c52427905a49d9b2e60bc44053dd6564b0aaa32344bb"
+    }
+  },
+  "bulk_parent": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/bulk/SnO2-rutile-mace-mpa-0-medium-bulk-parent-v1.cif",
+    "sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429",
+    "status": "accepted",
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "formula": {
+      "O": 4,
+      "Sn": 2
+    },
+    "atom_count": 6,
+    "cell_A": {
+      "a": 4.8265005241,
+      "b": 4.8265005241,
+      "c": 3.2296703657
+    },
+    "space_group": {
+      "symbol": "P4_2/mnm",
+      "number": 136,
+      "symprec_A": 0.01
+    },
+    "run_fingerprint": "69d222cace86eecfc806d040fa732c5bbd8e701eaec5ce0039b4edaceabc1eb1",
+    "potential": {
+      "name": "mace-mpa-0-medium",
+      "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+      "default_dtype": "float32"
+    },
+    "potential_energy_eV": -37.702091217041016
+  },
+  "bulk_reference": {
+    "reduced_formula": {
+      "O": 2,
+      "Sn": 1
+    },
+    "parent_formula_units": 2,
+    "energy_policy": "fresh_same_model_single_point_on_accepted_bulk_parent"
+  },
+  "registered_surface_precut": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/slabs/110/stoichiometric/SnO2-rutile-110-five-repeat-bridging-O-bulk-parent-v1.cif",
+    "sha256": "fb3a3c25684f6d668702886e3717ba956fed8e5d57034d49659a5390e525e573",
+    "source_layers": 5,
+    "miller": [
+      1,
+      1,
+      0
+    ],
+    "primitive_miller": [
+      1,
+      1,
+      0
+    ],
+    "termination": "termination_screening_candidate",
+    "cut_fractional_phase": 0.5,
+    "screening_candidate_id": "termination-002"
+  },
+  "surface": {
+    "conventional_miller": [
+      1,
+      1,
+      0
+    ],
+    "primitive_miller": [
+      1,
+      1,
+      0
+    ],
+    "surface_count": 2
+  },
+  "potential": {
+    "model_path": "${PVKSAM_PROJECT_ROOT}/mace-mpa-0-medium.model",
+    "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+    "required_elements": [
+      "O",
+      "Sn"
+    ],
+    "declared_model_elements": [
+      "O",
+      "Sn"
+    ],
+    "coverage": "passed",
+    "coverage_basis": "maintainer_declaration_not_model_introspection",
+    "default_dtype": "float32"
+  },
+  "surface_precut_contract": {
+    "protocol_version": "surface_precut_v1",
+    "status": "active",
+    "miller": [
+      1,
+      1,
+      0
+    ],
+    "oriented_unit_repeats": 5,
+    "vacuum_A": 25.0,
+    "plane_tolerance_A": 0.05,
+    "symmetry_tolerance_A": 0.01,
+    "termination_enumeration": "all_interplanar_gaps",
+    "formal_oxidation_states": {
+      "Sn": 4,
+      "O": -2
+    },
+    "selection": {
+      "require_bulk_stoichiometry": true,
+      "require_formal_charge_neutrality": true,
+      "maximum_absolute_formal_dipole_density_e_per_A": 0.0001,
+      "preferred_top_elements": [
+        "O"
+      ]
+    },
+    "references": [
+      {
+        "doi": "10.1016/S0039-6028(98)00833-4",
+        "role": "stoichiometric_bridging_oxygen_110_termination_and_three_vs_five_layer_relaxation"
+      },
+      {
+        "doi": "10.1063/1.3694033",
+        "role": "relative_stability_of_low_index_SnO2_surfaces"
+      }
+    ],
+    "thickness_policy": "five_oriented_repeats_as_conservative_geometric_precut_pending_MACE_surface_convergence"
+  },
+  "surface_relaxation_contract": {
+    "protocol_version": "surface_relaxation_v1",
+    "status": "active_pending_first_run",
+    "thickness_repeats": [
+      3,
+      5,
+      7
+    ],
+    "vacuum_A": 25.0,
+    "relax_atomic_positions": true,
+    "relax_cell": false,
+    "translation_constraint": "fix_center_of_mass",
+    "surface_count": 2,
+    "force_tolerance_eV_A": 0.03,
+    "maximum_step_A": 0.05,
+    "maximum_steps": 500,
+    "convergence": {
+      "metric": "surface_energy_eV_A2",
+      "comparison": "two_thickest",
+      "maximum_absolute_difference_eV_A2": 0.001
+    },
+    "termination_screening": {
+      "protocol_version": "surface_termination_screen_v1",
+      "enumeration": "all_interplanar_cut_phases",
+      "energy_quantity": "two_surface_pair_average",
+      "formally_polar_policy": "classify_without_energy_requires_compensation_protocol",
+      "selection": {
+        "require_bulk_stoichiometry": true,
+        "require_formal_charge_neutrality": true,
+        "require_formal_nonpolarity": true,
+        "require_equivalent_surface_plane_composition": true,
+        "require_force_convergence": true,
+        "require_thickness_convergence": true,
+        "ranking": "lowest_converged_surface_energy"
+      }
+    }
+  },
+  "thickness_candidates": [
+    {
+      "cut_fractional_phase": 0.5,
+      "formula": {
+        "O": 12,
+        "Sn": 6
+      },
+      "atom_count": 18,
+      "cell_A": {
+        "lengths": [
+          6.825702499977524,
+          3.2296703656767276,
+          34.467176152723496
+        ],
+        "angles_deg": [
+          90.0,
+          90.0,
+          90.0
+        ],
+        "surface_area_A2": 22.044769089102964
+      },
+      "solid_thickness_A": 9.467176152723496,
+      "vacuum_A": 25.0,
+      "plane_count": 9,
+      "bottom_plane_formula": {
+        "O": 1
+      },
+      "top_plane_formula": {
+        "O": 1
+      },
+      "formal_charge_e": 0.0,
+      "formal_dipole_eA": 0.0,
+      "formal_dipole_density_e_per_A": 0.0,
+      "checks": {
+        "formal_charge_neutral": true,
+        "formal_nonpolar": true,
+        "preferred_top_elements": true,
+        "bulk_stoichiometry": true,
+        "symmetric_plane_composition": true
+      },
+      "oriented_unit_repeats": 3,
+      "selection_eligible": true,
+      "bulk_formula_units": 6
+    },
+    {
+      "cut_fractional_phase": 0.5,
+      "formula": {
+        "O": 20,
+        "Sn": 10
+      },
+      "atom_count": 30,
+      "cell_A": {
+        "lengths": [
+          6.825702499977524,
+          3.2296703656767276,
+          41.29287865270102
+        ],
+        "angles_deg": [
+          90.0,
+          90.0,
+          90.0
+        ],
+        "surface_area_A2": 22.044769089102964
+      },
+      "solid_thickness_A": 16.29287865270102,
+      "vacuum_A": 25.0,
+      "plane_count": 15,
+      "bottom_plane_formula": {
+        "O": 1
+      },
+      "top_plane_formula": {
+        "O": 1
+      },
+      "formal_charge_e": 0.0,
+      "formal_dipole_eA": 0.0,
+      "formal_dipole_density_e_per_A": 0.0,
+      "checks": {
+        "formal_charge_neutral": true,
+        "formal_nonpolar": true,
+        "preferred_top_elements": true,
+        "bulk_stoichiometry": true,
+        "symmetric_plane_composition": true
+      },
+      "oriented_unit_repeats": 5,
+      "selection_eligible": true,
+      "bulk_formula_units": 10
+    },
+    {
+      "cut_fractional_phase": 0.5,
+      "formula": {
+        "O": 28,
+        "Sn": 14
+      },
+      "atom_count": 42,
+      "cell_A": {
+        "lengths": [
+          6.825702499977524,
+          3.2296703656767276,
+          48.118581152678544
+        ],
+        "angles_deg": [
+          90.0,
+          90.0,
+          90.0
+        ],
+        "surface_area_A2": 22.044769089102964
+      },
+      "solid_thickness_A": 23.118581152678544,
+      "vacuum_A": 25.0,
+      "plane_count": 21,
+      "bottom_plane_formula": {
+        "O": 1
+      },
+      "top_plane_formula": {
+        "O": 1
+      },
+      "formal_charge_e": 0.0,
+      "formal_dipole_eA": -4.263256414560601e-14,
+      "formal_dipole_density_e_per_A": -1.9339084012760143e-15,
+      "checks": {
+        "formal_charge_neutral": true,
+        "formal_nonpolar": true,
+        "preferred_top_elements": true,
+        "bulk_stoichiometry": true,
+        "symmetric_plane_composition": true
+      },
+      "oriented_unit_repeats": 7,
+      "selection_eligible": true,
+      "bulk_formula_units": 14
+    }
+  ],
+  "surface_energy_definition": {
+    "equation": "gamma=(E_slab-N_formula*E_bulk_formula)/(2*A)",
+    "native_unit": "eV/A^2",
+    "reported_units": [
+      "eV/A^2",
+      "J/m^2"
+    ],
+    "J_m2_per_eV_A2": 16.02176634,
+    "bulk_reference_policy": "same model, dtype, device, and accepted Bulk Parent"
+  },
+  "fingerprint": "0885bdb21710bd59de9f7d49e430cd0bdbeede9dae7dcb74cca4280d4a1a2008",
+  "execution_contract": {
+    "read_only": true,
+    "executable": true,
+    "execution_command": "surface-relaxation-run",
+    "readiness_issues": [],
+    "registration_policy": "A passed run is only a relaxation/convergence candidate; promotion to a maintained relaxed surface requires a separate hash-verified record.",
+    "screening_diagnostic": true
+  },
+  "termination_screening_candidate": {
+    "candidate_id": "termination-002",
+    "cut_fractional_phase": 0.5,
+    "top_plane_formula": {
+      "O": 1
+    },
+    "bottom_plane_formula": {
+      "O": 1
+    },
+    "formal_dipole_density_e_per_A": 0.0,
+    "classification": "directly_rankable_nonpolar_pair"
+  }
+}

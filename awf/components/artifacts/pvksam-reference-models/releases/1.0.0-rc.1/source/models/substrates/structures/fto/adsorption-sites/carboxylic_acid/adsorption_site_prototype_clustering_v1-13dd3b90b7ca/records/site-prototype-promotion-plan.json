@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_promotion_plan",
+  "status": "passed_promotion_plan",
+  "fingerprint": "cd9c96d2ef3cfd0eb6bba5e4fb04901514db5c9ac7831bfae48a534d235cb41a",
+  "substrate": {
+    "key": "FTO",
+    "structure_manifest_path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/manifest.json",
+    "structure_manifest_sha256": "50b09291f1bcb69f6b0192c15c9a82dd84052c870e046501d01d39744fc19939"
+  },
+  "source_surface_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+  "anchor_family": "carboxylic_acid",
+  "probe": {
+    "schema_version": 1,
+    "key": "acetic_acid",
+    "display_name": "Acetic acid",
+    "anchor_family": "carboxylic_acid",
+    "manifest_sha256": "45d735588a621b5f8a26cf5d6a2503fda3ed865e929d7bc76720d117d1c467da",
+    "source_kind": "pubchem_3d_conformer",
+    "source_sha256": "c51ff19f9924d6b2494310412de3b0e7392cc4f897bdd9fdc441a5980e855dea",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/176/record/SDF?record_type=3d",
+    "pubchem_cid": 176,
+    "inchi_key": "QTBSBXVTEAMEQO-UHFFFAOYSA-N",
+    "neutral_formula": {
+      "C": 2,
+      "H": 4,
+      "O": 2
+    },
+    "neutral_atom_count": 8,
+    "fully_deprotonated_formula": {
+      "C": 2,
+      "H": 3,
+      "O": 2
+    },
+    "fully_deprotonated_atom_count": 7,
+    "released_protons": 1,
+    "source_atom_ids": {
+      "anchor": 3,
+      "carbon": 2,
+      "oxygen_donors": [
+        0,
+        1
+      ],
+      "acidic_hydrogens_removed": [
+        7
+      ],
+      "methyl_hydrogens_retained": [
+        4,
+        5,
+        6
+      ]
+    },
+    "adsorbate_atom_ids": {
+      "anchor": 3,
+      "carbon": 2,
+      "oxygen_donors": [
+        0,
+        1
+      ],
+      "methyl_hydrogens": [
+        4,
+        5,
+        6
+      ]
+    },
+    "adsorbate_to_source_atom_id": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "deprotonation_policy": "remove_every_hydrogen_covalently_bound_to_anchor_oxygen",
+    "alternative_states_enumerated": false
+  },
+  "clustering_contract": {
+    "protocol_version": "adsorption_site_prototype_clustering_v1",
+    "anchor_family": "carboxylic_acid",
+    "equivalent_probe_donors": true,
+    "maximum_contact_distance_rms_difference_A": 0.15,
+    "maximum_metal_geometry_rms_difference_A": 0.15,
+    "maximum_anchor_height_difference_A": 0.2,
+    "maximum_anchor_lateral_offset_difference_A": 0.25,
+    "representative_selection": "lowest_adsorption_energy_then_candidate_id",
+    "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+    "doped_site_energy_policy": "reuse_undoped_parent"
+  },
+  "prototype_run": {
+    "directory": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca",
+    "manifest_sha256": "e7be125becefd50967537c27ed0764daf0b0c915710c1fa8a6d9fd9b5083dc46",
+    "fingerprint": "13dd3b90b7ca6f0351496d5197d013104f0ddd696bbf264bc39f70e24f04bfab"
+  },
+  "prototype_library": {
+    "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/site-prototypes.json",
+    "source_sha256": "8cc29b30d813f00f65dad3109dc29c6386774a0f4e1ff739fc3f22a3aaa20e86",
+    "summary": {
+      "selected_relaxed_site_count": 4,
+      "rejected_geometric_site_combination_count": 1,
+      "site_prototype_count": 3,
+      "bidentate_prototype_count": 3,
+      "tridentate_prototype_count": 0,
+      "collapsed_selected_site_count": 1
+    },
+    "destination_directory": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca",
+    "destination_path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/site-prototypes.json"
+  },
+  "supersession": {
+    "requested": true,
+    "accepted_registrations_to_supersede": [
+      {
+        "status": "accepted_site_prototype_library",
+        "anchor_family": "carboxylic_acid",
+        "probe": "acetic_acid",
+        "source_surface_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+        "protocol_version": "adsorption_site_prototype_clustering_v1",
+        "promotion_fingerprint": "421572b1c3fadc28a6f57ac255d257178922987150fb9b7f4217b8ca7be03973",
+        "prototype_run_fingerprint": "7392329311a04369ce53dc93fcd2c31136442ecc4e508dd696a5aaedfd842bd8",
+        "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/site-prototypes.json",
+        "sha256": "05a00f057a41854239a5f45bef394e82bddf0226ea29fcfda1361aab97e5bf60",
+        "summary": {
+          "selected_relaxed_site_count": 2,
+          "rejected_geometric_site_combination_count": 1,
+          "site_prototype_count": 2,
+          "bidentate_prototype_count": 2,
+          "tridentate_prototype_count": 0,
+          "collapsed_selected_site_count": 0
+        },
+        "doped_site_energy_policy": "reuse_undoped_parent",
+        "representative_structures": [
+          {
+            "site_prototype_id": "site-prototype-carboxylic-acid-0001",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/structures/site-prototype-carboxylic-acid-0001.extxyz",
+            "sha256": "81f7f4ff3ea0f3939cf38cb4b41ec44860af0ef2300585c0573051ead696da79"
+          },
+          {
+            "site_prototype_id": "site-prototype-carboxylic-acid-0002",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/structures/site-prototype-carboxylic-acid-0002.extxyz",
+            "sha256": "87ffa5f4ff5dda681235d125048a64a35a633204aacdf7c9f1c8dac1c05957ba"
+          }
+        ],
+        "records": [
+          {
+            "role": "site_prototype_plan",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-plan.json",
+            "sha256": "4c776765dbef7b7bba90f2a454a70cd6c245f229667b598ea2605ac2a8de06cb"
+          },
+          {
+            "role": "site_prototype_run_manifest",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-run-manifest.json",
+            "sha256": "17c3f400e4205a6a5227c8bb5a75941e8ad91cf393db086e8c852fac91e62733"
+          },
+          {
+            "role": "probe_relaxation_plan",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/probe-relaxation-plan.json",
+            "sha256": "24cbaeedd90640267c14ed682dfb6aa5b49aced20a20bba759f2efa4e314b771"
+          },
+          {
+            "role": "probe_relaxation_run_manifest",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/probe-relaxation-run-manifest.json",
+            "sha256": "fc137f228e9c2bfde38d0fd9145cf6c8dee9308adc61a5fb587f20e29d750bd1"
+          },
+          {
+            "role": "candidate_energy_report",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/candidate-energy-report.json",
+            "sha256": "ce4448dfc3bc14d6da7a2ac2713ee4532b242b339d0e7bb945d1863f1f2a42b1"
+          },
+          {
+            "role": "site_energy_selection_report",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-energy-selection-report.json",
+            "sha256": "dedafac0cb30b5b1c49a086ef69cde5213e1f3501f10473d61aed67207fc6522"
+          },
+          {
+            "role": "site_prototype_promotion_plan",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-promotion-plan.json",
+            "sha256": "d292f2f381de66b91096438a0eb45f50b334f6a6da2485917d306ed7f41a2c5c"
+          },
+          {
+            "role": "site_prototype_promotion_report",
+            "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-promotion-report.json",
+            "sha256": "bd34a69718aaa2d9a8047700065f14acd397d5c8a97484b4c9553be8df9fe01f"
+          }
+        ]
+      }
+    ]
+  },
+  "representative_structures": [
+    {
+      "site_prototype_id": "site-prototype-carboxylic-acid-0001",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0001.extxyz",
+      "source_sha256": "0f0a2f494415819796f5841e8eece20940ccb44b36c884ce89d49f1d6d6793cd",
+      "destination_name": "site-prototype-carboxylic-acid-0001.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-carboxylic-acid-0002",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0002.extxyz",
+      "source_sha256": "68996620f69ae13fc340f38464c655093d595a35c7bca3b0bef9f07da0772a63",
+      "destination_name": "site-prototype-carboxylic-acid-0002.extxyz"
+    },
+    {
+      "site_prototype_id": "site-prototype-carboxylic-acid-0003",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0003.extxyz",
+      "source_sha256": "5447286a79ecc31e4b25d07d02ce151c67735760e45c28137497243b24a47bf4",
+      "destination_name": "site-prototype-carboxylic-acid-0003.extxyz"
+    }
+  ],
+  "evidence": [
+    {
+      "role": "site_prototype_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/adsorption-site-prototype-plan.json",
+      "source_sha256": "b3585b46358340f83b8edf7f71fd99aaf923e59ad547b75d2371f5362f1c8698",
+      "destination_name": "site-prototype-plan.json"
+    },
+    {
+      "role": "site_prototype_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/run-manifest.json",
+      "source_sha256": "e7be125becefd50967537c27ed0764daf0b0c915710c1fa8a6d9fd9b5083dc46",
+      "destination_name": "site-prototype-run-manifest.json"
+    },
+    {
+      "role": "probe_relaxation_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T111435Z-7de385093690/adsorption-probe-relaxation-plan.json",
+      "source_sha256": "a2550cc497b6de0fb87ca48441341dd27feaae81fc32709921b94f2a8998b201",
+      "destination_name": "probe-relaxation-plan.json"
+    },
+    {
+      "role": "probe_relaxation_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T111435Z-7de385093690/run-manifest.json",
+      "source_sha256": "0ed5891ccf7ad9bd80006b6a9ca8f84424fa03bf40ce55616e9a581096726c6d",
+      "destination_name": "probe-relaxation-run-manifest.json"
+    },
+    {
+      "role": "candidate_energy_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T111435Z-7de385093690/candidate-energy-report.json",
+      "source_sha256": "2af810843ed623037e07fc6589f8d91e10497d4ecbc03639b69e8438277be35c",
+      "destination_name": "candidate-energy-report.json"
+    },
+    {
+      "role": "site_energy_selection_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T111435Z-7de385093690/site-energy-selection-report.json",
+      "source_sha256": "bbc8c1ffb23016b8ec2c0d35069e15e92bd7d9e0fab8b7d8542f8da22ada5c02",
+      "destination_name": "site-energy-selection-report.json"
+    }
+  ],
+  "execution_contract": {
+    "read_only": true,
+    "executable": true,
+    "execution_command": "adsorption-site-prototype-promotion-run",
+    "readiness_issues": [],
+    "mutation": "Create one immutable maintained Site Prototype package and append its hash-verified registration to the substrate structure manifest, while retaining and marking the prior accepted registration as superseded."
+  }
+}

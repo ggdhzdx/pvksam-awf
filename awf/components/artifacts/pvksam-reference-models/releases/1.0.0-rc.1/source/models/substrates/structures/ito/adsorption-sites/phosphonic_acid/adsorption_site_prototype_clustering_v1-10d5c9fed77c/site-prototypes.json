@@ -1,0 +1,4731 @@
+{
+  "schema_version": 1,
+  "status": "passed_clustering_pending_promotion",
+  "fingerprint": "10d5c9fed77ca19ab1809d55747aa2f6ab72ea9ca3c2a2c4436d34fc2e03dde7",
+  "substrate_key": "ITO",
+  "anchor_family": "phosphonic_acid",
+  "probe": {
+    "schema_version": 1,
+    "key": "methylphosphonic_acid",
+    "display_name": "Methylphosphonic acid",
+    "anchor_family": "phosphonic_acid",
+    "manifest_sha256": "50909d1e1fea4427bcf5d601f2873b6c27006f843e65ecab5c3257fce63290f4",
+    "source_kind": "pubchem_3d_conformer",
+    "source_sha256": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13818/record/SDF?record_type=3d",
+    "pubchem_cid": 13818,
+    "inchi_key": "YACKEPLHDIMKIO-UHFFFAOYSA-N",
+    "neutral_formula": {
+      "C": 1,
+      "H": 5,
+      "O": 3,
+      "P": 1
+    },
+    "neutral_atom_count": 10,
+    "fully_deprotonated_formula": {
+      "C": 1,
+      "H": 3,
+      "O": 3,
+      "P": 1
+    },
+    "fully_deprotonated_atom_count": 8,
+    "released_protons": 2,
+    "source_atom_ids": {
+      "anchor": 0,
+      "carbon": 4,
+      "oxygen_donors": [
+        1,
+        2,
+        3
+      ],
+      "acidic_hydrogens_removed": [
+        8,
+        9
+      ],
+      "methyl_hydrogens_retained": [
+        5,
+        6,
+        7
+      ]
+    },
+    "adsorbate_atom_ids": {
+      "anchor": 0,
+      "carbon": 4,
+      "oxygen_donors": [
+        1,
+        2,
+        3
+      ],
+      "methyl_hydrogens": [
+        5,
+        6,
+        7
+      ]
+    },
+    "adsorbate_to_source_atom_id": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "deprotonation_policy": "remove_every_hydrogen_covalently_bound_to_anchor_oxygen",
+    "alternative_states_enumerated": false
+  },
+  "source_surface": {
+    "sha256": "ca2a5df822673b3219e873d8552f05aa89cc64213d51f908d3c7a6894b125192",
+    "formula": {
+      "In": 48,
+      "O": 72
+    },
+    "atom_count": 120
+  },
+  "clustering_contract": {
+    "protocol_version": "adsorption_site_prototype_clustering_v1",
+    "anchor_family": "phosphonic_acid",
+    "equivalent_probe_donors": true,
+    "maximum_contact_distance_rms_difference_A": 0.15,
+    "maximum_metal_geometry_rms_difference_A": 0.15,
+    "maximum_anchor_height_difference_A": 0.2,
+    "maximum_anchor_lateral_offset_difference_A": 0.25,
+    "representative_selection": "lowest_adsorption_energy_then_candidate_id",
+    "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+    "doped_site_energy_policy": "reuse_undoped_parent"
+  },
+  "summary": {
+    "selected_relaxed_site_count": 28,
+    "site_prototype_count": 14,
+    "bidentate_prototype_count": 2,
+    "tridentate_prototype_count": 12,
+    "collapsed_selected_site_count": 14
+  },
+  "site_prototypes": [
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0001",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0025--proton-placement-002",
+      "member_count": 3,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0025",
+          "candidate_id": "site-combination-0025--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -3.6692428588867188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0014",
+          "candidate_id": "site-combination-0014--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -3.6672897338867188,
+          "energy_above_prototype_minimum_eV": 0.001953125,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.003864513080564308,
+            "metal_geometry_rms_difference_A": 0.003635400007283077,
+            "anchor_height_difference_A": 0.004730049999999153,
+            "anchor_lateral_offset_difference_A": 0.012728979789823958,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0010",
+          "candidate_id": "site-combination-0010--proton-placement-005",
+          "proton_placement_id": "proton-placement-005",
+          "adsorption_energy_eV": -3.5602340698242188,
+          "energy_above_prototype_minimum_eV": 0.1090087890625,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.013067261702307131,
+            "metal_geometry_rms_difference_A": 0.04162269030342654,
+            "anchor_height_difference_A": 0.008951013333330593,
+            "anchor_lateral_offset_difference_A": 0.07489811899640485,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 94,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.5539978870060074,
+            0.1542362290722263,
+            0.5816083636007391
+          ],
+          "unwrapped_clean_cartesian_A": [
+            6.946926179435243,
+            1.9458117097623107,
+            19.221606335267154
+          ]
+        },
+        {
+          "source_atom_id": 100,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8442939757138578,
+            0.17100571619078025,
+            0.5889461811788587
+          ],
+          "unwrapped_clean_cartesian_A": [
+            11.053657932281956,
+            2.157372019543421,
+            19.464114266159704
+          ]
+        },
+        {
+          "source_atom_id": 106,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            -1
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.5689818714593372,
+            0.8866149408601239,
+            0.5925606074675842
+          ],
+          "unwrapped_clean_cartesian_A": [
+            9.114485719956043,
+            -1.4304419727685858,
+            19.583567636499158
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 2,
+          "distance_A": 2.1377332714868427
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 1,
+          "distance_A": 2.149718874971446
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.178973771757012
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.6557579113930674,
+          0.07061896204104351
+        ],
+        "cartesian_A": [
+          9.038356610557747,
+          0.8909139188457152,
+          19.423096079308674
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          9.038356610557747,
+          0.8909139188457154,
+          19.423096079308674
+        ],
+        "surface_normal_coordinate_A": 19.423096079308674,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          8.98783842,
+          1.00741243,
+          21.98642886
+        ],
+        "anchor_projection_fractional_uv": [
+          0.6569072029112654,
+          0.07985330417333568
+        ],
+        "anchor_height_A": 2.4288298466666696,
+        "lateral_offset_A": 0.07650550746447775,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              9.06996887,
+              -0.52079191,
+              21.70623774
+            ],
+            "relative_surface_frame_A": [
+              0.03976162036984654,
+              -1.4645021033974426,
+              2.148638726666668
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              10.28089331,
+              1.71810121,
+              21.57351017
+            ],
+            "relative_surface_frame_A": [
+              1.250686060369846,
+              0.7743910166025573,
+              2.015911156666668
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              7.71151681,
+              1.65025457,
+              21.42396382
+            ],
+            "relative_surface_frame_A": [
+              -1.3186904396301538,
+              0.7065443766025573,
+              1.8663648066666703
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          9.030207249630154,
+          0.9437101933974427,
+          19.55759901333333
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.1377332714868427,
+          2.149718874971446,
+          2.178973771757012
+        ],
+        "metal_pair_distances_A": [
+          3.8555304851041634,
+          3.901339651148069,
+          3.9735434050687255
+        ],
+        "anchor_height_A": 2.4288298466666696,
+        "anchor_lateral_offset_A": 0.07650550746447775
+      },
+      "adsorption_energy_eV": -3.6692428588867188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 118,
+            "nearest_oxygen_distance_A": 0.9753240438839107,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 116,
+            "nearest_oxygen_distance_A": 0.9773344145908981,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0001.extxyz",
+        "sha256": "833224e1fd2b4a942554b334342548bc32b1a99cf9dfec91f957cb566eeb222f"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0025",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 94,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.5539978870060074,
+              0.1542362290722263,
+              0.5816083636007391
+            ],
+            "unwrapped_cartesian_A": [
+              6.946926179435243,
+              1.9458117097623107,
+              19.221606335267154
+            ]
+          },
+          {
+            "source_atom_id": 100,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.8442939757138578,
+              0.17100571619078025,
+              0.5889461811788587
+            ],
+            "unwrapped_cartesian_A": [
+              11.053657932281956,
+              2.157372019543421,
+              19.464114266159704
+            ]
+          },
+          {
+            "source_atom_id": 106,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              -1
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.5689818714593372,
+              0.8866149408601239,
+              0.5925606074675842
+            ],
+            "unwrapped_cartesian_A": [
+              9.114485719956043,
+              -1.4304419727685858,
+              19.583567636499158
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.6557579113930674,
+            0.07061896204104351
+          ],
+          "cartesian_A": [
+            9.038356610557747,
+            0.8909139188457152,
+            19.423096079308674
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            9.038356610557747,
+            0.8909139188457154,
+            19.423096079308674
+          ],
+          "surface_normal_coordinate_A": 19.423096079308674,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0002",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0016--proton-placement-002",
+      "member_count": 2,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0016",
+          "candidate_id": "site-combination-0016--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -3.4489059448242188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0027",
+          "candidate_id": "site-combination-0027--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "adsorption_energy_eV": -3.4489059448242188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.004207671799506535,
+            "metal_geometry_rms_difference_A": 0.00458423188456708,
+            "anchor_height_difference_A": 0.007581773333335207,
+            "anchor_lateral_offset_difference_A": 0.009972217472235312,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 101,
+          "atom_index_base": 0,
+          "lattice_image": [
+            -1,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8289942955385124,
+            0.673288255495121,
+            0.5889462256273708
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -7.395167740274796,
+            8.494062513511984,
+            19.46411573514099
+          ]
+        },
+        {
+          "source_atom_id": 102,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.0740465451515211,
+            0.897790140638796,
+            0.5961469255365677
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -5.460590243373789,
+            11.326330908583495,
+            19.702092056760723
+          ]
+        },
+        {
+          "source_atom_id": 103,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.11338506857985065,
+            0.6823669098503449,
+            0.5925605970204245
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -3.318443484275328,
+            8.608596900533382,
+            19.583567291230413
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 1,
+          "distance_A": 2.255267514348096
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 0,
+          "distance_A": 2.1636537804758564
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 2,
+          "distance_A": 2.1461935426014307
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.005475303089961359,
+          0.7511484353280872
+        ],
+        "cartesian_A": [
+          -5.391400489307971,
+          9.476330107542951,
+          19.58325836104404
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -5.391400489307972,
+          9.476330107542953,
+          19.58325836104404
+        ],
+        "surface_normal_coordinate_A": 19.58325836104404,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          -5.37962801,
+          8.99399941,
+          22.15961057
+        ],
+        "anchor_projection_fractional_uv": [
+          0.9871672857243088,
+          0.7129161297141545
+        ],
+        "anchor_height_A": 2.4779361866666676,
+        "lateral_offset_A": 0.4570233363819489,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              -5.41761572,
+              10.50784745,
+              21.87552042
+            ],
+            "relative_surface_frame_A": [
+              0.05367524259363865,
+              1.0661112499999987,
+              2.1938460366666668
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              -6.5614714,
+              8.19224419,
+              21.59218044
+            ],
+            "relative_surface_frame_A": [
+              -1.090180437406362,
+              -1.2494920100000009,
+              1.9105060566666658
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -4.02227675,
+              8.36105661,
+              21.7212429
+            ],
+            "relative_surface_frame_A": [
+              1.4490142125936387,
+              -1.0806795900000008,
+              2.039568516666666
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -5.471290962593638,
+          9.441736200000001,
+          19.681674383333334
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.1461935426014307,
+          2.1636537804758564,
+          2.255267514348096
+        ],
+        "metal_pair_distances_A": [
+          3.3576105875582156,
+          3.5307933566888563,
+          3.925891514525059
+        ],
+        "anchor_height_A": 2.4779361866666676,
+        "anchor_lateral_offset_A": 0.4570233363819489
+      },
+      "adsorption_energy_eV": -3.4489059448242188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 115,
+            "nearest_oxygen_distance_A": 0.9830912583525222,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 117,
+            "nearest_oxygen_distance_A": 0.9755607295882106,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0002.extxyz",
+        "sha256": "093b34373f68060d812a2a8960097933b39c9e25fd291896d98bcba04e6b0388"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0016",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 102,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.07404654515152112,
+              0.897790140638796,
+              0.5961469255365677
+            ],
+            "unwrapped_cartesian_A": [
+              -5.460590243373789,
+              11.326330908583495,
+              19.702092056760723
+            ]
+          },
+          {
+            "source_atom_id": 103,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.11338506857985065,
+              0.6823669098503449,
+              0.5925605970204245
+            ],
+            "unwrapped_cartesian_A": [
+              -3.318443484275328,
+              8.608596900533382,
+              19.583567291230413
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.09371580686568594,
+            0.7900785252445705
+          ],
+          "cartesian_A": [
+            -4.389516863824558,
+            9.967463904558437,
+            19.642829673995568
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -4.389516863824559,
+            9.96746390455844,
+            19.642829673995568
+          ],
+          "surface_normal_coordinate_A": 19.642829673995568,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0003",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0009--proton-placement-003",
+      "member_count": 2,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0009",
+          "candidate_id": "site-combination-0009--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "adsorption_energy_eV": -3.4394454956054688,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0024",
+          "candidate_id": "site-combination-0024--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -3.1061935424804688,
+          "energy_above_prototype_minimum_eV": 0.333251953125,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.006591608743612773,
+            "metal_geometry_rms_difference_A": 0.04466970525790735,
+            "anchor_height_difference_A": 0.001996673333334087,
+            "anchor_lateral_offset_difference_A": 0.08887402745269946,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 94,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.5539978870060074,
+            0.1542362290722263,
+            0.5816083636007391
+          ],
+          "unwrapped_clean_cartesian_A": [
+            6.946926179435243,
+            1.9458117097623107,
+            19.221606335267154
+          ]
+        },
+        {
+          "source_atom_id": 97,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8457637901403808,
+            0.3997616741533166,
+            0.5816083521581703
+          ],
+          "unwrapped_clean_cartesian_A": [
+            9.408872958168047,
+            5.043308899347177,
+            19.221605957101076
+          ]
+        },
+        {
+          "source_atom_id": 100,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8442939757138578,
+            0.17100571619078025,
+            0.5889461811788587
+          ],
+          "unwrapped_clean_cartesian_A": [
+            11.053657932281956,
+            2.157372019543421,
+            19.464114266159704
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 2,
+          "distance_A": 2.192595182288067
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 1,
+          "distance_A": 2.203989744651944
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.144710967108108
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.7480185509534154,
+          0.2416678731387744
+        ],
+        "cartesian_A": [
+          9.136485689961749,
+          3.048830876217636,
+          19.302442186175977
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          9.13648568996175,
+          3.0488308762176364,
+          19.302442186175977
+        ],
+        "surface_normal_coordinate_A": 19.302442186175977,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          8.79669036,
+          2.98183137,
+          21.84378358
+        ],
+        "anchor_projection_fractional_uv": [
+          0.7220375248735968,
+          0.23635710687250924
+        ],
+        "anchor_height_A": 2.4623491500000014,
+        "lateral_offset_A": 0.27144602545434937,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              10.05029421,
+              2.11705245,
+              21.54068116
+            ],
+            "relative_surface_frame_A": [
+              0.9835053800000004,
+              -0.8917930133333334,
+              2.1592467299999996
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              8.94771132,
+              4.46271116,
+              21.39050335
+            ],
+            "relative_surface_frame_A": [
+              -0.11907751000000033,
+              1.453865696666666,
+              2.0090689200000007
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              7.48427394,
+              2.31873438,
+              21.38170767
+            ],
+            "relative_surface_frame_A": [
+              -1.5825148900000006,
+              -0.6901110833333335,
+              2.000273240000002
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          9.06678883,
+          3.0088454633333335,
+          19.38143443
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.144710967108108,
+          2.192595182288067,
+          2.203989744651944
+        ],
+        "metal_pair_distances_A": [
+          3.4207625843513183,
+          3.812568964609759,
+          3.9619187281101462
+        ],
+        "anchor_height_A": 2.4623491500000014,
+        "anchor_lateral_offset_A": 0.27144602545434937
+      },
+      "adsorption_energy_eV": -3.4394454956054688,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 112,
+            "nearest_oxygen_distance_A": 0.981774056514361,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 118,
+            "nearest_oxygen_distance_A": 0.9740245241157215,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0003.extxyz",
+        "sha256": "88fca9a435903485bae52ffb0005c1809be34a3aac53e066d8de9cf0872a80b7"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0009",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 94,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.5539978870060074,
+              0.1542362290722263,
+              0.5816083636007391
+            ],
+            "unwrapped_cartesian_A": [
+              6.946926179435243,
+              1.9458117097623107,
+              19.221606335267154
+            ]
+          },
+          {
+            "source_atom_id": 100,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.8442939757138578,
+              0.17100571619078025,
+              0.5889461811788587
+            ],
+            "unwrapped_cartesian_A": [
+              11.053657932281956,
+              2.157372019543421,
+              19.464114266159704
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.6991459313599325,
+            0.16262097263150327
+          ],
+          "cartesian_A": [
+            9.0002920558586,
+            2.0515918646528655,
+            19.34286030071343
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            9.0002920558586,
+            2.051591864652866,
+            19.34286030071343
+          ],
+          "surface_normal_coordinate_A": 19.34286030071343,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0004",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0018--proton-placement-001",
+      "member_count": 2,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0018",
+          "candidate_id": "site-combination-0018--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "adsorption_energy_eV": -3.0176925659179688,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0001",
+          "candidate_id": "site-combination-0001--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "adsorption_energy_eV": -2.8069992065429688,
+          "energy_above_prototype_minimum_eV": 0.210693359375,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.017546769633041467,
+            "metal_geometry_rms_difference_A": 0.01132308837203988,
+            "anchor_height_difference_A": 0.04609406499999835,
+            "anchor_lateral_offset_difference_A": 0.22247923249358004,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 97,
+          "atom_index_base": 0,
+          "lattice_image": [
+            -1,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8457637901403808,
+            0.3997616741533166,
+            0.5816083521581703
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -5.158585299612868,
+            5.043308899347177,
+            19.221605957101076
+          ]
+        },
+        {
+          "source_atom_id": 103,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.11338506857985065,
+            0.6823669098503449,
+            0.5925605970204245
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -3.318443484275328,
+            8.608596900533382,
+            19.583567291230413
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 1,
+          "distance_A": 2.1765175995838124
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.1337573059543744
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.9795744293601159,
+          0.5410642920018307
+        ],
+        "cartesian_A": [
+          10.328943865836818,
+          6.825952899940279,
+          19.402586624165743
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -4.238514391944098,
+          6.82595289994028,
+          19.402586624165743
+        ],
+        "surface_normal_coordinate_A": 19.402586624165743,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          -4.49049382,
+          6.36035313,
+          22.1261356
+        ],
+        "anchor_projection_fractional_uv": [
+          0.9438239524169346,
+          0.5041581759515491
+        ],
+        "anchor_height_A": 2.5753728000000002,
+        "lateral_offset_A": 0.4910194978783252,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              -4.50483858,
+              7.80418466,
+              21.54906133
+            ],
+            "relative_surface_frame_A": [
+              -0.13463775110954224,
+              0.96777508,
+              1.9982985299999996
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -5.527665,
+              5.45417148,
+              21.40115537
+            ],
+            "relative_surface_frame_A": [
+              -1.1574641711095417,
+              -1.3822380999999995,
+              1.8503925700000003
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -4.370200828890458,
+          6.83640958,
+          19.5507628
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "2-donor_2-metal_2-contact",
+      "final_denticity": 2,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.1337573059543744,
+          2.1765175995838124
+        ],
+        "metal_pair_distances_A": [
+          3.9275654089406036
+        ],
+        "anchor_height_A": 2.5753728000000002,
+        "anchor_lateral_offset_A": 0.4910194978783252
+      },
+      "adsorption_energy_eV": -3.0176925659179688,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 117,
+            "nearest_oxygen_distance_A": 0.9898830101648718,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 112,
+            "nearest_oxygen_distance_A": 1.0164265669838708,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0004.extxyz",
+        "sha256": "552e047e0bb74afa82663d2513111a25ce9acbc48475bd51d3c30181622a9fe0"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0018",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 92,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.09418697021875716,
+              0.44092706761981715,
+              0.5898914356588392
+            ],
+            "unwrapped_cartesian_A": [
+              -1.8395285690501175,
+              5.562642814121378,
+              19.495354032706985
+            ]
+          },
+          {
+            "source_atom_id": 97,
+            "atom_index_base": 0,
+            "lattice_image": [
+              -1,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.8457637901403808,
+              0.3997616741533166,
+              0.5816083521581703
+            ],
+            "unwrapped_cartesian_A": [
+              -5.158585299612868,
+              5.043308899347177,
+              19.221605957101076
+            ]
+          },
+          {
+            "source_atom_id": 103,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.11338506857985065,
+              0.6823669098503449,
+              0.5925605970204245
+            ],
+            "unwrapped_cartesian_A": [
+              -3.318443484275328,
+              8.608596900533382,
+              19.583567291230413
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.017778609646329532,
+            0.5076852172078261
+          ],
+          "cartesian_A": [
+            -3.4388524509794376,
+            6.404849538000644,
+            19.43350909367949
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -3.438852450979438,
+            6.4048495380006445,
+            19.43350909367949
+          ],
+          "surface_normal_coordinate_A": 19.43350909367949,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0005",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0007--proton-placement-002",
+      "member_count": 2,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0007",
+          "candidate_id": "site-combination-0007--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -2.8925094604492188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0023",
+          "candidate_id": "site-combination-0023--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -2.8915939331054688,
+          "energy_above_prototype_minimum_eV": 0.00091552734375,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.004089281903105557,
+            "metal_geometry_rms_difference_A": 0.0027993108869514348,
+            "anchor_height_difference_A": 0.0028688866666612967,
+            "anchor_lateral_offset_difference_A": 0.00049769811030273,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 94,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.5539978870060074,
+            0.1542362290722263,
+            0.5816083636007391
+          ],
+          "unwrapped_clean_cartesian_A": [
+            6.946926179435243,
+            1.9458117097623107,
+            19.221606335267154
+          ]
+        },
+        {
+          "source_atom_id": 96,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.6002383315307119,
+            0.4460021071132601,
+            0.5816083502280049
+          ],
+          "unwrapped_clean_cartesian_A": [
+            5.495388300166331,
+            5.626668441130342,
+            19.221605893310937
+          ]
+        },
+        {
+          "source_atom_id": 97,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8457637901403808,
+            0.3997616741533166,
+            0.5816083521581703
+          ],
+          "unwrapped_clean_cartesian_A": [
+            9.408872958168047,
+            5.043308899347177,
+            19.221605957101076
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 1,
+          "distance_A": 2.1845176355262574
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 0,
+          "distance_A": 2.1586764545414785
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 2,
+          "distance_A": 2.1780653370248926
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.6666666695590334,
+          0.33333333677960103
+        ],
+        "cartesian_A": [
+          7.283729145923209,
+          4.20526301674661,
+          19.221606061893056
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          7.283729145923207,
+          4.20526301674661,
+          19.221606061893056
+        ],
+        "surface_normal_coordinate_A": 19.221606061893056,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          7.33361151,
+          4.11145533,
+          21.76030695
+        ],
+        "anchor_projection_fractional_uv": [
+          0.6663730336314251,
+          0.32589759991503403
+        ],
+        "anchor_height_A": 2.465596343333331,
+        "lateral_offset_A": 0.1390482913659533,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              6.12406479,
+              4.94688668,
+              21.31453132
+            ],
+            "relative_surface_frame_A": [
+              -1.154420186666667,
+              0.7077775500000003,
+              2.0198207133333312
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              7.21224615,
+              2.61471491,
+              21.3500542
+            ],
+            "relative_surface_frame_A": [
+              -0.06623882666666692,
+              -1.62439422,
+              2.0553435933333297
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              8.69769979,
+              4.73285606,
+              21.3552798
+            ],
+            "relative_surface_frame_A": [
+              1.4192148133333324,
+              0.4937469299999995,
+              2.0605691933333325
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          7.278484976666667,
+          4.23910913,
+          19.29471060666667
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.1586764545414785,
+          2.1780653370248926,
+          2.1845176355262574
+        ],
+        "metal_pair_distances_A": [
+          3.787905151246599,
+          3.800598241679252,
+          3.864726548947352
+        ],
+        "anchor_height_A": 2.465596343333331,
+        "anchor_lateral_offset_A": 0.1390482913659533
+      },
+      "adsorption_energy_eV": -2.8925094604492188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 113,
+            "nearest_oxygen_distance_A": 0.979613522142589,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 112,
+            "nearest_oxygen_distance_A": 0.9801086458453752,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0005.extxyz",
+        "sha256": "98ea9e23890fc53b946a665486f72856e4f35719a4fe0acf6d9606ef54686765"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0007",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 94,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.5539978870060074,
+              0.1542362290722263,
+              0.5816083636007391
+            ],
+            "unwrapped_cartesian_A": [
+              6.946926179435243,
+              1.9458117097623107,
+              19.221606335267154
+            ]
+          },
+          {
+            "source_atom_id": 96,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.6002383315307119,
+              0.4460021071132601,
+              0.5816083502280049
+            ],
+            "unwrapped_cartesian_A": [
+              5.495388300166331,
+              5.626668441130342,
+              19.221605893310937
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.5771181092683596,
+            0.3001191680927432
+          ],
+          "cartesian_A": [
+            6.221157239800786,
+            3.786240075446326,
+            19.221606114289045
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            6.221157239800787,
+            3.786240075446326,
+            19.221606114289045
+          ],
+          "surface_normal_coordinate_A": 19.221606114289045,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0006",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0022--proton-placement-003",
+      "member_count": 3,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0022",
+          "candidate_id": "site-combination-0022--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "adsorption_energy_eV": -2.3650436401367188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0005",
+          "candidate_id": "site-combination-0005--proton-placement-009",
+          "proton_placement_id": "proton-placement-009",
+          "adsorption_energy_eV": -2.3428878784179688,
+          "energy_above_prototype_minimum_eV": 0.02215576171875,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.00709371627853967,
+            "metal_geometry_rms_difference_A": 0.0038814272848848035,
+            "anchor_height_difference_A": 0.00028844000000560754,
+            "anchor_lateral_offset_difference_A": 0.006871532688145832,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0006",
+          "candidate_id": "site-combination-0006--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "adsorption_energy_eV": -2.1041793823242188,
+          "energy_above_prototype_minimum_eV": 0.2608642578125,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.035281628191851315,
+            "metal_geometry_rms_difference_A": 0.08672784440352363,
+            "anchor_height_difference_A": 0.056993559999995114,
+            "anchor_lateral_offset_difference_A": 0.19564738744505455,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 92,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.09418697021875715,
+            0.44092706761981715,
+            0.5898914356588392
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.8395285690501177,
+            5.562642814121378,
+            19.495354032706985
+          ]
+        },
+        {
+          "source_atom_id": 104,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.10220985536427832,
+            0.17625640202044762,
+            0.5961469480125449
+          ],
+          "unwrapped_clean_cartesian_A": [
+            0.20513391200318698,
+            2.22361356365473,
+            19.70209279957051
+          ]
+        },
+        {
+          "source_atom_id": 105,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.3176330634388577,
+            0.4310181136132674,
+            0.592560603890292
+          ],
+          "unwrapped_clean_cartesian_A": [
+            1.4876872037322628,
+            5.437633541958664,
+            19.583567518273032
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 1,
+          "distance_A": 2.223966160559569
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 2,
+          "distance_A": 2.148595247547787
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.2837218070684773
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.17134329634063106,
+          0.34940052775117736
+        ],
+        "cartesian_A": [
+          -0.04890248443822243,
+          4.407963306578257,
+          19.593671450183507
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -0.04890248443822265,
+          4.407963306578257,
+          19.593671450183507
+        ],
+        "surface_normal_coordinate_A": 19.593671450183507,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          -0.01396699,
+          4.58288393,
+          22.07589302
+        ],
+        "anchor_projection_fractional_uv": [
+          0.18067409111980823,
+          0.3632657425652193
+        ],
+        "anchor_height_A": 2.5219299933333303,
+        "lateral_offset_A": 0.28413229583109173,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              -0.15405845,
+              3.08006128,
+              21.80143475
+            ],
+            "relative_surface_frame_A": [
+              -0.08704048666666665,
+              -1.2236869200000005,
+              2.24747172333333
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              1.37226195,
+              5.13216737,
+              21.62544277
+            ],
+            "relative_surface_frame_A": [
+              1.4392799133333334,
+              0.8284191700000001,
+              2.071479743333331
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -1.16964335,
+              5.48360123,
+              21.54804889
+            ],
+            "relative_surface_frame_A": [
+              -1.1026253866666667,
+              1.1798530299999994,
+              1.994085863333332
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -0.06701796333333336,
+          4.3037482,
+          19.55396302666667
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.148595247547787,
+          2.223966160559569,
+          2.2837218070684773
+        ],
+        "metal_pair_distances_A": [
+          3.3493717421763356,
+          3.4646530421694504,
+          3.802235226026695
+        ],
+        "anchor_height_A": 2.5219299933333303,
+        "anchor_lateral_offset_A": 0.28413229583109173
+      },
+      "adsorption_energy_eV": -2.3650436401367188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 119,
+            "nearest_oxygen_distance_A": 0.9776481577319072,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 117,
+            "nearest_oxygen_distance_A": 0.9872489817580988,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0006.extxyz",
+        "sha256": "a2bd91ca7ca3b459212fce46aa62eef700eab21f57ffc17cd8bed46a5fe74d7d"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0022",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 92,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.09418697021875716,
+              0.44092706761981715,
+              0.5898914356588392
+            ],
+            "unwrapped_cartesian_A": [
+              -1.8395285690501175,
+              5.562642814121378,
+              19.495354032706985
+            ]
+          },
+          {
+            "source_atom_id": 104,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.10220985536427832,
+              0.17625640202044762,
+              0.5961469480125449
+            ],
+            "unwrapped_cartesian_A": [
+              0.20513391200318706,
+              2.22361356365473,
+              19.70209279957051
+            ]
+          },
+          {
+            "source_atom_id": 105,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.3176330634388577,
+              0.4310181136132674,
+              0.592560603890292
+            ],
+            "unwrapped_cartesian_A": [
+              1.487687203732263,
+              5.437633541958664,
+              19.583567518273032
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.17134329634063106,
+            0.34940052775117736
+          ],
+          "cartesian_A": [
+            -0.048902484438222524,
+            4.407963306578257,
+            19.593671450183507
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -0.0489024844382225,
+            4.407963306578257,
+            19.593671450183507
+          ],
+          "surface_normal_coordinate_A": 19.593671450183507,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0007",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0004--proton-placement-009",
+      "member_count": 1,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0004",
+          "candidate_id": "site-combination-0004--proton-placement-009",
+          "proton_placement_id": "proton-placement-009",
+          "adsorption_energy_eV": -2.3619918823242188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 92,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.09418697021875715,
+            0.44092706761981715,
+            0.5898914356588392
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.8395285690501177,
+            5.562642814121378,
+            19.495354032706985
+          ]
+        },
+        {
+          "source_atom_id": 97,
+          "atom_index_base": 0,
+          "lattice_image": [
+            -1,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8457637901403808,
+            0.3997616741533166,
+            0.5816083521581703
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -5.158585299612868,
+            5.043308899347177,
+            19.221605957101076
+          ]
+        },
+        {
+          "source_atom_id": 103,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.11338506857985065,
+            0.6823669098503449,
+            0.5925605970204245
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -3.318443484275328,
+            8.608596900533382,
+            19.583567291230413
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 2,
+          "distance_A": 2.1785427730475595
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 1,
+          "distance_A": 2.178013903625334
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.2262819076797613
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.01777860964632952,
+          0.5076852172078261
+        ],
+        "cartesian_A": [
+          -3.438852450979438,
+          6.404849538000644,
+          19.43350909367949
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -3.438852450979438,
+          6.4048495380006445,
+          19.43350909367949
+        ],
+        "surface_normal_coordinate_A": 19.43350909367949,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          -4.55544679,
+          6.45652591,
+          22.0954588
+        ],
+        "anchor_projection_fractional_uv": [
+          0.943176784639862,
+          0.5117813837121832
+        ],
+        "anchor_height_A": 2.320896733333335,
+        "lateral_offset_A": 1.032616941087665,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              -4.63155897,
+              7.91324521,
+              21.54412925
+            ],
+            "relative_surface_frame_A": [
+              -1.1039507374063624,
+              1.5559445333333333,
+              1.7695671833333364
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              -5.59314607,
+              5.55081053,
+              21.40040246
+            ],
+            "relative_surface_frame_A": [
+              -2.0655378374063624,
+              -0.8064901466666674,
+              1.625840393333334
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -3.14453724,
+              5.86318012,
+              22.06576815
+            ],
+            "relative_surface_frame_A": [
+              0.38307099259363797,
+              -0.4941205566666671,
+              2.2912060833333356
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -3.527608232593638,
+          6.357300676666667,
+          19.774562066666665
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.178013903625334,
+          2.1785427730475595,
+          2.2262819076797613
+        ],
+        "metal_pair_distances_A": [
+          3.2807992304933338,
+          3.3541586518391466,
+          3.8510184549658515
+        ],
+        "anchor_height_A": 2.320896733333335,
+        "anchor_lateral_offset_A": 1.032616941087665
+      },
+      "adsorption_energy_eV": -2.3619918823242188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 115,
+            "nearest_oxygen_distance_A": 0.9773195360861624,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 119,
+            "nearest_oxygen_distance_A": 0.9731859525281638,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0007.extxyz",
+        "sha256": "3fa316ceedf0970b650f6216773e629b2f5d46749208bfbd09044ced71897aa7"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0004",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 92,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.09418697021875716,
+              0.44092706761981715,
+              0.5898914356588392
+            ],
+            "unwrapped_cartesian_A": [
+              -1.8395285690501175,
+              5.562642814121378,
+              19.495354032706985
+            ]
+          },
+          {
+            "source_atom_id": 103,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.11338506857985065,
+              0.6823669098503449,
+              0.5925605970204245
+            ],
+            "unwrapped_cartesian_A": [
+              -3.318443484275328,
+              8.608596900533382,
+              19.583567291230413
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.10378601939930394,
+            0.561646988735081
+          ],
+          "cartesian_A": [
+            -2.5789860266627223,
+            7.085619857327379,
+            19.539460661968697
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -2.5789860266627227,
+            7.08561985732738,
+            19.539460661968697
+          ],
+          "surface_normal_coordinate_A": 19.539460661968697,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0008",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0008--proton-placement-003",
+      "member_count": 3,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0008",
+          "candidate_id": "site-combination-0008--proton-placement-003",
+          "proton_placement_id": "proton-placement-003",
+          "adsorption_energy_eV": -2.2750778198242188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0017",
+          "candidate_id": "site-combination-0017--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -2.2747726440429688,
+          "energy_above_prototype_minimum_eV": 0.00030517578125,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.010195400897296843,
+            "metal_geometry_rms_difference_A": 0.0013615326301857225,
+            "anchor_height_difference_A": 0.0013791133333320715,
+            "anchor_lateral_offset_difference_A": 0.0009672651609074767,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0003",
+          "candidate_id": "site-combination-0003--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -2.2712936401367188,
+          "energy_above_prototype_minimum_eV": 0.0037841796875,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.026146996592491867,
+            "metal_geometry_rms_difference_A": 0.0021871399005463665,
+            "anchor_height_difference_A": 0.010788476666665048,
+            "anchor_lateral_offset_difference_A": 0.013084983689587465,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 93,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            -1
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.3467400754603005,
+            0.9058129945982206,
+            0.5898914621233882
+          ],
+          "unwrapped_clean_cartesian_A": [
+            5.737154210375636,
+            -1.1882433791376332,
+            19.495354907335297
+          ]
+        },
+        {
+          "source_atom_id": 94,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.5539978870060074,
+            0.1542362290722263,
+            0.5816083636007391
+          ],
+          "unwrapped_clean_cartesian_A": [
+            6.946926179435243,
+            1.9458117097623107,
+            19.221606335267154
+          ]
+        },
+        {
+          "source_atom_id": 99,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.3267117448622511,
+            0.15570601893089717,
+            0.5889462321538492
+          ],
+          "unwrapped_clean_cartesian_A": [
+            3.625239239977065,
+            1.9643542683757762,
+            19.46411595083493
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 2,
+          "distance_A": 2.22526829772721
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 0,
+          "distance_A": 2.4134089810877373
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 1,
+          "distance_A": 2.1688821457506147
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.40914990244285304,
+          0.07191841420044805
+        ],
+        "cartesian_A": [
+          5.4364398765959825,
+          0.9073075330001512,
+          19.393692397812462
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          5.4364398765959825,
+          0.9073075330001513,
+          19.393692397812462
+        ],
+        "surface_normal_coordinate_A": 19.393692397812462,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          5.61710037,
+          0.99500378,
+          21.98809154
+        ],
+        "anchor_projection_fractional_uv": [
+          0.4250272052038038,
+          0.07886972319565162
+        ],
+        "anchor_height_A": 2.5527238333333315,
+        "lateral_offset_A": 0.1604784149939885,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              4.32908059,
+              1.80643863,
+              21.69932508
+            ],
+            "relative_surface_frame_A": [
+              -1.1293091329634874,
+              0.8351888432692239,
+              2.2639573733333336
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              5.54894744,
+              -0.54426146,
+              21.72638511
+            ],
+            "relative_surface_frame_A": [
+              0.09055771703651239,
+              -1.5155112467307759,
+              2.2910174033333313
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              6.92921838,
+              1.62587475,
+              21.43134049
+            ],
+            "relative_surface_frame_A": [
+              1.4708286570365123,
+              0.6546249632692239,
+              1.9959727833333325
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          5.458389722963488,
+          0.971249786730776,
+          19.435367706666668
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.1688821457506147,
+          2.22526829772721,
+          2.4134089810877373
+        ],
+        "metal_pair_distances_A": [
+          3.3558619009872053,
+          3.3805033289417517,
+          3.863011900953612
+        ],
+        "anchor_height_A": 2.5527238333333315,
+        "anchor_lateral_offset_A": 0.1604784149939885
+      },
+      "adsorption_energy_eV": -2.2750778198242188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 115,
+            "nearest_oxygen_distance_A": 0.9983337806328819,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 118,
+            "nearest_oxygen_distance_A": 0.9803566989825823,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0008.extxyz",
+        "sha256": "0ef7bd0aaa4c239d9eb1ebbdfbf06477b42e7e8a5b8bdea8b49f95fb0da4cb54"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0008",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 94,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.5539978870060074,
+              0.1542362290722263,
+              0.5816083636007391
+            ],
+            "unwrapped_cartesian_A": [
+              6.946926179435243,
+              1.9458117097623107,
+              19.221606335267154
+            ]
+          },
+          {
+            "source_atom_id": 99,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.3267117448622511,
+              0.15570601893089717,
+              0.5889462321538492
+            ],
+            "unwrapped_cartesian_A": [
+              3.625239239977065,
+              1.9643542683757762,
+              19.46411595083493
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.4403548159341292,
+            0.15497112400156174
+          ],
+          "cartesian_A": [
+            5.286082709706154,
+            1.9550829890690433,
+            19.342861143051042
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            5.286082709706154,
+            1.9550829890690435,
+            19.342861143051042
+          ],
+          "surface_normal_coordinate_A": 19.342861143051042,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0009",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0013--proton-placement-004",
+      "member_count": 3,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0013",
+          "candidate_id": "site-combination-0013--proton-placement-004",
+          "proton_placement_id": "proton-placement-004",
+          "adsorption_energy_eV": -2.2567062377929688,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0026",
+          "candidate_id": "site-combination-0026--proton-placement-008",
+          "proton_placement_id": "proton-placement-008",
+          "adsorption_energy_eV": -2.2555465698242188,
+          "energy_above_prototype_minimum_eV": 0.00115966796875,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.004229778947900786,
+            "metal_geometry_rms_difference_A": 0.00042675634857904565,
+            "anchor_height_difference_A": 0.0020267866666650036,
+            "anchor_lateral_offset_difference_A": 0.02027524476649281,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0012",
+          "candidate_id": "site-combination-0012--proton-placement-009",
+          "proton_placement_id": "proton-placement-009",
+          "adsorption_energy_eV": -1.8387985229492188,
+          "energy_above_prototype_minimum_eV": 0.41790771484375,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.02632644827825927,
+            "metal_geometry_rms_difference_A": 0.020183467198433808,
+            "anchor_height_difference_A": 0.005972776666666846,
+            "anchor_lateral_offset_difference_A": 0.08898047917459398,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 99,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.3267117448622511,
+            0.15570601893089717,
+            0.5889462321538492
+          ],
+          "unwrapped_clean_cartesian_A": [
+            3.625239239977065,
+            1.9643542683757762,
+            19.46411595083493
+          ]
+        },
+        {
+          "source_atom_id": 102,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            -1
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.0740465451515211,
+            0.897790140638796,
+            0.5961469255365677
+          ],
+          "unwrapped_clean_cartesian_A": [
+            1.8231388855166726,
+            -1.289458011224177,
+            19.702092056760723
+          ]
+        },
+        {
+          "source_atom_id": 104,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.10220985536427832,
+            0.17625640202044762,
+            0.5961469480125449
+          ],
+          "unwrapped_clean_cartesian_A": [
+            0.20513391200318698,
+            2.22361356365473,
+            19.70209279957051
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 2,
+          "distance_A": 2.188063742988638
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 1,
+          "distance_A": 2.279883670797891
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.181059443809106
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.16765604845935017,
+          0.07658418719671363
+        ],
+        "cartesian_A": [
+          1.884504012498975,
+          0.9661699402687763,
+          19.622766935722055
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          1.884504012498975,
+          0.9661699402687765,
+          19.622766935722055
+        ],
+        "surface_normal_coordinate_A": 19.622766935722055,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          2.02080736,
+          1.12764986,
+          22.21443587
+        ],
+        "anchor_projection_fractional_uv": [
+          0.18341266286419775,
+          0.08938401452084464
+        ],
+        "anchor_height_A": 2.5040666666666667,
+        "lateral_offset_A": 0.22900556833770805,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              0.6854967,
+              1.83911764,
+              21.87793616
+            ],
+            "relative_surface_frame_A": [
+              -1.1732038229634871,
+              0.8732235332692242,
+              2.1675669566666684
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              2.04555104,
+              -0.39537821,
+              21.90468136
+            ],
+            "relative_surface_frame_A": [
+              0.18685051703651268,
+              -1.3612723167307759,
+              2.194312156666669
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              3.23107063,
+              1.95335902,
+              21.70433545
+            ],
+            "relative_surface_frame_A": [
+              1.3723701070365129,
+              0.9874649132692241,
+              1.993966246666666
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          1.8587005229634872,
+          0.9658941067307758,
+          19.710369203333332
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.181059443809106,
+          2.188063742988638,
+          2.279883670797891
+        ],
+        "metal_pair_distances_A": [
+          3.420151296986882,
+          3.6497428573906507,
+          3.7954647829553196
+        ],
+        "anchor_height_A": 2.5040666666666667,
+        "anchor_lateral_offset_A": 0.22900556833770805
+      },
+      "adsorption_energy_eV": -2.2567062377929688,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 114,
+            "nearest_oxygen_distance_A": 0.9784241758628609,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 115,
+            "nearest_oxygen_distance_A": 0.9824466579108637,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0009.extxyz",
+        "sha256": "db18ab9799eb070796f966a012246c640bfce8b3f3d4f92f4e59aa8b4396921a"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0013",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 99,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.3267117448622511,
+              0.15570601893089717,
+              0.5889462321538492
+            ],
+            "unwrapped_cartesian_A": [
+              3.625239239977065,
+              1.9643542683757762,
+              19.46411595083493
+            ]
+          },
+          {
+            "source_atom_id": 104,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.10220985536427832,
+              0.17625640202044762,
+              0.5961469480125449
+            ],
+            "unwrapped_cartesian_A": [
+              0.20513391200318706,
+              2.22361356365473,
+              19.70209279957051
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.21446080011326468,
+            0.1659812104756724
+          ],
+          "cartesian_A": [
+            1.915186575990126,
+            2.093983916015253,
+            19.583104375202723
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            1.915186575990126,
+            2.093983916015253,
+            19.583104375202723
+          ],
+          "surface_normal_coordinate_A": 19.583104375202723,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0010",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0015--proton-placement-002",
+      "member_count": 2,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0015",
+          "candidate_id": "site-combination-0015--proton-placement-002",
+          "proton_placement_id": "proton-placement-002",
+          "adsorption_energy_eV": -1.8987350463867188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0028",
+          "candidate_id": "site-combination-0028--proton-placement-007",
+          "proton_placement_id": "proton-placement-007",
+          "adsorption_energy_eV": -1.8970260620117188,
+          "energy_above_prototype_minimum_eV": 0.001708984375,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.002923141833781243,
+            "metal_geometry_rms_difference_A": 0.0035381138814309532,
+            "anchor_height_difference_A": 0.00486809666666943,
+            "anchor_lateral_offset_difference_A": 0.011443172165098228,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 102,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            -1
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.0740465451515211,
+            0.897790140638796,
+            0.5961469255365677
+          ],
+          "unwrapped_clean_cartesian_A": [
+            1.8231388855166726,
+            -1.289458011224177,
+            19.702092056760723
+          ]
+        },
+        {
+          "source_atom_id": 104,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.10220985536427832,
+            0.17625640202044762,
+            0.5961469480125449
+          ],
+          "unwrapped_clean_cartesian_A": [
+            0.20513391200318698,
+            2.22361356365473,
+            19.70209279957051
+          ]
+        },
+        {
+          "source_atom_id": 107,
+          "atom_index_base": 0,
+          "lattice_image": [
+            -1,
+            -1
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8237435960824832,
+            0.9259534504260497,
+            0.5961469220037745
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -2.028272796709386,
+            -0.9341556396650308,
+            19.70209194000525
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 0,
+          "distance_A": 2.2130837122206186
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 1,
+          "distance_A": 2.2401747816983177
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 2,
+          "distance_A": 2.21993680362769
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.9999999988660943,
+          0.9999999976950978
+        ],
+        "cartesian_A": [
+          7.283729129160612,
+          12.615788890729513,
+          19.702092265445497
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          2.701578220391336e-10,
+          -2.9078159287839373e-08,
+          19.702092265445497
+        ],
+        "surface_normal_coordinate_A": 19.702092265445497,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          0.01381785,
+          0.02887227,
+          22.28501414
+        ],
+        "anchor_projection_fractional_uv": [
+          0.002092833376771916,
+          0.0022885822031049135
+        ],
+        "anchor_height_A": 2.492270829999999,
+        "lateral_offset_A": 0.04876953508037567,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              1.16737189,
+              -0.92818804,
+              21.91660843
+            ],
+            "relative_surface_frame_A": [
+              1.1841016133333304,
+              -0.9190430334615524,
+              2.123865119999998
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              0.24190721,
+              1.50574028,
+              21.8807918
+            ],
+            "relative_surface_frame_A": [
+              0.2586369333333304,
+              1.5148852865384475,
+              2.0880484899999985
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -1.39618549,
+              -0.44778156,
+              21.8283066
+            ],
+            "relative_surface_frame_A": [
+              -1.3794557666666696,
+              -0.43863655346155245,
+              2.035563289999999
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -0.016729723333330337,
+          -0.009145006538447594,
+          19.792743310000002
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.2130837122206186,
+          2.21993680362769,
+          2.2401747816983177
+        ],
+        "metal_pair_distances_A": [
+          3.757385852046917,
+          3.800180437087796,
+          4.1329801795891745
+        ],
+        "anchor_height_A": 2.492270829999999,
+        "anchor_lateral_offset_A": 0.04876953508037567
+      },
+      "adsorption_energy_eV": -1.8987350463867188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 110,
+            "nearest_oxygen_distance_A": 0.989111025247664,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 115,
+            "nearest_oxygen_distance_A": 0.9776651760493942,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0010.extxyz",
+        "sha256": "c73841ec0a02218e266630d4e14494cdab6a047f3148ec3c51d0ee532a384476"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0015",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 102,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              -1
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.07404654515152112,
+              0.897790140638796,
+              0.5961469255365677
+            ],
+            "unwrapped_cartesian_A": [
+              1.8231388855166726,
+              -1.289458011224177,
+              19.702092056760723
+            ]
+          },
+          {
+            "source_atom_id": 104,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.10220985536427832,
+              0.17625640202044762,
+              0.5961469480125449
+            ],
+            "unwrapped_cartesian_A": [
+              0.20513391200318706,
+              2.22361356365473,
+              19.70209279957051
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.08812820025789975,
+            0.037023271329621854
+          ],
+          "cartesian_A": [
+            1.0141363987599301,
+            0.46707777621527646,
+            19.702092428165617
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            1.01413639875993,
+            0.46707777621527646,
+            19.702092428165617
+          ],
+          "surface_normal_coordinate_A": 19.702092428165617,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0011",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0020--proton-placement-001",
+      "member_count": 1,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0020",
+          "candidate_id": "site-combination-0020--proton-placement-001",
+          "proton_placement_id": "proton-placement-001",
+          "adsorption_energy_eV": -1.8529586791992188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 92,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.09418697021875715,
+            0.44092706761981715,
+            0.5898914356588392
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.8395285690501177,
+            5.562642814121378,
+            19.495354032706985
+          ]
+        },
+        {
+          "source_atom_id": 105,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.3176330634388577,
+            0.4310181136132674,
+            0.592560603890292
+          ],
+          "unwrapped_clean_cartesian_A": [
+            1.4876872037322628,
+            5.437633541958664,
+            19.583567518273032
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 1,
+          "distance_A": 2.134744174752458
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.2825961691553367
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.20591001682880744,
+          0.43597259061654225
+        ],
+        "cartesian_A": [
+          -0.17592068265892724,
+          5.50013817804002,
+          19.539460775490006
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -0.17592068265892746,
+          5.500138178040021,
+          19.539460775490006
+        ],
+        "surface_normal_coordinate_A": 19.539460775490006,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          0.17273163,
+          5.56755307,
+          22.49040384
+        ],
+        "anchor_projection_fractional_uv": [
+          0.23251550364888438,
+          0.4413162827461825
+        ],
+        "anchor_height_A": 2.870446649999998,
+        "lateral_offset_A": 0.38902101918619486,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              1.32618968,
+              4.85516143,
+              21.70036292
+            ],
+            "relative_surface_frame_A": [
+              1.50631526,
+              -0.5485955999999996,
+              2.080405729999999
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -1.20695025,
+              5.39316763,
+              21.80729515
+            ],
+            "relative_surface_frame_A": [
+              -1.0268246699999999,
+              -0.010589399999999749,
+              2.1873379600000007
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -0.18012558,
+          5.4037570299999995,
+          19.61995719
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "2-donor_2-metal_2-contact",
+      "final_denticity": 2,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.134744174752458,
+          2.2825961691553367
+        ],
+        "metal_pair_distances_A": [
+          3.32886916158452
+        ],
+        "anchor_height_A": 2.870446649999998,
+        "anchor_lateral_offset_A": 0.38902101918619486
+      },
+      "adsorption_energy_eV": -1.8529586791992188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 117,
+            "nearest_oxygen_distance_A": 0.9824024129538004,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 119,
+            "nearest_oxygen_distance_A": 1.0147691059188892,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0011.extxyz",
+        "sha256": "70daf78e554eabbb269958049eaf93adb2a497ffbb00c2b69ae1bd1b92dd2487"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0020",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 92,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.09418697021875716,
+              0.44092706761981715,
+              0.5898914356588392
+            ],
+            "unwrapped_cartesian_A": [
+              -1.8395285690501175,
+              5.562642814121378,
+              19.495354032706985
+            ]
+          },
+          {
+            "source_atom_id": 98,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.3333333207186809,
+              0.6666666630709354,
+              0.598149716925996
+            ],
+            "unwrapped_cartesian_A": [
+              -1.5757309325749582e-07,
+              8.410525901175461,
+              19.768282417953124
+            ]
+          },
+          {
+            "source_atom_id": 105,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.3176330634388577,
+              0.4310181136132674,
+              0.592560603890292
+            ],
+            "unwrapped_cartesian_A": [
+              1.487687203732263,
+              5.437633541958664,
+              19.583567518273032
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.2483844514587653,
+            0.5128706147680067
+          ],
+          "cartesian_A": [
+            -0.1172805076303154,
+            6.470267419085167,
+            19.615734656311048
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -0.1172805076303159,
+            6.470267419085168,
+            19.615734656311048
+          ],
+          "surface_normal_coordinate_A": 19.615734656311048,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0012",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0021--proton-placement-008",
+      "member_count": 1,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0021",
+          "candidate_id": "site-combination-0021--proton-placement-008",
+          "proton_placement_id": "proton-placement-008",
+          "adsorption_energy_eV": -1.4108200073242188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 92,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.09418697021875715,
+            0.44092706761981715,
+            0.5898914356588392
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.8395285690501177,
+            5.562642814121378,
+            19.495354032706985
+          ]
+        },
+        {
+          "source_atom_id": 100,
+          "atom_index_base": 0,
+          "lattice_image": [
+            -1,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.8442939757138578,
+            0.17100571619078025,
+            0.5889461811788587
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -3.513800325498959,
+            2.157372019543421,
+            19.464114266159704
+          ]
+        },
+        {
+          "source_atom_id": 104,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.10220985536427832,
+            0.17625640202044762,
+            0.5961469480125449
+          ],
+          "unwrapped_clean_cartesian_A": [
+            0.20513391200318698,
+            2.22361356365473,
+            19.70209279957051
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 2,
+          "distance_A": 2.2150831285066603
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 0,
+          "distance_A": 2.381631246298196
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 1,
+          "distance_A": 2.2694265863667558
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.013563600432297762,
+          0.2627297286103484
+        ],
+        "cartesian_A": [
+          -1.7160649941819632,
+          3.3145427991065097,
+          19.553853699479067
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -1.7160649941819635,
+          3.3145427991065097,
+          19.553853699479067
+        ],
+        "surface_normal_coordinate_A": 19.553853699479067,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          -1.64770995,
+          3.39860002,
+          22.13400273
+        ],
+        "anchor_projection_fractional_uv": [
+          0.021587340828445434,
+          0.26939258746347283
+        ],
+        "anchor_height_A": 2.542001063333334,
+        "lateral_offset_A": 0.11067251108722304,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              -0.26659693,
+              2.76152094,
+              21.81616163
+            ],
+            "relative_surface_frame_A": [
+              1.4502544459269717,
+              -0.5506622533333339,
+              2.224159963333335
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              -1.78508631,
+              4.87387818,
+              21.73892331
+            ],
+            "relative_surface_frame_A": [
+              -0.06823493407302839,
+              1.5616949866666663,
+              2.146921643333336
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -2.79238971,
+              2.43102646,
+              21.65496091
+            ],
+            "relative_surface_frame_A": [
+              -1.0755383340730285,
+              -0.8811567333333339,
+              2.062959243333335
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -1.7168513759269717,
+          3.312183193333334,
+          19.592001666666665
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.2150831285066603,
+          2.2694265863667558,
+          2.381631246298196
+        ],
+        "metal_pair_distances_A": [
+          3.792024962817161,
+          3.980042363356974,
+          4.023117227889024
+        ],
+        "anchor_height_A": 2.542001063333334,
+        "anchor_lateral_offset_A": 0.11067251108722304
+      },
+      "adsorption_energy_eV": -1.4108200073242188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 110,
+            "nearest_oxygen_distance_A": 0.9920682658028227,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 117,
+            "nearest_oxygen_distance_A": 0.9771179286301734,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0012.extxyz",
+        "sha256": "1fc39df5434199101b04c68c5528efda74bcdb22a04b39bcbed9167cfd4b1222"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0021",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 92,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.09418697021875716,
+              0.44092706761981715,
+              0.5898914356588392
+            ],
+            "unwrapped_cartesian_A": [
+              -1.8395285690501175,
+              5.562642814121378,
+              19.495354032706985
+            ]
+          },
+          {
+            "source_atom_id": 100,
+            "atom_index_base": 0,
+            "lattice_image": [
+              -1,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.8442939757138578,
+              0.17100571619078025,
+              0.5889461811788587
+            ],
+            "unwrapped_cartesian_A": [
+              -3.513800325498959,
+              2.157372019543421,
+              19.464114266159704
+            ]
+          },
+          {
+            "source_atom_id": 104,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.10220985536427832,
+              0.17625640202044762,
+              0.5961469480125449
+            ],
+            "unwrapped_cartesian_A": [
+              0.20513391200318706,
+              2.22361356365473,
+              19.70209279957051
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.013563600432297757,
+            0.2627297286103484
+          ],
+          "cartesian_A": [
+            -1.7160649941819635,
+            3.3145427991065097,
+            19.553853699479067
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -1.7160649941819635,
+            3.3145427991065097,
+            19.553853699479067
+          ],
+          "surface_normal_coordinate_A": 19.553853699479067,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0013",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0011--proton-placement-006",
+      "member_count": 2,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0011",
+          "candidate_id": "site-combination-0011--proton-placement-006",
+          "proton_placement_id": "proton-placement-006",
+          "adsorption_energy_eV": -1.3662033081054688,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        },
+        {
+          "site_combination_id": "site-combination-0002",
+          "candidate_id": "site-combination-0002--proton-placement-007",
+          "proton_placement_id": "proton-placement-007",
+          "adsorption_energy_eV": -1.3621139526367188,
+          "energy_above_prototype_minimum_eV": 0.00408935546875,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0064025845548956505,
+            "metal_geometry_rms_difference_A": 0.006354496757724226,
+            "anchor_height_difference_A": 0.0036032066666642493,
+            "anchor_lateral_offset_difference_A": 0.0035503332399178245,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 92,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.09418697021875715,
+            0.44092706761981715,
+            0.5898914356588392
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.8395285690501177,
+            5.562642814121378,
+            19.495354032706985
+          ]
+        },
+        {
+          "source_atom_id": 98,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.3333333207186809,
+            0.6666666630709354,
+            0.598149716925996
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.5757309324015978e-07,
+            8.410525901175461,
+            19.768282417953124
+          ]
+        },
+        {
+          "source_atom_id": 103,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.11338506857985065,
+            0.6823669098503449,
+            0.5925605970204245
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -3.318443484275328,
+            8.608596900533382,
+            19.583567291230413
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 0,
+          "distance_A": 2.2647974147340557
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 1,
+          "distance_A": 2.1549818465523813
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 2,
+          "distance_A": 2.1606563173583826
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.1803017865057629,
+          0.5966535468470325
+        ],
+        "cartesian_A": [
+          -1.7193240702995136,
+          7.527255205276741,
+          19.615734580630175
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -1.719324070299513,
+          7.527255205276741,
+          19.615734580630175
+        ],
+        "surface_normal_coordinate_A": 19.615734580630175,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          -2.11196776,
+          6.99364477,
+          22.30686944
+        ],
+        "anchor_projection_fractional_uv": [
+          0.13219979055354328,
+          0.5543565142422039
+        ],
+        "anchor_height_A": 2.385529463333331,
+        "lateral_offset_A": 0.6497954637597649,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              -1.60853038,
+              5.71146689,
+              21.59890528
+            ],
+            "relative_surface_frame_A": [
+              0.10567733000000024,
+              -1.796007703333335,
+              1.6775653033333313
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              -1.00050513,
+              8.0546694,
+              22.47050931
+            ],
+            "relative_surface_frame_A": [
+              0.7137025800000001,
+              0.5471948066666652,
+              2.5491693333333316
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -3.42666016,
+              7.57004338,
+              21.69120703
+            ],
+            "relative_surface_frame_A": [
+              -1.7124524499999998,
+              0.06256878666666577,
+              1.769867053333332
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -1.7142077100000002,
+          7.507474593333335,
+          19.92133997666667
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.1549818465523813,
+          2.1606563173583826,
+          2.2647974147340557
+        ],
+        "metal_pair_distances_A": [
+          3.2835519766751005,
+          3.6659558654576134,
+          3.7028079117223194
+        ],
+        "anchor_height_A": 2.385529463333331,
+        "anchor_lateral_offset_A": 0.6497954637597649
+      },
+      "adsorption_energy_eV": -1.3662033081054688,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 115,
+            "nearest_oxygen_distance_A": 0.9740570285404629,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 114,
+            "nearest_oxygen_distance_A": 0.9860179455187433,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0013.extxyz",
+        "sha256": "6a187786ebe9b27d1edc4f044373643f9a021e379678edc7b9eb2f6ba62dc402"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0011",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 98,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.3333333207186809,
+              0.6666666630709354,
+              0.598149716925996
+            ],
+            "unwrapped_cartesian_A": [
+              -1.5757309325749582e-07,
+              8.410525901175461,
+              19.768282417953124
+            ]
+          },
+          {
+            "source_atom_id": 103,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.11338506857985065,
+              0.6823669098503449,
+              0.5925605970204245
+            ],
+            "unwrapped_cartesian_A": [
+              -3.318443484275328,
+              8.608596900533382,
+              19.583567291230413
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.22335919464926576,
+            0.6745167864606401
+          ],
+          "cartesian_A": [
+            -1.65922182092421,
+            8.50956140085442,
+            19.67592485459177
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -1.6592218209242107,
+            8.509561400854421,
+            19.67592485459177
+          ],
+          "surface_normal_coordinate_A": 19.67592485459177,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    },
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0014",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "representative_candidate_id": "site-combination-0019--proton-placement-008",
+      "member_count": 1,
+      "members": [
+        {
+          "site_combination_id": "site-combination-0019",
+          "candidate_id": "site-combination-0019--proton-placement-008",
+          "proton_placement_id": "proton-placement-008",
+          "adsorption_energy_eV": -1.2660446166992188,
+          "energy_above_prototype_minimum_eV": 0.0,
+          "geometry_difference_from_representative": {
+            "contact_distance_rms_difference_A": 0.0,
+            "metal_geometry_rms_difference_A": 0.0,
+            "anchor_height_difference_A": 0.0,
+            "anchor_lateral_offset_difference_A": 0.0,
+            "checks": {
+              "contact_distance": true,
+              "metal_geometry": true,
+              "anchor_height": true,
+              "anchor_lateral_offset": true
+            }
+          }
+        }
+      ],
+      "metal_vertices": [
+        {
+          "source_atom_id": 92,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.09418697021875715,
+            0.44092706761981715,
+            0.5898914356588392
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.8395285690501177,
+            5.562642814121378,
+            19.495354032706985
+          ]
+        },
+        {
+          "source_atom_id": 98,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.3333333207186809,
+            0.6666666630709354,
+            0.598149716925996
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -1.5757309324015978e-07,
+            8.410525901175461,
+            19.768282417953124
+          ]
+        },
+        {
+          "source_atom_id": 103,
+          "atom_index_base": 0,
+          "lattice_image": [
+            0,
+            0
+          ],
+          "element": "In",
+          "source_fractional_xyz": [
+            0.11338506857985065,
+            0.6823669098503449,
+            0.5925605970204245
+          ],
+          "unwrapped_clean_cartesian_A": [
+            -3.318443484275328,
+            8.608596900533382,
+            19.583567291230413
+          ]
+        }
+      ],
+      "donor_metal_mapping": [
+        {
+          "probe_donor_id": "O1",
+          "metal_vertex_index": 1,
+          "distance_A": 2.1471311057336937
+        },
+        {
+          "probe_donor_id": "O2",
+          "metal_vertex_index": 2,
+          "distance_A": 2.1420634524548845
+        },
+        {
+          "probe_donor_id": "O3",
+          "metal_vertex_index": 0,
+          "distance_A": 2.2447235758458683
+        }
+      ],
+      "ideal_site_location": {
+        "fractional_uv": [
+          0.1803017865057629,
+          0.5966535468470325
+        ],
+        "cartesian_A": [
+          -1.7193240702995136,
+          7.527255205276741,
+          19.615734580630175
+        ],
+        "unwrapped_centroid_cartesian_A": [
+          -1.719324070299513,
+          7.527255205276741,
+          19.615734580630175
+        ],
+        "surface_normal_coordinate_A": 19.615734580630175,
+        "definition": "centroid of final contacted metal vertices reconstructed in the undoped clean source surface cell"
+      },
+      "relaxed_adsorption_location": {
+        "anchor_atom_id_0_based": 120,
+        "anchor_cartesian_A": [
+          -2.05326957,
+          7.16090428,
+          22.02807028
+        ],
+        "anchor_projection_fractional_uv": [
+          0.14285817105997733,
+          0.5676144651371646
+        ],
+        "anchor_height_A": 2.0162138300000016,
+        "lateral_offset_A": 0.5505922366513016,
+        "binding_oxygen_positions": [
+          {
+            "probe_donor_id": "O1",
+            "atom_id_0_based": 121,
+            "cartesian_A": [
+              -0.8603426,
+              8.02869517,
+              22.62193438
+            ],
+            "relative_surface_frame_A": [
+              0.8242296533333334,
+              0.4588726833333343,
+              2.610077929999999
+            ]
+          },
+          {
+            "probe_donor_id": "O2",
+            "atom_id_0_based": 122,
+            "cartesian_A": [
+              -3.49188478,
+              7.80674844,
+              21.72361667
+            ],
+            "relative_surface_frame_A": [
+              -1.8073125266666665,
+              0.23692595333333344,
+              1.7117602199999986
+            ]
+          },
+          {
+            "probe_donor_id": "O3",
+            "atom_id_0_based": 123,
+            "cartesian_A": [
+              -1.79835758,
+              5.64161047,
+              21.66248443
+            ],
+            "relative_surface_frame_A": [
+              -0.11378532666666663,
+              -1.9282120166666665,
+              1.6506279799999994
+            ]
+          }
+        ],
+        "relaxed_contact_metal_centroid_A": [
+          -1.6845722533333334,
+          7.569822486666666,
+          20.01185645
+        ]
+      },
+      "surface_frame": {
+        "periodic_fractional_axes": [
+          0,
+          1
+        ],
+        "u_cartesian_unit": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "v_cartesian_unit": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "outward_normal_cartesian_unit": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "final_topology": "3-donor_3-metal_3-contact",
+      "final_denticity": 3,
+      "geometry_descriptor": {
+        "contact_distances_A": [
+          2.1420634524548845,
+          2.1471311057336937,
+          2.2447235758458683
+        ],
+        "metal_pair_distances_A": [
+          3.402765751027188,
+          3.9302572086445107,
+          3.9754820325822697
+        ],
+        "anchor_height_A": 2.0162138300000016,
+        "anchor_lateral_offset_A": 0.5505922366513016
+      },
+      "adsorption_energy_eV": -1.2660446166992188,
+      "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+      "surface_proton_policy": {
+        "released_protons_retained_in_energy": 2,
+        "selected_assignments": [
+          {
+            "surface_proton_atom_id_0_based": 128,
+            "nearest_oxygen_atom_id_0_based": 114,
+            "nearest_oxygen_distance_A": 0.9895417821635571,
+            "nearest_oxygen_is_substrate": true
+          },
+          {
+            "surface_proton_atom_id_0_based": 129,
+            "nearest_oxygen_atom_id_0_based": 115,
+            "nearest_oxygen_distance_A": 0.9759656858088844,
+            "nearest_oxygen_is_substrate": true
+          }
+        ],
+        "excluded_from_future_site_integer_program": true
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "doped_site_energy_source": "undoped_parent_approximation",
+      "representative_relaxed_structure": {
+        "path": "structures/site-prototype-phosphonic-acid-0014.extxyz",
+        "sha256": "775b05303a3a9a39de3561d10eb2c1a68ec1e27169d5e14b7254d1f9a2d26b6c"
+      },
+      "source_site_combination": {
+        "site_combination_id": "site-combination-0019",
+        "initial_metal_vertices": [
+          {
+            "source_atom_id": 92,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.09418697021875716,
+              0.44092706761981715,
+              0.5898914356588392
+            ],
+            "unwrapped_cartesian_A": [
+              -1.8395285690501175,
+              5.562642814121378,
+              19.495354032706985
+            ]
+          },
+          {
+            "source_atom_id": 98,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.3333333207186809,
+              0.6666666630709354,
+              0.598149716925996
+            ],
+            "unwrapped_cartesian_A": [
+              -1.5757309325749582e-07,
+              8.410525901175461,
+              19.768282417953124
+            ]
+          },
+          {
+            "source_atom_id": 103,
+            "atom_index_base": 0,
+            "lattice_image": [
+              0,
+              0
+            ],
+            "element": "In",
+            "source_fractional_xyz": [
+              0.11338506857985065,
+              0.6823669098503449,
+              0.5925605970204245
+            ],
+            "unwrapped_cartesian_A": [
+              -3.318443484275328,
+              8.608596900533382,
+              19.583567291230413
+            ]
+          }
+        ],
+        "initial_ideal_site_location": {
+          "fractional_uv": [
+            0.18030178650576292,
+            0.5966535468470325
+          ],
+          "cartesian_A": [
+            -1.7193240702995134,
+            7.527255205276741,
+            19.615734580630175
+          ],
+          "unwrapped_centroid_cartesian_A": [
+            -1.719324070299513,
+            7.527255205276741,
+            19.615734580630175
+          ],
+          "surface_normal_coordinate_A": 19.615734580630175,
+          "definition": "centroid of explicitly unwrapped periodic metal vertices, wrapped into the source surface cell in u/v"
+        }
+      }
+    }
+  ]
+}

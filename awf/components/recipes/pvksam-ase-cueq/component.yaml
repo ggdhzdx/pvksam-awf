@@ -3,18 +3,19 @@
   "id": "recipe.pvksam-ase-cueq",
   "kind": "recipe",
   "releases": {
-    "1.0.0-rc.2": {
+    "1.0.0-rc.3": {
       "status": "candidate",
       "observed_at": "2026-10-06",
-      "source_snapshot": "components/recipes/pvksam-ase-cueq/releases/1.0.0-rc.2/source",
-      "tree_sha256": "326bbfbdaad34092cad76c60c1a057c8e8f0484524989fd89a15bf6711acf49a",
-      "provenance": "Public dependency-alignment successor; instructions are unchanged and the external MACE dependency points to portable Artifact rc.2.",
-      "instructions": "releases/1.0.0-rc.2/source/RECIPE.md",
+      "source_snapshot": "components/recipes/pvksam-ase-cueq/releases/1.0.0-rc.3/source",
+      "tree_sha256": "dcf15315c3e97a8ecc42d2b86a930fd7af54403a66073d644c84f087b7938b6a",
+      "provenance": "Public successor adding the bundled ITO/FTO and used-SAM reference Artifact; runtime and external MACE identity are unchanged.",
+      "instructions": "releases/1.0.0-rc.3/source/RECIPE.md",
       "artifacts": [
-        "artifact.mace-mpa-0-medium@1.0.0-rc.2"
+        "artifact.mace-mpa-0-medium@1.0.0-rc.2",
+        "artifact.pvksam-reference-models@1.0.0-rc.1"
       ],
       "expected_download_bytes_this_publication": 0,
-      "predecessor": "recipe.pvksam-ase-cueq@1.0.0-rc.1"
+      "predecessor": "recipe.pvksam-ase-cueq@1.0.0-rc.2"
     }
   }
 }

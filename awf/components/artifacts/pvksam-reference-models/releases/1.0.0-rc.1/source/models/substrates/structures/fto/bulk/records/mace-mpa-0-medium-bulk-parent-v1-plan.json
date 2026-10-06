@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "mode": "bulk_relaxation_plan",
+  "substrate": {
+    "key": "FTO",
+    "host_material": "SnO2",
+    "structure_manifest": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/manifest.json",
+      "sha256": "c1c10f8cbaf0e9657dad206a3801882c599b2664d547e0ead4f0d18f5c068f59"
+    }
+  },
+  "bulk_seed": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/bulk/SnO2-rutile-conventional.cif",
+    "sha256": "d4e5ad60e414f2d26e31a5a3b903b16e72c5f85ad712efb31f14511b1b12f18b",
+    "status": "standardized_seed_pending_protocol_relaxation",
+    "formula": {
+      "O": 4,
+      "Sn": 2
+    },
+    "atom_count": 6,
+    "pbc": [
+      true,
+      true,
+      true
+    ],
+    "cell_A": {
+      "lengths": [
+        4.737,
+        4.737,
+        3.187
+      ],
+      "angles_deg": [
+        90.0,
+        90.0,
+        90.0
+      ],
+      "volume_A3": 71.51363160299998
+    },
+    "cell_constraint_check": "passed"
+  },
+  "potential": {
+    "model_path": "${PVKSAM_PROJECT_ROOT}/mace-mpa-0-medium.model",
+    "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+    "required_elements": [
+      "O",
+      "Sn"
+    ],
+    "declared_model_elements": [
+      "O",
+      "Sn"
+    ],
+    "coverage": "passed",
+    "coverage_basis": "maintainer_declaration_not_model_introspection"
+  },
+  "relaxation_contract": {
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "status": "ready_for_execution",
+    "cell_constraint": "tetragonal",
+    "relax_atomic_positions": true,
+    "relax_cell": true,
+    "target_pressure_GPa": 0.0,
+    "force_tolerance_eV_A": 0.03,
+    "stress_tolerance_GPa": 0.2,
+    "maximum_step_A": 0.05,
+    "symmetry_tolerance_A": 0.01,
+    "maximum_steps": 500,
+    "reference": {
+      "cell_A": {
+        "a": 4.7374,
+        "b": 4.7374,
+        "c": 3.1864
+      },
+      "provenance": "neutron_powder_diffraction_Bolzan_et_al_1997",
+      "citation": "A. A. Bolzan, C. Fong, B. J. Kennedy, C. J. Howard, Structural studies of rutile-type metal dioxides, Acta Crystallographica B53 (1997) 373-380",
+      "doi": "10.1107/S0108768197001468"
+    },
+    "acceptance": {
+      "maximum_relative_length_deviation": 0.02,
+      "maximum_angle_deviation_deg": 0.5,
+      "require_formula_unchanged": true,
+      "require_atom_count_unchanged": true,
+      "require_crystal_system_preserved": true,
+      "expected_space_group_number": 136
+    }
+  },
+  "optimizer_contract": {
+    "optimizer": "LBFGS",
+    "cell_filter": "FrechetCellFilter",
+    "symmetry_constraint": "FixSymmetry",
+    "exp_cell_factor": 2.9756865618345185,
+    "derivation": "stress_tolerance_eV_A3 * initial_volume_A3 / force_tolerance_eV_A",
+    "purpose": "Map the declared stress threshold onto the same optimizer fmax threshold used for atomic forces."
+  },
+  "seed_reference_comparison": {
+    "reference_lengths_A": [
+      4.7374,
+      4.7374,
+      3.1864
+    ],
+    "relative_length_deviations": [
+      8.443449993666482e-05,
+      8.443449993666482e-05,
+      0.00018830027617371765
+    ],
+    "within_acceptance_envelope": true,
+    "note": "This comparison characterizes the unrelaxed seed. Acceptance must be recomputed from the future relaxed candidate."
+  },
+  "planned_outputs": {
+    "candidate_structure_role": "bulk_parent_candidate",
+    "required_records": [
+      "relaxed_structure",
+      "optimizer_log",
+      "final_force_and_stress_metrics",
+      "acceptance_report",
+      "provenance_manifest"
+    ],
+    "registration_policy": "Promote a candidate to Bulk Parent only after every acceptance check passes; never overwrite the Bulk Seed."
+  },
+  "bulk_parent_state": "not_registered",
+  "execution_contract": {
+    "executable": true,
+    "read_only": true,
+    "execution_command": "bulk-relaxation-run",
+    "readiness_issues": []
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "artifact.pvksam-reference-models",
+  "kind": "artifact",
+  "releases": {
+    "1.0.0-rc.1": {
+      "status": "candidate",
+      "observed_at": "2026-10-06",
+      "source_snapshot": "components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source",
+      "tree_sha256": "dd548eff614a99d9d2958ffbff5000d167cbf935bfb6c2ded5bc0283e5bfab30",
+      "provenance": "Privacy-sanitized public bundle of the maintained ITO/FTO substrate catalogs and nine SAM molecular models used in the source project.",
+      "capabilities": [
+        "bundled-ITO-and-FTO-structure-catalogs",
+        "maintained-relaxed-surface-models",
+        "phosphonic-and-carboxylic-adsorption-site-packages",
+        "six-authoritative-explicit-H-SAM-source-SDFs",
+        "three-historical-used-DBF-coordinate-models"
+      ],
+      "limitations": [
+        "structure availability does not establish fitness for a new scientific calculation",
+        "historical DBF extxyz files are coordinate-only extractions without authoritative bond orders",
+        "recorded site packages do not establish universal adsorption-site coverage",
+        "MACE model weights and runtime software remain external"
+      ],
+      "download_policy": "Bundled in the AWF Release; no external structure download is required.",
+      "payloads": [
+        {
+          "id": "pvksam-reference-models",
+          "source": "Maintained project catalogs and used SAM inputs, privacy-sanitized for public distribution",
+          "path": "components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source",
+          "kind": "tree",
+          "file_bytes": 7820057,
+          "tree_sha256": "dd548eff614a99d9d2958ffbff5000d167cbf935bfb6c2ded5bc0283e5bfab30",
+          "expected_download_bytes_this_task": 0,
+          "bundled": true
+        }
+      ]
+    }
+  }
+}

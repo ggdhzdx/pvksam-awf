@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_run",
+  "status": "passed_clustering_pending_promotion",
+  "fingerprint": "13dd3b90b7ca6f0351496d5197d013104f0ddd696bbf264bc39f70e24f04bfab",
+  "substrate_key": "FTO",
+  "anchor_family": "carboxylic_acid",
+  "site_prototype_count": 3,
+  "artifacts": [
+    {
+      "role": "site_prototype_plan",
+      "path": "adsorption-site-prototype-plan.json",
+      "sha256": "b3585b46358340f83b8edf7f71fd99aaf923e59ad547b75d2371f5362f1c8698"
+    },
+    {
+      "role": "site_prototype_library",
+      "path": "site-prototypes.json",
+      "sha256": "8cc29b30d813f00f65dad3109dc29c6386774a0f4e1ff739fc3f22a3aaa20e86"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0001",
+      "path": "structures/site-prototype-carboxylic-acid-0001.extxyz",
+      "sha256": "0f0a2f494415819796f5841e8eece20940ccb44b36c884ce89d49f1d6d6793cd"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0002",
+      "path": "structures/site-prototype-carboxylic-acid-0002.extxyz",
+      "sha256": "68996620f69ae13fc340f38464c655093d595a35c7bca3b0bef9f07da0772a63"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0003",
+      "path": "structures/site-prototype-carboxylic-acid-0003.extxyz",
+      "sha256": "5447286a79ecc31e4b25d07d02ce151c67735760e45c28137497243b24a47bf4"
+    }
+  ]
+}

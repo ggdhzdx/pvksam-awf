@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "fingerprint": "7338c92d5f603633a5a08a2f9edd6269a58a5029e992ab4a6bb2e38cc798a012",
+  "plan_fingerprint": "0885bdb21710bd59de9f7d49e430cd0bdbeede9dae7dcb74cca4280d4a1a2008",
+  "started_at_utc": "2026-08-02T09:32:25.358286+00:00",
+  "output_directory": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/fto/surface_termination_screen_v1-20260802T093225Z-b8ad4bdd6c96/termination-runs/termination-002/fto/surface_relaxation_v1-20260802T093225Z-7338c92d5f60",
+  "host": "node01",
+  "python": "3.11.14",
+  "device": "cuda",
+  "default_dtype": "float32",
+  "plan": {
+    "path": "surface-relaxation-plan.json",
+    "sha256": "cd0368a979166b4cbc245d31b74a901ad472f02ef4b6cbb873b2d24787dc0ed2"
+  },
+  "artifacts": [
+    {
+      "role": "bulk_single_point_reference",
+      "path": "bulk-reference.json",
+      "sha256": "452624fcbd20409a58430db48d70f758a79018b6b11961caa9a19fcd15535b43"
+    },
+    {
+      "role": "initial_surface_slab",
+      "oriented_unit_repeats": 3,
+      "path": "repeat-003/initial.cif",
+      "sha256": "9446839aa45dba28cfce107a8eb9911a5a6f774f1c10b2f1e7de00194654a617"
+    },
+    {
+      "role": "relaxed_surface_slab",
+      "oriented_unit_repeats": 3,
+      "path": "repeat-003/relaxed.cif",
+      "sha256": "5a7b1c68297a1d0d88e585e645b4158ad2bf966b96d283799df883a0b5ee89b5"
+    },
+    {
+      "role": "surface_optimization_trajectory",
+      "oriented_unit_repeats": 3,
+      "path": "repeat-003/optimization.traj",
+      "sha256": "15c7921432c9afabe939a6c7472d67b29a417ef94241945129fe5c05c926ae8f"
+    },
+    {
+      "role": "surface_optimizer_log",
+      "oriented_unit_repeats": 3,
+      "path": "repeat-003/optimizer.log",
+      "sha256": "34b31288b187886684828df6bf69f9869dedf1e42261a84d31affcb8527c76e9"
+    },
+    {
+      "role": "surface_progress",
+      "oriented_unit_repeats": 3,
+      "path": "repeat-003/progress.jsonl",
+      "sha256": "a1f553c00d826813c9740f8cabfc7127c741d8cb7872c2dabddaa6a03b8a6c75"
+    },
+    {
+      "role": "surface_relaxation_report",
+      "oriented_unit_repeats": 3,
+      "path": "repeat-003/relaxation-report.json",
+      "sha256": "f9c172c47cf8a63253ed047e51372bf7688813e8281fc7143b1fe76a4d56621f"
+    },
+    {
+      "role": "initial_surface_slab",
+      "oriented_unit_repeats": 5,
+      "path": "repeat-005/initial.cif",
+      "sha256": "fb3a3c25684f6d668702886e3717ba956fed8e5d57034d49659a5390e525e573"
+    },
+    {
+      "role": "relaxed_surface_slab",
+      "oriented_unit_repeats": 5,
+      "path": "repeat-005/relaxed.cif",
+      "sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600"
+    },
+    {
+      "role": "surface_optimization_trajectory",
+      "oriented_unit_repeats": 5,
+      "path": "repeat-005/optimization.traj",
+      "sha256": "12e5245bb5481c3306f18534f3710fa2ed424fe19c0fe80663d16bc0819e3da4"
+    },
+    {
+      "role": "surface_optimizer_log",
+      "oriented_unit_repeats": 5,
+      "path": "repeat-005/optimizer.log",
+      "sha256": "3fb186a79eca6d2a5091e996120dbc0b52e1be3b30c4741654c7af810f8ccd83"
+    },
+    {
+      "role": "surface_progress",
+      "oriented_unit_repeats": 5,
+      "path": "repeat-005/progress.jsonl",
+      "sha256": "7e99077c3820e867e8d20724c33fe938cb03e5ac71c015befaa98de015d3d31a"
+    },
+    {
+      "role": "surface_relaxation_report",
+      "oriented_unit_repeats": 5,
+      "path": "repeat-005/relaxation-report.json",
+      "sha256": "bd34d08fb643e1909da1d2e0aa8e3a51b8c86ddf32e37abd27bdaabab7b395cf"
+    },
+    {
+      "role": "initial_surface_slab",
+      "oriented_unit_repeats": 7,
+      "path": "repeat-007/initial.cif",
+      "sha256": "d31da789c99884f26da6e2dd31ff64712b986fcc5e46b2459aa6d1d963a44bf5"
+    },
+    {
+      "role": "relaxed_surface_slab",
+      "oriented_unit_repeats": 7,
+      "path": "repeat-007/relaxed.cif",
+      "sha256": "cd01b6b61068abb6d3fef630f3a7632eaac1dcbf09c1e67689ff7b8d2d1583c7"
+    },
+    {
+      "role": "surface_optimization_trajectory",
+      "oriented_unit_repeats": 7,
+      "path": "repeat-007/optimization.traj",
+      "sha256": "7293c99388d4b4af87e4b63d29528c933138af1885be5cdd10465dfe598b353e"
+    },
+    {
+      "role": "surface_optimizer_log",
+      "oriented_unit_repeats": 7,
+      "path": "repeat-007/optimizer.log",
+      "sha256": "ed56b2551bbf5ad51d22684409c136989cdceb0bf6005cfc04d432d48b8a1e97"
+    },
+    {
+      "role": "surface_progress",
+      "oriented_unit_repeats": 7,
+      "path": "repeat-007/progress.jsonl",
+      "sha256": "321df85a62cecd84eeb81eb1dadc8e276d3ecac5c6d58124c182d550b581d93e"
+    },
+    {
+      "role": "surface_relaxation_report",
+      "oriented_unit_repeats": 7,
+      "path": "repeat-007/relaxation-report.json",
+      "sha256": "c45a588dbe93d5a245ec085831fbda76e209da9a83454dd7f2a7cf2c08de6684"
+    },
+    {
+      "role": "surface_convergence_report",
+      "path": "convergence-report.json",
+      "sha256": "63539ece350370be97b709df2c51a8e7c80f67165ba73b9637c27148446fe89d"
+    }
+  ],
+  "finished_at_utc": "2026-08-02T09:32:34.537279+00:00",
+  "runtime": {
+    "mace_version": "0.3.14",
+    "torch_version": "2.9.1+cu128",
+    "cuda_available": true,
+    "cuda_device_name": "NVIDIA GeForce RTX 4090 D"
+  },
+  "bulk_reference": {
+    "schema_version": 1,
+    "structure": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/bulk/SnO2-rutile-mace-mpa-0-medium-bulk-parent-v1.cif",
+      "sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429"
+    },
+    "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+    "default_dtype": "float32",
+    "device": "cuda",
+    "reduced_formula": {
+      "O": 2,
+      "Sn": 1
+    },
+    "parent_formula_units": 2,
+    "potential_energy_eV": -37.702091217041016,
+    "potential_energy_per_formula_unit_eV": -18.851045608520508,
+    "maximum_force_eV_A": 0.019661540497217776,
+    "note": "Fresh single-point reference evaluated in this run with the same calculator instance used for every slab."
+  },
+  "convergence_status": "passed"
+}

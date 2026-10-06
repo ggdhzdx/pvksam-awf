@@ -1,0 +1,257 @@
+schema_version = 1
+key = "ITO"
+display_name = "Sn-doped In2O3(111)"
+aliases = ["ito", "indium tin oxide", "sn-doped in2o3"]
+status = "validated_surface_recipe"
+
+[source]
+kind = "curated_surface_slab"
+structure = "structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/In2O3-Ia-3-111-three-repeat-O-terminated-relaxed-mace-mpa-0-medium-v1.cif"
+sha256 = "ca2a5df822673b3219e873d8552f05aa89cc64213d51f908d3c7a6894b125192"
+structure_manifest = "structures/ito/manifest.json"
+provenance = "relaxed_surface_promotion_v1 from surface_termination_screen_v1 termination-001; three-repeat ITO(111), O/O-terminated, force-converged and thickness-converged against the four/five-repeat series"
+expected_formula = { In = 48, O = 72 }
+
+[surface]
+miller = [1, 1, 1]
+termination = "stoichiometric_formally_nonpolar_O_top"
+normal_axis = 2
+
+[supercell]
+shape = "orthogonal"
+transform = [[1, 0, 0], [1, 2, 0], [0, 0, 1]]
+repeat = [4, 4, 1]
+minimum_sam_count = 64
+supported_workflows = ["single_molecule_adsorption", "dense_monolayer"]
+
+[single_molecule_adsorption]
+target_sam_count = 1
+size_metric = "maximum_atom_pair_distance"
+minimum_lateral_image_clearance_A = 10.0
+supercell_selection = "minimum_source_cell_multiplier_meeting_image_clearance"
+maximum_repeat = [8, 8, 1]
+minimum_bottom_vacuum_A = 10.0
+minimum_top_image_clearance_A = 10.0
+
+[slab]
+source_layers = 3
+target_layers = 3
+working_layers = 2
+layer_gap_A = 0.7
+minimum_thickness_A = 7.0
+minimum_vacuum_A = 24.0
+
+[doping]
+method = "substitution"
+host_element = "In"
+dopant_element = "Sn"
+layer_partition = "equal_stoichiometric_blocks_by_outward_normal"
+eligible_layer_indices_bottom_to_top = [1, 2, 3]
+target_site_fraction = 0.10416666666666667
+tolerance = 0.001
+distribution = "layer_stratified_farthest"
+layer_integer_allocation = "largest_remainder_bottom_to_top"
+layer_site_fractions = [0.0625, 0.125, 0.125]
+minimum_separation_A = 4.0
+seed = 340111
+charge_compensation = "implicit_electronic_donor_no_explicit_defect"
+
+[doping.target_fraction_basis]
+kind = "literature_guided_computational_default"
+status = "recommended_default_for_generic_conductive_ito"
+quantity = "Sn/(In+Sn) substitution fraction on cation sites"
+numerator = 5
+denominator = 48
+objective = "Generic transparent-conducting ITO, prioritizing low electrical resistivity while retaining a transparent-conductor composition range."
+physical_target_fraction = 0.10
+selection_method = "Use the literature-supported 10 cation-site at.% Sn target, then select the nearest source-cell-compatible exact fraction that preserves the validated three-layer 1:2:2 allocation."
+rationale = "The exact 5/48 value is 0.4167 percentage points above the 10 at.% physical target, is represented without rounding in every allowed source-cell repeat, preserves the established project ITO structures, and follows the validated bottom-to-top one, two, and two Sn allocation over three 16-In layers."
+evidence = ["doi:10.1021/acscombsci.5b00166", "https://www.sciencedirect.com/science/article/pii/S0040609000013699", "https://www.sciencedirect.com/science/article/pii/S0040609003020029", "git:6efd7f0:substrates/ito.toml", "DBF34_CODEX_STATUS.md"]
+limitation = "This is a generic conductivity-oriented computational default, not a universal optimum, not an experimental assay for the submitted material, not an optimization for the submitted SAM, and not 10 wt% SnO2; reported optima vary with deposition route and target property."
+user_override_policy = "Use --dopant-site-percent for a known Sn/(In+Sn) cation-site percentage; the plan must label it as a user override and retain the catalog recommendation for comparison."
+
+[doping.user_override]
+enabled = true
+input_quantity = "dopant substitutions divided by total host-plus-dopant sites on the registered substitutional sublattice"
+cli_option = "--dopant-site-percent"
+minimum_percent = 0.0
+maximum_percent = 20.0
+layer_profile_policy = "scale_catalog_layer_site_fractions"
+outside_range_policy = "reject_and_require_a_separately_reviewed_recipe"
+range_rationale = "The public override is bounded to a conservative 0-20 cation-site at.% modeling window; values outside it require an explicit substrate recipe and validation rather than silent extrapolation."
+
+[adsorption]
+site_source = "accepted_site_prototype_library"
+site_instance_protocol = "site_prototype_supercell_expansion_v1"
+coverage_policy = "fixed_catalog_minimum_sam_count"
+selection_objective = "minimum_total_undoped_parent_adsorption_energy"
+conflict_policy = "shared_actual_metal_hard_conflict"
+metal_capacity = 1
+anchor_element = "P"
+anchor_neighbor_pattern = ["C", "O", "O", "O"]
+released_protons = 2
+surface_parent_element = "O"
+
+[adsorption.dense_h0_pose_search]
+protocol_version = "outward_normal_clearance_scan_v1"
+anchor_families = ["phosphonic_acid", "carboxylic_acid"]
+translation_direction = "outward_surface_normal"
+normal_translation_step_A = 0.1
+maximum_translation_origin = "final_metal_oxygen_distance_window_width"
+candidate_retention = "all_compatible_translations_per_donor_mapping"
+
+[adsorption.site_discovery]
+protocol_version = "clean_surface_site_enumeration_v1"
+surface_side = "top"
+surface_metal_elements = ["In"]
+surface_metal_depth_A = 0.7
+probe = "methylphosphonic_acid"
+probe_manifest = "probes/methylphosphonic_acid/manifest.toml"
+probe_donor_labels = ["O1", "O2", "O3"]
+equivalent_probe_donors = true
+fully_deprotonated = true
+denticities = [2, 3]
+metal_vertex_distance_window_A = [3.0, 4.3]
+maximum_vertex_normal_span_A = 0.7
+symmetry_tolerance_A = 0.05
+require_distinct_periodic_metal_vertices = true
+
+[adsorption.site_discovery.probe_preparation]
+protocol_version = "adsorption_probe_preparation_v1"
+minimum_probe_image_separation_A = 10.0
+anchor_height_reference_A = 2.5
+anchor_height_search_A = [2.3, 3.05, 0.05]
+preferred_metal_oxygen_distance_A = 2.2
+accepted_metal_oxygen_distance_A = [1.8, 2.6]
+methyl_outward_alignment_weight = 4
+minimum_methyl_outward_cosine = 0.9
+minimum_unmapped_donor_metal_distance_A = 2.6
+minimum_probe_substrate_heavy_distance_A = 1.8
+surface_oxygen_depth_A = 0.7
+proton_parent_lateral_radius_A = 5.0
+surface_oxygen_hydrogen_bond_A = 0.98
+minimum_proton_proton_distance_A = 1.2
+minimum_proton_probe_heavy_distance_A = 1.4
+
+[adsorption.site_discovery.probe_relaxation]
+protocol_version = "adsorption_probe_relaxation_v1"
+relax_cell = false
+freeze_lower_substrate_layers = true
+movable_substrate_layers_from_surface = 1
+layer_partition = "equal_stoichiometric_blocks_by_outward_normal"
+probe_atoms_movable = true
+surface_protons_movable = true
+persist_atom_ids_before_relaxation = true
+optimizer = "LBFGS"
+force_tolerance_eV_A = 0.03
+maximum_step_A = 0.05
+maximum_steps = 500
+isolated_neutral_probe_vacuum_A = 10.0
+clean_slab_reference_policy = "relax_with_same_frozen_substrate_layers"
+neutral_probe_reference_policy = "relax_isolated_neutral_acid"
+reference_calculator_reuse = true
+retain_released_protons = true
+
+[adsorption.site_discovery.probe_relaxation.validation]
+final_metal_oxygen_distance_A = [1.7, 2.8]
+require_final_denticity_in_catalog = true
+require_probe_connectivity = true
+require_substrate_formula_unchanged = true
+surface_proton_final_policy = "bound_to_substrate_oxygen"
+maximum_surface_oxygen_hydrogen_distance_A = 1.25
+maximum_movable_substrate_displacement_A = 1.5
+
+[adsorption.site_discovery.site_prototype_clustering]
+protocol_version = "adsorption_site_prototype_clustering_v1"
+anchor_family = "phosphonic_acid"
+equivalent_probe_donors = true
+maximum_contact_distance_rms_difference_A = 0.15
+maximum_metal_geometry_rms_difference_A = 0.15
+maximum_anchor_height_difference_A = 0.20
+maximum_anchor_lateral_offset_difference_A = 0.25
+representative_selection = "lowest_adsorption_energy_then_candidate_id"
+energy_policy = "lowest_valid_surface_proton_placement_per_site_combination"
+doped_site_energy_policy = "reuse_undoped_parent"
+
+[adsorption.site_discovery_profiles.carboxylic_acid]
+anchor_element = "C"
+anchor_neighbor_pattern = ["C", "O", "O"]
+released_protons = 1
+surface_parent_element = "O"
+
+[adsorption.site_discovery_profiles.carboxylic_acid.site_discovery]
+protocol_version = "clean_surface_site_enumeration_v1"
+surface_side = "top"
+surface_metal_elements = ["In"]
+surface_metal_depth_A = 0.7
+probe = "acetic_acid"
+probe_manifest = "probes/acetic_acid/manifest.toml"
+probe_donor_labels = ["O1", "O2"]
+equivalent_probe_donors = true
+fully_deprotonated = true
+denticities = [2]
+binding_modes = ["bridging_distinct_metals", "chelating_shared_metal"]
+metal_vertex_distance_window_A = [3.0, 4.3]
+maximum_vertex_normal_span_A = 0.7
+symmetry_tolerance_A = 0.05
+require_distinct_periodic_metal_vertices = true
+
+[adsorption.site_discovery_profiles.carboxylic_acid.site_discovery.probe_preparation]
+protocol_version = "adsorption_probe_preparation_v1"
+minimum_probe_image_separation_A = 10.0
+anchor_height_reference_A = 2.5
+anchor_height_search_A = [2.3, 3.05, 0.05]
+chelate_donor_midpoint_height_reference_A = 1.9
+chelate_donor_midpoint_height_search_A = [1.2, 2.6, 0.025]
+chelate_azimuth_step_degrees = 5
+preferred_metal_oxygen_distance_A = 2.2
+accepted_metal_oxygen_distance_A = [1.8, 2.6]
+methyl_outward_alignment_weight = 4
+minimum_methyl_outward_cosine = 0.9
+minimum_unmapped_donor_metal_distance_A = 2.6
+minimum_probe_substrate_heavy_distance_A = 1.8
+surface_oxygen_depth_A = 0.7
+proton_parent_lateral_radius_A = 5.0
+surface_oxygen_hydrogen_bond_A = 0.98
+minimum_proton_proton_distance_A = 1.2
+minimum_proton_probe_heavy_distance_A = 1.4
+
+[adsorption.site_discovery_profiles.carboxylic_acid.site_discovery.probe_relaxation]
+protocol_version = "adsorption_probe_relaxation_v1"
+relax_cell = false
+freeze_lower_substrate_layers = true
+movable_substrate_layers_from_surface = 1
+layer_partition = "equal_stoichiometric_blocks_by_outward_normal"
+probe_atoms_movable = true
+surface_protons_movable = true
+persist_atom_ids_before_relaxation = true
+optimizer = "LBFGS"
+force_tolerance_eV_A = 0.03
+maximum_step_A = 0.05
+maximum_steps = 500
+isolated_neutral_probe_vacuum_A = 10.0
+clean_slab_reference_policy = "relax_with_same_frozen_substrate_layers"
+neutral_probe_reference_policy = "relax_isolated_neutral_acid"
+reference_calculator_reuse = true
+retain_released_protons = true
+
+[adsorption.site_discovery_profiles.carboxylic_acid.site_discovery.probe_relaxation.validation]
+final_metal_oxygen_distance_A = [1.7, 2.8]
+require_final_denticity_in_catalog = true
+require_probe_connectivity = true
+require_substrate_formula_unchanged = true
+surface_proton_final_policy = "bound_to_substrate_oxygen"
+maximum_surface_oxygen_hydrogen_distance_A = 1.25
+maximum_movable_substrate_displacement_A = 1.5
+
+[adsorption.site_discovery_profiles.carboxylic_acid.site_discovery.site_prototype_clustering]
+protocol_version = "adsorption_site_prototype_clustering_v1"
+anchor_family = "carboxylic_acid"
+equivalent_probe_donors = true
+maximum_contact_distance_rms_difference_A = 0.15
+maximum_metal_geometry_rms_difference_A = 0.15
+maximum_anchor_height_difference_A = 0.20
+maximum_anchor_lateral_offset_difference_A = 0.25
+representative_selection = "lowest_adsorption_energy_then_candidate_id"
+energy_policy = "lowest_valid_surface_proton_placement_per_site_combination"
+doped_site_energy_policy = "reuse_undoped_parent"

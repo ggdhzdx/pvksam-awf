@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "status": "passed_selection",
+  "selected_candidate_id": "termination-002",
+  "selection_rule": "Among stoichiometric, charge-neutral, formally nonpolar, force-converged and thickness-converged pairs, choose the lowest thick-limit surface energy.",
+  "energy_interpretation": {
+    "reported_quantity": "two_surface_pair_average",
+    "equation": "gamma_pair_average=(E_slab-N_formula*E_bulk_formula)/(2*A)",
+    "warning": "For an asymmetric or formally polar slab this is only the average excess energy of its two complementary surfaces, not either individual surface energy. Uncompensated polar pairs are diagnostic-only."
+  },
+  "candidate_results": [
+    {
+      "candidate_id": "termination-001",
+      "cut_fractional_phase": 0.193494636834,
+      "top_plane_formula": {
+        "O": 2,
+        "Sn": 2
+      },
+      "bottom_plane_formula": {
+        "O": 1
+      },
+      "formal_dipole_density_e_per_A": 1.5481456105048443,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    },
+    {
+      "candidate_id": "termination-002",
+      "cut_fractional_phase": 0.5,
+      "top_plane_formula": {
+        "O": 1
+      },
+      "bottom_plane_formula": {
+        "O": 1
+      },
+      "formal_dipole_density_e_per_A": 0.0,
+      "classification": "directly_rankable_nonpolar_pair",
+      "individual_surface_energy_interpretation": "allowed_for_symmetric_nonpolar_pair",
+      "calculation_status": "completed",
+      "relaxations_passed": true,
+      "thickness_converged": true,
+      "rankable": true,
+      "thickest_repeat": 7,
+      "pair_average_surface_energy_eV_A2": 0.06744246028324426,
+      "pair_average_surface_energy_J_m2": 1.0805473400528696,
+      "child_run": {
+        "status": "passed",
+        "output_directory": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/fto/surface_termination_screen_v1-20260802T093225Z-b8ad4bdd6c96/termination-runs/termination-002/fto/surface_relaxation_v1-20260802T093225Z-7338c92d5f60",
+        "run_manifest_sha256": "cf80d63dc3e8217dc0574f524438bce625a6d348460a920bb020e458bb39835d",
+        "convergence_report_sha256": "63539ece350370be97b709df2c51a8e7c80f67165ba73b9637c27148446fe89d"
+      }
+    },
+    {
+      "candidate_id": "termination-003",
+      "cut_fractional_phase": 0.806505363166,
+      "top_plane_formula": {
+        "O": 1
+      },
+      "bottom_plane_formula": {
+        "O": 2,
+        "Sn": 2
+      },
+      "formal_dipole_density_e_per_A": -1.5481456105048443,
+      "classification": "requires_separate_surface_energy_protocol",
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "calculation_status": "not_run_requires_compensation_or_symmetric_slab_protocol",
+      "relaxations_passed": null,
+      "thickness_converged": null,
+      "rankable": false,
+      "thickest_repeat": null,
+      "pair_average_surface_energy_eV_A2": null,
+      "pair_average_surface_energy_J_m2": null,
+      "child_run": null
+    }
+  ],
+  "diagnostic_pair_average_energy_order": [
+    "termination-002"
+  ],
+  "rankable_energy_order": [
+    "termination-002"
+  ]
+}

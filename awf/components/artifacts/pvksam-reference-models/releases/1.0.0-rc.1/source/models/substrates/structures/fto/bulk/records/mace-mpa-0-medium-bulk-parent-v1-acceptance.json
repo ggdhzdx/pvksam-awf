@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checks": {
+    "optimizer_converged": {
+      "passed": true,
+      "observed_steps": 6,
+      "maximum_steps": 500
+    },
+    "force": {
+      "passed": true,
+      "observed_eV_A": 0.0196611940604416,
+      "maximum_eV_A": 0.03
+    },
+    "stress": {
+      "passed": true,
+      "observed_GPa": 0.1811202838770499,
+      "maximum_GPa": 0.2
+    },
+    "reference_lattice": {
+      "passed": true,
+      "observed_maximum_relative_deviation": 0.018807895490369788,
+      "maximum_relative_deviation": 0.02
+    },
+    "cell_angles": {
+      "passed": true,
+      "observed_maximum_deviation_deg": 0.0,
+      "maximum_deviation_deg": 0.5
+    },
+    "cell_constraint": {
+      "passed": true,
+      "kind": "tetragonal",
+      "observed_relative_equality_deviation": 0.0,
+      "maximum_relative_equality_deviation": 1e-06
+    },
+    "formula": {
+      "passed": true,
+      "observed": {
+        "O": 4,
+        "Sn": 2
+      },
+      "expected": {
+        "O": 4,
+        "Sn": 2
+      }
+    },
+    "atom_count": {
+      "passed": true,
+      "observed": 6,
+      "expected": 6
+    },
+    "space_group": {
+      "passed": true,
+      "observed": {
+        "number": 136,
+        "symbol": "P4_2/mnm",
+        "symprec_A": 0.01
+      },
+      "expected_number": 136
+    }
+  },
+  "metrics": {
+    "potential_energy_eV": -37.702091217041016,
+    "maximum_force_eV_A": 0.0196611940604416,
+    "maximum_absolute_stress_GPa": 0.1811202838770499,
+    "stress_GPa": [
+      [
+        0.02046053876999963,
+        1.611230112170129e-05,
+        5.95699249571511e-06
+      ],
+      [
+        1.611230112170129e-05,
+        0.020462182459054488,
+        -6.017189744235591e-07
+      ],
+      [
+        5.95699249571511e-06,
+        -6.017189744235591e-07,
+        0.1811202838770499
+      ]
+    ],
+    "cell_A": {
+      "lengths": [
+        4.826500524096078,
+        4.826500524096078,
+        3.2296703656767276
+      ],
+      "angles_deg": [
+        90.0,
+        90.0,
+        90.0
+      ],
+      "volume_A3": 75.23551774145868
+    },
+    "relative_length_deviations": [
+      0.018807895490369788,
+      0.018807895490369788,
+      0.013579703011777463
+    ]
+  },
+  "symmetry": {
+    "number": 136,
+    "symbol": "P4_2/mnm",
+    "symprec_A": 0.01
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_promotion_run",
+  "status": "passed_promotion",
+  "fingerprint": "39bebf40f1c0fb5764a3e5cf088127cd659aaf23a6beeb2f5052ea75f5ce4381",
+  "promoted_at_utc": "2026-08-03T04:10:34.236737+00:00",
+  "substrate_key": "ITO",
+  "anchor_family": "phosphonic_acid",
+  "source_surface_sha256": "ca2a5df822673b3219e873d8552f05aa89cc64213d51f908d3c7a6894b125192",
+  "prototype_run": {
+    "directory": "${PVKSAM_PROJECT_ROOT}\\runs\\adsorption-site-prototypes\\ito\\adsorption_site_prototype_clustering_v1-10d5c9fed77c",
+    "manifest_sha256": "b1de960124e5dbd2dd2c5922a4ff945e8432ca4a149a949fb970a331af0bed01",
+    "fingerprint": "10d5c9fed77ca19ab1809d55747aa2f6ab72ea9ca3c2a2c4436d34fc2e03dde7"
+  },
+  "prototype_library_sha256": "82cd2d4e7c4d4a9bca666bafb7eba7628a56a271c4d241a572aaa514299377dc"
+}

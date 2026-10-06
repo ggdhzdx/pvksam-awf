@@ -1,0 +1,25 @@
+schema_version = 1
+key = "acetic_acid"
+display_name = "Acetic acid"
+anchor_family = "carboxylic_acid"
+source_kind = "pubchem_3d_conformer"
+source = "sources/pubchem-cid-176-3d.sdf"
+sha256 = "c51ff19f9924d6b2494310412de3b0e7392cc4f897bdd9fdc441a5980e855dea"
+source_url = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/176/record/SDF?record_type=3d"
+pubchem_cid = 176
+inchi_key = "QTBSBXVTEAMEQO-UHFFFAOYSA-N"
+expected_neutral_formula = { C = 2, H = 4, O = 2 }
+
+[topology]
+anchor_element = "C"
+carbon_neighbor_count = 1
+oxygen_neighbor_count = 2
+acidic_hydrogen_count = 1
+methyl_hydrogen_count = 3
+
+[deprotonation]
+policy = "remove_every_hydrogen_covalently_bound_to_anchor_oxygen"
+fully_deprotonated_formula = { C = 2, H = 3, O = 2 }
+released_protons = 1
+retain_released_protons_in_surface_system = true
+alternative_states_enumerated = false

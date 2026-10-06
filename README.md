@@ -1,27 +1,24 @@
 # PVKSAM AWF public distribution
 
-Portable public distribution of `pvksam@1.0.0-rc.17` (`AWF PVKSAM`). It implements the selected phosphonate SAM route for registered oxide substrates: systematic skeleton sampling, fixed-head optimization, site roll screening, MACE surface optimization, monolayer growth, proton placement and cyclic annealing.
+Portable public distribution of `pvksam@1.0.0-rc.18` (`AWF PVKSAM`). It implements the selected phosphonate SAM route and now includes the reference scientific structures needed to inspect and reuse that route.
 
 The exact Release is recorded because AWF uses a rolling current pointer. The historical `candidate` label is retained for compatibility and audit history; it does not block task-scoped use.
 
 ## Included
 
 - exact Workflow descriptor and immutable version lock;
-- `skill.pvksam@1.0.0-rc.15`;
-- `recipe.pvksam-ase-cueq@1.0.0-rc.2`;
-- portable identity for `artifact.mace-mpa-0-medium@1.0.0-rc.2`;
-- tests, small synthetic fixtures and scientific evidence boundaries.
+- `skill.pvksam@1.0.0-rc.16` and `recipe.pvksam-ase-cueq@1.0.0-rc.3`;
+- maintained ITO(111) and FTO(110) catalogs with bulk/source structures, relaxed slabs and phosphonic-acid/carboxylic-acid site packages;
+- six authoritative explicit-H SAM source SDFs: 1Br2PADCB, 1Br4PADCB, 2Br2PADCB, 2Nap-Ac, 3Nap-Ac and 4Nap-Ac;
+- three coordinate-only historical used-SAM models: DBF21ID, DBF34ID and DBF43ID;
+- lowest-energy optimized reference SDFs for the three brominated molecules;
+- tests, provenance records and scientific evidence boundaries.
 
-Private workspace paths, project ITO/SAM structures, substrate/site packages, trajectories, results, credentials and model weights are excluded.
+Select the SAM explicitly from `awf/components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source/MODEL-CATALOG.json`. The Skill discovers the bundled substrate catalog automatically. The historical DBF files do not preserve authoritative bond orders and require topology review before use as source molecules.
 
 ## External MACE model
 
-Obtain the model through a legitimate source and set `PVKSAM_MACE_MODEL` to its local path. Required identity:
-
-- bytes: `79,462,305`
-- SHA-256: `75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638`
-
-This repository does not authorize downloading or redistributing the model weights.
+The MACE weights remain external. Set `PVKSAM_MACE_MODEL` to a legitimately acquired payload with 79,462,305 bytes and SHA-256 `75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638`.
 
 ## Verify
 
@@ -29,10 +26,10 @@ This repository does not authorize downloading or redistributing the model weigh
 python verify.py
 ```
 
-The standalone verifier checks the repository manifest, exact Workflow lock, public-content exclusions, Python syntax and external-model identity declaration. Scientific execution additionally requires the environment and project inputs described by the Recipe.
+The verifier checks every distributed file, the exact lock, the bundled model catalog and checksums, path privacy, Python syntax and the external MACE identity declaration.
 
 ## Use with AWF
 
-`awf/registry.fragment.json` is merge input, not a replacement registry. Publish the listed immutable Releases through the recipient AWF installation's normal process, merge the fragment, and run that installation's verifier before use.
+`awf/registry.fragment.json` is merge input, not a replacement registry. Publish the listed immutable Releases through the recipient AWF installation, merge the fragment and run that installation's verifier.
 
-Engineering verification does not establish universal conformer coverage, an ITO-bound global minimum, force-field transferability or device performance.
+Engineering verification and bundled file identity do not establish universal conformer coverage, adsorption minima, force-field transferability or device performance.

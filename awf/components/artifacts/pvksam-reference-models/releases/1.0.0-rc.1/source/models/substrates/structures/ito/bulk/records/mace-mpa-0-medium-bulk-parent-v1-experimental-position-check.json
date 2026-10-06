@@ -1,0 +1,2226 @@
+{
+  "bulk_parent": {
+    "atom_count": 80,
+    "cell_A": {
+      "a": 10.3007485187,
+      "b": 10.3007485187,
+      "c": 10.3007485187
+    },
+    "formula": {
+      "In": 32,
+      "O": 48
+    },
+    "path": "bulk/In2O3-Ia-3-mace-mpa-0-medium-bulk-parent-v1.cif",
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "run_fingerprint": "500c5cfe723bbd0e034f0b3ecf9e7b4f807b655f41b48495ef737aaf00d7eb51",
+    "sha256": "ee8f6591c9bc900ee3d8209a1ed62e3b7e2d25535011b291bd7aad6efec2ad16",
+    "space_group": {
+      "number": 206,
+      "symbol": "Ia-3",
+      "symprec_A": 0.01
+    },
+    "status": "accepted"
+  },
+  "checks": {
+    "maximum_displacement": {
+      "maximum_A": 0.1,
+      "observed_A": 0.034429221125447336,
+      "passed": true
+    },
+    "rms_displacement": {
+      "maximum_A": 0.05,
+      "observed_A": 0.026723878340912187,
+      "passed": true
+    }
+  },
+  "comparison": {
+    "atom_mapping": [
+      {
+        "candidate_aligned_fractional": [
+          0.0,
+          0.25,
+          0.46599041753857995
+        ],
+        "candidate_standardized_index_0based": 0,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          -0.0031320457621860213
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          -0.00030958246141998824
+        ],
+        "reference_fractional": [
+          0.0,
+          0.25,
+          0.46629999999999994
+        ],
+        "reference_standardized_index_0based": 13
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.0,
+          0.25,
+          0.96599041753858
+        ],
+        "candidate_standardized_index_0based": 1,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          -0.0031320457621860213
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          -0.00030958246141998824
+        ],
+        "reference_fractional": [
+          0.0,
+          0.25,
+          0.9662999999999999
+        ],
+        "reference_standardized_index_0based": 6
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.5,
+          0.25,
+          0.53400958246142
+        ],
+        "candidate_standardized_index_0based": 2,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0031320457621860213
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.00030958246141998824
+        ],
+        "reference_fractional": [
+          0.5,
+          0.25,
+          0.5337000000000001
+        ],
+        "reference_standardized_index_0based": 12
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.5,
+          0.25,
+          0.03400958246142005
+        ],
+        "candidate_standardized_index_0based": 3,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0031320457621860213
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.00030958246141998824
+        ],
+        "reference_fractional": [
+          0.5,
+          0.25,
+          0.03370000000000006
+        ],
+        "reference_standardized_index_0based": 7
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.03400958246142005,
+          0.0,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 4,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0031320457621860213,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.00030958246141998824,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.03370000000000006,
+          0.0,
+          0.75
+        ],
+        "reference_standardized_index_0based": 14
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.53400958246142,
+          0.0,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 5,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0031320457621860213,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.00030958246141998824,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.5337000000000001,
+          0.0,
+          0.75
+        ],
+        "reference_standardized_index_0based": 9
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.03400958246142005,
+          0.5
+        ],
+        "candidate_standardized_index_0based": 6,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.03370000000000006,
+          0.5
+        ],
+        "reference_standardized_index_0based": 5
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 7,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "reference_standardized_index_0based": 3
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.25,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 8,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.25,
+          0.75
+        ],
+        "reference_standardized_index_0based": 2
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.46599041753857995,
+          0.0
+        ],
+        "candidate_standardized_index_0based": 9,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          -0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          -0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.46629999999999994,
+          0.0
+        ],
+        "reference_standardized_index_0based": 11
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.03400958246142005,
+          0.0
+        ],
+        "candidate_standardized_index_0based": 10,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.03370000000000006,
+          0.0
+        ],
+        "reference_standardized_index_0based": 10
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.25,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 11,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.25,
+          0.75
+        ],
+        "reference_standardized_index_0based": 0
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.75,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 12,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.75,
+          0.75
+        ],
+        "reference_standardized_index_0based": 1
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.46599041753857995,
+          0.5
+        ],
+        "candidate_standardized_index_0based": 13,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          -0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          -0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.46629999999999994,
+          0.5
+        ],
+        "reference_standardized_index_0based": 4
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.96599041753858,
+          0.5,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 14,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          -0.0031320457621860213,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          -0.00030958246141998824,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.9662999999999999,
+          0.5,
+          0.75
+        ],
+        "reference_standardized_index_0based": 15
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.46599041753857995,
+          0.5,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 15,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          -0.0031320457621860213,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          -0.00030958246141998824,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.46629999999999994,
+          0.5,
+          0.75
+        ],
+        "reference_standardized_index_0based": 8
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.11026572861628975,
+          0.15456853831426923,
+          0.6175864132045287
+        ],
+        "candidate_standardized_index_0based": 16,
+        "displacement_A": 0.03442922112544606,
+        "displacement_vector_A": [
+          0.01482877641100331,
+          -0.012458697874537608,
+          -0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.001465728616289741,
+          -0.0012314616857307115,
+          -0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.10880000000000001,
+          0.15579999999999994,
+          0.6204000000000001
+        ],
+        "reference_standardized_index_0based": 37
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6102657286162898,
+          0.8454314616857308,
+          0.6175864132045287
+        ],
+        "candidate_standardized_index_0based": 17,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.014828776411003872,
+          0.01245869787453789,
+          -0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0014657286162897964,
+          0.0012314616857307392,
+          -0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.6088,
+          0.8442000000000001,
+          0.6204000000000001
+        ],
+        "reference_standardized_index_0based": 27
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6102657286162898,
+          0.15456853831426923,
+          0.8824135867954713
+        ],
+        "candidate_standardized_index_0based": 18,
+        "displacement_A": 0.0344292211254463,
+        "displacement_vector_A": [
+          0.014828776411003872,
+          -0.012458697874537608,
+          0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0014657286162897964,
+          -0.0012314616857307115,
+          0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.6088,
+          0.15579999999999994,
+          0.8795999999999999
+        ],
+        "reference_standardized_index_0based": 26
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.11026572861628975,
+          0.8454314616857308,
+          0.8824135867954713
+        ],
+        "candidate_standardized_index_0based": 19,
+        "displacement_A": 0.03442922112544616,
+        "displacement_vector_A": [
+          0.01482877641100331,
+          0.01245869787453789,
+          0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.001465728616289741,
+          0.0012314616857307392,
+          0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.10880000000000001,
+          0.8442000000000001,
+          0.8795999999999999
+        ],
+        "reference_standardized_index_0based": 36
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.11758641320452856,
+          0.11026572861628975,
+          0.3454314616857308
+        ],
+        "candidate_standardized_index_0based": 20,
+        "displacement_A": 0.03442922112544709,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          0.01482877641100331,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          0.001465728616289741,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.12040000000000006,
+          0.10880000000000001,
+          0.34420000000000006
+        ],
+        "reference_standardized_index_0based": 19
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.11758641320452856,
+          0.38973427138371025,
+          0.8454314616857308
+        ],
+        "candidate_standardized_index_0based": 21,
+        "displacement_A": 0.03442922112544709,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          -0.01482877641100331,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          -0.001465728616289741,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.12040000000000006,
+          0.3912,
+          0.8442000000000001
+        ],
+        "reference_standardized_index_0based": 30
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.11758641320452856,
+          0.6102657286162898,
+          0.6545685383142692
+        ],
+        "candidate_standardized_index_0based": 22,
+        "displacement_A": 0.03442922112544733,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          0.014828776411003872,
+          -0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          0.0014657286162897964,
+          -0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.12040000000000006,
+          0.6088,
+          0.6557999999999999
+        ],
+        "reference_standardized_index_0based": 29
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.11758641320452856,
+          0.8897342713837102,
+          0.15456853831426923
+        ],
+        "candidate_standardized_index_0based": 23,
+        "displacement_A": 0.03442922112544723,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          -0.014828776411003872,
+          -0.012458697874537608
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          -0.0014657286162897964,
+          -0.0012314616857307115
+        ],
+        "reference_fractional": [
+          0.12040000000000006,
+          0.8912,
+          0.15579999999999994
+        ],
+        "reference_standardized_index_0based": 16
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.15456853831426923,
+          0.11758641320452856,
+          0.8897342713837102
+        ],
+        "candidate_standardized_index_0based": 24,
+        "displacement_A": 0.03442922112544723,
+        "displacement_vector_A": [
+          -0.012458697874537608,
+          -0.02846505760978518,
+          -0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307115,
+          -0.002813586795471501,
+          -0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.15579999999999994,
+          0.12040000000000006,
+          0.8912
+        ],
+        "reference_standardized_index_0based": 20
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.15456853831426923,
+          0.3824135867954713,
+          0.38973427138371025
+        ],
+        "candidate_standardized_index_0based": 25,
+        "displacement_A": 0.03442922112544606,
+        "displacement_vector_A": [
+          -0.012458697874537608,
+          0.028465057609784055,
+          -0.01482877641100331
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307115,
+          0.00281358679547139,
+          -0.001465728616289741
+        ],
+        "reference_fractional": [
+          0.15579999999999994,
+          0.37959999999999994,
+          0.3912
+        ],
+        "reference_standardized_index_0based": 35
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.15456853831426923,
+          0.6175864132045287,
+          0.11026572861628975
+        ],
+        "candidate_standardized_index_0based": 26,
+        "displacement_A": 0.03442922112544606,
+        "displacement_vector_A": [
+          -0.012458697874537608,
+          -0.028465057609784055,
+          0.01482877641100331
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307115,
+          -0.00281358679547139,
+          0.001465728616289741
+        ],
+        "reference_fractional": [
+          0.15579999999999994,
+          0.6204000000000001,
+          0.10880000000000001
+        ],
+        "reference_standardized_index_0based": 33
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.15456853831426923,
+          0.8824135867954713,
+          0.6102657286162898
+        ],
+        "candidate_standardized_index_0based": 27,
+        "displacement_A": 0.0344292211254463,
+        "displacement_vector_A": [
+          -0.012458697874537608,
+          0.028465057609784055,
+          0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307115,
+          0.00281358679547139,
+          0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.15579999999999994,
+          0.8795999999999999,
+          0.6088
+        ],
+        "reference_standardized_index_0based": 22
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3454314616857308,
+          0.11758641320452856,
+          0.11026572861628975
+        ],
+        "candidate_standardized_index_0based": 28,
+        "displacement_A": 0.03442922112544709,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          -0.02846505760978518,
+          0.01482877641100331
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          -0.002813586795471501,
+          0.001465728616289741
+        ],
+        "reference_fractional": [
+          0.34420000000000006,
+          0.12040000000000006,
+          0.10880000000000001
+        ],
+        "reference_standardized_index_0based": 23
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3454314616857308,
+          0.3824135867954713,
+          0.6102657286162898
+        ],
+        "candidate_standardized_index_0based": 29,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          0.028465057609784055,
+          0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          0.00281358679547139,
+          0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.34420000000000006,
+          0.37959999999999994,
+          0.6088
+        ],
+        "reference_standardized_index_0based": 32
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3454314616857308,
+          0.6175864132045287,
+          0.8897342713837102
+        ],
+        "candidate_standardized_index_0based": 30,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          -0.028465057609784055,
+          -0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          -0.00281358679547139,
+          -0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.34420000000000006,
+          0.6204000000000001,
+          0.8912
+        ],
+        "reference_standardized_index_0based": 34
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3454314616857308,
+          0.8824135867954713,
+          0.38973427138371025
+        ],
+        "candidate_standardized_index_0based": 31,
+        "displacement_A": 0.03442922112544616,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          0.028465057609784055,
+          -0.01482877641100331
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          0.00281358679547139,
+          -0.001465728616289741
+        ],
+        "reference_fractional": [
+          0.34420000000000006,
+          0.8795999999999999,
+          0.3912
+        ],
+        "reference_standardized_index_0based": 21
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3824135867954713,
+          0.11026572861628975,
+          0.6545685383142692
+        ],
+        "candidate_standardized_index_0based": 32,
+        "displacement_A": 0.034429221125446156,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          0.01482877641100331,
+          -0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          0.001465728616289741,
+          -0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.37959999999999994,
+          0.10880000000000001,
+          0.6557999999999999
+        ],
+        "reference_standardized_index_0based": 18
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3824135867954713,
+          0.38973427138371025,
+          0.15456853831426923
+        ],
+        "candidate_standardized_index_0based": 33,
+        "displacement_A": 0.03442922112544606,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          -0.01482877641100331,
+          -0.012458697874537608
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          -0.001465728616289741,
+          -0.0012314616857307115
+        ],
+        "reference_fractional": [
+          0.37959999999999994,
+          0.3912,
+          0.15579999999999994
+        ],
+        "reference_standardized_index_0based": 31
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3824135867954713,
+          0.6102657286162898,
+          0.3454314616857308
+        ],
+        "candidate_standardized_index_0based": 34,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          0.014828776411003872,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          0.0014657286162897964,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.37959999999999994,
+          0.6088,
+          0.34420000000000006
+        ],
+        "reference_standardized_index_0based": 28
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3824135867954713,
+          0.8897342713837102,
+          0.8454314616857308
+        ],
+        "candidate_standardized_index_0based": 35,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          -0.014828776411003872,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          -0.0014657286162897964,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.37959999999999994,
+          0.8912,
+          0.8442000000000001
+        ],
+        "reference_standardized_index_0based": 17
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8897342713837102,
+          0.6545685383142692,
+          0.8824135867954713
+        ],
+        "candidate_standardized_index_0based": 36,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          -0.014828776411003872,
+          -0.01245869787453789,
+          0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0014657286162897964,
+          -0.0012314616857307392,
+          0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.8912,
+          0.6557999999999999,
+          0.8795999999999999
+        ],
+        "reference_standardized_index_0based": 39
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.38973427138371025,
+          0.3454314616857308,
+          0.8824135867954713
+        ],
+        "candidate_standardized_index_0based": 37,
+        "displacement_A": 0.03442922112544616,
+        "displacement_vector_A": [
+          -0.01482877641100331,
+          0.01245869787453789,
+          0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.001465728616289741,
+          0.0012314616857307392,
+          0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.3912,
+          0.34420000000000006,
+          0.8795999999999999
+        ],
+        "reference_standardized_index_0based": 25
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.38973427138371025,
+          0.6545685383142692,
+          0.6175864132045287
+        ],
+        "candidate_standardized_index_0based": 38,
+        "displacement_A": 0.03442922112544616,
+        "displacement_vector_A": [
+          -0.01482877641100331,
+          -0.01245869787453789,
+          -0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.001465728616289741,
+          -0.0012314616857307392,
+          -0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.3912,
+          0.6557999999999999,
+          0.6204000000000001
+        ],
+        "reference_standardized_index_0based": 24
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8897342713837102,
+          0.3454314616857308,
+          0.6175864132045287
+        ],
+        "candidate_standardized_index_0based": 39,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          -0.014828776411003872,
+          0.01245869787453789,
+          -0.028465057609784055
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0014657286162897964,
+          0.0012314616857307392,
+          -0.00281358679547139
+        ],
+        "reference_fractional": [
+          0.8912,
+          0.34420000000000006,
+          0.6204000000000001
+        ],
+        "reference_standardized_index_0based": 38
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.5,
+          0.75,
+          0.96599041753858
+        ],
+        "candidate_standardized_index_0based": 40,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          -0.0031320457621860213
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          -0.00030958246141998824
+        ],
+        "reference_fractional": [
+          0.5,
+          0.75,
+          0.9662999999999999
+        ],
+        "reference_standardized_index_0based": 53
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.5,
+          0.75,
+          0.46599041753857984
+        ],
+        "candidate_standardized_index_0based": 41,
+        "displacement_A": 0.0031320457621871445,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          -0.0031320457621871445
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          -0.00030958246142009926
+        ],
+        "reference_fractional": [
+          0.5,
+          0.75,
+          0.46629999999999994
+        ],
+        "reference_standardized_index_0based": 46
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.0,
+          0.75,
+          0.03400958246142016
+        ],
+        "candidate_standardized_index_0based": 42,
+        "displacement_A": 0.0031320457621871445,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0031320457621871445
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.00030958246142009926
+        ],
+        "reference_fractional": [
+          0.0,
+          0.75,
+          0.03370000000000006
+        ],
+        "reference_standardized_index_0based": 52
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.0,
+          0.75,
+          0.53400958246142
+        ],
+        "candidate_standardized_index_0based": 43,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0031320457621860213
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.00030958246141998824
+        ],
+        "reference_fractional": [
+          0.0,
+          0.75,
+          0.5337000000000001
+        ],
+        "reference_standardized_index_0based": 47
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.53400958246142,
+          0.5,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 44,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0031320457621860213,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.00030958246141998824,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.5337000000000001,
+          0.5,
+          0.25
+        ],
+        "reference_standardized_index_0based": 54
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.03400958246142016,
+          0.5,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 45,
+        "displacement_A": 0.0031320457621871445,
+        "displacement_vector_A": [
+          0.0031320457621871445,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.00030958246142009926,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.03370000000000006,
+          0.5,
+          0.25
+        ],
+        "reference_standardized_index_0based": 49
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.53400958246142,
+          0.0
+        ],
+        "candidate_standardized_index_0based": 46,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.5337000000000001,
+          0.0
+        ],
+        "reference_standardized_index_0based": 45
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "candidate_standardized_index_0based": 47,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "reference_standardized_index_0based": 43
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.75,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 48,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.75,
+          0.25
+        ],
+        "reference_standardized_index_0based": 42
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.96599041753858,
+          0.5
+        ],
+        "candidate_standardized_index_0based": 49,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          -0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          -0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.9662999999999999,
+          0.5
+        ],
+        "reference_standardized_index_0based": 51
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.53400958246142,
+          0.5
+        ],
+        "candidate_standardized_index_0based": 50,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.5337000000000001,
+          0.5
+        ],
+        "reference_standardized_index_0based": 50
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.75,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 51,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.75,
+          0.25
+        ],
+        "reference_standardized_index_0based": 40
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.75,
+          0.25,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 52,
+        "displacement_A": 0.0,
+        "displacement_vector_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.75,
+          0.25,
+          0.25
+        ],
+        "reference_standardized_index_0based": 41
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.25,
+          0.96599041753858,
+          0.0
+        ],
+        "candidate_standardized_index_0based": 53,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          0.0,
+          -0.0031320457621860213,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          0.0,
+          -0.00030958246141998824,
+          0.0
+        ],
+        "reference_fractional": [
+          0.25,
+          0.9662999999999999,
+          0.0
+        ],
+        "reference_standardized_index_0based": 44
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.46599041753857984,
+          0.0,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 54,
+        "displacement_A": 0.0031320457621871445,
+        "displacement_vector_A": [
+          -0.0031320457621871445,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          -0.00030958246142009926,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.46629999999999994,
+          0.0,
+          0.25
+        ],
+        "reference_standardized_index_0based": 55
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.96599041753858,
+          0.0,
+          0.25
+        ],
+        "candidate_standardized_index_0based": 55,
+        "displacement_A": 0.0031320457621860213,
+        "displacement_vector_A": [
+          -0.0031320457621860213,
+          0.0,
+          0.0
+        ],
+        "element": "In",
+        "fractional_difference_minimum_image": [
+          -0.00030958246141998824,
+          0.0,
+          0.0
+        ],
+        "reference_fractional": [
+          0.9662999999999999,
+          0.0,
+          0.25
+        ],
+        "reference_standardized_index_0based": 48
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6102657286162898,
+          0.6545685383142692,
+          0.11758641320452856
+        ],
+        "candidate_standardized_index_0based": 56,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          0.014828776411003872,
+          -0.01245869787453789,
+          -0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0014657286162897964,
+          -0.0012314616857307392,
+          -0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.6088,
+          0.6557999999999999,
+          0.12040000000000006
+        ],
+        "reference_standardized_index_0based": 77
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.1102657286162898,
+          0.3454314616857308,
+          0.11758641320452856
+        ],
+        "candidate_standardized_index_0based": 57,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          0.014828776411003872,
+          0.01245869787453789,
+          -0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0014657286162897964,
+          0.0012314616857307392,
+          -0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.10880000000000001,
+          0.34420000000000006,
+          0.12040000000000006
+        ],
+        "reference_standardized_index_0based": 67
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.1102657286162898,
+          0.6545685383142692,
+          0.38241358679547144
+        ],
+        "candidate_standardized_index_0based": 58,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          0.014828776411003872,
+          -0.01245869787453789,
+          0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0014657286162897964,
+          -0.0012314616857307392,
+          0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.10880000000000001,
+          0.6557999999999999,
+          0.37959999999999994
+        ],
+        "reference_standardized_index_0based": 66
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6102657286162898,
+          0.3454314616857308,
+          0.38241358679547144
+        ],
+        "candidate_standardized_index_0based": 59,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          0.014828776411003872,
+          0.01245869787453789,
+          0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0014657286162897964,
+          0.0012314616857307392,
+          0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.6088,
+          0.34420000000000006,
+          0.37959999999999994
+        ],
+        "reference_standardized_index_0based": 76
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6175864132045286,
+          0.6102657286162898,
+          0.8454314616857308
+        ],
+        "candidate_standardized_index_0based": 60,
+        "displacement_A": 0.03442922112544733,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          0.014828776411003872,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          0.0014657286162897964,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.6204000000000001,
+          0.6088,
+          0.8442000000000001
+        ],
+        "reference_standardized_index_0based": 59
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6175864132045286,
+          0.8897342713837102,
+          0.3454314616857308
+        ],
+        "candidate_standardized_index_0based": 61,
+        "displacement_A": 0.03442922112544733,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          -0.014828776411003872,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          -0.0014657286162897964,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.6204000000000001,
+          0.8912,
+          0.34420000000000006
+        ],
+        "reference_standardized_index_0based": 70
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6175864132045286,
+          0.1102657286162898,
+          0.1545685383142692
+        ],
+        "candidate_standardized_index_0based": 62,
+        "displacement_A": 0.03442922112544733,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          0.014828776411003872,
+          -0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          0.0014657286162897964,
+          -0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.6204000000000001,
+          0.10880000000000001,
+          0.15579999999999994
+        ],
+        "reference_standardized_index_0based": 69
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6175864132045286,
+          0.3897342713837102,
+          0.6545685383142692
+        ],
+        "candidate_standardized_index_0based": 63,
+        "displacement_A": 0.03442922112544733,
+        "displacement_vector_A": [
+          -0.02846505760978518,
+          -0.014828776411003872,
+          -0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.002813586795471501,
+          -0.0014657286162897964,
+          -0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.6204000000000001,
+          0.3912,
+          0.6557999999999999
+        ],
+        "reference_standardized_index_0based": 56
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6545685383142692,
+          0.6175864132045286,
+          0.3897342713837102
+        ],
+        "candidate_standardized_index_0based": 64,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          -0.01245869787453789,
+          -0.02846505760978518,
+          -0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307392,
+          -0.002813586795471501,
+          -0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.6557999999999999,
+          0.6204000000000001,
+          0.3912
+        ],
+        "reference_standardized_index_0based": 60
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6545685383142692,
+          0.8824135867954713,
+          0.8897342713837102
+        ],
+        "candidate_standardized_index_0based": 65,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          -0.01245869787453789,
+          0.028465057609784055,
+          -0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307392,
+          0.00281358679547139,
+          -0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.6557999999999999,
+          0.8795999999999999,
+          0.8912
+        ],
+        "reference_standardized_index_0based": 75
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6545685383142692,
+          0.11758641320452856,
+          0.6102657286162898
+        ],
+        "candidate_standardized_index_0based": 66,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          -0.01245869787453789,
+          -0.02846505760978518,
+          0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307392,
+          -0.002813586795471501,
+          0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.6557999999999999,
+          0.12040000000000006,
+          0.6088
+        ],
+        "reference_standardized_index_0based": 73
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.6545685383142692,
+          0.38241358679547144,
+          0.1102657286162898
+        ],
+        "candidate_standardized_index_0based": 67,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          -0.01245869787453789,
+          0.02846505760978518,
+          0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0012314616857307392,
+          0.002813586795471501,
+          0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.6557999999999999,
+          0.37959999999999994,
+          0.10880000000000001
+        ],
+        "reference_standardized_index_0based": 62
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8454314616857308,
+          0.6175864132045286,
+          0.6102657286162898
+        ],
+        "candidate_standardized_index_0based": 68,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          -0.02846505760978518,
+          0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          -0.002813586795471501,
+          0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.8442000000000001,
+          0.6204000000000001,
+          0.6088
+        ],
+        "reference_standardized_index_0based": 63
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8454314616857308,
+          0.8824135867954713,
+          0.1102657286162898
+        ],
+        "candidate_standardized_index_0based": 69,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          0.028465057609784055,
+          0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          0.00281358679547139,
+          0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.8442000000000001,
+          0.8795999999999999,
+          0.10880000000000001
+        ],
+        "reference_standardized_index_0based": 72
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8454314616857308,
+          0.11758641320452856,
+          0.3897342713837102
+        ],
+        "candidate_standardized_index_0based": 70,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          -0.02846505760978518,
+          -0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          -0.002813586795471501,
+          -0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.8442000000000001,
+          0.12040000000000006,
+          0.3912
+        ],
+        "reference_standardized_index_0based": 74
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8454314616857308,
+          0.38241358679547144,
+          0.8897342713837102
+        ],
+        "candidate_standardized_index_0based": 71,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          0.01245869787453789,
+          0.02846505760978518,
+          -0.014828776411003872
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.0012314616857307392,
+          0.002813586795471501,
+          -0.0014657286162897964
+        ],
+        "reference_fractional": [
+          0.8442000000000001,
+          0.37959999999999994,
+          0.8912
+        ],
+        "reference_standardized_index_0based": 61
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8824135867954713,
+          0.6102657286162898,
+          0.1545685383142692
+        ],
+        "candidate_standardized_index_0based": 72,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          0.014828776411003872,
+          -0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          0.0014657286162897964,
+          -0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.8795999999999999,
+          0.6088,
+          0.15579999999999994
+        ],
+        "reference_standardized_index_0based": 58
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8824135867954713,
+          0.8897342713837102,
+          0.6545685383142692
+        ],
+        "candidate_standardized_index_0based": 73,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          -0.014828776411003872,
+          -0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          -0.0014657286162897964,
+          -0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.8795999999999999,
+          0.8912,
+          0.6557999999999999
+        ],
+        "reference_standardized_index_0based": 71
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8824135867954713,
+          0.1102657286162898,
+          0.8454314616857308
+        ],
+        "candidate_standardized_index_0based": 74,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          0.014828776411003872,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          0.0014657286162897964,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.8795999999999999,
+          0.10880000000000001,
+          0.8442000000000001
+        ],
+        "reference_standardized_index_0based": 68
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8824135867954713,
+          0.3897342713837102,
+          0.3454314616857308
+        ],
+        "candidate_standardized_index_0based": 75,
+        "displacement_A": 0.034429221125446406,
+        "displacement_vector_A": [
+          0.028465057609784055,
+          -0.014828776411003872,
+          0.01245869787453789
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          0.00281358679547139,
+          -0.0014657286162897964,
+          0.0012314616857307392
+        ],
+        "reference_fractional": [
+          0.8795999999999999,
+          0.3912,
+          0.34420000000000006
+        ],
+        "reference_standardized_index_0based": 57
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3897342713837102,
+          0.1545685383142692,
+          0.38241358679547144
+        ],
+        "candidate_standardized_index_0based": 76,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          -0.014828776411003872,
+          -0.01245869787453789,
+          0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0014657286162897964,
+          -0.0012314616857307392,
+          0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.3912,
+          0.15579999999999994,
+          0.37959999999999994
+        ],
+        "reference_standardized_index_0based": 79
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8897342713837102,
+          0.8454314616857308,
+          0.38241358679547144
+        ],
+        "candidate_standardized_index_0based": 77,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          -0.014828776411003872,
+          0.01245869787453789,
+          0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0014657286162897964,
+          0.0012314616857307392,
+          0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.8912,
+          0.8442000000000001,
+          0.37959999999999994
+        ],
+        "reference_standardized_index_0based": 65
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.8897342713837102,
+          0.1545685383142692,
+          0.11758641320452856
+        ],
+        "candidate_standardized_index_0based": 78,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          -0.014828776411003872,
+          -0.01245869787453789,
+          -0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0014657286162897964,
+          -0.0012314616857307392,
+          -0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.8912,
+          0.15579999999999994,
+          0.12040000000000006
+        ],
+        "reference_standardized_index_0based": 64
+      },
+      {
+        "candidate_aligned_fractional": [
+          0.3897342713837102,
+          0.8454314616857308,
+          0.11758641320452856
+        ],
+        "candidate_standardized_index_0based": 79,
+        "displacement_A": 0.034429221125447336,
+        "displacement_vector_A": [
+          -0.014828776411003872,
+          0.01245869787453789,
+          -0.02846505760978518
+        ],
+        "element": "O",
+        "fractional_difference_minimum_image": [
+          -0.0014657286162897964,
+          0.0012314616857307392,
+          -0.002813586795471501
+        ],
+        "reference_fractional": [
+          0.3912,
+          0.8442000000000001,
+          0.12040000000000006
+        ],
+        "reference_standardized_index_0based": 78
+      }
+    ],
+    "by_element": {
+      "In": {
+        "count": 32,
+        "maximum_displacement_A": 0.0031320457621871445,
+        "mean_displacement_A": 0.0023490343216396566,
+        "rms_displacement_A": 0.002712431195868651
+      },
+      "O": {
+        "count": 48,
+        "maximum_displacement_A": 0.034429221125447336,
+        "mean_displacement_A": 0.034429221125446795,
+        "rms_displacement_A": 0.034429221125446795
+      }
+    },
+    "by_wyckoff_group": {
+      "In:b": {
+        "count": 8,
+        "maximum_displacement_A": 0.0,
+        "mean_displacement_A": 0.0,
+        "representative": {
+          "candidate_fractional": [
+            0.75,
+            0.25,
+            0.75
+          ],
+          "experimental_fractional": [
+            0.75,
+            0.25,
+            0.75
+          ],
+          "fractional_difference_minimum_image": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rms_displacement_A": 0.0
+      },
+      "In:d": {
+        "count": 24,
+        "maximum_displacement_A": 0.0031320457621871445,
+        "mean_displacement_A": 0.0031320457621862086,
+        "representative": {
+          "candidate_fractional": [
+            0.75,
+            0.46599041753857995,
+            0.5
+          ],
+          "experimental_fractional": [
+            0.75,
+            0.46629999999999994,
+            0.5
+          ],
+          "fractional_difference_minimum_image": [
+            0.0,
+            -0.00030958246141998824,
+            0.0
+          ]
+        },
+        "rms_displacement_A": 0.003132045762186208
+      },
+      "O:e": {
+        "count": 48,
+        "maximum_displacement_A": 0.034429221125447336,
+        "mean_displacement_A": 0.034429221125446795,
+        "representative": {
+          "candidate_fractional": [
+            0.11758641320452856,
+            0.8897342713837102,
+            0.15456853831426923
+          ],
+          "experimental_fractional": [
+            0.12040000000000006,
+            0.8912,
+            0.15579999999999994
+          ],
+          "fractional_difference_minimum_image": [
+            -0.002813586795471501,
+            -0.0014657286162897964,
+            -0.0012314616857307115
+          ]
+        },
+        "rms_displacement_A": 0.034429221125446795
+      }
+    },
+    "coordinate_basis": "Fractional internal-coordinate differences converted with the experimental reference lattice; lattice-size error is excluded.",
+    "method": "spglib_standardized_conventional_cells_then_elementwise_hungarian_minimum_image_matching",
+    "origin_shift_fractional": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "overall_maximum_displacement_A": 0.034429221125447336,
+    "overall_mean_displacement_A": 0.021597146403923934,
+    "overall_rms_displacement_A": 0.026723878340912187,
+    "symprec_A": 0.01
+  },
+  "experimental_reference": {
+    "citation": "M. Marezio, Refinement of the crystal structure of In2O3 at two wavelengths, Acta Crystallographica 20 (1966) 723-728",
+    "doi": "10.1107/S0365110X66001749",
+    "path": "sources/experimental/cod-2310009-marezio-1966.cif",
+    "sha256": "9f37d9c40f126e548deb9a9be0992d1d6ac3be7ddfc64fffc216cc1e8589fcb2"
+  },
+  "mode": "bulk_parent_position_check",
+  "schema_version": 1,
+  "status": "passed",
+  "substrate": "ITO"
+}

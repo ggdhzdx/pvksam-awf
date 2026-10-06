@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_promotion_run",
+  "status": "passed_promotion",
+  "fingerprint": "cd9c96d2ef3cfd0eb6bba5e4fb04901514db5c9ac7831bfae48a534d235cb41a",
+  "promoted_at_utc": "2026-08-03T11:23:04.908247+00:00",
+  "substrate_key": "FTO",
+  "anchor_family": "carboxylic_acid",
+  "source_surface_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+  "prototype_run": {
+    "directory": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-13dd3b90b7ca",
+    "manifest_sha256": "e7be125becefd50967537c27ed0764daf0b0c915710c1fa8a6d9fd9b5083dc46",
+    "fingerprint": "13dd3b90b7ca6f0351496d5197d013104f0ddd696bbf264bc39f70e24f04bfab"
+  },
+  "prototype_library_sha256": "8cc29b30d813f00f65dad3109dc29c6386774a0f4e1ff739fc3f22a3aaa20e86"
+}

@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_promotion_plan",
+  "status": "passed_promotion_plan",
+  "fingerprint": "9d5447f15e469366d3f7f13aba5ab850b9d3651049f1727fd6d84c7a20e63ce8",
+  "substrate": {
+    "key": "FTO",
+    "structure_manifest_path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/manifest.json",
+    "structure_manifest_sha256": "162fc56ef63afd2ab8e3cbc4b028c4a9f707118ec236aec26f018d8778f3648a"
+  },
+  "source_surface_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+  "anchor_family": "phosphonic_acid",
+  "probe": {
+    "schema_version": 1,
+    "key": "methylphosphonic_acid",
+    "display_name": "Methylphosphonic acid",
+    "anchor_family": "phosphonic_acid",
+    "manifest_sha256": "50909d1e1fea4427bcf5d601f2873b6c27006f843e65ecab5c3257fce63290f4",
+    "source_kind": "pubchem_3d_conformer",
+    "source_sha256": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf",
+    "source_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13818/record/SDF?record_type=3d",
+    "pubchem_cid": 13818,
+    "inchi_key": "YACKEPLHDIMKIO-UHFFFAOYSA-N",
+    "neutral_formula": {
+      "C": 1,
+      "H": 5,
+      "O": 3,
+      "P": 1
+    },
+    "neutral_atom_count": 10,
+    "fully_deprotonated_formula": {
+      "C": 1,
+      "H": 3,
+      "O": 3,
+      "P": 1
+    },
+    "fully_deprotonated_atom_count": 8,
+    "released_protons": 2,
+    "source_atom_ids": {
+      "anchor": 0,
+      "carbon": 4,
+      "oxygen_donors": [
+        1,
+        2,
+        3
+      ],
+      "acidic_hydrogens_removed": [
+        8,
+        9
+      ],
+      "methyl_hydrogens_retained": [
+        5,
+        6,
+        7
+      ]
+    },
+    "adsorbate_atom_ids": {
+      "anchor": 0,
+      "carbon": 4,
+      "oxygen_donors": [
+        1,
+        2,
+        3
+      ],
+      "methyl_hydrogens": [
+        5,
+        6,
+        7
+      ]
+    },
+    "adsorbate_to_source_atom_id": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "deprotonation_policy": "remove_every_hydrogen_covalently_bound_to_anchor_oxygen",
+    "alternative_states_enumerated": false
+  },
+  "clustering_contract": {
+    "protocol_version": "adsorption_site_prototype_clustering_v1",
+    "anchor_family": "phosphonic_acid",
+    "equivalent_probe_donors": true,
+    "maximum_contact_distance_rms_difference_A": 0.15,
+    "maximum_metal_geometry_rms_difference_A": 0.15,
+    "maximum_anchor_height_difference_A": 0.2,
+    "maximum_anchor_lateral_offset_difference_A": 0.25,
+    "representative_selection": "lowest_adsorption_energy_then_candidate_id",
+    "energy_policy": "lowest_valid_surface_proton_placement_per_site_combination",
+    "doped_site_energy_policy": "reuse_undoped_parent"
+  },
+  "prototype_run": {
+    "directory": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-80142c6989cd",
+    "manifest_sha256": "380e3522a578e28718c4bced8ecf3b9ea2eca283295a10229fbfc157c8387a1b",
+    "fingerprint": "80142c6989cd65df13a2db22556a12658af27d9eadc2a39d6e7b7d7f18be6904"
+  },
+  "prototype_library": {
+    "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-80142c6989cd/site-prototypes.json",
+    "source_sha256": "ed4a0dd815244415e2ed5325903ae88fee5700dfc93473fade4601c463e78ffa",
+    "summary": {
+      "selected_relaxed_site_count": 3,
+      "rejected_geometric_site_combination_count": 2,
+      "site_prototype_count": 1,
+      "bidentate_prototype_count": 1,
+      "tridentate_prototype_count": 0,
+      "collapsed_selected_site_count": 2
+    },
+    "destination_directory": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd",
+    "destination_path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/fto/adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/site-prototypes.json"
+  },
+  "representative_structures": [
+    {
+      "site_prototype_id": "site-prototype-phosphonic-acid-0001",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-80142c6989cd/structures/site-prototype-phosphonic-acid-0001.extxyz",
+      "source_sha256": "32ec39bae8a67b75563a8ab4f8478e5b5ed6323606610b4f6341319fdbf297e3",
+      "destination_name": "site-prototype-phosphonic-acid-0001.extxyz"
+    }
+  ],
+  "evidence": [
+    {
+      "role": "site_prototype_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-80142c6989cd/adsorption-site-prototype-plan.json",
+      "source_sha256": "3bdf7395f9f4b0dd2f1c5b52749e46fce4d492f05aa7e2bff39f5bbfcd52d810",
+      "destination_name": "site-prototype-plan.json"
+    },
+    {
+      "role": "site_prototype_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-site-prototypes/fto/adsorption_site_prototype_clustering_v1-80142c6989cd/run-manifest.json",
+      "source_sha256": "380e3522a578e28718c4bced8ecf3b9ea2eca283295a10229fbfc157c8387a1b",
+      "destination_name": "site-prototype-run-manifest.json"
+    },
+    {
+      "role": "probe_relaxation_plan",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T083912Z-abd14d8ef5b5/adsorption-probe-relaxation-plan.json",
+      "source_sha256": "8bdc83f0e8795deefb0e04bfe7112d73db79a7b625665d42a977b52101151ded",
+      "destination_name": "probe-relaxation-plan.json"
+    },
+    {
+      "role": "probe_relaxation_run_manifest",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T083912Z-abd14d8ef5b5/run-manifest.json",
+      "source_sha256": "c75f9edcfe7721a54c25140df0875d5e2888b99aafa41f387f6f878a97413f1b",
+      "destination_name": "probe-relaxation-run-manifest.json"
+    },
+    {
+      "role": "candidate_energy_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T083912Z-abd14d8ef5b5/candidate-energy-report.json",
+      "source_sha256": "c7c8dbea1a8266e99395fdc8c61f69614d1170db9473cbc6520672116ea97c1a",
+      "destination_name": "candidate-energy-report.json"
+    },
+    {
+      "role": "site_energy_selection_report",
+      "source_path": "${PVKSAM_PROJECT_ROOT}/runs/adsorption-probe-relaxation/fto/adsorption_probe_relaxation_v1-20260803T083912Z-abd14d8ef5b5/site-energy-selection-report.json",
+      "source_sha256": "d6b820bb0b1d13fd823a3010d1285c53fcc36c4f3db215f880e6f9100bddd7f9",
+      "destination_name": "site-energy-selection-report.json"
+    }
+  ],
+  "execution_contract": {
+    "read_only": true,
+    "executable": true,
+    "execution_command": "adsorption-site-prototype-promotion-run",
+    "readiness_issues": [],
+    "mutation": "Create one immutable maintained Site Prototype package and append its hash-verified registration to the substrate structure manifest."
+  }
+}

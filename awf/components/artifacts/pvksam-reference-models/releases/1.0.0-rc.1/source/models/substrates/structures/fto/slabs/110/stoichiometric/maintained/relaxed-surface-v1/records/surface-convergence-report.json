@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checks": {
+    "all_relaxations_passed": {
+      "passed": true,
+      "failed_repeats": []
+    },
+    "two_thickest_surface_energy": {
+      "passed": true,
+      "thinner_repeat": 5,
+      "thickest_repeat": 7,
+      "absolute_difference_eV_A2": 0.000528646959257334,
+      "absolute_difference_J_m2": 0.008469858057572504,
+      "maximum_eV_A2": 0.001,
+      "maximum_J_m2": 0.01602176634
+    }
+  },
+  "thickness_series": [
+    {
+      "schema_version": 1,
+      "status": "passed",
+      "oriented_unit_repeats": 3,
+      "formula": {
+        "O": 12,
+        "Sn": 6
+      },
+      "atom_count": 18,
+      "bulk_formula_units": 6,
+      "surface_area_A2": 22.044769089102964,
+      "initial_energy_eV": -109.23915100097656,
+      "relaxed_energy_eV": -110.01272583007812,
+      "relaxation_energy_eV": -0.7735748291015625,
+      "surface_energy_eV_A2": 0.07016512190581542,
+      "surface_energy_J_m2": 1.1241691883925902,
+      "maximum_force_eV_A": 0.022391501950886503,
+      "maximum_atomic_displacement_A": 0.22462065430404604,
+      "checks": {
+        "optimizer_converged": {
+          "passed": true,
+          "observed_steps": 14,
+          "maximum_steps": 500
+        },
+        "force": {
+          "passed": true,
+          "observed_eV_A": 0.022391501950886503,
+          "maximum_eV_A": 0.03
+        },
+        "formula": {
+          "passed": true,
+          "observed": {
+            "O": 12,
+            "Sn": 6
+          },
+          "expected": {
+            "O": 12,
+            "Sn": 6
+          }
+        },
+        "atom_count": {
+          "passed": true,
+          "observed": 18,
+          "expected": 18
+        },
+        "fixed_cell": {
+          "passed": true,
+          "maximum_absolute_change_A": 0.0
+        },
+        "periodicity": {
+          "passed": true,
+          "observed": [
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": 1,
+      "status": "passed",
+      "oriented_unit_repeats": 5,
+      "formula": {
+        "O": 20,
+        "Sn": 10
+      },
+      "atom_count": 30,
+      "bulk_formula_units": 10,
+      "surface_area_A2": 22.044769089102964,
+      "initial_energy_eV": -184.6874237060547,
+      "relaxed_energy_eV": -185.51364135742188,
+      "relaxation_energy_eV": -0.8262176513671875,
+      "surface_energy_eV_A2": 0.06797110724250159,
+      "surface_energy_J_m2": 1.0890171981104422,
+      "maximum_force_eV_A": 0.026227901131155383,
+      "maximum_atomic_displacement_A": 0.19335780515688256,
+      "checks": {
+        "optimizer_converged": {
+          "passed": true,
+          "observed_steps": 22,
+          "maximum_steps": 500
+        },
+        "force": {
+          "passed": true,
+          "observed_eV_A": 0.026227901131155383,
+          "maximum_eV_A": 0.03
+        },
+        "formula": {
+          "passed": true,
+          "observed": {
+            "O": 20,
+            "Sn": 10
+          },
+          "expected": {
+            "O": 20,
+            "Sn": 10
+          }
+        },
+        "atom_count": {
+          "passed": true,
+          "observed": 30,
+          "expected": 30
+        },
+        "fixed_cell": {
+          "passed": true,
+          "maximum_absolute_change_A": 0.0
+        },
+        "periodicity": {
+          "passed": true,
+          "observed": [
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    },
+    {
+      "schema_version": 1,
+      "status": "passed",
+      "oriented_unit_repeats": 7,
+      "formula": {
+        "O": 28,
+        "Sn": 14
+      },
+      "atom_count": 42,
+      "bulk_formula_units": 14,
+      "surface_area_A2": 22.044769089102964,
+      "initial_energy_eV": -260.0916748046875,
+      "relaxed_energy_eV": -260.9411315917969,
+      "relaxation_energy_eV": -0.849456787109375,
+      "surface_energy_eV_A2": 0.06744246028324426,
+      "surface_energy_J_m2": 1.0805473400528696,
+      "maximum_force_eV_A": 0.026534820427775174,
+      "maximum_atomic_displacement_A": 0.17293080661794774,
+      "checks": {
+        "optimizer_converged": {
+          "passed": true,
+          "observed_steps": 17,
+          "maximum_steps": 500
+        },
+        "force": {
+          "passed": true,
+          "observed_eV_A": 0.026534820427775174,
+          "maximum_eV_A": 0.03
+        },
+        "formula": {
+          "passed": true,
+          "observed": {
+            "O": 28,
+            "Sn": 14
+          },
+          "expected": {
+            "O": 28,
+            "Sn": 14
+          }
+        },
+        "atom_count": {
+          "passed": true,
+          "observed": 42,
+          "expected": 42
+        },
+        "fixed_cell": {
+          "passed": true,
+          "maximum_absolute_change_A": 0.0
+        },
+        "periodicity": {
+          "passed": true,
+          "observed": [
+            true,
+            true,
+            true
+          ]
+        }
+      }
+    }
+  ],
+  "interpretation": "Convergence is established only for this termination, potential, vacuum, relaxation contract, and tested thickness series."
+}

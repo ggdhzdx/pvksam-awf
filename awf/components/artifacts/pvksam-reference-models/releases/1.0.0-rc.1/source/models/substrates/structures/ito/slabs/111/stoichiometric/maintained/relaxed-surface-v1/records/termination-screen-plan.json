@@ -1,0 +1,2130 @@
+{
+  "schema_version": 1,
+  "mode": "surface_termination_screen_plan",
+  "substrate": {
+    "key": "ITO",
+    "host_material": "In2O3",
+    "structure_manifest": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/manifest.json",
+      "sha256": "a705227f12cb05c984d7204963f3c70479bc62ac0f8effa360e69fb6f92832fb"
+    }
+  },
+  "bulk_parent": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/bulk/In2O3-Ia-3-mace-mpa-0-medium-bulk-parent-v1.cif",
+    "sha256": "ee8f6591c9bc900ee3d8209a1ed62e3b7e2d25535011b291bd7aad6efec2ad16",
+    "status": "accepted",
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "formula": {
+      "In": 32,
+      "O": 48
+    },
+    "atom_count": 80,
+    "cell_A": {
+      "a": 10.3007485187,
+      "b": 10.3007485187,
+      "c": 10.3007485187
+    },
+    "space_group": {
+      "symbol": "Ia-3",
+      "number": 206,
+      "symprec_A": 0.01
+    },
+    "run_fingerprint": "500c5cfe723bbd0e034f0b3ecf9e7b4f807b655f41b48495ef737aaf00d7eb51",
+    "potential": {
+      "name": "mace-mpa-0-medium",
+      "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+      "default_dtype": "float32"
+    },
+    "potential_energy_eV": -452.04766845703125
+  },
+  "surface": {
+    "conventional_miller": [
+      1,
+      1,
+      1
+    ],
+    "primitive_miller": [
+      1,
+      1,
+      1
+    ],
+    "surface_count": 2
+  },
+  "potential": {
+    "model_path": "${PVKSAM_PROJECT_ROOT}/mace-mpa-0-medium.model",
+    "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+    "required_elements": [
+      "In",
+      "O"
+    ],
+    "declared_model_elements": [
+      "In",
+      "O"
+    ],
+    "coverage": "passed",
+    "coverage_basis": "maintainer_declaration_not_model_introspection",
+    "default_dtype": "float32"
+  },
+  "surface_precut_contract": {
+    "protocol_version": "surface_precut_v1",
+    "status": "active",
+    "miller": [
+      1,
+      1,
+      1
+    ],
+    "oriented_unit_repeats": 3,
+    "vacuum_A": 25.0,
+    "plane_tolerance_A": 0.05,
+    "symmetry_tolerance_A": 0.01,
+    "termination_enumeration": "all_interplanar_gaps",
+    "formal_oxidation_states": {
+      "In": 3,
+      "O": -2
+    },
+    "selection": {
+      "require_bulk_stoichiometry": true,
+      "require_formal_charge_neutrality": true,
+      "maximum_absolute_formal_dipole_density_e_per_A": 0.0001,
+      "preferred_top_elements": [
+        "O"
+      ]
+    },
+    "historical_comparison": {
+      "structure": "slabs/111/stoichiometric/three-layer-mother-slab.cif",
+      "sha256": "57e2dc8effea64937cb5a34705b9e8eb94f31aa2d7e1f34e08d4af06a9df056f",
+      "maximum_scaled_geometry_rmsd_A": 0.1,
+      "resolved_structure_path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/three-layer-mother-slab.cif"
+    }
+  },
+  "surface_relaxation_contract": {
+    "protocol_version": "surface_relaxation_v1",
+    "status": "active_pending_first_run",
+    "thickness_repeats": [
+      3,
+      4,
+      5
+    ],
+    "vacuum_A": 25.0,
+    "relax_atomic_positions": true,
+    "relax_cell": false,
+    "translation_constraint": "fix_center_of_mass",
+    "surface_count": 2,
+    "force_tolerance_eV_A": 0.03,
+    "maximum_step_A": 0.05,
+    "maximum_steps": 500,
+    "convergence": {
+      "metric": "surface_energy_eV_A2",
+      "comparison": "two_thickest",
+      "maximum_absolute_difference_eV_A2": 0.001
+    },
+    "termination_screening": {
+      "protocol_version": "surface_termination_screen_v1",
+      "enumeration": "all_interplanar_cut_phases",
+      "energy_quantity": "two_surface_pair_average",
+      "formally_polar_policy": "classify_without_energy_requires_compensation_protocol",
+      "selection": {
+        "require_bulk_stoichiometry": true,
+        "require_formal_charge_neutrality": true,
+        "require_formal_nonpolarity": true,
+        "require_equivalent_surface_plane_composition": true,
+        "require_force_convergence": true,
+        "require_thickness_convergence": true,
+        "ranking": "lowest_converged_surface_energy"
+      }
+    }
+  },
+  "termination_screening_contract": {
+    "protocol_version": "surface_termination_screen_v1",
+    "enumeration": "all_interplanar_cut_phases",
+    "energy_quantity": "two_surface_pair_average",
+    "formally_polar_policy": "classify_without_energy_requires_compensation_protocol",
+    "selection": {
+      "require_bulk_stoichiometry": true,
+      "require_formal_charge_neutrality": true,
+      "require_formal_nonpolarity": true,
+      "require_equivalent_surface_plane_composition": true,
+      "require_force_convergence": true,
+      "require_thickness_convergence": true,
+      "ranking": "lowest_converged_surface_energy"
+    }
+  },
+  "base_surface_relaxation_plan": {
+    "schema_version": 1,
+    "mode": "surface_relaxation_plan",
+    "substrate": {
+      "key": "ITO",
+      "host_material": "In2O3",
+      "structure_manifest": {
+        "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/manifest.json",
+        "sha256": "a705227f12cb05c984d7204963f3c70479bc62ac0f8effa360e69fb6f92832fb"
+      }
+    },
+    "bulk_parent": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/bulk/In2O3-Ia-3-mace-mpa-0-medium-bulk-parent-v1.cif",
+      "sha256": "ee8f6591c9bc900ee3d8209a1ed62e3b7e2d25535011b291bd7aad6efec2ad16",
+      "status": "accepted",
+      "protocol_version": "bulk_parent_relaxation_v1",
+      "formula": {
+        "In": 32,
+        "O": 48
+      },
+      "atom_count": 80,
+      "cell_A": {
+        "a": 10.3007485187,
+        "b": 10.3007485187,
+        "c": 10.3007485187
+      },
+      "space_group": {
+        "symbol": "Ia-3",
+        "number": 206,
+        "symprec_A": 0.01
+      },
+      "run_fingerprint": "500c5cfe723bbd0e034f0b3ecf9e7b4f807b655f41b48495ef737aaf00d7eb51",
+      "potential": {
+        "name": "mace-mpa-0-medium",
+        "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+        "default_dtype": "float32"
+      },
+      "potential_energy_eV": -452.04766845703125
+    },
+    "bulk_reference": {
+      "reduced_formula": {
+        "In": 2,
+        "O": 3
+      },
+      "parent_formula_units": 16,
+      "energy_policy": "fresh_same_model_single_point_on_accepted_bulk_parent"
+    },
+    "registered_surface_precut": {
+      "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/In2O3-Ia-3-111-three-repeat-nonpolar-bulk-parent-v1.cif",
+      "sha256": "3bdc783d48ecc51c6fd62a27e828ef774e922af79a193311da600aba75ece7bd",
+      "source_layers": 3,
+      "miller": [
+        1,
+        1,
+        1
+      ],
+      "primitive_miller": [
+        1,
+        1,
+        1
+      ],
+      "termination": "stoichiometric_formally_nonpolar_O_top",
+      "cut_fractional_phase": 0.0
+    },
+    "surface": {
+      "conventional_miller": [
+        1,
+        1,
+        1
+      ],
+      "primitive_miller": [
+        1,
+        1,
+        1
+      ],
+      "surface_count": 2
+    },
+    "potential": {
+      "model_path": "${PVKSAM_PROJECT_ROOT}/mace-mpa-0-medium.model",
+      "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+      "required_elements": [
+        "In",
+        "O"
+      ],
+      "declared_model_elements": [
+        "In",
+        "O"
+      ],
+      "coverage": "passed",
+      "coverage_basis": "maintainer_declaration_not_model_introspection",
+      "default_dtype": "float32"
+    },
+    "surface_precut_contract": {
+      "protocol_version": "surface_precut_v1",
+      "status": "active",
+      "miller": [
+        1,
+        1,
+        1
+      ],
+      "oriented_unit_repeats": 3,
+      "vacuum_A": 25.0,
+      "plane_tolerance_A": 0.05,
+      "symmetry_tolerance_A": 0.01,
+      "termination_enumeration": "all_interplanar_gaps",
+      "formal_oxidation_states": {
+        "In": 3,
+        "O": -2
+      },
+      "selection": {
+        "require_bulk_stoichiometry": true,
+        "require_formal_charge_neutrality": true,
+        "maximum_absolute_formal_dipole_density_e_per_A": 0.0001,
+        "preferred_top_elements": [
+          "O"
+        ]
+      },
+      "historical_comparison": {
+        "structure": "slabs/111/stoichiometric/three-layer-mother-slab.cif",
+        "sha256": "57e2dc8effea64937cb5a34705b9e8eb94f31aa2d7e1f34e08d4af06a9df056f",
+        "maximum_scaled_geometry_rmsd_A": 0.1,
+        "resolved_structure_path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/three-layer-mother-slab.cif"
+      }
+    },
+    "surface_relaxation_contract": {
+      "protocol_version": "surface_relaxation_v1",
+      "status": "active_pending_first_run",
+      "thickness_repeats": [
+        3,
+        4,
+        5
+      ],
+      "vacuum_A": 25.0,
+      "relax_atomic_positions": true,
+      "relax_cell": false,
+      "translation_constraint": "fix_center_of_mass",
+      "surface_count": 2,
+      "force_tolerance_eV_A": 0.03,
+      "maximum_step_A": 0.05,
+      "maximum_steps": 500,
+      "convergence": {
+        "metric": "surface_energy_eV_A2",
+        "comparison": "two_thickest",
+        "maximum_absolute_difference_eV_A2": 0.001
+      },
+      "termination_screening": {
+        "protocol_version": "surface_termination_screen_v1",
+        "enumeration": "all_interplanar_cut_phases",
+        "energy_quantity": "two_surface_pair_average",
+        "formally_polar_policy": "classify_without_energy_requires_compensation_protocol",
+        "selection": {
+          "require_bulk_stoichiometry": true,
+          "require_formal_charge_neutrality": true,
+          "require_formal_nonpolarity": true,
+          "require_equivalent_surface_plane_composition": true,
+          "require_force_convergence": true,
+          "require_thickness_convergence": true,
+          "ranking": "lowest_converged_surface_energy"
+        }
+      }
+    },
+    "thickness_candidates": [
+      {
+        "cut_fractional_phase": 0.0,
+        "formula": {
+          "In": 48,
+          "O": 72
+        },
+        "atom_count": 120,
+        "cell_A": {
+          "lengths": [
+            14.567458257780915,
+            14.567458257780917,
+            33.04905420593702
+          ],
+          "angles_deg": [
+            90.0,
+            90.0,
+            120.00000000000001
+          ],
+          "surface_area_A2": 183.77997847827328
+        },
+        "solid_thickness_A": 8.049054205937017,
+        "vacuum_A": 25.0,
+        "plane_count": 33,
+        "bottom_plane_formula": {
+          "O": 3
+        },
+        "top_plane_formula": {
+          "O": 3
+        },
+        "formal_charge_e": 0.0,
+        "formal_dipole_eA": -7.815970093361102e-14,
+        "formal_dipole_density_e_per_A": -4.2528953143201707e-16,
+        "checks": {
+          "formal_charge_neutral": true,
+          "formal_nonpolar": true,
+          "preferred_top_elements": true,
+          "bulk_stoichiometry": true,
+          "symmetric_plane_composition": true
+        },
+        "oriented_unit_repeats": 3,
+        "selection_eligible": true,
+        "bulk_formula_units": 24
+      },
+      {
+        "cut_fractional_phase": 0.0,
+        "formula": {
+          "In": 64,
+          "O": 96
+        },
+        "atom_count": 160,
+        "cell_A": {
+          "lengths": [
+            14.567458257780915,
+            14.567458257780917,
+            36.022624171008395
+          ],
+          "angles_deg": [
+            90.0,
+            90.0,
+            120.00000000000001
+          ],
+          "surface_area_A2": 183.77997847827328
+        },
+        "solid_thickness_A": 11.022624171008394,
+        "vacuum_A": 25.0,
+        "plane_count": 44,
+        "bottom_plane_formula": {
+          "O": 3
+        },
+        "top_plane_formula": {
+          "O": 3
+        },
+        "formal_charge_e": 0.0,
+        "formal_dipole_eA": 7.105427357601002e-14,
+        "formal_dipole_density_e_per_A": 3.8662684675637914e-16,
+        "checks": {
+          "formal_charge_neutral": true,
+          "formal_nonpolar": true,
+          "preferred_top_elements": true,
+          "bulk_stoichiometry": true,
+          "symmetric_plane_composition": true
+        },
+        "oriented_unit_repeats": 4,
+        "selection_eligible": true,
+        "bulk_formula_units": 32
+      },
+      {
+        "cut_fractional_phase": 0.0,
+        "formula": {
+          "In": 80,
+          "O": 120
+        },
+        "atom_count": 200,
+        "cell_A": {
+          "lengths": [
+            14.567458257780915,
+            14.567458257780917,
+            38.99619413607977
+          ],
+          "angles_deg": [
+            90.0,
+            90.0,
+            120.00000000000001
+          ],
+          "surface_area_A2": 183.77997847827328
+        },
+        "solid_thickness_A": 13.996194136079765,
+        "vacuum_A": 25.000000000000007,
+        "plane_count": 55,
+        "bottom_plane_formula": {
+          "O": 3
+        },
+        "top_plane_formula": {
+          "O": 3
+        },
+        "formal_charge_e": 0.0,
+        "formal_dipole_eA": 1.1723955140041653e-13,
+        "formal_dipole_density_e_per_A": 6.379342971480256e-16,
+        "checks": {
+          "formal_charge_neutral": true,
+          "formal_nonpolar": true,
+          "preferred_top_elements": true,
+          "bulk_stoichiometry": true,
+          "symmetric_plane_composition": true
+        },
+        "oriented_unit_repeats": 5,
+        "selection_eligible": true,
+        "bulk_formula_units": 40
+      }
+    ],
+    "surface_energy_definition": {
+      "equation": "gamma=(E_slab-N_formula*E_bulk_formula)/(2*A)",
+      "native_unit": "eV/A^2",
+      "reported_units": [
+        "eV/A^2",
+        "J/m^2"
+      ],
+      "J_m2_per_eV_A2": 16.02176634,
+      "bulk_reference_policy": "same model, dtype, device, and accepted Bulk Parent"
+    },
+    "fingerprint": "d1b2929ca2d4ccd3236b710657afd201168ce5faf7afc06a606170305f671894",
+    "execution_contract": {
+      "read_only": true,
+      "executable": true,
+      "execution_command": "surface-relaxation-run",
+      "readiness_issues": [],
+      "registration_policy": "A passed run is only a relaxation/convergence candidate; promotion to a maintained relaxed surface requires a separate hash-verified record."
+    }
+  },
+  "termination_candidates": [
+    {
+      "candidate_id": "termination-001",
+      "cut_fractional_phase": 0.0,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -4.2528953143201707e-16,
+      "classification": "directly_rankable_nonpolar_pair",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": true,
+        "same_top_bottom_plane_composition": true
+      },
+      "individual_surface_energy_interpretation": "allowed_for_symmetric_nonpolar_pair",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.0,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.04905420593702
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.049054205937017,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -7.815970093361102e-14,
+          "formal_dipole_density_e_per_A": -4.2528953143201707e-16,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": true,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": true,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.0,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.022624171008395
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.022624171008394,
+          "vacuum_A": 25.0,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 7.105427357601002e-14,
+          "formal_dipole_density_e_per_A": 3.8662684675637914e-16,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": true,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": true,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.0,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              38.99619413607977
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 13.996194136079765,
+          "vacuum_A": 25.000000000000007,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 1.1723955140041653e-13,
+          "formal_dipole_density_e_per_A": 6.379342971480256e-16,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": true,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": true,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-002",
+      "cut_fractional_phase": 0.190862923371,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -0.29124097093967366,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": true
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.190862923371,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.65727707172501
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.657277071725009,
+          "vacuum_A": 25.000000000000004,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -53.52425937128464,
+          "formal_dipole_density_e_per_A": -0.29124097093967366,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.190862923371,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.63084703679638
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.63084703679638,
+          "vacuum_A": 25.0,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -71.36567916171279,
+          "formal_dipole_density_e_per_A": -0.3883212945862312,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.190862923371,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.604417001867766
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.604417001867757,
+          "vacuum_A": 25.000000000000007,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -89.20709895214097,
+          "formal_dipole_density_e_per_A": -0.4854016182327889,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-003",
+      "cut_fractional_phase": 0.264827173591,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -0.5824819418793474,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": true
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.264827173591,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.744266972819865
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.744266972819867,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -107.0485187425693,
+          "formal_dipole_density_e_per_A": -0.5824819418793474,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.264827173591,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.717836937891235
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.717836937891237,
+          "vacuum_A": 25.0,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -142.73135832342587,
+          "formal_dipole_density_e_per_A": -0.776642589172464,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.264827173591,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.69140690296261
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.691406902962608,
+          "vacuum_A": 25.000000000000004,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -178.41419790428233,
+          "formal_dipole_density_e_per_A": -0.97080323646558,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-004",
+      "cut_fractional_phase": 0.309137076629,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": -0.873722912819021,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": true
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.309137076629,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.83363562395272
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.833635623952723,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -160.57277811385393,
+          "formal_dipole_density_e_per_A": -0.873722912819021,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.309137076629,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.8072055890241
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.807205589024097,
+          "vacuum_A": 25.000000000000004,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -214.09703748513863,
+          "formal_dipole_density_e_per_A": -1.164963883758695,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.309137076629,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.78077555409547
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.780775554095468,
+          "vacuum_A": 25.0,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -267.6212968564232,
+          "formal_dipole_density_e_per_A": -1.4562048546983684,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-005",
+      "cut_fractional_phase": 0.377879640441,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "In": 6
+      },
+      "formal_dipole_density_e_per_A": -1.1649638837586958,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": false
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.377879640441,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.59896252032551
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.598962520325507,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "In": 6
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -214.09703748513874,
+          "formal_dipole_density_e_per_A": -1.1649638837586958,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.377879640441,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.57253248539689
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.572532485396886,
+          "vacuum_A": 25.000000000000007,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "In": 6
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -285.46271664685173,
+          "formal_dipole_density_e_per_A": -1.553285178344928,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.377879640441,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.54610245046825
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.546102450468247,
+          "vacuum_A": 25.0,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "In": 6
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -356.82839580856466,
+          "formal_dipole_density_e_per_A": -1.94160647293116,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-006",
+      "cut_fractional_phase": 0.465990417539,
+      "top_plane_formula": {
+        "In": 6
+      },
+      "bottom_plane_formula": {
+        "In": 4
+      },
+      "formal_dipole_density_e_per_A": -0.29124097093967366,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": false
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.465990417539,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.718450149350325
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.718450149350325,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "In": 4
+          },
+          "top_plane_formula": {
+            "In": 6
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -53.52425937128464,
+          "formal_dipole_density_e_per_A": -0.29124097093967366,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.465990417539,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.6920201144217
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.692020114421695,
+          "vacuum_A": 25.000000000000007,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "In": 4
+          },
+          "top_plane_formula": {
+            "In": 6
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -71.36567916171276,
+          "formal_dipole_density_e_per_A": -0.38832129458623105,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.465990417539,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.665590079493064
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.665590079493066,
+          "vacuum_A": 25.0,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "In": 4
+          },
+          "top_plane_formula": {
+            "In": 6
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": -89.207098952141,
+          "formal_dipole_density_e_per_A": -0.48540161823278904,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-007",
+      "cut_fractional_phase": 0.534009582461,
+      "top_plane_formula": {
+        "In": 4
+      },
+      "bottom_plane_formula": {
+        "In": 6
+      },
+      "formal_dipole_density_e_per_A": 0.29124097093967455,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": false
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.534009582461,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.71845014935032
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.71845014935032,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "In": 6
+          },
+          "top_plane_formula": {
+            "In": 4
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 53.5242593712848,
+          "formal_dipole_density_e_per_A": 0.29124097093967455,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.534009582461,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.69202011442169
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.69202011442169,
+          "vacuum_A": 25.0,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "In": 6
+          },
+          "top_plane_formula": {
+            "In": 4
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 71.36567916171303,
+          "formal_dipole_density_e_per_A": 0.38832129458623255,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.534009582461,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.665590079493064
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.66559007949306,
+          "vacuum_A": 25.000000000000007,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "In": 6
+          },
+          "top_plane_formula": {
+            "In": 4
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 89.20709895214111,
+          "formal_dipole_density_e_per_A": 0.48540161823278966,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-008",
+      "cut_fractional_phase": 0.622120359559,
+      "top_plane_formula": {
+        "In": 6
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 1.1649638837586953,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": false
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.622120359559,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.59896252032551
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.59896252032551,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "In": 6
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 214.09703748513869,
+          "formal_dipole_density_e_per_A": 1.1649638837586953,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.622120359559,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.57253248539688
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.572532485396879,
+          "vacuum_A": 25.0,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "In": 6
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 285.4627166468515,
+          "formal_dipole_density_e_per_A": 1.5532851783449266,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.622120359559,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.546102450468254
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.54610245046825,
+          "vacuum_A": 25.000000000000004,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "In": 6
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 356.82839580856444,
+          "formal_dipole_density_e_per_A": 1.9416064729311586,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": false,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": false
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-009",
+      "cut_fractional_phase": 0.690862923371,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 0.8737229128190217,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": true
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.690862923371,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.83363562395272
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.833635623952725,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 160.57277811385404,
+          "formal_dipole_density_e_per_A": 0.8737229128190217,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.690862923371,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.8072055890241
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.8072055890241,
+          "vacuum_A": 25.0,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 214.09703748513869,
+          "formal_dipole_density_e_per_A": 1.1649638837586953,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.690862923371,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.78077555409547
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.78077555409547,
+          "vacuum_A": 25.0,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 267.6212968564233,
+          "formal_dipole_density_e_per_A": 1.456204854698369,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-010",
+      "cut_fractional_phase": 0.735172826409,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 0.5824819418793477,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": true
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.735172826409,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.74426697281987
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.74426697281987,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 107.04851874256933,
+          "formal_dipole_density_e_per_A": 0.5824819418793477,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.735172826409,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.71783693789124
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.717836937891246,
+          "vacuum_A": 24.999999999999996,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 142.73135832342564,
+          "formal_dipole_density_e_per_A": 0.7766425891724628,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.735172826409,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.69140690296261
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.691406902962608,
+          "vacuum_A": 25.000000000000004,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 178.41419790428228,
+          "formal_dipole_density_e_per_A": 0.9708032364655796,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    },
+    {
+      "candidate_id": "termination-011",
+      "cut_fractional_phase": 0.809137076629,
+      "top_plane_formula": {
+        "O": 3
+      },
+      "bottom_plane_formula": {
+        "O": 3
+      },
+      "formal_dipole_density_e_per_A": 0.291240970939675,
+      "classification": "requires_separate_surface_energy_protocol",
+      "checks": {
+        "bulk_stoichiometry": true,
+        "formal_charge_neutral": true,
+        "formal_nonpolar": false,
+        "same_top_bottom_plane_composition": true
+      },
+      "individual_surface_energy_interpretation": "pair_average_only",
+      "thickness_candidates": [
+        {
+          "cut_fractional_phase": 0.809137076629,
+          "formula": {
+            "In": 48,
+            "O": 72
+          },
+          "atom_count": 120,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              33.65727707172502
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 8.657277071725018,
+          "vacuum_A": 25.0,
+          "plane_count": 33,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 53.524259371284884,
+          "formal_dipole_density_e_per_A": 0.291240970939675,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 3,
+          "selection_eligible": false,
+          "bulk_formula_units": 24
+        },
+        {
+          "cut_fractional_phase": 0.809137076629,
+          "formula": {
+            "In": 64,
+            "O": 96
+          },
+          "atom_count": 160,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              36.630847036796396
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 11.63084703679639,
+          "vacuum_A": 25.000000000000007,
+          "plane_count": 44,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 71.3656791617131,
+          "formal_dipole_density_e_per_A": 0.38832129458623293,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 4,
+          "selection_eligible": false,
+          "bulk_formula_units": 32
+        },
+        {
+          "cut_fractional_phase": 0.809137076629,
+          "formula": {
+            "In": 80,
+            "O": 120
+          },
+          "atom_count": 200,
+          "cell_A": {
+            "lengths": [
+              14.567458257780915,
+              14.567458257780917,
+              39.60441700186775
+            ],
+            "angles_deg": [
+              90.0,
+              90.0,
+              120.00000000000001
+            ],
+            "surface_area_A2": 183.77997847827328
+          },
+          "solid_thickness_A": 14.604417001867755,
+          "vacuum_A": 24.999999999999996,
+          "plane_count": 55,
+          "bottom_plane_formula": {
+            "O": 3
+          },
+          "top_plane_formula": {
+            "O": 3
+          },
+          "formal_charge_e": 0.0,
+          "formal_dipole_eA": 89.20709895214135,
+          "formal_dipole_density_e_per_A": 0.485401618232791,
+          "checks": {
+            "formal_charge_neutral": true,
+            "formal_nonpolar": false,
+            "preferred_top_elements": true,
+            "bulk_stoichiometry": true,
+            "symmetric_plane_composition": true
+          },
+          "oriented_unit_repeats": 5,
+          "selection_eligible": false,
+          "bulk_formula_units": 40
+        }
+      ]
+    }
+  ],
+  "pre_relaxation_rankable_candidate_ids": [
+    "termination-001"
+  ],
+  "energy_interpretation": {
+    "reported_quantity": "two_surface_pair_average",
+    "equation": "gamma_pair_average=(E_slab-N_formula*E_bulk_formula)/(2*A)",
+    "warning": "For an asymmetric or formally polar slab this is only the average excess energy of its two complementary surfaces, not either individual surface energy. Uncompensated polar pairs are diagnostic-only."
+  },
+  "fingerprint": "c30bda2cd7675ed97560ce62d39cda1125dbca8ddc79d82927bf745272f26855",
+  "execution_contract": {
+    "read_only": true,
+    "executable": true,
+    "execution_command": "surface-termination-screen-run",
+    "readiness_issues": []
+  }
+}

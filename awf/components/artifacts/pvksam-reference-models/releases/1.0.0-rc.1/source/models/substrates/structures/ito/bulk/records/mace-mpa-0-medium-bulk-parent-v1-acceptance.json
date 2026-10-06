@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checks": {
+    "optimizer_converged": {
+      "passed": true,
+      "observed_steps": 14,
+      "maximum_steps": 500
+    },
+    "force": {
+      "passed": true,
+      "observed_eV_A": 0.0282189604122399,
+      "maximum_eV_A": 0.03
+    },
+    "stress": {
+      "passed": true,
+      "observed_GPa": 0.11564671648809291,
+      "maximum_GPa": 0.2
+    },
+    "reference_lattice": {
+      "passed": true,
+      "observed_maximum_relative_deviation": 0.018162352350385984,
+      "maximum_relative_deviation": 0.02
+    },
+    "cell_angles": {
+      "passed": true,
+      "observed_maximum_deviation_deg": 0.0,
+      "maximum_deviation_deg": 0.5
+    },
+    "cell_constraint": {
+      "passed": true,
+      "kind": "cubic",
+      "observed_relative_equality_deviation": 0.0,
+      "maximum_relative_equality_deviation": 1e-06
+    },
+    "formula": {
+      "passed": true,
+      "observed": {
+        "In": 32,
+        "O": 48
+      },
+      "expected": {
+        "In": 32,
+        "O": 48
+      }
+    },
+    "atom_count": {
+      "passed": true,
+      "observed": 80,
+      "expected": 80
+    },
+    "space_group": {
+      "passed": true,
+      "observed": {
+        "number": 206,
+        "symbol": "Ia-3",
+        "symprec_A": 0.01
+      },
+      "expected_number": 206
+    }
+  },
+  "metrics": {
+    "potential_energy_eV": -452.04766845703125,
+    "maximum_force_eV_A": 0.0282189604122399,
+    "maximum_absolute_stress_GPa": 0.11564671648809291,
+    "stress_GPa": [
+      [
+        0.11564451557679109,
+        2.2840048233786206e-08,
+        6.750977163051334e-07
+      ],
+      [
+        2.2840048233786206e-08,
+        0.11564671648809291,
+        -1.1835118449086338e-06
+      ],
+      [
+        6.750977163051334e-07,
+        -1.1835118449086338e-06,
+        0.11563707351230443
+      ]
+    ],
+    "cell_A": {
+      "lengths": [
+        10.300748518728856,
+        10.300748518728856,
+        10.300748518728856
+      ],
+      "angles_deg": [
+        90.0,
+        90.0,
+        90.0
+      ],
+      "volume_A3": 1092.965248368913
+    },
+    "relative_length_deviations": [
+      0.018162352350385984,
+      0.018162352350385984,
+      0.018162352350385984
+    ]
+  },
+  "symmetry": {
+    "number": 206,
+    "symbol": "Ia-3",
+    "symprec_A": 0.01
+  }
+}

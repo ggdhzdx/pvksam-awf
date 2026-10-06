@@ -1,0 +1,658 @@
+{
+  "schema_version": 1,
+  "substrate_key": "FTO",
+  "host_material": "SnO2",
+  "sources": [
+    {
+      "path": "sources/materials-studio/SnO2-rutile-bulk.cif",
+      "role": "authoritative_user_supplied_bulk_source",
+      "space_group": {
+        "symbol": "P4_2/mnm",
+        "number": 136
+      },
+      "formula": {
+        "Sn": 2,
+        "O": 4
+      },
+      "atom_count": 6,
+      "sha256": "63c0befda40e0a7466511096fffb872ffaa29a36c513f5c9406c467bde3dd031"
+    },
+    {
+      "path": "sources/experimental/cod-2101853-bolzan-1997.cif",
+      "role": "experimental_bulk_reference_structure",
+      "cod_id": "2101853",
+      "doi": "10.1107/S0108768197001468",
+      "space_group": {
+        "symbol": "P4_2/mnm",
+        "number": 136
+      },
+      "formula": {
+        "Sn": 2,
+        "O": 4
+      },
+      "atom_count": 6,
+      "sha256": "4a965e1b9841236cfdeba92e70717997160234d393246e9ccddda4459fee4cf4"
+    }
+  ],
+  "bulk_seed": {
+    "path": "bulk/SnO2-rutile-conventional.cif",
+    "status": "standardized_seed_pending_protocol_relaxation",
+    "parent": "sources/materials-studio/SnO2-rutile-bulk.cif",
+    "derivation": "Expanded the source CIF symmetry to an explicit six-atom conventional P1 representation without changing the lattice or fractional sites.",
+    "source_space_group": {
+      "symbol": "P4_2/mnm",
+      "number": 136
+    },
+    "formula": {
+      "Sn": 2,
+      "O": 4
+    },
+    "atom_count": 6,
+    "cell_A": {
+      "a": 4.737,
+      "b": 4.737,
+      "c": 3.187
+    },
+    "sha256": "d4e5ad60e414f2d26e31a5a3b903b16e72c5f85ad712efb31f14511b1b12f18b"
+  },
+  "bulk_parent": {
+    "path": "bulk/SnO2-rutile-mace-mpa-0-medium-bulk-parent-v1.cif",
+    "status": "accepted",
+    "parent_seed": "bulk/SnO2-rutile-conventional.cif",
+    "parent_seed_sha256": "d4e5ad60e414f2d26e31a5a3b903b16e72c5f85ad712efb31f14511b1b12f18b",
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "potential": {
+      "name": "mace-mpa-0-medium",
+      "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+      "default_dtype": "float32"
+    },
+    "run_fingerprint": "69d222cace86eecfc806d040fa732c5bbd8e701eaec5ce0039b4edaceabc1eb1",
+    "space_group": {
+      "symbol": "P4_2/mnm",
+      "number": 136,
+      "symprec_A": 0.01
+    },
+    "formula": {
+      "Sn": 2,
+      "O": 4
+    },
+    "atom_count": 6,
+    "cell_A": {
+      "a": 4.8265005241,
+      "b": 4.8265005241,
+      "c": 3.2296703657
+    },
+    "potential_energy_eV": -37.702091217041016,
+    "maximum_force_eV_A": 0.0196611941,
+    "maximum_absolute_stress_GPa": 0.1811202839,
+    "maximum_relative_reference_lattice_deviation": 0.0188078955,
+    "experimental_position_rmsd_A": 0.0048431318228105095,
+    "experimental_position_maximum_displacement_A": 0.005931600861460663,
+    "optimizer_steps": 6,
+    "sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429",
+    "records": [
+      {
+        "role": "plan",
+        "path": "bulk/records/mace-mpa-0-medium-bulk-parent-v1-plan.json",
+        "sha256": "d1e4200131b7643c686e366753fd3ef5b0870431dc265df8693871d8fc10940f"
+      },
+      {
+        "role": "acceptance_report",
+        "path": "bulk/records/mace-mpa-0-medium-bulk-parent-v1-acceptance.json",
+        "sha256": "86dca3ff1ef0549c45d5e31bcf498360d25502d237b14dc99e8cb30068a6ab68"
+      },
+      {
+        "role": "run_manifest",
+        "path": "bulk/records/mace-mpa-0-medium-bulk-parent-v1-run-manifest.json",
+        "sha256": "bf095c1e292b7366cbc29572907cadde00cc0cf6186b1fe192936f7ccfe067fd"
+      },
+      {
+        "role": "optimizer_log",
+        "path": "bulk/records/mace-mpa-0-medium-bulk-parent-v1-optimizer.txt",
+        "sha256": "8a9f71be794b8f7d5bf1c58839332fe78c1d5acba4dce8f4ad5b4ae91503b277"
+      },
+      {
+        "role": "progress",
+        "path": "bulk/records/mace-mpa-0-medium-bulk-parent-v1-progress.jsonl",
+        "sha256": "a21a3dbe12ae6aab083c77dec3de1e195cb23bffec3058ae135b57a073cc530c"
+      },
+      {
+        "role": "experimental_position_check",
+        "path": "bulk/records/mace-mpa-0-medium-bulk-parent-v1-experimental-position-check.json",
+        "sha256": "67b2e722592525359aa91b796c6eb86243b3df27e764c45ee540c33d67f20460"
+      }
+    ]
+  },
+  "bulk_relaxation_contract": {
+    "protocol_version": "bulk_parent_relaxation_v1",
+    "status": "validated_by_accepted_run_and_experimental_position_check",
+    "cell_constraint": "tetragonal",
+    "relax_atomic_positions": true,
+    "relax_cell": true,
+    "target_pressure_GPa": 0.0,
+    "force_tolerance_eV_A": 0.03,
+    "stress_tolerance_GPa": 0.2,
+    "maximum_step_A": 0.05,
+    "symmetry_tolerance_A": 0.01,
+    "maximum_steps": 500,
+    "reference": {
+      "cell_A": {
+        "a": 4.7374,
+        "b": 4.7374,
+        "c": 3.1864
+      },
+      "provenance": "neutron_powder_diffraction_Bolzan_et_al_1997",
+      "citation": "A. A. Bolzan, C. Fong, B. J. Kennedy, C. J. Howard, Structural studies of rutile-type metal dioxides, Acta Crystallographica B53 (1997) 373-380",
+      "doi": "10.1107/S0108768197001468",
+      "structure": "sources/experimental/cod-2101853-bolzan-1997.cif",
+      "structure_sha256": "4a965e1b9841236cfdeba92e70717997160234d393246e9ccddda4459fee4cf4"
+    },
+    "acceptance": {
+      "maximum_relative_length_deviation": 0.02,
+      "maximum_angle_deviation_deg": 0.5,
+      "require_formula_unchanged": true,
+      "require_atom_count_unchanged": true,
+      "require_crystal_system_preserved": true,
+      "expected_space_group_number": 136,
+      "maximum_experimental_position_rmsd_A": 0.05,
+      "maximum_experimental_position_displacement_A": 0.1
+    }
+  },
+  "surface_precut_contract": {
+    "protocol_version": "surface_precut_v1",
+    "status": "active",
+    "miller": [
+      1,
+      1,
+      0
+    ],
+    "oriented_unit_repeats": 5,
+    "vacuum_A": 25.0,
+    "plane_tolerance_A": 0.05,
+    "symmetry_tolerance_A": 0.01,
+    "termination_enumeration": "all_interplanar_gaps",
+    "formal_oxidation_states": {
+      "Sn": 4,
+      "O": -2
+    },
+    "selection": {
+      "require_bulk_stoichiometry": true,
+      "require_formal_charge_neutrality": true,
+      "maximum_absolute_formal_dipole_density_e_per_A": 0.0001,
+      "preferred_top_elements": [
+        "O"
+      ]
+    },
+    "references": [
+      {
+        "doi": "10.1016/S0039-6028(98)00833-4",
+        "role": "stoichiometric_bridging_oxygen_110_termination_and_three_vs_five_layer_relaxation"
+      },
+      {
+        "doi": "10.1063/1.3694033",
+        "role": "relative_stability_of_low_index_SnO2_surfaces"
+      }
+    ],
+    "thickness_policy": "five_oriented_repeats_as_conservative_geometric_precut_pending_MACE_surface_convergence"
+  },
+  "surface_relaxation_contract": {
+    "protocol_version": "surface_relaxation_v1",
+    "status": "active_pending_first_run",
+    "thickness_repeats": [
+      3,
+      5,
+      7
+    ],
+    "vacuum_A": 25.0,
+    "relax_atomic_positions": true,
+    "relax_cell": false,
+    "translation_constraint": "fix_center_of_mass",
+    "surface_count": 2,
+    "force_tolerance_eV_A": 0.03,
+    "maximum_step_A": 0.05,
+    "maximum_steps": 500,
+    "convergence": {
+      "metric": "surface_energy_eV_A2",
+      "comparison": "two_thickest",
+      "maximum_absolute_difference_eV_A2": 0.001
+    },
+    "termination_screening": {
+      "protocol_version": "surface_termination_screen_v1",
+      "enumeration": "all_interplanar_cut_phases",
+      "energy_quantity": "two_surface_pair_average",
+      "formally_polar_policy": "classify_without_energy_requires_compensation_protocol",
+      "selection": {
+        "require_bulk_stoichiometry": true,
+        "require_formal_charge_neutrality": true,
+        "require_formal_nonpolarity": true,
+        "require_equivalent_surface_plane_composition": true,
+        "require_force_convergence": true,
+        "require_thickness_convergence": true,
+        "ranking": "lowest_converged_surface_energy"
+      }
+    },
+    "promotion": {
+      "protocol_version": "relaxed_surface_promotion_v1",
+      "preserve_registered_thickness": true,
+      "destination_directory": "slabs/110/stoichiometric/maintained/relaxed-surface-v1",
+      "structure_filename": "SnO2-rutile-110-five-repeat-bridging-O-relaxed-mace-mpa-0-medium-v1.cif"
+    }
+  },
+  "precut_slabs": [
+    {
+      "path": "slabs/110/stoichiometric/SnO2-rutile-110-five-repeat-bridging-O-bulk-parent-v1.cif",
+      "status": "superseded_by_relaxed_maintained_surface",
+      "parent_bulk": "bulk/SnO2-rutile-mace-mpa-0-medium-bulk-parent-v1.cif",
+      "parent_bulk_sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429",
+      "protocol_version": "surface_precut_v1",
+      "run_fingerprint": "eacec7c62384cf982f570540b0a81ac9a0089757c37cc5d6ed0cfb5a9a8b24c8",
+      "miller": [
+        1,
+        1,
+        0
+      ],
+      "primitive_miller": [
+        1,
+        1,
+        0
+      ],
+      "termination": "stoichiometric_bridging_O_formally_nonpolar",
+      "cut_fractional_phase": 0.5,
+      "formula": {
+        "O": 20,
+        "Sn": 10
+      },
+      "atom_count": 30,
+      "source_layers": 5,
+      "cell_A": {
+        "a": 6.8257025,
+        "b": 3.2296703657,
+        "c": 41.2928786527,
+        "gamma_deg": 90.0
+      },
+      "solid_thickness_A": 16.2928786527,
+      "vacuum_A": 25.0,
+      "formal_dipole_density_e_per_A": 0.0,
+      "relaxation_status": "unrelaxed_geometric_precut",
+      "sha256": "fb3a3c25684f6d668702886e3717ba956fed8e5d57034d49659a5390e525e573",
+      "records": [
+        {
+          "role": "surface_precut_plan",
+          "path": "slabs/110/stoichiometric/records/surface-precut-v1-plan.json",
+          "sha256": "ef6c98d3b6f0d6f482e2a88cd468f53d222f2a0dd02e0ee7274d7a22d0344a32"
+        },
+        {
+          "role": "selection_report",
+          "path": "slabs/110/stoichiometric/records/surface-precut-v1-selection.json",
+          "sha256": "0cd9ea73dab8c6efeab030cb0ee2515637625abbff64e55e98409b3375d2c317"
+        },
+        {
+          "role": "run_manifest",
+          "path": "slabs/110/stoichiometric/records/surface-precut-v1-run-manifest.json",
+          "sha256": "2e820d9866978238870068c6976029aac786e415b0110cf4cb15ee4df2fdeab2"
+        }
+      ],
+      "superseded_by": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/SnO2-rutile-110-five-repeat-bridging-O-relaxed-mace-mpa-0-medium-v1.cif",
+      "superseded_by_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600"
+    },
+    {
+      "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/SnO2-rutile-110-five-repeat-bridging-O-relaxed-mace-mpa-0-medium-v1.cif",
+      "status": "accepted_relaxed_maintained_surface",
+      "parent_bulk": "bulk/SnO2-rutile-mace-mpa-0-medium-bulk-parent-v1.cif",
+      "parent_bulk_sha256": "fdf4fbe5038620283066c0744a4ce139a971b04bc2e3c899fbdf9058ce7b0429",
+      "source_precut_sha256": "fb3a3c25684f6d668702886e3717ba956fed8e5d57034d49659a5390e525e573",
+      "protocol_version": "relaxed_surface_promotion_v1",
+      "promotion_fingerprint": "f02e00f16d904a2d0aba1e52dbea8f5e27c940af4dd93461d791cfd93b53311d",
+      "screen_run_fingerprint": "b8ad4bdd6c96aa54abefb1dc854a6d172cbda527d49f2374307af6c265c23c4c",
+      "termination_candidate_id": "termination-002",
+      "miller": [
+        1,
+        1,
+        0
+      ],
+      "primitive_miller": [
+        1,
+        1,
+        0
+      ],
+      "termination": "stoichiometric_bridging_O_formally_nonpolar",
+      "cut_fractional_phase": 0.5,
+      "formula": {
+        "O": 20,
+        "Sn": 10
+      },
+      "atom_count": 30,
+      "source_layers": 5,
+      "cell_A": {
+        "lengths": [
+          6.825702499977524,
+          3.2296703656767276,
+          41.29287865270102
+        ],
+        "angles_deg": [
+          90.0,
+          90.0,
+          90.0
+        ],
+        "surface_area_A2": 22.044769089102964
+      },
+      "solid_thickness_A": 16.430582113647816,
+      "vacuum_A": 24.862296539053204,
+      "top_plane_formula": {
+        "O": 1
+      },
+      "bottom_plane_formula": {
+        "O": 1
+      },
+      "formal_dipole_density_e_per_A": 2.375628525609221e-07,
+      "relaxation_status": "force_and_thickness_converged",
+      "surface_energy_eV_A2": 0.06797110724250159,
+      "surface_energy_J_m2": 1.0890171981104422,
+      "maximum_force_eV_A": 0.026227901131155383,
+      "maximum_atomic_displacement_A": 0.19335780515688256,
+      "thickness_convergence": {
+        "passed": true,
+        "thinner_repeat": 5,
+        "thickest_repeat": 7,
+        "absolute_difference_eV_A2": 0.000528646959257334,
+        "absolute_difference_J_m2": 0.008469858057572504,
+        "maximum_eV_A2": 0.001,
+        "maximum_J_m2": 0.01602176634
+      },
+      "sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+      "records": [
+        {
+          "role": "termination_screen_plan",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/termination-screen-plan.json",
+          "sha256": "19daad1c6c5a1656146bd28e2d3e2b3b5d121580be65e174b0509ead43457fba"
+        },
+        {
+          "role": "termination_selection_report",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/termination-selection-report.json",
+          "sha256": "b1f6eb7e0f8607318e2187cf7808cc8f334ac81c4a48f6322b1f6386cf5cb4ac"
+        },
+        {
+          "role": "termination_screen_run_manifest",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/termination-screen-run-manifest.json",
+          "sha256": "a042298ee679b7b3f2ca14cc185d4da8080a11c45815422664d213ca9d59f1d1"
+        },
+        {
+          "role": "surface_relaxation_plan",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-relaxation-plan.json",
+          "sha256": "a246733a436a76ca776b0ecf34517176437341ac97098ebe3f783ff11e9de01f"
+        },
+        {
+          "role": "surface_relaxation_run_manifest",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-relaxation-run-manifest.json",
+          "sha256": "22b3bb9b0dd05e964c61a0d4f195b3f6b64437a8d17084292dde31837622a898"
+        },
+        {
+          "role": "surface_convergence_report",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-convergence-report.json",
+          "sha256": "63539ece350370be97b709df2c51a8e7c80f67165ba73b9637c27148446fe89d"
+        },
+        {
+          "role": "bulk_reference",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/bulk-reference.json",
+          "sha256": "723eb2d425e26e8f51ebf2558be3206c1ee0deb9e55e6476662fb7f8de3c636f"
+        },
+        {
+          "role": "target_relaxation_report",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/repeat-005-relaxation-report.json",
+          "sha256": "bd34d08fb643e1909da1d2e0aa8e3a51b8c86ddf32e37abd27bdaabab7b395cf"
+        },
+        {
+          "role": "target_optimizer_log",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/repeat-005-optimizer.log",
+          "sha256": "3fb186a79eca6d2a5091e996120dbc0b52e1be3b30c4741654c7af810f8ccd83"
+        },
+        {
+          "role": "target_progress",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/repeat-005-progress.jsonl",
+          "sha256": "7e99077c3820e867e8d20724c33fe938cb03e5ac71c015befaa98de015d3d31a"
+        },
+        {
+          "role": "surface_promotion_plan",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-promotion-plan.json",
+          "sha256": "21726f88bea4df24aae9a684260c9fcfcff0a78e28792ef0dcb8c67d50849e88"
+        },
+        {
+          "role": "surface_promotion_report",
+          "path": "slabs/110/stoichiometric/maintained/relaxed-surface-v1/records/surface-promotion-report.json",
+          "sha256": "af480963cd512479aa109dbcd89fcb874298e45958d3b4b94c7379491b50296d"
+        }
+      ]
+    }
+  ],
+  "open_decisions": [
+    "The public FTO dense-monolayer coverage and target cell remain unregistered; the maintained F-on-O recipe currently supports single-molecule adsorption only."
+  ],
+  "adsorption_site_libraries": [
+    {
+      "status": "accepted_site_prototype_library",
+      "anchor_family": "phosphonic_acid",
+      "probe": "methylphosphonic_acid",
+      "source_surface_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+      "protocol_version": "adsorption_site_prototype_clustering_v1",
+      "promotion_fingerprint": "9d5447f15e469366d3f7f13aba5ab850b9d3651049f1727fd6d84c7a20e63ce8",
+      "prototype_run_fingerprint": "80142c6989cd65df13a2db22556a12658af27d9eadc2a39d6e7b7d7f18be6904",
+      "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/site-prototypes.json",
+      "sha256": "ed4a0dd815244415e2ed5325903ae88fee5700dfc93473fade4601c463e78ffa",
+      "summary": {
+        "selected_relaxed_site_count": 3,
+        "rejected_geometric_site_combination_count": 2,
+        "site_prototype_count": 1,
+        "bidentate_prototype_count": 1,
+        "tridentate_prototype_count": 0,
+        "collapsed_selected_site_count": 2
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "representative_structures": [
+        {
+          "site_prototype_id": "site-prototype-phosphonic-acid-0001",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/structures/site-prototype-phosphonic-acid-0001.extxyz",
+          "sha256": "32ec39bae8a67b75563a8ab4f8478e5b5ed6323606610b4f6341319fdbf297e3"
+        }
+      ],
+      "records": [
+        {
+          "role": "site_prototype_plan",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-plan.json",
+          "sha256": "4c93c32461ffe526c03a5d1c1cae2c9fca02b819665fb4cd47ed4107f2a8f0d7"
+        },
+        {
+          "role": "site_prototype_run_manifest",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-run-manifest.json",
+          "sha256": "380e3522a578e28718c4bced8ecf3b9ea2eca283295a10229fbfc157c8387a1b"
+        },
+        {
+          "role": "probe_relaxation_plan",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/probe-relaxation-plan.json",
+          "sha256": "dd3b78c5de2078b355bc8ff3506c28390c175edbc6e44d98a478ab06f765610c"
+        },
+        {
+          "role": "probe_relaxation_run_manifest",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/probe-relaxation-run-manifest.json",
+          "sha256": "70e1f23fe3c9bd624ae717e258cfee52f89529cf0f36938b4685e71ebacae4cd"
+        },
+        {
+          "role": "candidate_energy_report",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/candidate-energy-report.json",
+          "sha256": "c7c8dbea1a8266e99395fdc8c61f69614d1170db9473cbc6520672116ea97c1a"
+        },
+        {
+          "role": "site_energy_selection_report",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-energy-selection-report.json",
+          "sha256": "d6b820bb0b1d13fd823a3010d1285c53fcc36c4f3db215f880e6f9100bddd7f9"
+        },
+        {
+          "role": "site_prototype_promotion_plan",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-promotion-plan.json",
+          "sha256": "25846d94c63def576a0bd1f239ef7ae73190be58759f6b85a1bcfbb7f72be65c"
+        },
+        {
+          "role": "site_prototype_promotion_report",
+          "path": "adsorption-sites/phosphonic_acid/adsorption_site_prototype_clustering_v1-80142c6989cd/records/site-prototype-promotion-report.json",
+          "sha256": "62cf2f33067bd641d1c224632dcf4c2216b70b70a62fe437ab142e99c4ed9163"
+        }
+      ]
+    },
+    {
+      "status": "superseded_site_prototype_library",
+      "anchor_family": "carboxylic_acid",
+      "probe": "acetic_acid",
+      "source_surface_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+      "protocol_version": "adsorption_site_prototype_clustering_v1",
+      "promotion_fingerprint": "421572b1c3fadc28a6f57ac255d257178922987150fb9b7f4217b8ca7be03973",
+      "prototype_run_fingerprint": "7392329311a04369ce53dc93fcd2c31136442ecc4e508dd696a5aaedfd842bd8",
+      "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/site-prototypes.json",
+      "sha256": "05a00f057a41854239a5f45bef394e82bddf0226ea29fcfda1361aab97e5bf60",
+      "summary": {
+        "selected_relaxed_site_count": 2,
+        "rejected_geometric_site_combination_count": 1,
+        "site_prototype_count": 2,
+        "bidentate_prototype_count": 2,
+        "tridentate_prototype_count": 0,
+        "collapsed_selected_site_count": 0
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "representative_structures": [
+        {
+          "site_prototype_id": "site-prototype-carboxylic-acid-0001",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/structures/site-prototype-carboxylic-acid-0001.extxyz",
+          "sha256": "81f7f4ff3ea0f3939cf38cb4b41ec44860af0ef2300585c0573051ead696da79"
+        },
+        {
+          "site_prototype_id": "site-prototype-carboxylic-acid-0002",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/structures/site-prototype-carboxylic-acid-0002.extxyz",
+          "sha256": "87ffa5f4ff5dda681235d125048a64a35a633204aacdf7c9f1c8dac1c05957ba"
+        }
+      ],
+      "records": [
+        {
+          "role": "site_prototype_plan",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-plan.json",
+          "sha256": "26d62eecddacf138b279578d18a71a44f607b03914a755ed833801429e199c23"
+        },
+        {
+          "role": "site_prototype_run_manifest",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-run-manifest.json",
+          "sha256": "17c3f400e4205a6a5227c8bb5a75941e8ad91cf393db086e8c852fac91e62733"
+        },
+        {
+          "role": "probe_relaxation_plan",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/probe-relaxation-plan.json",
+          "sha256": "5f2fe3e77e7a7834145d14c83bfd22fc844c25f99c01b1b442e5ee03918d2b1c"
+        },
+        {
+          "role": "probe_relaxation_run_manifest",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/probe-relaxation-run-manifest.json",
+          "sha256": "5d4c1e86cc0d44610d2a8bf6b78a66d55ad20124619cf47a10ff861c47d8f5ed"
+        },
+        {
+          "role": "candidate_energy_report",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/candidate-energy-report.json",
+          "sha256": "ce4448dfc3bc14d6da7a2ac2713ee4532b242b339d0e7bb945d1863f1f2a42b1"
+        },
+        {
+          "role": "site_energy_selection_report",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-energy-selection-report.json",
+          "sha256": "dedafac0cb30b5b1c49a086ef69cde5213e1f3501f10473d61aed67207fc6522"
+        },
+        {
+          "role": "site_prototype_promotion_plan",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-promotion-plan.json",
+          "sha256": "c4d8ce5ea28f4e8de330ae50178ac7b373006610bd30d1643d14a32f3ba2c42b"
+        },
+        {
+          "role": "site_prototype_promotion_report",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-7392329311a0/records/site-prototype-promotion-report.json",
+          "sha256": "553debe68bde0f034f332fb3dcbb3f8e5ecdb58eb8f73aa02671fa21375d78d2"
+        }
+      ],
+      "superseded_at_utc": "2026-08-03T11:23:05.149782+00:00",
+      "superseded_by": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/site-prototypes.json",
+      "superseded_by_sha256": "8cc29b30d813f00f65dad3109dc29c6386774a0f4e1ff739fc3f22a3aaa20e86",
+      "superseded_by_promotion_fingerprint": "cd9c96d2ef3cfd0eb6bba5e4fb04901514db5c9ac7831bfae48a534d235cb41a"
+    },
+    {
+      "status": "accepted_site_prototype_library",
+      "anchor_family": "carboxylic_acid",
+      "probe": "acetic_acid",
+      "source_surface_sha256": "2a2eb0439fce0103d3c84523afb57dd92fe523b6c712b2d40c31bc958b839600",
+      "protocol_version": "adsorption_site_prototype_clustering_v1",
+      "promotion_fingerprint": "cd9c96d2ef3cfd0eb6bba5e4fb04901514db5c9ac7831bfae48a534d235cb41a",
+      "prototype_run_fingerprint": "13dd3b90b7ca6f0351496d5197d013104f0ddd696bbf264bc39f70e24f04bfab",
+      "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/site-prototypes.json",
+      "sha256": "8cc29b30d813f00f65dad3109dc29c6386774a0f4e1ff739fc3f22a3aaa20e86",
+      "summary": {
+        "selected_relaxed_site_count": 4,
+        "rejected_geometric_site_combination_count": 1,
+        "site_prototype_count": 3,
+        "bidentate_prototype_count": 3,
+        "tridentate_prototype_count": 0,
+        "collapsed_selected_site_count": 1
+      },
+      "doped_site_energy_policy": "reuse_undoped_parent",
+      "representative_structures": [
+        {
+          "site_prototype_id": "site-prototype-carboxylic-acid-0001",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0001.extxyz",
+          "sha256": "0f0a2f494415819796f5841e8eece20940ccb44b36c884ce89d49f1d6d6793cd"
+        },
+        {
+          "site_prototype_id": "site-prototype-carboxylic-acid-0002",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0002.extxyz",
+          "sha256": "68996620f69ae13fc340f38464c655093d595a35c7bca3b0bef9f07da0772a63"
+        },
+        {
+          "site_prototype_id": "site-prototype-carboxylic-acid-0003",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/structures/site-prototype-carboxylic-acid-0003.extxyz",
+          "sha256": "5447286a79ecc31e4b25d07d02ce151c67735760e45c28137497243b24a47bf4"
+        }
+      ],
+      "records": [
+        {
+          "role": "site_prototype_plan",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-plan.json",
+          "sha256": "83aa27132e2b432d8e4fa68ca0460368ea245bdc2eefd2020f13f80ff8ae1c0a"
+        },
+        {
+          "role": "site_prototype_run_manifest",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-run-manifest.json",
+          "sha256": "e7be125becefd50967537c27ed0764daf0b0c915710c1fa8a6d9fd9b5083dc46"
+        },
+        {
+          "role": "probe_relaxation_plan",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/probe-relaxation-plan.json",
+          "sha256": "621cbeab82d904b0d43fd5582f27e89a9bd19ad786a0e1c7b1482b096c263385"
+        },
+        {
+          "role": "probe_relaxation_run_manifest",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/probe-relaxation-run-manifest.json",
+          "sha256": "6827a82cf736895c13d2f80f6a3e99641786e486b0db8076a6301a5e5bd354c5"
+        },
+        {
+          "role": "candidate_energy_report",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/candidate-energy-report.json",
+          "sha256": "2af810843ed623037e07fc6589f8d91e10497d4ecbc03639b69e8438277be35c"
+        },
+        {
+          "role": "site_energy_selection_report",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-energy-selection-report.json",
+          "sha256": "bbc8c1ffb23016b8ec2c0d35069e15e92bd7d9e0fab8b7d8542f8da22ada5c02"
+        },
+        {
+          "role": "site_prototype_promotion_plan",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-promotion-plan.json",
+          "sha256": "dc7e64f4fad6604c3dfb359525f03686473303f1a28319354238f719cbf377c9"
+        },
+        {
+          "role": "site_prototype_promotion_report",
+          "path": "adsorption-sites/carboxylic_acid/adsorption_site_prototype_clustering_v1-13dd3b90b7ca/records/site-prototype-promotion-report.json",
+          "sha256": "025c987b0cea9f8b8f92d4cd24e878985a0b0c611c7bb70d1c0c706814e7368a"
+        }
+      ]
+    }
+  ]
+}

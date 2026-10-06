@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "mode": "adsorption_site_prototype_run",
+  "status": "passed_clustering_pending_promotion",
+  "fingerprint": "0b339cba894bc8f7cba344517b7a0a4d76cbb911228797e6ba63d22691af7ec6",
+  "substrate_key": "ITO",
+  "anchor_family": "carboxylic_acid",
+  "site_prototype_count": 14,
+  "artifacts": [
+    {
+      "role": "site_prototype_plan",
+      "path": "adsorption-site-prototype-plan.json",
+      "sha256": "5ced5574fdfd15962952ff48431b28b9b3caa3ff19a7243574ce10d65bdba22e"
+    },
+    {
+      "role": "site_prototype_library",
+      "path": "site-prototypes.json",
+      "sha256": "72bf9f533b88552569669baf0daab45110c4eccceb6d31367aca2010f4b38d6d"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0001",
+      "path": "structures/site-prototype-carboxylic-acid-0001.extxyz",
+      "sha256": "fc6d8096d15a5bd02034fbdbf169b2bbd842ef4986880979cb6dd787eed2f12d"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0002",
+      "path": "structures/site-prototype-carboxylic-acid-0002.extxyz",
+      "sha256": "e8d129af877434352f2cdd69e63dd3364325fbb34d9192947dcc6ffb12a73a9a"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0003",
+      "path": "structures/site-prototype-carboxylic-acid-0003.extxyz",
+      "sha256": "7975b573b98093372cab4353abac877866831aab4e174efa096aed9afbae3ea7"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0004",
+      "path": "structures/site-prototype-carboxylic-acid-0004.extxyz",
+      "sha256": "647e774ba1d32de96bf400bf156d645e60267e3f23c189bc20eb21a9fbd831ee"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0005",
+      "path": "structures/site-prototype-carboxylic-acid-0005.extxyz",
+      "sha256": "5fc3abdf0ad6809ed1ba250cfc6eea85907b967b2ca62ed8dc2c31ae60017090"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0006",
+      "path": "structures/site-prototype-carboxylic-acid-0006.extxyz",
+      "sha256": "42b798ad0b6596e6bc49d53aadc6f4c82a70a346d5bce553043ec2a0429d4481"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0007",
+      "path": "structures/site-prototype-carboxylic-acid-0007.extxyz",
+      "sha256": "02be19c333733cdce11d645cf57519ce159111d160f2d6d260d0dcb57ae42ba2"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0008",
+      "path": "structures/site-prototype-carboxylic-acid-0008.extxyz",
+      "sha256": "e8058fe932e69a9cfcd25168d92508d9ff727561b0e16d1e9ce0934bd6bcd0e2"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0009",
+      "path": "structures/site-prototype-carboxylic-acid-0009.extxyz",
+      "sha256": "e6f52490310059731780e0201bb855f98e15099ed2c7c4d2bff58aa0c94c6d4e"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0010",
+      "path": "structures/site-prototype-carboxylic-acid-0010.extxyz",
+      "sha256": "c7a379c8e4c6022f989255f43e0d8557044c7ef5a614e1a71f83eabfab2bce7e"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0011",
+      "path": "structures/site-prototype-carboxylic-acid-0011.extxyz",
+      "sha256": "c014e208eb92aeea6d078c5376139784a057f11966143c8eabb30b0f11980627"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0012",
+      "path": "structures/site-prototype-carboxylic-acid-0012.extxyz",
+      "sha256": "bf238c208eff693cdb246c4b76a2b27f637eb597f6dd79459f3883caca3a0a8c"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0013",
+      "path": "structures/site-prototype-carboxylic-acid-0013.extxyz",
+      "sha256": "4c7e69ff4185c0ec47ad88e6527c65228a66fea711ceefa03e507356cd1c0f79"
+    },
+    {
+      "role": "representative_relaxed_structure",
+      "site_prototype_id": "site-prototype-carboxylic-acid-0014",
+      "path": "structures/site-prototype-carboxylic-acid-0014.extxyz",
+      "sha256": "062326124439f3bca8b3295db3a936a64804ee9e9b9ae5c804c0634032000e97"
+    }
+  ]
+}

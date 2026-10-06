@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "passed_promotion",
+  "protocol_version": "relaxed_surface_promotion_v1",
+  "plan_fingerprint": "8482a80884360b826d2fd4d2b06da5438e268ae8359796796b7001f14e9b486f",
+  "promoted_at_utc": "2026-08-02T12:36:19.423161+00:00",
+  "substrate_key": "ITO",
+  "source_surface_precut": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/In2O3-Ia-3-111-three-repeat-nonpolar-bulk-parent-v1.cif",
+    "sha256": "3bdc783d48ecc51c6fd62a27e828ef774e922af79a193311da600aba75ece7bd",
+    "status": "accepted_bulk_derived_unrelaxed_precut",
+    "source_layers": 3,
+    "miller": [
+      1,
+      1,
+      1
+    ],
+    "primitive_miller": [
+      1,
+      1,
+      1
+    ],
+    "termination": "stoichiometric_formally_nonpolar_O_top",
+    "cut_fractional_phase": 0.0
+  },
+  "screen_result": {
+    "run_directory": "${PVKSAM_PROJECT_ROOT}/runs/surface-termination-screen/ito/surface_termination_screen_v1-20260802T093159Z-b20e8ce28f17",
+    "run_fingerprint": "b20e8ce28f17235ff1e27715bae67043e330817d68a8d53d4b9f8ceb1e460e23",
+    "selected_candidate_id": "termination-001",
+    "plan_sha256": "bbfe082ae879139383c7f00351748377fd8a943d442421026b387b3b1882cf67",
+    "selection_report_sha256": "71e74b22a730f6c4ed253af550e7bb3e17c37d089251d012ca9ebbaffea6244f",
+    "run_manifest_sha256": "a8098446bf62a4a437f0c1dcb8fe7da2e7c9cb8b04d67a28eac511c75953899e"
+  },
+  "registered_surface": {
+    "path": "${PVKSAM_PROJECT_ROOT}/substrates/structures/ito/slabs/111/stoichiometric/maintained/relaxed-surface-v1/In2O3-Ia-3-111-three-repeat-O-terminated-relaxed-mace-mpa-0-medium-v1.cif",
+    "sha256": "ca2a5df822673b3219e873d8552f05aa89cc64213d51f908d3c7a6894b125192",
+    "oriented_unit_repeats": 3
+  }
+}

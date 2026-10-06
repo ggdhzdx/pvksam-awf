@@ -1,7 +1,5 @@
+dist/*
+!dist/*.zip
+!dist/*.sha256
 __pycache__/
 *.pyc
-*.model
-*.pt
-*.pth
-*.ckpt
-dist/

@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "fingerprint": "500c5cfe723bbd0e034f0b3ecf9e7b4f807b655f41b48495ef737aaf00d7eb51",
+  "started_at_utc": "2026-08-02T01:45:44.552395+00:00",
+  "output_directory": "${PVKSAM_PROJECT_ROOT}/runs/bulk-relaxation/ito/bulk_parent_relaxation_v1-20260802T014544Z-500c5cfe723b",
+  "host": "node01",
+  "python": "3.11.14",
+  "device": "cuda",
+  "default_dtype": "float32",
+  "plan": {
+    "path": "bulk-relaxation-plan.json",
+    "sha256": "add5fd581ece61c134e2bdfb81f69e18524943a281563fd37eb5d274ccac80f2"
+  },
+  "artifacts": [
+    {
+      "role": "optimizer_log",
+      "path": "optimizer.log",
+      "sha256": "09a687c26b6de4c6aa620a460b63d6cc26625f985eb4d83f4b5b3c4c3462c37e"
+    },
+    {
+      "role": "optimization_trajectory",
+      "path": "optimization.traj",
+      "sha256": "095369034be668669e380df658d5ac79e821ef84e1b9ec4c8e9b20042bcad106"
+    },
+    {
+      "role": "bulk_parent_candidate",
+      "path": "bulk-parent-candidate.cif",
+      "sha256": "ee8f6591c9bc900ee3d8209a1ed62e3b7e2d25535011b291bd7aad6efec2ad16"
+    },
+    {
+      "role": "acceptance_report",
+      "path": "acceptance-report.json",
+      "sha256": "beec059d9c5402c8107476b0f22b4b09c035082c72507d0a673e7e6516ba969f"
+    },
+    {
+      "role": "progress",
+      "path": "progress.jsonl",
+      "sha256": "85aa3967981781e7d37bc76b379debc502387f70f5d6a1740c1e61f92203bac1"
+    }
+  ],
+  "finished_at_utc": "2026-08-02T01:45:52.675761+00:00",
+  "runtime": {
+    "mace_version": "0.3.14",
+    "torch_version": "2.9.1+cu128",
+    "cuda_available": true,
+    "cuda_device_name": "NVIDIA GeForce RTX 4090 D"
+  },
+  "initial_symmetry": {
+    "number": 206,
+    "symbol": "Ia-3",
+    "symprec_A": 0.01
+  },
+  "initial_formula": {
+    "In": 32,
+    "O": 48
+  },
+  "acceptance_status": "passed"
+}

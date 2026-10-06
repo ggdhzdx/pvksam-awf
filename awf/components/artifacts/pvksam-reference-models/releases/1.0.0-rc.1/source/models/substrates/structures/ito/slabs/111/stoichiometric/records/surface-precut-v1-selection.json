@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "passed_selection",
+  "selected_candidate_id": "termination-001",
+  "selection_basis": "bulk stoichiometry, formal charge neutrality, explicit formal-dipole threshold, and preferred top element",
+  "historical_comparison": {
+    "path": "slabs/111/stoichiometric/three-layer-mother-slab.cif",
+    "sha256": "57e2dc8effea64937cb5a34705b9e8eb94f31aa2d7e1f34e08d4af06a9df056f",
+    "status": "not_geometry_equivalent",
+    "method": "uniform_in_plane_scale_then_elementwise_hungarian_periodic_xy_and_nonperiodic_z_matching",
+    "maximum_scaled_geometry_rmsd_A": 0.1,
+    "scaled_geometry_rmsd_A": 0.45353014710333006,
+    "maximum_displacement_A": 0.7693361660298317,
+    "by_element": {
+      "In": {
+        "count": 48,
+        "rmsd_A": 0.5814804904671448,
+        "maximum_displacement_A": 0.7693361660298317
+      },
+      "O": {
+        "count": 72,
+        "rmsd_A": 0.34264113883674185,
+        "maximum_displacement_A": 0.3427810533596747
+      }
+    },
+    "candidate_to_reference_isotropic_scale": 0.9824500435658114,
+    "candidate_in_plane_length_relative_deviations": [
+      0.017863459367858357,
+      0.017863459367858606
+    ],
+    "z_flipped": false,
+    "origin_shift_fractional_xy": [
+      -0.5,
+      -1.0
+    ]
+  },
+  "known_limitations": [
+    "Candidates are unrelaxed geometric Surface Precuts.",
+    "Formal-charge nonpolarity is not a calculated surface energy."
+  ]
+}
