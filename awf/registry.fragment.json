@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "components": [
+    {
+      "descriptor": "components/skills/pvksam/component.yaml",
+      "id": "skill.pvksam",
+      "kind": "skill"
+    },
+    {
+      "descriptor": "components/recipes/pvksam-ase-cueq/component.yaml",
+      "id": "recipe.pvksam-ase-cueq",
+      "kind": "recipe"
+    },
+    {
+      "descriptor": "components/artifacts/mace-mpa-0-medium/component.yaml",
+      "id": "artifact.mace-mpa-0-medium",
+      "kind": "artifact"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "pvksam",
+      "display_name": "AWF PVKSAM",
+      "aliases": [
+        "AWF PVKSAM",
+        "PVKSAM"
+      ],
+      "descriptor": "workflows/pvksam/releases/1.0.0-rc.17/workflow.yaml",
+      "descriptor_sha256": "502c602bae4454415925a32929fb294ff9048c53e8b42eb9ea107ca2c49f589b",
+      "lock": "workflows/pvksam/releases/1.0.0-rc.17/versions.lock",
+      "lock_sha256": "1a4e67884a02c44d5dc74cd8972c6b2cf95a7e2f5f9668986e3f2473f6a8b774",
+      "releases": {
+        "1.0.0-rc.17": {
+          "descriptor": "workflows/pvksam/releases/1.0.0-rc.17/workflow.yaml",
+          "descriptor_sha256": "502c602bae4454415925a32929fb294ff9048c53e8b42eb9ea107ca2c49f589b",
+          "lock": "workflows/pvksam/releases/1.0.0-rc.17/versions.lock",
+          "lock_sha256": "1a4e67884a02c44d5dc74cd8972c6b2cf95a7e2f5f9668986e3f2473f6a8b774",
+          "status": "candidate"
+        }
+      }
+    }
+  ]
+}

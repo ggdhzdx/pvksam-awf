@@ -1,0 +1,71 @@
+{
+  "base_release": "skill.pvksam@1.0.0-rc.12",
+  "case_evidence": {
+    "molecule": "2Nap-Ac phosphonate SAM at one registered ITO site",
+    "scope": "Existing case evidence only; not a new full-chain validation and not a universal count or guarantee.",
+    "summary": "20,736 skeleton grid points; 3,655 passed pre-optimization screen; 2,765 passed post-optimization common-phase checks; 121 symmetry-aware representatives; 1,292 of 1,452 site P-C rolls passed; one pose per skeleton selected for MACE; 121 valid surface structures, 81 surface-geometry clusters and 7 Pareto/endpoint candidates."
+  },
+  "change": "Remove all alternate PVKSAM initial-conformer entry paths, including the scanner legacy 216-start branch. fixed-site-cpu now accepts only the hash-bound output of the selected per-skeleton MMFF94s single-roll selector. Keep the one reviewed phosphonate skeleton-grid route through MACE, growth, H0, global proton placement and cyclic annealing.",
+  "date": "2026-10-05",
+  "engineering_validation": {
+    "component_tests": "209 passed, 5 skipped (external project fixtures unavailable)",
+    "downloads": 0,
+    "project_front_tests": "79 passed (mace conformation scan and PVKSAM front-contract tests)",
+    "scientific_jobs_launched": 0
+  },
+  "limitations": [
+    "Initial input route is phosphonate-only; carboxylate original-molecule adapter is not connected.",
+    "The isolated skeleton scanner infers adjacency from reviewed unoptimized H0 coordinates; compare it to the authoritative source SDF for every new molecule.",
+    "The --pvksam-front controller seals H0 intake and executes only the CPU skeleton grid; force-field, deduplication, site roll, MACE and growth remain explicit handoffs.",
+    "fixed-site-cpu requires the selected single-roll schema and its hash-bound selector receipt; it does not generate torsions itself.",
+    "MMFF94s gas-phase single-point energy selects one MACE start and is not an adsorption-energy ranking.",
+    "The cited case covers one molecule and one registered ITO site prototype; it does not prove universal conformer coverage or multi-site growth."
+  ],
+  "route": [
+    "phosphonate-skeleton-grid",
+    "fixed-head-MMFF94s",
+    "common-PC-phase-and-symmetry-dedup",
+    "ITO-PC-roll-screen",
+    "single-lowest-safe-MMFF94s-single-point-per-skeleton",
+    "MACE-surface-optimization",
+    "surface-clustering-and-Pareto-selection",
+    "registered-growth",
+    "H0-restraints-global-protonation-cyclic-annealing"
+  ],
+  "schema_version": 1,
+  "source_files_sha256": {
+    "SKILL.md": "a38ac6d5f4160d294bbbb2745fb949edbc559f5be4130a8c795dab3f6e5f5c12",
+    "references/initial-conformer-search.md": "c5353dd7a71312fca5b30fa3d19c501f804eeef4d4b27bae93be9e57634bfac6",
+    "references/pvksam.zh-CN.md": "4bf7f83d10a5ddab81df5ca237ba53d0bda306a3b90f501a1a983d0f96bc5b88",
+    "scripts/analyze_production_traj.py": "8e7600d44d8a517dd4b06c51e466796d8c5f95fa1bc4151965445795bdf77ac6",
+    "scripts/fast_ff_prefilter.py": "c5880e02a7d9f359a3e3772d7fc5bf06e3d4fcd651870ed920967266b890a191",
+    "scripts/generate_pc_rolls.py": "04a2739c8fd26d05657f2a7935fde74e88282bb8deb53be8262f6a96efb84720",
+    "scripts/mace_conformation_scan.py": "5526f83de5350f1a3ab8350a37a2cb7ce31b51c7f40e4b75aa422f0fd59d6628",
+    "scripts/mace_dimer_scan.py": "01385004c7453122db594559b7868a98a4c4d6831fd4c040c528e820cefadd19",
+    "scripts/monolayer_builder.py": "e2dc7d4fcb91b64479021ff86f7232d9445ba95694f7b58ed05cdd8d7b5f0dda",
+    "scripts/monolayer_headgroup_fit.py": "7426a8ce80ac04a5d92368a4a3c92b174f2d6c75960b917467917b64042bf7fa",
+    "scripts/monolayer_sequential_growth.py": "786799afac203a831d4f8200fb01468c0bdcabafe60a4a1971418d58d5d9d620",
+    "scripts/orchestrate_md_pipeline.py": "d2e183fe37b3a1eb7abaaf4583615f365f3ccfca0b7e7319b1a6b17bbbc43821",
+    "scripts/relax_monolayer.py": "c507c2533a9f7ed6dd2f2d83a67d01a8c532b9f96500e5bf6a509d28ba41c699",
+    "scripts/run_annealing.py": "dbca9e5bf353d7b6f56d54f702c506abea5c1dcd51d6a683bb2ec13c814d6935",
+    "scripts/run_langevin_md_hmr.py": "d97964407b1ba52164d03e6b34c24ec369f541a7158ce9f364e1b9d469ec9a39",
+    "scripts/sam_lammps.py": "44286c6770e955de03996b577bc8d97cc0abc8a345c6b3eba130c24f7153cbaf",
+    "scripts/sam_structure_tools.py": "d9c114d7f09f6b5b3c0c0daa8de443fdf7e3e14962a50bbff083277fb7c3402a",
+    "scripts/select_single_pc_roll.py": "7ff1dc5038bf56fe9dd7e53cac61905c05388047aa938842389ebe7192127c71",
+    "scripts/stage0_relaxation.py": "10992d6219fee77fcf288c1ab47987b4379ffe7eddf5e92fb76d0d924e2cf8f2",
+    "scripts/substrate_library.py": "3e36fb0d531cccc5fb51049426509cad9123d0fa1180d6e4fae0d9ea59625cc6",
+    "scripts/surface_protonation.py": "d104b44aa2159c87e096e07dec750135964676baf909164cc74039894630140d",
+    "scripts/validate_monolayer.py": "ddcc30d2aa598178d114881df79f234b0386bc6d0151feebf9d26a3a1541a5a3",
+    "tests/fixtures/methylphosphonic-acid.sdf": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf",
+    "tests/test_fast_ff_prefilter.py": "dfd75bcf4f0a13bb94781dfb5705cee1e5f6d34d61b1ee2e3a89a4550da5bd64",
+    "tests/test_generate_pc_rolls.py": "6b2bcff5ee7c6f65f9f64d16bd6323a63e80d75b915aa467d450b5c5b193dbf7",
+    "tests/test_mace_conformation_scan.py": "2fac0f156b6b7850ca318a072c18fe5d919a95fc0d88edb61584bccff803afc8",
+    "tests/test_metal_coordination_filter.py": "7482e9402e8a6a7ccb1e27f00c8f76560867189f2e72d40f5ca08d236f166335",
+    "tests/test_pvksam.py": "c14a1ab0e4b2edd4d021df1d54cfbfab68706def0479dfd77c5df3355ab48d81",
+    "tests/test_sam_structure_tools.py": "09286aaa4f88c0bac350fd45fdb07257939b6ed9a1d317101142b62116621e97",
+    "tests/test_select_single_pc_roll.py": "ffa188c6c4ac6d5abc97803dbf74b353ddccc183fc01f5d3953f65c97afbd2c2",
+    "tests/test_surface_protonation.py": "445bc093c60c2112cd1026f5b5303b734ddf46a07a772f2b2a744ce0e5911ff7",
+    "tests/test_validate_monolayer.py": "6797d06a6ec0d0ad3e60831f77438c3bd37d4efd2cec3f7f0cb06b373dfc9f0f"
+  },
+  "source_project": "external project workspace (not bundled)"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "mace-mpa-0-medium",
+  "path": "external/mace-mpa-0-medium.model",
+  "path_env": "PVKSAM_MACE_MODEL",
+  "kind": "file",
+  "file_bytes": 79462305,
+  "sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+  "source": "External hash-identified MACE model; model bytes and upstream acquisition URL are not bundled",
+  "expected_download_bytes_this_task": 0,
+  "bundled": false
+}

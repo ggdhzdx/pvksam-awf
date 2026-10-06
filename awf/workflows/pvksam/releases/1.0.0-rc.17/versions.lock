@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "workflow": "pvksam",
+  "workflow_release": "1.0.0-rc.17",
+  "locked_at": "2026-10-05",
+  "components": {
+    "skill.pvksam": "1.0.0-rc.15",
+    "recipe.pvksam-ase-cueq": "1.0.0-rc.2",
+    "artifact.mace-mpa-0-medium": "1.0.0-rc.2"
+  },
+  "release": "1.0.0-rc.17"
+}

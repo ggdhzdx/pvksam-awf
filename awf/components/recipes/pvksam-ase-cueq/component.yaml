@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "recipe.pvksam-ase-cueq",
+  "kind": "recipe",
+  "releases": {
+    "1.0.0-rc.2": {
+      "status": "candidate",
+      "observed_at": "2026-10-06",
+      "source_snapshot": "components/recipes/pvksam-ase-cueq/releases/1.0.0-rc.2/source",
+      "tree_sha256": "326bbfbdaad34092cad76c60c1a057c8e8f0484524989fd89a15bf6711acf49a",
+      "provenance": "Public dependency-alignment successor; instructions are unchanged and the external MACE dependency points to portable Artifact rc.2.",
+      "instructions": "releases/1.0.0-rc.2/source/RECIPE.md",
+      "artifacts": [
+        "artifact.mace-mpa-0-medium@1.0.0-rc.2"
+      ],
+      "expected_download_bytes_this_publication": 0,
+      "predecessor": "recipe.pvksam-ase-cueq@1.0.0-rc.1"
+    }
+  }
+}

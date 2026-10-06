@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "workflow": "pvksam",
+  "workflow_release": "1.0.0-rc.17",
+  "files": {
+    ".gitignore": {
+      "bytes": 51,
+      "sha256": "7a111fc11987a2441ae564e200fd2ecfa2131aa72d770b41314dff1e122185b9"
+    },
+    "LICENSE": {
+      "bytes": 1076,
+      "sha256": "c286dad1c2440b465c9bc6faef734bb4c045be12fc5622ee38164c25462228ed"
+    },
+    "MODEL-NOTICE.md": {
+      "bytes": 389,
+      "sha256": "4493697c329f124b88873068dc86fae68a42ed10869144b07f09694e1e7297a0"
+    },
+    "README.md": {
+      "bytes": 1993,
+      "sha256": "b7238b04ecec3f2d93919cfa6cb24de5a8bf0035e7e7c05418ee58ff8c175c68"
+    },
+    "THIRD-PARTY-NOTICES.md": {
+      "bytes": 305,
+      "sha256": "0d653079f40ebabf0c95e9d2563d3691244c343b16f7524c0ee22f2f425d4004"
+    },
+    "awf/components/artifacts/mace-mpa-0-medium/component.yaml": {
+      "bytes": 1252,
+      "sha256": "36c38a94ebe97cdf46c8f00115b385f71402dc02809bf332d034f73216ef8099"
+    },
+    "awf/components/artifacts/mace-mpa-0-medium/releases/1.0.0-rc.2/source/README.md": {
+      "bytes": 242,
+      "sha256": "66edd1518ce4e020bd489a175557055654a0be2686c4e72b6b92c20dd0dcbfb8"
+    },
+    "awf/components/artifacts/mace-mpa-0-medium/releases/1.0.0-rc.2/source/model.json": {
+      "bytes": 408,
+      "sha256": "c84c45e35a91cb2f211ee55db929944cb24ae6055c0979daf1428a7dff910224"
+    },
+    "awf/components/recipes/pvksam-ase-cueq/component.yaml": {
+      "bytes": 776,
+      "sha256": "cf727b57d087b22b1b77f7c1312363c59cc39204f937a320def4b69e64e86026"
+    },
+    "awf/components/recipes/pvksam-ase-cueq/releases/1.0.0-rc.2/source/RECIPE.md": {
+      "bytes": 2845,
+      "sha256": "a795cf56d963879de5a6e40389c40e23c2c34a1279d70e62a2b8b014c0e2697f"
+    },
+    "awf/components/skills/pvksam/component.yaml": {
+      "bytes": 2583,
+      "sha256": "f1b94150a4264bc38a7d4a9583adcc77efcf5b01a39587a44d741507938c9a12"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/.gitignore": {
+      "bytes": 37,
+      "sha256": "3ed731b65d06150c138e2dadb0be0697550888a6b47eb8c45ecc9adba8b8e9bd"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/CACHEDIR.TAG": {
+      "bytes": 191,
+      "sha256": "37dc88ef9a0abeddbe81053a6dd8fdfb13afb613045ea1eb4a5c815a74a3bde4"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/README.md": {
+      "bytes": 302,
+      "sha256": "73fd6fccdd802c419a6b2d983d6c3173b7da97558ac4b589edec2dfe443db9ad"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/.pytest_cache/v/cache/nodeids": {
+      "bytes": 21685,
+      "sha256": "528865af644529a0f59c0c7fe03eac63617e37105c199c59e451c7115bc64887"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/SKILL.md": {
+      "bytes": 8400,
+      "sha256": "a38ac6d5f4160d294bbbb2745fb949edbc559f5be4130a8c795dab3f6e5f5c12"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/provenance.json": {
+      "bytes": 6005,
+      "sha256": "70b09c5d9901d6fb28dac1629ee137d749af6a35f6eedac8238e44cfd34bc111"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/references/initial-conformer-search.md": {
+      "bytes": 10896,
+      "sha256": "c5353dd7a71312fca5b30fa3d19c501f804eeef4d4b27bae93be9e57634bfac6"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/references/pvksam.zh-CN.md": {
+      "bytes": 10661,
+      "sha256": "4bf7f83d10a5ddab81df5ca237ba53d0bda306a3b90f501a1a983d0f96bc5b88"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/analyze_production_traj.py": {
+      "bytes": 87921,
+      "sha256": "8e7600d44d8a517dd4b06c51e466796d8c5f95fa1bc4151965445795bdf77ac6"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/fast_ff_prefilter.py": {
+      "bytes": 137093,
+      "sha256": "c5880e02a7d9f359a3e3772d7fc5bf06e3d4fcd651870ed920967266b890a191"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/generate_pc_rolls.py": {
+      "bytes": 10774,
+      "sha256": "04a2739c8fd26d05657f2a7935fde74e88282bb8deb53be8262f6a96efb84720"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/mace_conformation_scan.py": {
+      "bytes": 349436,
+      "sha256": "5526f83de5350f1a3ab8350a37a2cb7ce31b51c7f40e4b75aa422f0fd59d6628"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/mace_dimer_scan.py": {
+      "bytes": 34478,
+      "sha256": "2ffcb27b446b3b2f0c0bb4c25485c00ac5c228f79f4b3599315b255ee6e52e46"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/monolayer_builder.py": {
+      "bytes": 26822,
+      "sha256": "66bacec5fa95e7c3d1c03d7af83ab3c0737a26adfaab9ecf977f495cf33397d9"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/monolayer_headgroup_fit.py": {
+      "bytes": 48328,
+      "sha256": "7426a8ce80ac04a5d92368a4a3c92b174f2d6c75960b917467917b64042bf7fa"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/monolayer_sequential_growth.py": {
+      "bytes": 820562,
+      "sha256": "786799afac203a831d4f8200fb01468c0bdcabafe60a4a1971418d58d5d9d620"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/orchestrate_md_pipeline.py": {
+      "bytes": 99706,
+      "sha256": "43b09e02cbad5cdef9304cce9500ec9ccf95cad71825174008a2358892159f4a"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/relax_monolayer.py": {
+      "bytes": 44974,
+      "sha256": "c507c2533a9f7ed6dd2f2d83a67d01a8c532b9f96500e5bf6a509d28ba41c699"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/run_annealing.py": {
+      "bytes": 27859,
+      "sha256": "dbca9e5bf353d7b6f56d54f702c506abea5c1dcd51d6a683bb2ec13c814d6935"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/run_langevin_md_hmr.py": {
+      "bytes": 19205,
+      "sha256": "50ad6fc595ea0a32e2223708f6c73efd291518b8e55fe0df6c8ee8661520e824"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/sam_lammps.py": {
+      "bytes": 16639,
+      "sha256": "44286c6770e955de03996b577bc8d97cc0abc8a345c6b3eba130c24f7153cbaf"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/sam_structure_tools.py": {
+      "bytes": 129209,
+      "sha256": "d9c114d7f09f6b5b3c0c0daa8de443fdf7e3e14962a50bbff083277fb7c3402a"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/select_single_pc_roll.py": {
+      "bytes": 14794,
+      "sha256": "7ff1dc5038bf56fe9dd7e53cac61905c05388047aa938842389ebe7192127c71"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/stage0_relaxation.py": {
+      "bytes": 23571,
+      "sha256": "10992d6219fee77fcf288c1ab47987b4379ffe7eddf5e92fb76d0d924e2cf8f2"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/substrate_library.py": {
+      "bytes": 620859,
+      "sha256": "3e36fb0d531cccc5fb51049426509cad9123d0fa1180d6e4fae0d9ea59625cc6"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/surface_protonation.py": {
+      "bytes": 56884,
+      "sha256": "d104b44aa2159c87e096e07dec750135964676baf909164cc74039894630140d"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/scripts/validate_monolayer.py": {
+      "bytes": 75491,
+      "sha256": "ddcc30d2aa598178d114881df79f234b0386bc6d0151feebf9d26a3a1541a5a3"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/fixtures/methylphosphonic-acid.sdf": {
+      "bytes": 2011,
+      "sha256": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_fast_ff_prefilter.py": {
+      "bytes": 45344,
+      "sha256": "dfd75bcf4f0a13bb94781dfb5705cee1e5f6d34d61b1ee2e3a89a4550da5bd64"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_generate_pc_rolls.py": {
+      "bytes": 4130,
+      "sha256": "6b2bcff5ee7c6f65f9f64d16bd6323a63e80d75b915aa467d450b5c5b193dbf7"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_mace_conformation_scan.py": {
+      "bytes": 52511,
+      "sha256": "2fac0f156b6b7850ca318a072c18fe5d919a95fc0d88edb61584bccff803afc8"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_metal_coordination_filter.py": {
+      "bytes": 10342,
+      "sha256": "7482e9402e8a6a7ccb1e27f00c8f76560867189f2e72d40f5ca08d236f166335"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_pvksam.py": {
+      "bytes": 23177,
+      "sha256": "c14a1ab0e4b2edd4d021df1d54cfbfab68706def0479dfd77c5df3355ab48d81"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_sam_structure_tools.py": {
+      "bytes": 57533,
+      "sha256": "09286aaa4f88c0bac350fd45fdb07257939b6ed9a1d317101142b62116621e97"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_select_single_pc_roll.py": {
+      "bytes": 7555,
+      "sha256": "ffa188c6c4ac6d5abc97803dbf74b353ddccc183fc01f5d3953f65c97afbd2c2"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_surface_protonation.py": {
+      "bytes": 7713,
+      "sha256": "445bc093c60c2112cd1026f5b5303b734ddf46a07a772f2b2a744ce0e5911ff7"
+    },
+    "awf/components/skills/pvksam/releases/1.0.0-rc.15/source/tests/test_validate_monolayer.py": {
+      "bytes": 33485,
+      "sha256": "6797d06a6ec0d0ad3e60831f77438c3bd37d4efd2cec3f7f0cb06b373dfc9f0f"
+    },
+    "awf/docs/adr/0019-public-pvksam-workflow-closure.md": {
+      "bytes": 1835,
+      "sha256": "fad7ba016a8c875dae0b277b065472e7cbab21b04fb5a9b2479dd75f4e6071e1"
+    },
+    "awf/registry.fragment.json": {
+      "bytes": 1404,
+      "sha256": "54ca41a0041a6e25cf0e6d45f3a651a2f929734513ce80fd18c8519b80a4a91a"
+    },
+    "awf/workflows/pvksam/releases/1.0.0-rc.17/versions.lock": {
+      "bytes": 293,
+      "sha256": "1a4e67884a02c44d5dc74cd8972c6b2cf95a7e2f5f9668986e3f2473f6a8b774"
+    },
+    "awf/workflows/pvksam/releases/1.0.0-rc.17/workflow.yaml": {
+      "bytes": 11653,
+      "sha256": "502c602bae4454415925a32929fb294ff9048c53e8b42eb9ea107ca2c49f589b"
+    },
+    "verify.py": {
+      "bytes": 2314,
+      "sha256": "afef9e92267fc59c7ad86c43b696561869956fac3848b5ac2e671569e5359d4e"
+    }
+  }
+}

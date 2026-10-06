@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "artifact.mace-mpa-0-medium",
+  "kind": "artifact",
+  "releases": {
+    "1.0.0-rc.2": {
+      "status": "candidate",
+      "observed_at": "2026-10-06",
+      "source_snapshot": "components/artifacts/mace-mpa-0-medium/releases/1.0.0-rc.2/source",
+      "tree_sha256": "0989085427d1954863eddd9fc5b787e9dad466ad8ef2d50861db28f6287a63b2",
+      "predecessor": "artifact.mace-mpa-0-medium@1.0.0-rc.1",
+      "provenance": "Public portable model identity. The external payload is located through PVKSAM_MACE_MODEL and is not redistributed.",
+      "payloads": [
+        {
+          "id": "mace-mpa-0-medium",
+          "path": "external/mace-mpa-0-medium.model",
+          "path_env": "PVKSAM_MACE_MODEL",
+          "kind": "file",
+          "file_bytes": 79462305,
+          "sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+          "source": "External hash-identified MACE model; model bytes and upstream acquisition URL are not bundled",
+          "expected_download_bytes_this_task": 0,
+          "bundled": false
+        }
+      ],
+      "download_policy": "No automatic download. Set PVKSAM_MACE_MODEL to a legitimately acquired payload and verify its exact size and SHA-256."
+    }
+  }
+}
