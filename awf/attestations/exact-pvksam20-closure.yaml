@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "digest_contract": "awf-tree-v2",
+  "provenance": "Exact selected records copied from registered authoritative attestations; source and release metadata unchanged.",
+  "releases": {
+    "artifact.pvksam-reference-models@1.0.0-rc.1": {
+      "coverage": "tree",
+      "descriptor": "components/artifacts/pvksam-reference-models/component.yaml",
+      "descriptor_file_sha256": "8ed85a08a84b77d0a384cfba8ca07c9f9691d2ba37e1cafe4ff794d19ef2c535",
+      "metadata_sha256": "168428f60f2f01baf10212a6baff3d4fe1c0bd184c67e49bffe985ec9e0e0d21",
+      "root": "components/artifacts/pvksam-reference-models/releases/1.0.0-rc.1/source",
+      "legacy_tree_sha256": "dd548eff614a99d9d2958ffbff5000d167cbf935bfb6c2ded5bc0283e5bfab30",
+      "tree_sha256": "23330616bc5e1ef4f9e02a78857a387ad1e5c641207d05cd7ec2dfb811abfd71",
+      "entry_count": 275,
+      "regular_file_bytes": 7820057,
+      "symlink_count": 0
+    },
+    "recipe.pvksam-ase-cueq@1.0.0-rc.3": {
+      "coverage": "tree",
+      "descriptor": "components/recipes/pvksam-ase-cueq/component.yaml",
+      "descriptor_file_sha256": "9e90c9db003eb59946359fd9ff29d4f30abffc52b866c4222db39554b0262052",
+      "metadata_sha256": "62a10be5f37b9ee4c652e1411820c8f4bc9a957e49f2ecc3e4c08e7a4ad54b6b",
+      "root": "components/recipes/pvksam-ase-cueq/releases/1.0.0-rc.3/source",
+      "legacy_tree_sha256": "dcf15315c3e97a8ecc42d2b86a930fd7af54403a66073d644c84f087b7938b6a",
+      "tree_sha256": "1146981c77604ea9f7bc411f632f49e0d61c9eeedd2b3c42ed86e41e487c69b3",
+      "entry_count": 1,
+      "regular_file_bytes": 3387,
+      "symlink_count": 0
+    },
+    "artifact.mace-mpa-0-medium@1.0.0-rc.2": {
+      "coverage": "tree",
+      "descriptor": "components/artifacts/mace-mpa-0-medium/component.yaml",
+      "descriptor_file_sha256": "3740dffd5f46f3ffac25094a6543cf9b890bc9338a5eac10ad7a0cd93201fa78",
+      "metadata_sha256": "f5634171550e9e76135a5943527589e3e3343d73a99383ce7e763db83ec42fc0",
+      "root": "components/artifacts/mace-mpa-0-medium/releases/1.0.0-rc.2/source",
+      "legacy_tree_sha256": "0989085427d1954863eddd9fc5b787e9dad466ad8ef2d50861db28f6287a63b2",
+      "tree_sha256": "12a1ff5009bc5cc49702fd8e306721f7e6d3c36555191e496f40a0340d27cf70",
+      "entry_count": 2,
+      "regular_file_bytes": 650,
+      "symlink_count": 0
+    },
+    "skill.pvksam@1.0.0-rc.21": {
+      "coverage": "tree",
+      "descriptor": "components/skills/pvksam/component.yaml",
+      "descriptor_file_sha256": "dff390dd7e0c6d7291d5f32884d83ccf18016d35312253a38d0ee85e6eb9a5b8",
+      "metadata_sha256": "4ed3c839b7d8bc6e0d77ad30d95c185981b7e2680c7514a3d7f7034dd10c6b6b",
+      "root": "components/skills/pvksam/releases/1.0.0-rc.21/source",
+      "legacy_tree_sha256": "5abd48cde3435c1e42e51e79b1f62319184ac9d0be0b591d193a562931b224aa",
+      "tree_sha256": "cb87abf545a34c4eb5a7f199eab50f707fb6a953c3a8f3b1a5ee2d3b51a5f712",
+      "entry_count": 50,
+      "regular_file_bytes": 3416930,
+      "symlink_count": 0
+    }
+  }
+}

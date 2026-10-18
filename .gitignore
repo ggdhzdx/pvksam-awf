@@ -1,5 +1,7 @@
 dist/*
 !dist/*.zip
 !dist/*.sha256
+!dist/pvksam-1.0.0-rc.23/
+!dist/pvksam-1.0.0-rc.23/**
 __pycache__/
 *.pyc

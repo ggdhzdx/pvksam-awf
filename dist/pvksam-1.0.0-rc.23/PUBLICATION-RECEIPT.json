@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "workflow": "pvksam",
+  "release": "1.0.0-rc.23",
+  "original_manifest": "original-manifest.json",
+  "original_manifest_sha256": "0de17dcfa0b8f9109b6b57b2e464602a3647ac95ad0983216b91e2ab1abd8fd1",
+  "original_sha256sums": "original-SHA256SUMS",
+  "archive_renames": {
+    "pvksam-rc20-closure.zip": "pvksam-awf-1.0.0-rc.23.zip",
+    "pvksam-rc20-closure.tar.gz": "pvksam-awf-1.0.0-rc.23.tar.gz"
+  },
+  "receipt_changes": "Only the two archive filename fields in manifest.json and SHA256SUMS were changed; archive bytes and all member records remain unchanged. The original receipt identifies pvksam@1.0.0-rc.23 despite inherited rc20 archive names.",
+  "frozen_release_changes": false
+}

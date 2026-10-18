@@ -1,0 +1,278 @@
+{
+  "adsorption_metal_policy": {
+    "H0_entry_recheck": true,
+    "all_mapped_metals_must_pass": true,
+    "cutoff_A": 2.7,
+    "default_on": true,
+    "ligands": "substrate_O_only",
+    "max_allowed_coordination": 5,
+    "mode": "exclude-six-coordinated"
+  },
+  "candidate_limitations": [
+    "Original-molecule initial conformer route is supported only for reviewed phosphonate anchors; carboxylate input adapter is pending.",
+    "New-molecule two-family end-to-end scientific validation is deferred by explicit user instruction.",
+    "The cited route counts are from 2Nap-Ac at one registered ITO site and are not universal targets.",
+    "The front controller executes only H0 canonicalization and CPU skeleton-grid screening; later stages are explicit handoffs.",
+    "The isolated skeleton scanner infers adjacency from reviewed unoptimized H0 coordinates; verify against the authoritative source SDF.",
+    "The site-roll gas-phase single-point energy only selects the MACE starting pose.",
+    "Post-H0 backend supports diagonal positive cells, a/b periodicity and +z surface normal.",
+    "20-cycle review cap preserves state but does not imply convergence; automatic cross-directory resume is not implemented.",
+    "MACE model weights remain external. The bundled ITO/FTO and SAM reference models still require task-specific scientific review.",
+    "Nonrecessed post-H parent policy is validated for In/Sn/O ITO only; F-containing FTO post-H placement requires separate validation and fails closed.",
+    "Pack-then-bind has one complete seven-source 2Nap-Ac/ITO N96 case; finite greedy geometry search does not prove maximum coverage or minimum adsorption energy.",
+    "Standalone growth CLI default remains registered for compatibility; the AWF route explicitly passes pack-then-bind."
+  ],
+  "display_name": "AWF PVKSAM",
+  "engineering_gate": "Portable component regression for the sole route, hard rejection of removed conformer entry modes, hash-bound selected-roll receipt, source identity, H0 mapping, torsion screening, stage hashes and post-H0 constraints; relaxed-force defaults checked against the optimizer worker; exact immutable component and model identities.",
+  "entry_skills": [
+    "skill.pvksam"
+  ],
+  "front_chain_policy": {
+    "candidate_backend": "historical plain MACE CUDA float32 for fixed-site surface optimization",
+    "candidate_source": "phosphonate-skeleton-grid (only permitted value)",
+    "carboxylate_source_adapter": "not connected",
+    "dedup": "energy-radius-symmetry using exact H0 heavy-graph automorphisms, proper P-C axis alignment and 1.0 A per-atom 3D RMSD representative radius",
+    "entry": "orchestrate_md_pipeline.py --pvksam-front CONFIG_OR_PLAN --plan/--execute",
+    "fixed_site_screen_input": "Generated P-C roll grid with sibling hash-bound generation receipt for prescreen; selected one-roll-per-skeleton ensemble with sibling hash-bound selection receipt for rescreen and MACE plan; no direct torsion-grid generation.",
+    "growth_defaults": "joint pack-then-bind; existing cohesive-frontier + continuous-snap score; explicit dynamic CN5 fill",
+    "handoffs": "sealed plan and SHA256-verified stage artifacts; front CLI ends after H0 canonicalization and CPU skeleton scan",
+    "input_identity": "original explicit-H SDF, charge/bond orders/atom map, registered substrate/site package, growth slab/site package, model and exact runtime",
+    "isolated_optimization": "RDKit MMFF94s; fix P and three anchor O; 0.03 eV/A movable-force gate checked every 250 requested steps, 5000-step ceiling are cited 2Nap-Ac case values, not universal calibrations",
+    "legacy_scan_mode": "removed",
+    "preoptimization_gates": {
+      "headgroup_clearance": "same common P-C phase",
+      "intramolecular_min_A": {
+        "H-H": 1.2,
+        "H-heavy": 1.4,
+        "heavy-heavy": 1.8
+      },
+      "organic_height": "all carbon-side atoms including H z>=0 under a shared feasible P-C phase"
+    },
+    "rejected_routes": [
+      "confsearch-etkdgv3",
+      "legacy-torsion-grid",
+      "pre-adsorbed-216-start-scan"
+    ],
+    "resume": "verified completed stages only; scientific/runtime failure requires a new output directory",
+    "route": [
+      "30-degree isolated internal torsion grid; omit P-C axial phase",
+      "online height and intramolecular/PO3 clearance screen before MMFF94s",
+      "MMFF94s optimize with P and three anchor O fixed",
+      "continuous shared P-C phase recovery and exact graph-symmetry energy-radius dedup at 1.0 A",
+      "registered ITO site alignment and 30-degree P-C roll collision screen",
+      "one minimum-MMFF94s-single-point safe roll per skeleton",
+      "MACE optimize, surface cluster and energy/area Pareto select",
+      "joint pack-then-bind organic packing then rigid PO3 P-C fit; CN6 exclusion and dynamic CN5 fill"
+    ],
+    "scope": "reviewed phosphonate SAM on registered ITO site",
+    "site_phase_policy": {
+      "pc_roll_step_deg": 30.0,
+      "per_skeleton_selection": "exactly one minimum-MMFF94s single-point among CPU-screen-passing rolls",
+      "screen_before_mace": [
+        "PO3 head-fit RMSD <=0.50 A",
+        "all non-anchor atoms including H at/above mean of three mapped anchor-O heights",
+        "intramolecular short contacts",
+        "periodic ITO and surface-H collisions"
+      ],
+      "site_candidates_must_be_rescreened_after_selection": true,
+      "surface_energy_claim": "none; MACE performs surface relaxation",
+      "vdw_radius_scale_case_value": 0.85
+    },
+    "site_roll_handoff": "Hash-bound generated grid → CPU prescreen → MMFF94s single-roll selection → selected rescreen → MACE plan",
+    "six_coordinate_exclusion": {
+      "cutoff_A": 2.7,
+      "default_on": true,
+      "max_allowed_coordination": 5,
+      "mode": "exclude-six-coordinated"
+    },
+    "skeleton_grid": {
+      "step_deg_default": 30.0,
+      "torsions": "explicit reviewed original 1-based four-atom paths; exclude P-C"
+    }
+  },
+  "growth_policy": {
+    "azimuth_step_deg": 30.0,
+    "branch_rank": null,
+    "candidate_energy": "source conformer relative total energy; not incremental adsorption energy",
+    "cohesive_area_relative_tolerance": 0.2,
+    "cohesive_contact_relative_tolerance": 0.2,
+    "cohesive_contact_vdw_radius_scale": 1.1,
+    "cohesive_energy_tolerance_eV": 0.03,
+    "cohesive_frontier_mode": "continuous-snap",
+    "cohesive_perimeter_relative_tolerance": 0.1,
+    "collision_cache": "lazy",
+    "conformer_selection_mode": "joint",
+    "default_single_metal_azimuth_source": "azimuth_step_deg",
+    "failure_commit": "remove failed pose only; no site/metal/placed-state consumption",
+    "footprint_boundary_samples": 720,
+    "frontier_snap_radius_A": 4.0,
+    "h_heavy_min": 1.8,
+    "headgroup_feasible_arc_step_deg": 5.0,
+    "headgroup_fit_scope": "three O rigid rotation about source P-C axis",
+    "headgroup_rmsd_max_A": 0.5,
+    "heavy_heavy_min": 2.2,
+    "hh_min": 1.5,
+    "independent_validation": "off",
+    "max_conformers": 10,
+    "metal_coordination_cutoff_A": 2.7,
+    "metal_coordination_filter": "exclude-six-coordinated",
+    "metal_coordination_max_allowed": 5,
+    "organic_and_P_fixed_during_head_fit": true,
+    "pose_mode": "pack-then-bind",
+    "projection_radius_scale": 1.0,
+    "scientific_scope": "finite geometry search; no global packing or energy minimum guarantee",
+    "scope": "phosphonate; runtime data external; no target count",
+    "seed": 340501,
+    "selection_policy": "cohesive-frontier",
+    "single_metal_rotation_step_deg": 30.0,
+    "single_metal_sites": "dynamic-cn5-uncovered",
+    "single_metal_translation_offsets_A": [
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0
+    ],
+    "substrate_collision": "height",
+    "substrate_height_clearance_A": 1.0,
+    "trajectory_count": 1,
+    "uniform_supported": false,
+    "write_every_step": true
+  },
+  "id": "pvksam",
+  "post_adsorption_relaxation_policy": {
+    "evidence_scope": "One similar-size 2Nap-Ac/ITO post-protonation case supports this operating target; cross-molecule universality is not established.",
+    "fmax_eV_A": 0.05,
+    "interpretation": "Operational optimizer target; geometry, restraint and protonation audits remain independent mandatory gates.",
+    "maximum_steps": 5000,
+    "maxstep_A": 0.02,
+    "stages": [
+      "H0 relaxation",
+      "post-protonation relaxation",
+      "post-annealing-cycle relaxation"
+    ]
+  },
+  "purpose": "Single systematic phosphonate SAM route on registered oxide substrates through fixed-head skeleton optimization, symmetry-aware deduplication, one safe P-C roll per skeleton, MACE surface optimization, monolayer growth, global proton placement and convergence-checked cyclic annealing. The locked distribution includes maintained ITO/FTO structures and the cataloged SAM models used by the source project.",
+  "release": "1.0.0-rc.23",
+  "release_notes": {
+    "authorization": "User explicitly requested a PVKSAM relaxation-default upgrade after the 4Nap-Ac Stage 13 iteration-limit result",
+    "change": "Raise post-adsorption restrained-relaxation defaults from 2000 steps/fmax 0.01 eV/A to 5000 steps/fmax 0.05 eV/A, preserve maxstep 0.02 A, synchronize planner and worker defaults, and add regression/evidence records",
+    "downloads": 0,
+    "prior_release_preserved": "1.0.0-rc.22",
+    "project_pin_migration": false,
+    "scientific_method_or_parameter_changes": true
+  },
+  "schema_version": 1,
+  "scientific_gate": "Existing 2Nap-Ac phosphonate one-site evidence only. Do not claim universal conformer coverage or an ITO-bound global minimum from isolated MMFF94s energies. Preserve MACE convergence, supported P tetrahedra and per-cycle contact/energy checks. New-molecule two-family full-chain validation remains deferred.",
+  "source_manifest": "source_manifest.json",
+  "source_manifest_sha256": "572af9b12984cd95460f4244fdcae8bc7778b6a473d911c07a1980e91f347180",
+  "stages": [
+    {
+      "artifact": "artifact.pvksam-reference-models",
+      "condition": "One explicitly selected reviewed phosphonate SAM source and one maintained registered ITO/FTO substrate/site package from the locked reference-model Artifact, or an explicitly overridden catalog.",
+      "id": "molecule-substrate-intake",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "condition": "Only phosphonate-skeleton-grid: unique 30-degree internal torsion grid, with P-C axial roll excluded; screen Z and intramolecular/PO3 clearance before MMFF94s. Other initial sources are rejected.",
+      "id": "initial-conformer-generation",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "condition": "Optimize safe grid points with P and three anchor O fixed; restore shared feasible P-C phase and use exact graph-symmetry energy-radius representative selection.",
+      "id": "isolated-skeleton-mmff-phase-recovery-and-dedup",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "condition": "At the registered ITO site, sample the P-C roll grid and screen headgroup fit, mean anchor-O height, intramolecular contacts and periodic surface collisions.",
+      "id": "site-bound-pc-roll-screen",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "condition": "Select exactly one minimum-MMFF94s-single-point safe roll per skeleton; this is an initial-pose rule, not a surface-energy ranking.",
+      "id": "single-safe-roll-per-skeleton",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "artifact": "artifact.mace-mpa-0-medium",
+      "condition": "Run the locked MACE backend, verify convergence and geometry, then apply the existing surface clustering and energy/area Pareto selection.",
+      "id": "fixed-site-mace-optimization-and-selection",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "condition": "Explicit --pose-mode pack-then-bind; all selected conformers share one layer and actual source identity; rigid PO3 fit after organic packing; 30-degree azimuth, 5-degree feasible head arc; dynamic CN5 fill; rejected fit never consumes state.",
+      "id": "filtered-sequential-growth-and-H0-assembly",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "id": "sealed-H0-restraints-and-relaxation",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "condition": "ITO substrate O only; local-upper-envelope 3.0 A; full proton conservation; audit selected parents after global solve; no recessed fallback.",
+      "id": "global-surface-protonation",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "id": "post-H-optimization",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "id": "cyclic-annealing",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    },
+    {
+      "id": "delivery-and-evidence",
+      "recipe": "recipe.pvksam-ase-cueq",
+      "required": true,
+      "skill": "skill.pvksam"
+    }
+  ],
+  "status": "candidate",
+  "surface_parent_site_policy": {
+    "envelope_elements": [
+      "In",
+      "Sn",
+      "O"
+    ],
+    "height_tolerance_A": 1e-07,
+    "infeasible_action": "fail; never restore recessed parents or reduce proton count",
+    "lateral_numerical_tolerance_A": 1e-10,
+    "mode": "local-upper-envelope",
+    "normal_cartesian_unit": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "parent_element": "O",
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "radius_A": 3.0,
+    "scope": "ITO construction only; surface OH remains unrestrained"
+  },
+  "version_lock": "versions.lock"
+}

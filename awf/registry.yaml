@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "global_components": {},
+  "components": [
+    {
+      "descriptor": "components/artifacts/mace-mpa-0-medium/component.yaml",
+      "id": "artifact.mace-mpa-0-medium",
+      "kind": "artifact"
+    },
+    {
+      "descriptor": "components/artifacts/pvksam-reference-models/component.yaml",
+      "id": "artifact.pvksam-reference-models",
+      "kind": "artifact"
+    },
+    {
+      "descriptor": "components/recipes/pvksam-ase-cueq/component.yaml",
+      "id": "recipe.pvksam-ase-cueq",
+      "kind": "recipe"
+    },
+    {
+      "descriptor": "components/skills/pvksam/component.yaml",
+      "id": "skill.pvksam",
+      "kind": "skill"
+    }
+  ],
+  "workflows": [
+    {
+      "aliases": [
+        "AWF PVKSAM",
+        "PVKSAM"
+      ],
+      "descriptor": "workflows/pvksam/releases/1.0.0-rc.23/workflow.yaml",
+      "descriptor_sha256": "a8c5e622f396e745cbb93a954c972e0b97d0f4794bd7f1e50328440cf0ffd97a",
+      "display_name": "AWF PVKSAM",
+      "id": "pvksam",
+      "lock": "workflows/pvksam/releases/1.0.0-rc.23/versions.lock",
+      "lock_sha256": "f07b34bd6a5ec7c05810161a4b35d439b0a9a54ae94ef190b6c674cc4f011a76",
+      "releases": {
+        "1.0.0-rc.23": {
+          "descriptor": "workflows/pvksam/releases/1.0.0-rc.23/workflow.yaml",
+          "descriptor_sha256": "a8c5e622f396e745cbb93a954c972e0b97d0f4794bd7f1e50328440cf0ffd97a",
+          "lock": "workflows/pvksam/releases/1.0.0-rc.23/versions.lock",
+          "lock_sha256": "f07b34bd6a5ec7c05810161a4b35d439b0a9a54ae94ef190b6c674cc4f011a76",
+          "status": "candidate"
+        }
+      }
+    }
+  ],
+  "integrity_policy": {
+    "digest_contract": "awf-tree-v2",
+    "require_component_release_metadata": true,
+    "required_release_attestations": [
+      "artifact.mace-mpa-0-medium@1.0.0-rc.2",
+      "artifact.pvksam-reference-models@1.0.0-rc.1",
+      "recipe.pvksam-ase-cueq@1.0.0-rc.3",
+      "skill.pvksam@1.0.0-rc.21",
+      "skill.pvksam@1.0.0-rc.16"
+    ]
+  },
+  "integrity_attestations": [
+    "attestations/exact-pvksam20-closure.yaml",
+    "attestations/historical-pvksam-rc16.yaml"
+  ]
+}

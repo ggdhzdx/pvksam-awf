@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "digest_contract": "awf-tree-v2",
+  "provenance": "Exact historical skill.pvksam@1.0.0-rc.16 record retained from the registered authoritative release-integrity-20261006-pvksam-bundled-models-rc18.yaml attestation. The exact current rc.23 distribution remains separately recorded in dist.",
+  "releases": {
+    "skill.pvksam@1.0.0-rc.16": {
+      "coverage": "tree",
+      "descriptor": "components/skills/pvksam/component.yaml",
+      "descriptor_file_sha256": "bcf7f861816412a96ecada3a50ffee697ba95389d01a000cfe825dae4cf56c4e",
+      "metadata_sha256": "4c08fb7ddee3cb613152abc46098b7354345b52154d5cece61c6c133a0a87686",
+      "root": "components/skills/pvksam/releases/1.0.0-rc.16/source",
+      "legacy_tree_sha256": "fd9da3ebf16de5ea56cef7b9531f5111ddbbea489c8485bcd7def631aec9e72d",
+      "tree_sha256": "b29a55afeeab9807864e09b25d6cb8ba0e28253fca2d778d3fd2f1df9be74dac",
+      "entry_count": 37,
+      "regular_file_bytes": 2926137,
+      "symlink_count": 0
+    }
+  }
+}

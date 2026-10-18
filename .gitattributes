@@ -1,0 +1,3 @@
+# Preserve frozen Release and archive bytes on every platform.
+awf/** -text
+dist/** -text

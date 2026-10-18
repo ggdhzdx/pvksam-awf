@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "change": {
+    "steps_cap": 5000,
+    "fmax_eV_A": 0.05,
+    "maxstep_A": 0.02,
+    "scope": "PVKSAM post-adsorption restrained optimization: H0, post-protonation, and post-cycle relaxation"
+  },
+  "supporting_case": {
+    "system": "2Nap-Ac/ITO, 96 SAM, 192 surface H",
+    "atom_count": 12160,
+    "steps_cap": 5000,
+    "fmax_eV_A": 0.05,
+    "observed_steps": 603,
+    "fresh_final_fmax_eV_A": 0.0450213275,
+    "model_sha256": "75428afe3a1d7d8062e19bcaabd5c433623cabf308242ec9fb493e38604fb638",
+    "report": "/home/zc/sam-ito/docs/2Nap-Ac-n96-nonrecessed-H-optimization-20261007.zh-CN.md",
+    "classification": "one completed post-protonation ITO case; not a universal calibration"
+  },
+  "feedback_case": {
+    "system": "4Nap-Ac/ITO H0, 65 SAM",
+    "atom_count": 11630,
+    "old_steps_cap": 2000,
+    "old_fmax_eV_A": 0.01,
+    "old_final_fmax_eV_A": 0.282254841,
+    "old_minimum_fmax_eV_A": 0.036405896,
+    "old_minimum_step": 1957,
+    "old_result": "not converged under the then-locked 0.01 eV/A target",
+    "report": "/home/zc/sam-ito/runs/pvksam-front/4Nap-Ac-20261010-01/management/stage-13-h0-result.zh-CN.md"
+  },
+  "interpretation": [
+    "The related 2Nap-Ac case provides an empirical operating precedent at a similar total system size, but it is a post-protonation case and does not establish transferability to every H0 geometry.",
+    "The force target is an optimizer stopping criterion, not a standalone claim of physical accuracy; all locked geometry and restraint audits remain mandatory.",
+    "The earlier 4Nap-Ac Stage 13 result remains a failure under its original 0.01 eV/A and 2000-step contract. It is not retrospectively relabeled as a pass."
+  ]
+}

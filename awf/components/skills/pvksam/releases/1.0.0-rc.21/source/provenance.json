@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "base_release": "skill.pvksam@1.0.0-rc.20",
+  "date": "2026-10-10",
+  "change": "User-authorized post-adsorption relaxation defaults: 5000-step cap and fmax=0.05 eV/A; prior related case retained as limited evidence, no other scientific parameters changed",
+  "prior_route_provenance": {
+    "schema_version": 1,
+    "base_release": "skill.pvksam@1.0.0-rc.19",
+    "date": "2026-10-09",
+    "change": "Repair first CPU prescreen/selected rescreen/plan handoff; no scientific parameter changes",
+    "prior_route_provenance": {
+      "schema_version": 1,
+      "base_release": "skill.pvksam@1.0.0-rc.18",
+      "date": "2026-10-09",
+      "change": "Repair first CPU prescreen/selected rescreen/plan handoff; no scientific parameter changes",
+      "prior_route_provenance": {
+        "schema_version": 1,
+        "base_release": "skill.pvksam@1.0.0-rc.17",
+        "date": "2026-10-09",
+        "change": "Joint geometry packing then deferred rigid PO3 fitting; existing scientific parameters retained",
+        "prior_route_provenance": {
+          "schema_version": 1,
+          "base_release": "skill.pvksam@1.0.0-rc.16",
+          "date": "2026-10-07",
+          "change": "Promote verified ITO nonrecessed O parent policy and explicitly seal it in the official PVKSAM post plan.",
+          "prior_route_provenance": {
+            "base_release": "skill.pvksam@1.0.0-rc.12",
+            "case_evidence": {
+              "molecule": "2Nap-Ac phosphonate SAM at one registered ITO site",
+              "scope": "Existing case evidence only; not a new full-chain validation and not a universal count or guarantee.",
+              "summary": "20,736 skeleton grid points; 3,655 passed pre-optimization screen; 2,765 passed post-optimization common-phase checks; 121 symmetry-aware representatives; 1,292 of 1,452 site P-C rolls passed; one pose per skeleton selected for MACE; 121 valid surface structures, 81 surface-geometry clusters and 7 Pareto/endpoint candidates."
+            },
+            "change": "Remove all alternate PVKSAM initial-conformer entry paths, including the scanner legacy 216-start branch. fixed-site-cpu now accepts only the hash-bound output of the selected per-skeleton MMFF94s single-roll selector. Keep the one reviewed phosphonate skeleton-grid route through MACE, growth, H0, global proton placement and cyclic annealing.",
+            "date": "2026-10-05",
+            "engineering_validation": {
+              "component_tests": "209 passed, 5 skipped (external project fixtures unavailable)",
+              "downloads": 0,
+              "project_front_tests": "79 passed (mace conformation scan and PVKSAM front-contract tests)",
+              "scientific_jobs_launched": 0
+            },
+            "limitations": [
+              "Initial input route is phosphonate-only; carboxylate original-molecule adapter is not connected.",
+              "The isolated skeleton scanner infers adjacency from reviewed unoptimized H0 coordinates; compare it to the authoritative source SDF for every new molecule.",
+              "The --pvksam-front controller seals H0 intake and executes only the CPU skeleton grid; force-field, deduplication, site roll, MACE and growth remain explicit handoffs.",
+              "fixed-site-cpu requires the selected single-roll schema and its hash-bound selector receipt; it does not generate torsions itself.",
+              "MMFF94s gas-phase single-point energy selects one MACE start and is not an adsorption-energy ranking.",
+              "The cited case covers one molecule and one registered ITO site prototype; it does not prove universal conformer coverage or multi-site growth."
+            ],
+            "route": [
+              "phosphonate-skeleton-grid",
+              "fixed-head-MMFF94s",
+              "common-PC-phase-and-symmetry-dedup",
+              "ITO-PC-roll-screen",
+              "single-lowest-safe-MMFF94s-single-point-per-skeleton",
+              "MACE-surface-optimization",
+              "surface-clustering-and-Pareto-selection",
+              "registered-growth",
+              "H0-restraints-global-protonation-cyclic-annealing"
+            ],
+            "schema_version": 1,
+            "source_project": "external project workspace (not bundled)"
+          },
+          "project_imports_sha256": {
+            "scripts/surface_protonation.py": "551692a07af07ec2e3deefd9ffdf060caa42476d3de20fb391e2daf883b973d1",
+            "tests/test_surface_protonation.py": "c6cd23578426f44fdf7782d42ac2c69d9fc2375bd1a4e3a87f65c027b424b90a"
+          },
+          "engineering_validation": [
+            {
+              "argv": [
+                "/home/zc/sam-ito/.venv/bin/python",
+                "-B",
+                "-m",
+                "pytest",
+                "-q",
+                "-p",
+                "no:cacheprovider",
+                "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.17/source/tests"
+              ],
+              "exit_code": 0,
+              "log": "/home/zc/sam-ito/analysis/awf-pvksam-nonrecessed-H-20261007/component-check-0.log",
+              "log_sha256": "78e41c0c77049e9b9d0850da83cc50efaec2ddb554842f4ff185941f8cd49ecd"
+            },
+            {
+              "argv": [
+                "/home/zc/sam-ito/.venv/bin/python",
+                "-B",
+                "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.17/source/scripts/surface_protonation.py",
+                "--help"
+              ],
+              "exit_code": 0,
+              "log": "/home/zc/sam-ito/analysis/awf-pvksam-nonrecessed-H-20261007/component-check-1.log",
+              "log_sha256": "805e80f45fe87f52b0f7d62288b145ebf7d8f16c81e11f0ceb6cbe43defb0a28"
+            },
+            {
+              "argv": [
+                "/home/zc/sam-ito/.venv/bin/python",
+                "-B",
+                "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.17/source/scripts/orchestrate_md_pipeline.py",
+                "--help"
+              ],
+              "exit_code": 0,
+              "log": "/home/zc/sam-ito/analysis/awf-pvksam-nonrecessed-H-20261007/component-check-2.log",
+              "log_sha256": "48dc3617649d99a8b3f371f6dceeb1b6ce8c714380d49ce8669421cd3eaa30cd"
+            }
+          ],
+          "downloads": 0,
+          "scientific_jobs_launched": 0
+        },
+        "project_imports_sha256": {
+          "scripts/monolayer_sequential_growth.py": "3471bae9ccdc7a14ae049935a1633b5f4ebfd73b11db935f7de72be4afe9639d",
+          "scripts/monolayer_headgroup_fit.py": "98fca0b131bc0bfd5020c7a7dbfcd6ab82185c14b8eb1ea94a01f2930a9deacb",
+          "scripts/sam_structure_tools.py": "e035e814428de168910553c8c12dcfd1ff4201c2a021aaae4c1845e7d8761f64",
+          "tests/test_pack_then_bind_growth.py": "ca96086ce866f4a58d48c86bbba18aa088725de3fcc8e9be480318c20ef6edf4",
+          "tests/test_monolayer_headgroup_fit.py": "71b760dcf821b68fdf8912f73b1460d395e297d8c72944c17e0c9549520d6a4b",
+          "tests/test_monolayer_sequential_growth.py": "474e5957fc170b17ed6ef953714456edc4239ed842f9538226ea58c2bb817a36",
+          "tests/test_sam_structure_tools.py": "134239215b39066340ce54f356e8612a7435ee05308ce98ac54a29a916354bbc"
+        },
+        "packaged_imports_sha256": {
+          "scripts/monolayer_sequential_growth.py": "3471bae9ccdc7a14ae049935a1633b5f4ebfd73b11db935f7de72be4afe9639d",
+          "scripts/monolayer_headgroup_fit.py": "98fca0b131bc0bfd5020c7a7dbfcd6ab82185c14b8eb1ea94a01f2930a9deacb",
+          "scripts/sam_structure_tools.py": "e035e814428de168910553c8c12dcfd1ff4201c2a021aaae4c1845e7d8761f64",
+          "tests/test_pack_then_bind_growth.py": "ca96086ce866f4a58d48c86bbba18aa088725de3fcc8e9be480318c20ef6edf4",
+          "tests/test_monolayer_headgroup_fit.py": "71b760dcf821b68fdf8912f73b1460d395e297d8c72944c17e0c9549520d6a4b",
+          "tests/test_monolayer_sequential_growth.py": "986cd448cf3a3816615717747e09d5ddad76e029532a104b319b5a23d165c5e5",
+          "tests/test_sam_structure_tools.py": "134239215b39066340ce54f356e8612a7435ee05308ce98ac54a29a916354bbc"
+        },
+        "engineering_validation": [
+          {
+            "argv": [
+              "/home/zc/sam-ito/.venv/bin/python",
+              "-B",
+              "-m",
+              "pytest",
+              "-q",
+              "-p",
+              "no:cacheprovider",
+              "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.18/source/tests"
+            ],
+            "exit_code": 0,
+            "log": "/home/zc/sam-ito/analysis/awf-pvksam-pack-then-bind-20261009/component-check-0.log",
+            "log_sha256": "2689f4079f5832224f41be15926d7fd212d4d3a33ce7c81c546b2471228ac360"
+          },
+          {
+            "argv": [
+              "/home/zc/sam-ito/.venv/bin/python",
+              "-B",
+              "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.18/source/scripts/monolayer_sequential_growth.py",
+              "--help"
+            ],
+            "exit_code": 0,
+            "log": "/home/zc/sam-ito/analysis/awf-pvksam-pack-then-bind-20261009/component-check-1.log",
+            "log_sha256": "d36bd872c22223d1451eee2be98a3afbfa2627ae911df4e913e468435712489c"
+          },
+          {
+            "argv": [
+              "/home/zc/sam-ito/.venv/bin/python",
+              "-B",
+              "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.18/source/scripts/orchestrate_md_pipeline.py",
+              "--help"
+            ],
+            "exit_code": 0,
+            "log": "/home/zc/sam-ito/analysis/awf-pvksam-pack-then-bind-20261009/component-check-2.log",
+            "log_sha256": "48dc3617649d99a8b3f371f6dceeb1b6ce8c714380d49ce8669421cd3eaa30cd"
+          }
+        ],
+        "downloads": 0,
+        "scientific_jobs_launched": 0
+      },
+      "project_imports_sha256": {
+        "scripts/mace_conformation_scan.py": "f492aa023bb6fa50cb5b8a0e01aeed57429ebc647bab8275b21ae0da10b633ac"
+      },
+      "engineering_validation": [
+        {
+          "argv": [
+            "/home/zc/sam-ito/.venv/bin/python",
+            "-B",
+            "-m",
+            "pytest",
+            "-q",
+            "-p",
+            "no:cacheprovider",
+            "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.19/source/tests"
+          ],
+          "exit_code": 0,
+          "log": "/home/zc/sam-ito/analysis/awf-pvksam-roll-handoff-20261009/component-check-0.log",
+          "log_sha256": "ab856273cc4f4d2ebf5185266ebd13227761b16a70d6fffdd1b579e89a146aa5"
+        },
+        {
+          "argv": [
+            "/home/zc/sam-ito/.venv/bin/python",
+            "-B",
+            "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.19/source/scripts/mace_conformation_scan.py",
+            "--help"
+          ],
+          "exit_code": 0,
+          "log": "/home/zc/sam-ito/analysis/awf-pvksam-roll-handoff-20261009/component-check-1.log",
+          "log_sha256": "6d7275c7c835c8f2261ccfb8345ea97df6c9b7c4f0304e5ebebce2b557b808c1"
+        }
+      ]
+    },
+    "project_imports_sha256": {
+      "scripts/mace_conformation_scan.py": "fca2d92f61b82cdacaa4c94d4cb4ab2fcc49bfe91636b02208359e1008497dd4"
+    },
+    "engineering_validation": [
+      {
+        "argv": [
+          "/home/zc/sam-ito/.venv/bin/python",
+          "-B",
+          "-m",
+          "pytest",
+          "-q",
+          "-p",
+          "no:cacheprovider",
+          "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.20/source/tests"
+        ],
+        "exit_code": 0,
+        "log": "/home/zc/sam-ito/analysis/awf-pvksam-selector-receipt-20261009/component-check-0.log",
+        "log_sha256": "59136f631cc5af932829954ee27aeac1c665607a1e6736f93db3e1dd2af88234"
+      },
+      {
+        "argv": [
+          "/home/zc/sam-ito/.venv/bin/python",
+          "-B",
+          "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.20/source/scripts/mace_conformation_scan.py",
+          "--help"
+        ],
+        "exit_code": 0,
+        "log": "/home/zc/sam-ito/analysis/awf-pvksam-selector-receipt-20261009/component-check-1.log",
+        "log_sha256": "6d7275c7c835c8f2261ccfb8345ea97df6c9b7c4f0304e5ebebce2b557b808c1"
+      }
+    ]
+  },
+  "project_imports_sha256": {
+    "scripts/relax_monolayer.py": "f5028cd9d94ec584aa4a118b057856ad448625ff1fd3b77b90e960659a44ce91"
+  },
+  "engineering_validation": [
+    {
+      "argv": [
+        "/home/zc/sam-ito/.venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.21/source/tests"
+      ],
+      "exit_code": 0,
+      "log": "/home/zc/sam-ito/analysis/awf-pvksam-h0-relaxation-20261010/attempt02/component-check-0.log",
+      "log_sha256": "6b1b4d7b02f4883f36e2fdff4bf9044edc8014d99a39d4c02c4a47b8a21a6685"
+    },
+    {
+      "argv": [
+        "/home/zc/sam-ito/.venv/bin/python",
+        "-B",
+        "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.21/source/scripts/mace_conformation_scan.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "log": "/home/zc/sam-ito/analysis/awf-pvksam-h0-relaxation-20261010/attempt02/component-check-1.log",
+      "log_sha256": "6d7275c7c835c8f2261ccfb8345ea97df6c9b7c4f0304e5ebebce2b557b808c1"
+    },
+    {
+      "argv": [
+        "/home/zc/sam-ito/.venv/bin/python",
+        "-B",
+        "/home/zc/agent_workflows/components/skills/pvksam/releases/1.0.0-rc.21/source/scripts/relax_monolayer.py",
+        "--restrained",
+        "--help"
+      ],
+      "exit_code": 0,
+      "log": "/home/zc/sam-ito/analysis/awf-pvksam-h0-relaxation-20261010/attempt02/component-check-2.log",
+      "log_sha256": "56cccdc9cc36e6262fbe4e7a9fa5f6d94026657ddaf142b0965d04b817e74d34"
+    }
+  ],
+  "parameter_transfer_evidence": "evidence/h0-relaxation-parameter-transfer.json",
+  "parameter_transfer_evidence_sha256": "696129c35398b4a55a4092a4f7d10077f269c22ed885c5c3f18ea2cedfb9fc13",
+  "source_files_sha256": {
+    "SKILL.md": "78805e811eb1cd26627089a702dbe69f9c63b8e7d2da693bba0b6e8370c535ab",
+    "engineering/manage_drafts.py": "42204a3d44739a5adf041b9560f5db8eb8c98234cadc39e9ffaf3258bfb16ffe",
+    "engineering/verify.py": "581256fb8e98c5a735cdeedd32c129a921c68251c8bf49e3c9e06711f866fb9e",
+    "evidence/h0-relaxation-parameter-transfer.json": "696129c35398b4a55a4092a4f7d10077f269c22ed885c5c3f18ea2cedfb9fc13",
+    "evidence/joint-pack-then-bind-case.json": "0925920e3e7ee23aa0e1abeda24070a9596ec7a0d9b163092c4afa24897c4222",
+    "evidence/nonrecessed-ITO-H-case.json": "af44f2a5a616c84faedcee4a82fa91f058c7d7f2917e8371c654478fb8eb4401",
+    "evidence/selector-test-scope.json": "71d736670b6085fe93af7366f0662b9fa3f7a46b8351e078ee3cdde7032a20b6",
+    "references/initial-conformer-search.md": "7e9ef1dfd3879d6ff5d456657b3f22cf35e1b0aa291cc2561299db3d864ea203",
+    "references/pack-then-bind.md": "a64df9e63c894a17b167ce9ef019a90b3a4df4359817ba316327b7dd8055e5df",
+    "references/pvksam.zh-CN.md": "e5a1e8a9149ad7580203410f7e28799b05482d6218b3a47e73fca9f45c5e27c0",
+    "scripts/analyze_production_traj.py": "8e7600d44d8a517dd4b06c51e466796d8c5f95fa1bc4151965445795bdf77ac6",
+    "scripts/fast_ff_prefilter.py": "c5880e02a7d9f359a3e3772d7fc5bf06e3d4fcd651870ed920967266b890a191",
+    "scripts/generate_pc_rolls.py": "04a2739c8fd26d05657f2a7935fde74e88282bb8deb53be8262f6a96efb84720",
+    "scripts/mace_conformation_scan.py": "fca2d92f61b82cdacaa4c94d4cb4ab2fcc49bfe91636b02208359e1008497dd4",
+    "scripts/mace_dimer_scan.py": "2ffcb27b446b3b2f0c0bb4c25485c00ac5c228f79f4b3599315b255ee6e52e46",
+    "scripts/monolayer_builder.py": "66bacec5fa95e7c3d1c03d7af83ab3c0737a26adfaab9ecf977f495cf33397d9",
+    "scripts/monolayer_headgroup_fit.py": "98fca0b131bc0bfd5020c7a7dbfcd6ab82185c14b8eb1ea94a01f2930a9deacb",
+    "scripts/monolayer_sequential_growth.py": "3471bae9ccdc7a14ae049935a1633b5f4ebfd73b11db935f7de72be4afe9639d",
+    "scripts/orchestrate_md_pipeline.py": "9b79cde9bec91b169abab307be8493578cc6f86dde40b1f7d9f23b89a98a2787",
+    "scripts/relax_monolayer.py": "f5028cd9d94ec584aa4a118b057856ad448625ff1fd3b77b90e960659a44ce91",
+    "scripts/run_annealing.py": "dbca9e5bf353d7b6f56d54f702c506abea5c1dcd51d6a683bb2ec13c814d6935",
+    "scripts/run_langevin_md_hmr.py": "50ad6fc595ea0a32e2223708f6c73efd291518b8e55fe0df6c8ee8661520e824",
+    "scripts/sam_lammps.py": "44286c6770e955de03996b577bc8d97cc0abc8a345c6b3eba130c24f7153cbaf",
+    "scripts/sam_structure_tools.py": "e035e814428de168910553c8c12dcfd1ff4201c2a021aaae4c1845e7d8761f64",
+    "scripts/select_single_pc_roll.py": "7ff1dc5038bf56fe9dd7e53cac61905c05388047aa938842389ebe7192127c71",
+    "scripts/stage0_relaxation.py": "10992d6219fee77fcf288c1ab47987b4379ffe7eddf5e92fb76d0d924e2cf8f2",
+    "scripts/substrate_library.py": "81eedbf98fead2459f51776af8d0a6870f3f1ed21972e074cd94ef18fce86246",
+    "scripts/surface_protonation.py": "551692a07af07ec2e3deefd9ffdf060caa42476d3de20fb391e2daf883b973d1",
+    "scripts/validate_monolayer.py": "ddcc30d2aa598178d114881df79f234b0386bc6d0151feebf9d26a3a1541a5a3",
+    "tests/fixtures/methylphosphonic-acid.sdf": "739ef0503448a3afa07063e68ace9a95479f3c89378ef569eb4f018b72f91ccf",
+    "tests/test_fast_ff_prefilter.py": "dfd75bcf4f0a13bb94781dfb5705cee1e5f6d34d61b1ee2e3a89a4550da5bd64",
+    "tests/test_generate_pc_rolls.py": "4275bdb74323e61042714d8a0dc322ea3d3d396944519c9395a984f801aff902",
+    "tests/test_mace_conformation_scan.py": "14a399f8e0f563e1610792b65b24f8903e11b7519df620b8a12ee8972b2f4d4f",
+    "tests/test_metal_coordination_filter.py": "7482e9402e8a6a7ccb1e27f00c8f76560867189f2e72d40f5ca08d236f166335",
+    "tests/test_monolayer_headgroup_fit.py": "71b760dcf821b68fdf8912f73b1460d395e297d8c72944c17e0c9549520d6a4b",
+    "tests/test_monolayer_sequential_growth.py": "986cd448cf3a3816615717747e09d5ddad76e029532a104b319b5a23d165c5e5",
+    "tests/test_pack_then_bind_growth.py": "ca96086ce866f4a58d48c86bbba18aa088725de3fcc8e9be480318c20ef6edf4",
+    "tests/test_pvksam.py": "13c5dba05077a168c38e3728e966c7d341e342f91876d1d1493b1d15f9e52905",
+    "tests/test_relaxation_defaults.py": "7334c367b145128275627b31c225794a84ba6da0af32f5ae404610ab6a891aef",
+    "tests/test_sam_structure_tools.py": "134239215b39066340ce54f356e8612a7435ee05308ce98ac54a29a916354bbc",
+    "tests/test_select_single_pc_roll.py": "b6c0fbb6052b3aafc7fcc7b1937db69783d33a3face4af2cc73423da69728e9f",
+    "tests/test_surface_protonation.py": "c6cd23578426f44fdf7782d42ac2c69d9fc2375bd1a4e3a87f65c027b424b90a",
+    "tests/test_validate_monolayer.py": "6797d06a6ec0d0ad3e60831f77438c3bd37d4efd2cec3f7f0cb06b373dfc9f0f"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "case": "2Nap-Ac / ITO joint pack-then-bind N96",
+  "classification": "Previously completed project case; fresh release regression is synthetic CPU engineering validation",
+  "sources": 7,
+  "sites": 392,
+  "initial_poses": 32928,
+  "accepted_N": 96,
+  "denticity_counts": {
+    "3": 96
+  },
+  "source_counts": [
+    42,
+    0,
+    12,
+    26,
+    12,
+    2,
+    2
+  ],
+  "CN5_planned_poses": 806400,
+  "CN5_survivors": 196,
+  "CN5_accepted": 0,
+  "elapsed_seconds": 8433.47222439805,
+  "growth_owner_sha256": "3471bae9ccdc7a14ae049935a1633b5f4ebfd73b11db935f7de72be4afe9639d",
+  "scope": "Finite geometry construction; not physical dynamics, maximum coverage or global energy minimum",
+  "historical_failure": "Seven independent layers were an orchestration error, retained only as diagnostic controls; joint tests prevent recurrence",
+  "external_project_artifacts": [
+    {
+      "path_relative_to_project": "runs/sequential-adsorption/2Nap-Ac-pack-then-bind-joint-20261005-full-01/completion.json",
+      "sha256": "23cc34686d3330cdd9c5d3bb81afc09f831861ac2227a4d1e2081d15788807f0",
+      "bytes": 2543
+    },
+    {
+      "path_relative_to_project": "runs/sequential-adsorption/2Nap-Ac-pack-then-bind-joint-20261005-full-01/branch-01/trajectory-0001/final-h0.extxyz",
+      "sha256": "943dd0da7d4de456046d8a186cc307358782e675464c9b6f49e6da418d30393a",
+      "bytes": 646430
+    },
+    {
+      "path_relative_to_project": "runs/protocol-checks/pack-then-bind-joint-correction-20261005/full-joint-independent-audit/summary.json",
+      "sha256": "51d657bba8d0dc4daf45198c288598eefcb8d7a7cc6059fe0e6410a13d581020",
+      "bytes": 797
+    },
+    {
+      "path_relative_to_project": "runs/protocol-checks/pack-then-bind-joint-correction-20261005/pilot-joint-independent-audit/result-summary.json",
+      "sha256": "85a66b56f98ca915d4fe5763966f9e25dbb9b3c7a990e8aafeefdb7a6a00b247",
+      "bytes": 764
+    },
+    {
+      "path_relative_to_project": "runs/protocol-checks/pack-then-bind-joint-correction-20261005/CN5-pool-pruning-benchmark/benchmark.json",
+      "sha256": "df3e037a4525c35a2ac2b83fcc3a24c6c1fef32c3524ba83cb2c9cb2e681daa7",
+      "bytes": 4791
+    }
+  ],
+  "raw_scientific_inputs_and_trajectories_bundled": false
+}

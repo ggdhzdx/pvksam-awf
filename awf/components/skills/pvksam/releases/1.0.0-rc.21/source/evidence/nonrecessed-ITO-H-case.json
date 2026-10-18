@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "case": "2Nap-Ac N96, 192 ITO surface H",
+  "classification": "Previously completed project case; not a new Release end-to-end run",
+  "policy": {
+    "mode": "local-upper-envelope",
+    "radius_A": 3.0,
+    "parent_element": "O",
+    "envelope_elements": [
+      "In",
+      "Sn",
+      "O"
+    ],
+    "normal_cartesian_unit": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "periodic_axes": [
+      0,
+      1
+    ],
+    "height_tolerance_A": 1e-07,
+    "lateral_numerical_tolerance_A": 1e-10,
+    "scope": "ITO construction only; surface OH remains unrestrained",
+    "infeasible_action": "fail; never restore recessed parents or reduce proton count"
+  },
+  "parent_O_total": 2688,
+  "eligible_parent_O": 588,
+  "selected_unique_ITO_O": 192,
+  "optimization_steps": 603,
+  "final_inward_H": 0,
+  "new_outward_to_inward_H": 0,
+  "initial_shallow_inward_H": 9,
+  "initial_inward_recovered_by_step": 14,
+  "stored_unique_states": 604,
+  "original_parent_retained_H": 192,
+  "old_inward_H_at_matched_step_603": 19,
+  "fresh_fmax_eV_A": 0.04502132749495352,
+  "case_optimizer_overrides": {
+    "steps": 5000,
+    "fmax_eV_A": 0.05
+  },
+  "case_serialization": "Existing project adapter used 17 significant digits; core ASE export behavior unchanged.",
+  "placement_owner_sha256": "551692a07af07ec2e3deefd9ffdf060caa42476d3de20fb391e2daf883b973d1",
+  "external_project_artifacts": [
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/03-relax-post-h/inputs/h192.extxyz",
+      "sha256": "3170143a46ca56e91d48b4b985a2deb0eb05e8c84ca3fe764f02638c29e4e522",
+      "bytes": 948638
+    },
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/03-relax-post-h/inputs/initial-H-ledger.json",
+      "sha256": "f286c5f984c7c429b0553a1cb17463d6a123743cdb4f70542fdec22e59d23e79",
+      "bytes": 74264
+    },
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/03-relax-post-h/final/force-source/h192.extxyz",
+      "sha256": "17c6b1de27bb5ca3e1399a0632a794c41f0505de5641f173309464993abb6624",
+      "bytes": 948638
+    },
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/03-relax-post-h/final/H-analysis/report.json",
+      "sha256": "ae8d2acc8587e445225c866d9029cd54c41dbdc803110604c7d189b66822d926",
+      "bytes": 333638
+    },
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/03-relax-post-h/final/final-independent-audit.json",
+      "sha256": "0200e139caed9791c1a2414a2b664b539c814ff3e152cb26a78222bb20e6206d",
+      "bytes": 272275
+    },
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/03-relax-post-h/final/force-check/independent-force-check.json",
+      "sha256": "831f7944555926f9ff0416875209013274eaaca7a828448e3409eb2338134447",
+      "bytes": 11620
+    },
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/placement-independent-audit.json",
+      "sha256": "1ca45283097732035f1fc30187f41be53aaab0c96bb5afc4f90fc41baa9480b6",
+      "bytes": 59785
+    },
+    {
+      "path_relative_to_project": "runs/post-adsorption/2Nap-Ac-n96-h192-nonrecessed-20261007-01/run-summary.json",
+      "sha256": "dda605f5cfc2fc65e1dcbc7f27b5557334181104b560488171342cfd088ee709",
+      "bytes": 536
+    }
+  ],
+  "raw_scientific_inputs_and_trajectories_bundled": false,
+  "limitations": [
+    "One ITO construct and stored optimization states only; no annealing stability guarantee.",
+    "Initial parent selection does not freeze the mother O or the OH."
+  ]
+}
